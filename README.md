@@ -1,10 +1,10 @@
-# school.of.data
+# courses-and-workshops
 
-This repository contains curriculum and materials for research data management and data wrangling.  
+This repository contains curriculum and materials for courses and workshops taught through the uUniversity of Miami Libraries.  
 
 If you are not looking for the repository, but simply the curriculum materials, please see the [hosted version](http://tibbben.github.io/school.of.data/). 
 
-The repository was started through the Data Curation Initiative (http://library.miami.edu/datacuration) at the University of Miami Libraries (http://library.miami.edu). It has been supported by a fellowship from the Council for Library and Information Resources (http://www.clir.org).
+The repository was started through the Data Curation Initiative (http://library.miami.edu/datacuration) at the University of Miami Libraries (http://library.miami.edu).
 
 ---
 
@@ -39,7 +39,7 @@ Some of the material in this repository is drawn from:
 
 -  Heard Library at Vanderbilt University: [https://github.com/HeardLibrary](https://github.com/HeardLibrary)
 
-The repository was created by Tim Norris with help and inspiriation from many others including Elizabeth Fish, Angela Clark, and all the students who have participated in the seminar.
+The repository was created by Tim Norris with help and inspiriation from many others including Elizabeth Fish, Angela Clark, and all the students, faculty, and staff who have participated in the seminar.
 
 ---
 
