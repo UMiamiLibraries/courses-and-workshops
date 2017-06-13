@@ -1,0 +1,926 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../../common/css/reveal.css">
+        <link rel="stylesheet" href="../../common/css/white.css">
+        <link rel="stylesheet" href="../../common/css/overrides.css">
+	    <script src="../../common/java/print.js"></script>
+        <title>Research Data Management - 08</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+
+                <section data-background-image="../../common/assets/images-for-data/DataCurationCover.png">
+                    <div style="position: absolute; left: 340px; top: 125px; font-size: 150%; line-height: 100%;"><strong>Data Management in the<br>Research Environment</strong></div>
+                    <div style="position: absolute; left: 750px; top: 285px; font-size: 90%">RSM 674 Spring <script>var today = new Date();document.write(today.getFullYear());</script></div>
+                    <div style="position: absolute; left: 460px; top: 390px; font-size: 50%; text-align: left">Dr. Timothy Norris - Data Curation Fellow - <a href="mailto:tnorris@miami.edu" style="color: #222 !important; text-decoration: underline;">tnorris@miami.edu</a><br>Angela Clark - Librarian Associate Professor RSMAS - <a href="mailto:tnorris@miami.edu" style="color: #222 !important; text-decoration: underline;">aclark@rsmas.miami.edu</a></div>
+		        </section>
+				
+				<section>
+					<div style="font-weight: bold; font-size: 110%;">Todays Outline<br>Describing Data</div>
+					<div style="width: 47%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+						<ul style="font-size: 80%;">
+							<li style="position: relative; left: 23px; top: 20px;">Describing Data (who, what, standards, etc.)
+							<li style="position: relative; left: 23px; top: 20px;">Describing metadata
+						</ul>
+					</div>
+					<br><br><br><br>
+					<div style="position: absolute; bottom: 0px; left: 500px; text-align: left; font-size: 60%; line-height: normal;">
+						<a href="https://etherpad.net/p/Data_Management_Keywords">https://etherpad.net/p/Data_Management_Keywords</a><br>
+					</div>
+				</section>
+
+				<section>
+					<div style="font-weight: bold; font-size: 110%;">Metadata</div>
+					<div style="width: 30%; margin-left: auto; margin-right: auto; font-size: 600%; text-align: center; top: 0px; position: relative;">?</div>
+				</section>
+				
+			    <section>
+                    <div style="width: 80%; margin-right: 10%; margin-left: auto;">
+                        <span style="font-weight: bold; font-size: 110%;">A love letter to the future<br><br></span><br><br>
+                        <div style="font-size: 80%; text-align: left; line-height: 200%; position: relative; left: 100px;">
+                            <i>"Scientific metadata provide the information necessary for investigators separated by time, space, institution or disciplinary norm to establish common ground."  -  Christine Borgman</i>
+                        </div><br><br>
+                    </div>
+					<div style="position: absolute; bottom: -90px; left: 290px; width: 70%; text-align: left; font-size: 50%; line-height: normal;">Edwards, Mayernik, Betcheller, Bowker, and Borgman (2011). Science friction: Data, metadata, and collaboration. Social Studies of Science  41(5): 667-690. <a href=" http://dx.doi.org/10.1177/0306312711413314">http://dx.doi.org/10.1177/0306312711413314</a></div>
+                </section>
+				
+                <section>
+                    <br><br><img src="../../common/assets/images-for-data/DataCycle.png" style="max-width: 75%;">
+                    <div style="position: absolute; top: 50px; right: 100px; font-size: 110%; font-weight: bold; width: 500px;">Research Data Cycle</div>
+                    <div style="position: absolute; bottom: -40px; right: 50px; width: 400px; text-align: left; font-size: 50%; line-height: normal;"><a target="_blank" href="http://library.miami.edu/datacuration/">http://library.miami.edu/datacuration/</a></div>
+					<div class="fragment" style="position: absolute; top: -40px; left: 0px; width:100%; height:100%;"><object data="../../common/assets/images-for-data/metadataArrows.svg" type="image/svg+xml"></object></div>
+                </section>
+				
+				<section>
+                    <div style="width: 80%; margin-right: 10%; margin-left: auto;">
+                        <span style="font-weight: bold; font-size: 110%;">Data Collection<br></span>
+                        <div style="font-size: 80%; text-align: center; line-height: 100%; position: relative; left: 20px;">
+                            <img src="../../common/assets/images-for-data/dataCollection.jpg" style="max-width: 1100px"><br><br>
+                        </div>
+                    </div>
+					<div style="position: absolute; bottom: -20px; left: 420px; width: 100%; text-align: left; font-size: 50%; line-height: normal;">DataONE Education Module: Lesson 07: Metadata. DataONE.<br><a href="https://www.dataone.org/education-modules">https://www.dataone.org/education-modules</a></div>
+                </section>
+				
+			    <section>
+					<div style="font-weight: bold; font-size: 110%;">From Field/Lab Notes to Datasets</div>
+                    <div style="position: relative; top: 30px; font-size:40%; text-align: left; width:90%; margin-right: auto; margin-left: auto;">	
+						<table border=0 cellspacing=0 cellpadding=0 width=100% style='border-collapse:collapse'>
+						 <tr style=''>
+						  <td width=274 valign=top style='width:205.85pt;border-top:2.25pt;border-left:
+						  2.25pt;border-bottom:1.0pt;border-right:1.0pt;border-color:black;border-style:
+						  solid;padding:2px 6.7pt 0px 6.7pt;'>
+						  <b>Species</b>
+						  </td>
+						  <td width=108 valign=top style='width:81.0pt;border-top:solid black 2.25pt;
+						  border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  <b>Average Temperature</b>
+						  </td>
+						  <td width=144 valign=top style='width:1.5in;border-top:solid black 2.25pt;
+						  border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  <b>Temperature Standard Deviation</b>
+						  </td>
+						  <td width=120 valign=top style='width:1.25in;border-top:solid black 2.25pt;
+						  border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  <b>Number of Observations</b>
+						  </td>
+						  <td width=114 valign=top style='width:85.5pt;border-top:solid black 2.25pt;
+						  border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  <b>Minimum Temperature</b>
+						  </td>
+						  <td width=114 valign=top style='width:85.5pt;border-top:solid black 2.25pt;
+						  border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 2.25pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  <b>Maximum Temperature</b>
+						  </td>
+						 </tr>
+						 <tr style=''>
+						  <td width=274 valign=top style='width:205.85pt;border-top:none;border-left:
+						  solid black 2.25pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  Northern Red-legged Frog</p>
+						  </td>
+						  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  4.4</p>
+						  </td>
+						  <td width=144 valign=top style='width:1.5in;border-top:none;border-left:none;
+						  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2px 6.7pt 0px 6.7pt;
+						  '>
+						  ---</p>
+						  </td>
+						  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  1</p>
+						  </td>
+						  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  4.4</p>
+						  </td>
+						  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 2.25pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  4.4</p>
+						  </td>
+						 </tr>
+						 <tr style=''>
+						  <td width=274 valign=top style='width:205.85pt;border-top:none;border-left:
+						  solid black 2.25pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  Tailed Frog</p>
+						  </td>
+						  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  7.0</p>
+						  </td>
+						  <td width=144 valign=top style='width:1.5in;border-top:none;border-left:none;
+						  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2px 6.7pt 0px 6.7pt;
+						  '>
+						  3.0</p>
+						  </td>
+						  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  3</p>
+						  </td>
+						  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  4</p>
+						  </td>
+						  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 2.25pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  10</p>
+						  </td>
+						 </tr>
+						 <tr style=''>
+						  <td width=274 valign=top style='width:205.85pt;border-top:none;border-left:
+						  solid black 2.25pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  Arizona Toad</p>
+						  </td>
+						  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  10.0</p>
+						  </td>
+						  <td width=144 valign=top style='width:1.5in;border-top:none;border-left:none;
+						  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2px 6.7pt 0px 6.7pt;
+						  '>
+						  ---</p>
+						  </td>
+						  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  1</p>
+						  </td>
+						  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  10</p>
+						  </td>
+						  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 2.25pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  10</p>
+						  </td>
+						 </tr>
+						 <tr style=''>
+						  <td width=274 valign=top style='width:205.85pt;border-top:none;border-left:
+						  solid black 2.25pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  Strecker's Chorus Frog</p>
+						  </td>
+						  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  10.5</p>
+						  </td>
+						  <td width=144 valign=top style='width:1.5in;border-top:none;border-left:none;
+						  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2px 6.7pt 0px 6.7pt;
+						  '>
+						  2.0</p>
+						  </td>
+						  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  11</p>
+						  </td>
+						  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  9</p>
+						  </td>
+						  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 2.25pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  16</p>
+						  </td>
+						 </tr>
+						 <tr style=''>
+						  <td width=274 valign=top style='width:205.85pt;border-top:none;border-left:
+						  solid black 2.25pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  Oregon Spotted Frog</p>
+						  </td>
+						  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  11.0</p>
+						  </td>
+						  <td width=144 valign=top style='width:1.5in;border-top:none;border-left:none;
+						  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2px 6.7pt 0px 6.7pt;
+						  '>
+						  15.5</p>
+						  </td>
+						  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  2</p>
+						  </td>
+						  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  0</p>
+						  </td>
+						  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 2.25pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  22</p>
+						  </td>
+						 </tr>
+						 <tr style=''>
+						  <td width=274 valign=top style='width:205.85pt;border-top:none;border-left:
+						  solid black 2.25pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  New Jersey Chorus Frog</p>
+						  </td>
+						  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  11.5</p>
+						  </td>
+						  <td width=144 valign=top style='width:1.5in;border-top:none;border-left:none;
+						  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2px 6.7pt 0px 6.7pt;
+						  '>
+						  4.5</p>
+						  </td>
+						  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  17</p>
+						  </td>
+						  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  3</p>
+						  </td>
+						  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 2.25pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  22</p>
+						  </td>
+						 </tr>
+						 <tr style=''>
+						  <td width=274 valign=top style='width:205.85pt;border-top:none;border-left:
+						  solid black 2.25pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  Wood Frog</p>
+						  </td>
+						  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  12.5</p>
+						  </td>
+						  <td width=144 valign=top style='width:1.5in;border-top:none;border-left:none;
+						  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2px 6.7pt 0px 6.7pt;
+						  '>
+						  5.5</p>
+						  </td>
+						  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  897</p>
+						  </td>
+						  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  0</p>
+						  </td>
+						  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 2.25pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  28.8</p>
+						  </td>
+						 </tr>
+						 <tr style=''>
+						  <td width=274 valign=top style='width:205.85pt;border-top:none;border-left:
+						  solid black 2.25pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  Spring Peeper</p>
+						  </td>
+						  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  13.2</p>
+						  </td>
+						  <td width=144 valign=top style='width:1.5in;border-top:none;border-left:none;
+						  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2px 6.7pt 0px 6.7pt;
+						  '>
+						  5.6</p>
+						  </td>
+						  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  569</p>
+						  </td>
+						  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  -1</p>
+						  </td>
+						  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+						  none;border-bottom:solid black 1.0pt;border-right:solid black 2.25pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  32</p>
+						  </td>
+						 </tr>
+						 <tr style=''>
+						  <td width=274 valign=top style='width:205.85pt;border-top:none;border-left:
+						  solid black 2.25pt;border-bottom:solid black 2.25pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  Red-legged Frog</p>
+						  </td>
+						  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+						  none;border-bottom:solid black 2.25pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  13.3</p>
+						  </td>
+						  <td width=144 valign=top style='width:1.5in;border-top:none;border-left:none;
+						  border-bottom:solid black 2.25pt;border-right:solid black 1.0pt;padding:2px 6.7pt 0px 6.7pt;
+						  '>
+						  5.9</p>
+						  </td>
+						  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+						  none;border-bottom:solid black 2.25pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  16</p>
+						  </td>
+						  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+						  none;border-bottom:solid black 2.25pt;border-right:solid black 1.0pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  4</p>
+						  </td>
+						  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+						  none;border-bottom:solid black 2.25pt;border-right:solid black 2.25pt;
+						  padding:2px 6.7pt 0px 6.7pt;'>
+						  27</p>
+						  </td>
+						 </tr>
+						</table>
+					</div>
+					<br><br>
+					<div style="position: absolute; bottom: -20px; left: 420px; width: 100%; text-align: left; font-size: 50%; line-height: normal;">DataONE Education Module: Lesson 07: Metadata. DataONE.<br><a href="https://www.dataone.org/education-modules">https://www.dataone.org/education-modules</a></div>
+                </section>
+				
+				<section>
+                    <div style="width: 80%; margin-right: 10%; margin-left: auto;">
+                        <span style="font-weight: bold; font-size: 110%;">From Datasets to Published Papers<br><br></span>
+                        <div style="font-size: 80%; text-align: center; line-height: 100%; position: relative; left: 20px;">
+                            <img src="../../common/assets/images-for-data/scienceEditor.jpg" style="max-width: 500px"><br><br>
+                        </div>
+                    </div><br>
+					<div style="position: absolute; bottom: -20px; left: 420px; width: 100%; text-align: left; font-size: 50%; line-height: normal;">DataONE Education Module: Lesson 07: Metadata. DataONE.<br><a href="https://www.dataone.org/education-modules">https://www.dataone.org/education-modules</a></div>
+                </section>
+				
+				<section>
+                    <div style="width: 80%; margin-right: 10%; margin-left: auto;">
+                        <span style="font-weight: bold; font-size: 110%;">What is a Dataset<br></span>
+                        <div style="font-size: 80%; text-align: left; line-height: 130%; position: relative; left: 20px;">
+                            <ul>
+                                <li style="position: relative; left: 23px; margin-top:23px;">Definition: A collection of data
+                                <li style="position: relative; left: 23px; margin-top:23px;">Generally datasets can be defined as:
+								<ul style="font-size: 80%;">
+									<li>Spatial – a collection of logically related features arranged in a prescribed manner such as GIS map layers, water features, etc
+									<li>Tabular – a file, spreadsheet, data in a table
+									<li>Many tabular datasets are inherently “spatial”, e.g. water-quality samples associated with stream collection sites
+								</ul>
+                                <li style="position: relative; left: 23px; margin-top:23px;">Elements in a dataset can include:
+								<ul style="font-size: 80%;">
+									<li>Values, measures, points, coordinates, conditions, qualities, frequencies, or attributes that are a result of an observational study
+								</ul>
+                            </ul>
+                        </div>
+                    </div><br>
+					<div style="position: absolute; bottom: -30px; left: 420px; width: 100%; text-align: left; font-size: 50%; line-height: normal;">DataONE Education Module: Lesson 07: Metadata. DataONE.<br><a href="https://www.dataone.org/education-modules">https://www.dataone.org/education-modules</a></div>
+                </section>
+				
+				<section>
+                    <div style="width: 80%; margin-right: 10%; margin-left: auto;">
+                        <span style="font-weight: bold; font-size: 110%;">Working with data<br><br></span>
+                        <div style="font-size: 80%; text-align: center; line-height: 100%; position: relative; left: 20px;">
+						    <ul><li class="fragment">When you <i><b>provide</b></i> data to someone else, what types of information would you want to include with the data?</ul><br><br>
+                            <img src="../../common/assets/images-for-data/computerDataSharing.png" style="max-width: 600px"><br><br>
+							<ul><li class="fragment">When you <i><b>receive</b></i> a dataset from an external source, what types of details do you want to know about the data?</ul>
+                        </div>
+                    </div>
+					<div style="position: absolute; bottom: -90px; left: 420px; width: 100%; text-align: left; font-size: 50%; line-height: normal;">DataONE Education Module: Lesson 07: Metadata. DataONE.<br><a href="https://www.dataone.org/education-modules">https://www.dataone.org/education-modules</a></div>
+                </section>
+				
+			    <section>
+                    <div style="width: 80%; margin-right: 5%; margin-left: auto;">
+                        <span style="font-weight: bold; font-size: 110%; margin-left: -20%;">Working with data<br><br></span>
+					</div>
+                    <div style="width: 90%; margin-right: 5%; margin-left: auto;">
+                        <div style="font-size: 80%; text-align: left; line-height: 120%; ">
+                            <table style="border: none"><tbody><tr><td style="width: 550px;" class="fragment">
+							    Providing data<br><br>
+								<div style="font-size: 80%;">
+                                <ul>
+								    <li>Why were the data created?
+								    <li>What limitations, if any, do the data have?
+								    <li>What does the data mean?
+								    <li>How should the data be cited?
+							    </div>
+							</td><td class="fragment">
+							    Receiving data<br><br>
+								<div style="font-size: 80%;">
+                                <ul>
+								    <li>What are the data gaps?
+								    <li><b>What processes were used for creating the data</b>
+								    <li>Are there any fees associated with the data?
+								    <li>In what scale were the data created?
+								    <li>What do the values in the tables mean (data dictionary)?
+									<li>What software do I need to use the data?
+								    <li>What projection are the data in (geospatial data)?
+								    <li>Can I give these data to someone else?
+							    </div>
+							</td></tr></tbody></table>
+                        </div>
+                    </div>
+					<div style="position: absolute; bottom: -90px; left: 420px; width: 100%; text-align: left; font-size: 50%; line-height: normal;">DataONE Education Module: Lesson 07: Metadata. DataONE.<br><a href="https://www.dataone.org/education-modules">https://www.dataone.org/education-modules</a></div>
+                </section>
+				
+				<section>
+                    <div style="width: 60%; margin-right: 20%; margin-left: auto;">
+                        <span style="font-weight: bold; font-size: 110%;">What is Metadata?<br><br></span>
+						<span style="font-weight: bold; font-size: 90%;">Metadata is data 'reporting'<br></span>
+                        <div style="font-size: 80%; text-align: left; line-height: 160%; position: relative; left: 220px;">
+                            <ol>
+                                <li style="position: relative; left: 23px;">WHO created the data?
+                                <li style="position: relative; left: 23px;">WHAT is the content of the data?
+                                <li style="position: relative; left: 23px;">WHEN were the data created?
+								<li style="position: relative; left: 23px;">WHERE is the data geographically?
+                                <li style="position: relative; left: 23px;">HOW were the data developed?
+								<li style="position: relative; left: 23px;">WHY were the data developed?
+                            </ol>
+                        </div>
+                    </div><br>
+					<div style="position: absolute; bottom: -90px; left: 420px; width: 100%; text-align: left; font-size: 50%; line-height: normal;">DataONE Education Module: Lesson 07: Metadata. DataONE.<br><a href="https://www.dataone.org/education-modules">https://www.dataone.org/education-modules</a></div>
+                </section>
+
+				<section>
+					<div style="position: relative; top: -40px; left: 250px; width: 90%; height: 100%;"><iframe width="950px" height="600px" data-src="https://www.worldcat.org/search?q=isbn%3A0520023676"></iframe></div>
+					<div style="position: absolute; top: 100px; left: 50px; width: 200px; height: 400px; font-size: 90%; font-weight: bold;">Metadata you already know<br><br>Human Readable</div>
+				</section>
+				
+				<section>
+					<div style="position: relative; top: -40px; left: 400px; width: 900px; height: 100%; border: 1px solid gray; padding: 13px; background-color: #ccc; font-family: monospace; font-size: 60%; text-align: left;">
+						TY  - BOOK<br>
+						DB  - /z-wcorg/<br>
+						DP  - http://worldcat.org<br>
+						ID  - 702896<br>
+						LA  - English<br>
+						T1  - Traces on the Rhodian shore : nature and culture in Western thought from ancient times to the end of the eighteenth century<br>
+						AU  - Glacken, Clarence J.<br>
+						PB  - University of California Press<br>
+						CY  - Berkeley<br>
+						Y1  - 1973///<br>
+						SN  - 0520023676 9780520023673 0520032160 9780520032163<br>
+						ER  -
+					</div>
+					<div style="position: absolute; top: 60px; left: 50px; width: 200px; height: 400px; font-size: 90%; font-weight: bold;">Metadata you already know<br><br>Machine Readable</div>
+				</section>	
+				
+				<section>
+					... break ...
+				</section>
+				
+                <section>
+                    <div style="width: 70%; margin-right: 20%; margin-left: auto;">
+                        <span style="font-weight: bold; font-size: 110%;">Describing Metadata<br><br></span>
+                        <div style="font-size: 80%; text-align: left; line-height: 120%; position: relative; left: 100px;">
+							    Descriptive
+								<div style="font-size: 80%;">
+                                <ul>
+								    <li>Project: Describe the overall project (author, date, place, etc.)
+								    <li>Technical: Describe individual project elements (tables, column headers, etc.)
+							    </div><br>
+							    Structural
+								<div style="font-size: 80%;">
+                                <ul>
+								    <li>Describe how different elements of the data(set) fit together
+							    </div><br>
+							    Administrative
+								<div style="font-size: 80%;">
+                                <ul>
+								    <li>Rights Management
+									<li>Preservation
+							    </div>
+                        </div>
+                    </div>
+					<div style="position: absolute; bottom: -90px; width: 100%; text-align: center; font-size: 50%; line-height: normal;">National Information Standards Organization (NISO) (2004). Understanding Metadata.<br><a href="http://www.niso.org/publications/press/UnderstandingMetadata.pdf">http://www.niso.org/publications/press/UnderstandingMetadata.pdf</a></div>
+                </section>
+				
+				<section>
+                    <div style="width: 80%; margin-right: 10%; margin-left: auto;">
+                        <span style="font-weight: bold; font-size: 110%;">What is a Metadata Standard<br></span>
+                        <div style="font-size: 70%; text-align: left; line-height: 130%; position: relative; left: 20px;">
+                            <ul>
+                                <li style="position: relative; left: 23px; margin-top:23px;">A Standard provides a structure to describe data with:
+								<ul style="font-size: 80%;">
+									<li>Common terms to allow consistency between records
+									<li>Common definitions for easier interpretation
+									<li>Common language for ease of communication
+									<li>Common structure to quickly locate information
+								</ul>
+                                <li style="position: relative; left: 23px; margin-top:23px;">In search and retrieval, standards provide:
+								<ul style="font-size: 80%;">
+									<li>Documentation structure in a reliable and predictable format for computer interpretation
+									<li>A uniform summary description of the dataset
+								</ul>
+                            </ul>
+							<br>
+							<img src="../../common/assets/images-for-data/fishToComputer.jpg" style="max-width: 700px; margin-left: 20%; margin-right: auto;">
+                        </div>
+                    </div><br>
+					<div style="position: absolute; bottom: 0px; left: 420px; width: 100%; text-align: left; font-size: 50%; line-height: normal;">DataONE Education Module: Lesson 07: Metadata. DataONE.<br><a href="https://www.dataone.org/education-modules">https://www.dataone.org/education-modules</a></div>
+                </section>
+				
+                <section>
+				
+					<section>
+						<div style="width: 80%; margin-right: 10%; margin-left: auto;">
+							<span style="font-weight: bold; font-size: 110%;">Standards and Schemas<br><br></span>
+							<div style="font-size: 80%; text-align: left; line-height: 120%;">
+									<div style="font-size: 80%;position: relative; left: 120px;">
+									<span style="font-weight: bold; font-size: 110%;">Idea of standardized set of elements</span><br>
+									<ul>
+										<li>Minimal to maximal, depends on purpose, audience, domain, and structure
+									</div><br>
+									<div style="font-size: 80%; position: relative; left: 120px;">
+									<span style="font-weight: bold; font-size: 110%;">Dublin Core</span><br>
+									<ul>
+										<li>One of the most common (XML) – not Dublin Ireland
+										<li>Used as a starting point for many other schema
+									</div><br>
+									<div style="font-size: 80%; width: 90%; position: relative; left: 50px;">
+									<i>The <b>Dublin Core Metadata Element Set</b> is a vocabulary of <b>fifteen properties</b> for use in resource description. The name "Dublin" is due to its origin at a <b>1995 invitational workshop in Dublin, Ohio</b>; "core" because its elements are broad and generic, usable for describing a wide range of resources.</i>
+									</div>
+							</div>
+						</div>
+						<div style="position: absolute; bottom: -90px; width: 100%; text-align: center; font-size: 50%; line-height: normal;"><a href="http://dublincore.org/documents/dces/">http://dublincore.org/documents/dces/</a></div>
+					</section>
+					
+					<section>
+						<div style="width: 80%; position: absolute; left: 70px; text-align: left; line-height: 80%;">
+							<span style="font-weight: bold; font-size: 110%;">DC<br><br></span>
+							<span style="font-size: 65%;">
+							  Title<br>Creator<br>Subject<br>Description<br>Publisher<br>Contributor<br>Date<br>Type<br>Format<br>Identifier<br>Source<br>Language<br>Relation<br>Coverage<br>Rights
+							</span>
+						</div>
+						<div class="fragment" style="width: 80%; position: absolute; left: 310px; text-align: left; line-height: 80%;">
+							<span style="font-weight: bold; font-size: 110%;">DC Example<br><br></span>
+							<span style="font-size: 65%;">
+							  Title=<br>
+							  Creator=<br>
+							  Creator=<br>
+							  Creator=<br>
+							  Subject=<br>
+							  Description=<br>
+							  Publisher=<br>
+							  Publisher=<br>
+							  Date=<br>
+							  Type=<br>
+							  Format=<br>
+							  Identifier=<br>
+							  Language=
+							</span>
+						</div>
+						<div class="fragment" style="width: 80%; position: absolute; left: 500px; text-align: left; line-height: 80%;">
+							<span style="font-weight: bold; font-size: 110%;">&nbsp;<br><br></span>
+							<span style="font-size: 65%;">
+							  ”Metadata Demystified”<br>
+							  ”Brand, Amy”<br>
+							  ”Daly, Frank”<br>
+							  "Meyers, Barbara”<br>
+							  ”metadata”<br>
+							  ”Presents an overview of metadata conventions in publishing.”<br>
+							  ”NISO Press”<br>
+							  ”The Sheridan Press”<br>
+							  ”2003-07"<br>
+							  ”Text”<br>
+							  ”application/pdf”<br>
+							  ”http://www.niso.org/standards/resources/Metadata_Demystified.pdf”<br>
+							  ”en”
+							</span>
+						</div>
+						<div style="position: absolute; bottom: -690px; left: 800px; width: 100%; text-align: left; font-size: 50%; line-height: normal;"><a href="http://dublincore.org/documents/dces/">http://dublincore.org/documents/dces/</a></div>
+					</section>
+					
+				</section>
+
+                <section>
+				
+					<section>
+						<div style="width: 80%; margin-right: 10%; margin-left: auto;">
+							<span style="font-weight: bold; font-size: 110%;">Standards and Schemas<br><br></span>
+							<div style="font-size: 80%; text-align: left; line-height: 120%;">
+									<div style="font-size: 80%; position: relative; left: 300px;">
+									<span style="font-weight: bold; font-size: 110%;">Project Open Data</span><br>
+									<ul>
+										<li>US Government standard (json-ld)
+										<li>2013 data sharing requirements and open-data policy briefs</a>
+									</div><br>
+									<div style="font-size: 80%; width: 90%; position: relative; left: 150px;">
+									<i>The White House developed <b>Project Open Data</b> – this collection of code, tools, and case studies – to help agencies adopt the Open Data Policy and unlock the potential of government data. Project Open Data will evolve over time as a community resource to facilitate broader adoption of open data practices in government. Anyone – government employees, contractors, developers, the general public – can view and contribute.</i>									</div>
+							</div>
+						</div>
+						<div style="position: absolute; bottom: -90px; width: 100%; text-align: center; font-size: 50%; line-height: normal;"><a href="https://project-open-data.cio.gov/">https://project-open-data.cio.gov/</a></div>
+					</section>
+					
+					<section>
+						<div style="width: 90%; position: absolute; left: 5%; text-align: left;">
+							<span style="font-weight: bold; font-size: 100%; margin-left: 300px;">Project Open Data Required Fields</span><br><br>
+							<table class="table table-striped" style="font-size: 47%">
+							  <thead>
+								<tr>
+								  <th>Field</th>
+								  <th>Label</th>
+								  <th>Definition</th>
+								  <th>Required</th>
+								</tr>
+							  </thead>
+							  <tbody>
+								<tr>
+								  <td><a href="https://project-open-data.cio.gov/v1.1/schema/#title">title</a></td>
+								  <td>Title</td>
+								  <td>Human-readable name of the asset.  Should be in plain English and include sufficient detail to facilitate search and discovery.</td>
+								  <td>Always</td>
+								</tr>
+								<tr>
+								  <td><a href="https://project-open-data.cio.gov/v1.1/schema/#description">description</a></td>
+								  <td>Description</td>
+								  <td>Human-readable description (e.g., an abstract) with sufficient detail to enable a user to quickly understand whether the asset is of interest.</td>
+								  <td>Always</td>
+								</tr>
+								<tr>
+								  <td><a href="https://project-open-data.cio.gov/v1.1/schema/#keyword">keyword</a></td>
+								  <td>Tags</td>
+								  <td>Tags (or keywords) help users discover your dataset; please include terms that would be used by technical and non-technical users.</td>
+								  <td>Always</td>
+								</tr>
+								<tr>
+								  <td><a href="https://project-open-data.cio.gov/v1.1/schema/#modified">modified</a></td>
+								  <td>Last Update</td>
+								  <td>Most recent date on which the dataset was changed, updated or modified.</td>
+								  <td>Always</td>
+								</tr>
+								<tr>
+								  <td><a href="https://project-open-data.cio.gov/v1.1/schema/#publisher">publisher</a></td>
+								  <td>Publisher</td>
+								  <td>The publishing entity and optionally their parent organization(s).</td>
+								  <td>Always</td>
+								</tr>
+								<tr>
+								  <td><a href="https://project-open-data.cio.gov/v1.1/schema/#contactPoint">contactPoint</a></td>
+								  <td>Contact Name and Email</td>
+								  <td>Contact person’s name and email for the asset.</td>
+								  <td>Always</td>
+								</tr>
+								<tr>
+								  <td><a href="https://project-open-data.cio.gov/v1.1/schema/#identifier">identifier</a></td>
+								  <td>Unique Identifier</td>
+								  <td>A unique identifier for the dataset or API as maintained within an Agency catalog or database.</td>
+								  <td>Always</td>
+								</tr>
+								<tr>
+								  <td><a href="https://project-open-data.cio.gov/v1.1/schema/#accessLevel">accessLevel</a></td>
+								  <td>Public Access Level</td>
+								  <td>The degree to which this dataset <strong>could</strong> be made publicly-available, <em>regardless of whether it has been made available</em>. Choices: public (Data asset is or could be made publicly available to all without restrictions), restricted public (Data asset is available under certain use restrictions), or non-public (Data asset is not available to members of the public).</td>
+								  <td>Always</td>
+								</tr>
+								<tr>
+								  <td><a href="https://project-open-data.cio.gov/v1.1/schema/#bureauCode">bureauCode</a><sup><a href="https://project-open-data.cio.gov/v1.1/schema/#USG-note">USG</a></sup></td>
+								  <td>Bureau Code</td>
+								  <td>Federal agencies, combined agency and bureau code from OMB Circular A-11, Appendix C (<a href="http://www.whitehouse.gov/sites/default/files/omb/../../common/assets/images-for-data/a11_current_year/app_c.pdf">PDF</a>, <a href="/data/omb_bureau_codes.csv">CSV</a>) in the format of <code class="highlighter-rouge">015:11</code>.</td>
+								  <td>Always</td>
+								</tr>
+								<tr>
+								  <td><a href="https://project-open-data.cio.gov/v1.1/schema/#programCode">programCode</a><sup><a href="https://project-open-data.cio.gov/v1.1/schema/#USG-note">USG</a></sup></td>
+								  <td>Program Code</td>
+								  <td>Federal agencies, list the primary program related to this data asset, from the <a href="https://www.performance.gov/sites/default/files/files/FederalProgramInventory_FY13_MachineReadable_091613.xls">Federal Program Inventory</a>. Use the format of <code class="highlighter-rouge">015:001</code>.</td>
+								  <td>Always</td>
+								</tr>
+							  </tbody>
+							 </table>
+						</div>
+					</section>
+					
+				</section>
+				
+                <section>
+				
+					<section>
+						<div style="width: 80%; margin-right: 10%; margin-left: auto;">
+							<span style="font-weight: bold; font-size: 110%;">Standards and Schemas<br><br></span>
+							<div style="font-size: 80%; text-align: left; line-height: 120%;">
+									<div style="font-size: 80%; position: relative; left: 420px;">
+									<span style="font-weight: bold; font-size: 110%;">DataCite</span><br>
+									<ul>
+										<li>Up and coming resource (XML)
+										<li>Linked to work at <a href="http://re3data.org/">re3data.org</a>
+									</div><br>
+									<div style="font-size: 80%; width: 90%; position: relative; left: 50px;">
+									<i>The <b>DataCite Metadata Schema</b> is a list of core metadata properties chosen for an accurate and consistent identification of a resource for citation and retrieval purposes, along with recommended use instructions.</i>
+									</div>
+							</div>
+						</div>
+						<div style="position: absolute; bottom: -90px; width: 100%; text-align: center; font-size: 50%; line-height: normal;"><a href="http://schema.datacite.org/">http://schema.datacite.org/</a></div>
+					</section>
+					
+					<section>
+						<div style="width: 80%; position: absolute; left: 20px; text-align: left; line-height: 100%;">
+						    <img src="../../common/assets/images-for-data/dataciteXML.jpg">
+						</div>
+						<div style="position: absolute; bottom: -300px; left: 600px;">example datacite XML for example dataset</div>
+					</section>
+					
+				</section>
+				
+				<section>
+				
+					<section data-background-image="../../common/assets/images-for-data/GISMeta1.png"><div style="font-weight: bold; font-size: 110%; position: absolute; right: 150px; width: 500px; top: -380px">GIS Metadata Example</div></section>
+					<section data-background-image="../../common/assets/images-for-data/GISMeta2.png"><div style="font-weight: bold; font-size: 110%; position: absolute; right: 150px; width: 500px; top: -380px">GIS Metadata Example</div></section>
+					<section data-background-image="../../common/assets/images-for-data/GISMeta3.png"><div style="font-weight: bold; font-size: 110%; position: absolute; right: 150px; width: 500px; top: -380px">GIS Metadata Example</div></section>
+					<section data-background-image="../../common/assets/images-for-data/GISMeta4.png"><div style="font-weight: bold; font-size: 110%; position: absolute; right: 150px; width: 500px; top: -380px">GIS Metadata Example</div></section>
+					<section data-background-image="../../common/assets/images-for-data/GISMeta5.png"><div style="font-weight: bold; font-size: 110%; position: absolute; right: 150px; width: 500px; top: -380px">GIS Metadata Example</div></section>
+					<section data-background-image="../../common/assets/images-for-data/GISMeta6.png">
+						<div class="fragment" style="font-weight: bold; font-size: 110%; position: absolute; left: 380px; width: 400px; top: -210px;  -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg);">
+							<svg width="300px;" height="300px" xmlns="https://www.w3.org/TR/SVG/" viewbox="0 0 300 300">
+								<ellipse cx="150" cy="150" rx="100" ry="50" style="fill: none; stroke: red; stroke-width: 4" />
+							</svg>
+						</div>
+					</section>
+					<section data-background-image="../../common/assets/images-for-data/GISMeta7.png"><div style="font-weight: bold; font-size: 110%; position: absolute; right: 150px; width: 500px; top: -350px">GIS Metadata Example</div></section>
+				
+				</section>
+				
+				<section>
+                    <div style="width: 40%; margin-left: 0px; margin-right: auto;font-weight: bold; font-size: 110%; top: 200px"><br><br><br>Schemas as Walls<br><br><br></div>
+                    <div style="width: 50%; position: absolute; top: 0px; right: 0px;">
+                        <img src="../../common/assets/images-for-data/accessWalls.png" style="max-width: 500px"><br><br>
+                    </div>
+					<div style="position: absolute; bottom: -300px; left: 20px; width: 45%; text-align: left; font-size: 50%; line-height: normal;">Willis, Greenberg and White (2012). Analysis and Synthesis of Metadata Goals for Scientific Data, <i>Journal of the American Society for Information Science and Technology</i>, 63(8):1505–1520. <a href="http://scholarship.law.duke.edu/faculty_scholarship/2713/">http://scholarship.law.duke.edu/faculty_scholarship/2713/</a></div>
+                </section>
+				
+                <section>
+                    <div style="width: 80%; margin-right: 10%; margin-left: auto;">
+                        <span style="font-weight: bold; font-size: 110%;">Metadata Review<br></span>
+                        <div style="font-size: 80%; text-align: left; line-height: 120%; position: relative; left: 150px; margin-top: 13px;">
+							<ul>
+							    <li style="margin-top: 13px;">metadata is a description of your data for a future user (you perhaps?)
+                                <ul style="font-size: 80%;">
+								    <li>What does this person need to know to use the data <i>properly</i>?
+								    <li>Does this person need discipline specific knowledge? How much?
+								</ul>
+							    <li style="margin-top: 13px;">Two general kinds of descriptive metadata
+                                <ul style="font-size: 80%;">
+								    <li>Project level (contextual)
+								    <li>Technical (data level, units, headers, etc.)
+								</ul>
+							    <li style="margin-top: 13px;">How will the metadata be captured
+                                <ul style="font-size: 80%;">
+								    <li>Notebooks (electronic??)
+									<li>Device Capture
+								</ul>
+							    <li style="margin-top: 13px;">What format (with justification)
+                                <ul style="font-size: 80%;">
+								    <li>Discipline specific standard? Other standard? 
+									<li>Machine  or human readable (both?)
+								</ul>
+							</ul>
+                        </div>
+                    </div>
+                </section>
+
+			    <section>
+                    <div style="width: 80%; margin-right: 5%; margin-left: auto;">
+                        <span style="font-weight: bold; font-size: 110%; margin-left: -20%;">Acronym Awareness<br><br></span>
+					</div>
+                    <div style="width: 90%; margin-right: 5%; margin-left: auto;">
+                        <div style="font-size: 80%; text-align: left; line-height: 120%; ">
+                            <table style="border: none"><tbody><tr><td style="width: 550px;">
+							    Schemas and Standards<br><br>
+								<div style="font-size: 80%;">
+                                <ul>
+								    <li>Dublin Core
+								    <li>EML
+								    <li>FGDC and ISO 19115
+								    <li>DDI
+								    <li>EXIF and IPTC
+							    </div>
+							</td><td>
+							    Common Terms<br><br>
+								<div style="font-size: 80%;">
+                                <ul>
+								    <li>XML
+								    <li>RDF
+								    <li>Ontologies
+							    </div>
+							</td></tr></tbody></table>
+                        </div>
+                    </div><br><br>
+					<div style="position: absolute; bottom: 0px; left: 700px; width: 100%; text-align: left; font-size: 80%; line-height: normal;"><b>README.txt</b></div>
+                </section>
+				
+				<section>
+					... break ...
+				</section>
+				
+				
+<!-- ########################################################################################################################## -->
+<!-- ##               end of session one - some extra slides                                                                                                                                                                                             ## -->				
+<!-- ########################################################################################################################## -->	
+								
+                <section>
+					<div style="font-weight: bold; font-size: 110%;">Assignment #3</div>
+                    <div style="position: relative; top: 30px; font-size:80%; text-align: left; width:58%; margin-right: auto; margin-left: auto;">
+						<ul>
+						    <li style="position: relative; font-size: 95%;">Choose one of the following:
+							<ol style="font-size: 80%; margin-bottom: 23px;">
+								<li>Create metadata for your research data using an existing schema
+								<li>create a metadata schema for your data
+							</ol>
+						</ul>
+						<br><br>
+					</div>
+					<br><br>
+                </section>
+				
+				<section>
+					... break ...
+				</section>		
+
+            </div>
+        </div>
+        <script src="../../common/java/reveal.js"></script>
+	    <script src="../../common/java/notes.js"></script>
+	    <script src="../../common/java/head.min.js"></script>
+        <script>
+            Reveal.initialize({
+                width: 1366, height: 768, margin: 0.05,
+                controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+				chart: {
+					defaults: { 
+						global: { 
+							defaultFontSize: 20,
+							title: { fontColor: "#333" }, 
+							legend: {
+								position: "top",
+								labels: { fontColor: "#333" },
+							},
+							tooltips: {
+								labels: { fontColor: "#333" },
+							},
+						}, 
+						scale: { 
+							scaleLabel: { fontColor: "#333" }, 
+							gridLines: { color: "#333", zeroLineColor: "#333" }, 
+							ticks: { fontColor: "#333" }, 
+						} 
+					},
+				},
+                dependencies: [
+                    { src: '../../common/java/Chart.min.js' },
+                    { src: '../../common/java/csv2chart.js' }
+                ] 
+            });
+        </script>
+    </body>
+</html>

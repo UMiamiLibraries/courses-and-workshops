@@ -1,0 +1,1133 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../../common/css/reveal.css">
+        <link rel="stylesheet" href="../../common/css/white.css">
+        <link rel="stylesheet" href="../../common/css/overrides.css">
+	    <script src="../../common/java/print.js"></script>
+        <title>Research Data Management - 01</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+
+                <section data-background-image="../../common/assets/images-for-data/DataCurationCover.png">
+                    <div style="position: absolute; left: 340px; top: 125px; font-size: 150%; line-height: 100%;"><strong>Data Management in the<br>Research Environment</strong></div>
+                    <div style="position: absolute; left: 750px; top: 285px; font-size: 90%">RSM 674 Spring <script>var today = new Date();document.write(today.getFullYear());</script></div>
+                    <div style="position: absolute; left: 460px; top: 390px; font-size: 50%; text-align: left">Dr. Timothy Norris - Data Curation Fellow - <a href="mailto:tnorris@miami.edu" style="color: #222 !important; text-decoration: underline;">tnorris@miami.edu</a><br>Angela Clark - Librarian Associate Professor RSMAS - <a href="mailto:tnorris@miami.edu" style="color: #222 !important; text-decoration: underline;">aclark@rsmas.miami.edu</a></div>
+		        </section>
+
+                <section>
+                    <div style="width: 65%; margin-right: auto; margin-left: auto; position: relative; top: -50px;">
+                        <br><span style="font-weight: bold; font-size: 110%;">Course Overview<br><br></span>
+                        <div style="font-size: 70%; text-align: left; line-height: 170%; position: relative; left: 70px;">
+                            <ul>
+                                <li style="position: relative; left: 23px;" class="fragment">Why manage data / what is data management
+                                <li style="position: relative; left: 23px;" class="fragment">Data lifecycle and data management plans
+                                <li style="position: relative; left: 23px;" class="fragment">Data types, stages and formats
+                                <li style="position: relative; left: 23px;" class="fragment">Data organization / tips, tools and techniques
+                                <li style="position: relative; left: 23px;" class="fragment">Intellectual property and licensing
+                                <li style="position: relative; left: 23px;" class="fragment">Research data profiles
+                                <li style="position: relative; left: 23px;" class="fragment">Contextual Metadata
+                                <li style="position: relative; left: 23px;" class="fragment">Software carpentry: command line, python, and r
+                                <li style="position: relative; left: 23px;" class="fragment">Sharing data, data repositories and data preservation
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+				
+                <section>
+                    <div style="width: 85%; margin-right: auto; margin-left: auto; position: relative; top: -50px;">
+                        <br><span style="font-weight: bold; font-size: 110%;">what you expect / what we expect</span><br>syllabus review<br><br>
+                        <div style="font-size: 80%; text-align: left; line-height: 150%; position: relative; left: 0px;">
+                            <ul>
+                                <li style="position: relative; left: 23px;" class="fragment"><b>Two credit course</b> - moderate load - reading most weeks with a few breaks<br><br> 
+                                <li style="position: relative; left: 23px;" class="fragment"><b>Two major assignments</b> 
+                                    <ul style="font-size: 80%; line-height: 130%;">
+                                        <li class="fragment"><u>Midterm assignment:</u> written document based on ongoing research either in your advisors lab or in a colleagues lab. DUE WEEK 8 (30% OF GRADE)
+                                        <li class="fragment"><u>Final Assignment:</u> Either a written data management plan for your research (or your lab’s research) or a dataset prepared for repository deposit. DUE FINALS WEEK (40% OF GRADE)<br>
+                                        <span class="fragment"><br>NOTE: there is no final exam</span>
+                                    </ul><br>
+                                <li style="position: relative; left: 23px;" class="fragment"><b>Several minor assignments</b>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+				
+                <section>
+                    <div style="width: 100%; margin-right: auto; margin-left: auto; position: relative; top: -50px;">
+                        <br><span style="font-weight: bold; font-size: 110%;">Class Schedule</span>
+                        <div style="font-size: 60%; text-align: left; line-height: 150%; position: relative; left: 190px;"><br>
+                            <ul>
+                                <li style="position: relative; left: 23px;">Week 1: Course Introduction and Overview
+                                <li style="position: relative; left: 23px;">Week 2: The Research Data Lifecycle 
+                                <li style="position: relative; left: 23px;">Week 3: Data Types, Stages, and Formats
+                                <li style="position: relative; left: 23px;">Week 4: Data Storage, Backup and Security
+                                <li style="position: relative; left: 23px;">Week 5: Sharing and Reuse
+                                <li style="position: relative; left: 23px;">Week 6: Data Curation Profiles 
+                                <li style="position: relative; left: 23px;">Week 7: Introduction to BASH Shell
+                                <li style="position: relative; left: 23px;">Week 8: Metadata and Contextual Details
+                                <li style="position: relative; left: 23px;">Week 9: Versioning and Git
+                                <li style="position: relative; left: 23px;">Week 10: Introduction to R
+                                <li style="position: relative; left: 23px;">Week 11: Finding and Cleaning Data
+                                <li style="position: relative; left: 23px;">Week 12: Introduction to Python   
+                                <li style="position: relative; left: 23px;">Week 13: Repository Identification 
+                                <li style="position: relative; left: 23px;">Week 14: The Semantic Web
+                                <li style="position: relative; left: 23px;">Finals Week:
+                            </ul>
+                        </div>
+                        <div style="font-size: 60%; text-align: left; line-height: 150%; position: absolute; left: 800px; top: 150px;">
+                            <ul>
+                                <br>
+                                <br>
+                                <span class="fragment">[ Turn in Assignment #1 ]</span><br>
+                                <br>
+                                <br>
+                                <span class="fragment">[ Turn in Assignment #2 ]</span><br>
+                                <br>
+                                <span class="fragment">[ Turn in Midterm Project ]</span><br>
+                                <span class="fragment">[ Turn in Assignment #3 ]</span><br>
+                                <br>
+                                <span class="fragment">[ Turn in Assignment #4 ]</span><br>
+                                <br>
+                                <br>
+                                <span class="fragment">[ Turn in Assignment #5 ]</span><br>
+                                <span class="fragment">[ Turn in Final Project ]</span><br>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div style="width: 80%; margin-right: auto; margin-left: auto; position: relative; top: 0px;"><br><br>
+                        <div style="font-size: 80%; text-align: left; line-height: 150%; position: relative;">
+                            This class IS:<br>
+                            <ul>
+                                <li style="position: relative; left: 23px;">about interdisciplinary problem solving
+                                <li style="position: relative; left: 23px;">personal and professional practice 
+                                <li style="position: relative; left: 23px;">broad thinking
+                            </ul>
+                        </div><br><br>
+                        <div  class="fragment" style="font-size: 80%; text-align: right; line-height: 150%; position: relative;">
+                            This class IS NOT:<br>
+                            <ul style="text-align: right">
+                                <li>computer science
+                                <li>database adiminstration
+                                <li style="float: right">research methods (how to collect data)
+                            </ul>
+                        </div>
+                        <br><div class="fragment" style="position: absolute; left: 400px; top: 50px; font-weight: bold; font-size: 110%; width: 600px; text-align: right;">your participation ...<br><br></div>
+                        <div  class="fragment" style="position: absolute; left: 120px; top: 370px; font-weight: bold; font-size: 110%;">... is important<br><span style="font-size: 60%;"> 10% OF GRADE</span></div>
+                    </div>
+                </section>
+
+                <section data-background-color="#99cdef">
+                    <div style="float: right"><img src="../../common/assets/images-for-data/BigData.png" style="max-width: 700px !important; position: relative; right: 280px;"></div>
+                    <div style="position: absolute; top: 150px; left: 150px; font-weight: bold; font-size: 110%;">Big Data</div>
+                    <div style="position: absolute; bottom: -10px; right: 130px; width: 70%; text-align: right; font-size: 50%; line-height: normal;"><a target="_blank" href="https://www.domo.com/blog/2015/08/data-never-sleeps-3-0/">https://www.domo.com/blog/2015/08/data-never-sleeps-3-0/</a></div>
+                </section>
+
+                <section>
+                    <span style="font-weight: bold; font-size: 110%;">The World of Data Around Us<br><br></span>
+                    <div style="width: 850px; position: absolute; top: 120px; left: 50px;">
+                        <canvas data-chart="line">
+<!-- 
+{
+ "data": {
+  "labels": ["2005","2006","2007","2008","2009","2010"],
+  "datasets": [
+   {
+    "data":[134072,185070,246274,330115,439062,601432],
+    "label":"Available Storage",
+    "borderColor":"rgba(20,120,120,.8)",
+    "backgroundColor":"rgba(0,0,0,0)"
+   },
+   {
+    "data":[113493,160958,255287,413758,652250,987742],
+    "label":"Information",
+    "borderColor":"rgba(220,120,120,.8)",
+    "backgroundColor":"rgba(0,0,0,0)"
+   }
+  ]
+ }, 
+ "options": { 
+  "responsive": "true", 
+  "title": { 
+   "display": true,
+   "text": "Information and Storage Growth Trend (Petabytes)" 
+  }, 
+  "legend": { 
+   "position": "bottom", 
+   "labels": { 
+    "boxWidth": 13 
+   } 
+  } 
+ }
+}
+-->
+                        </canvas>
+                    </div>
+                    <div style="width: 500px; position: absolute; top: 250px; left: 850px">                    
+                        <canvas data-chart="pie" class="stretch">
+<!-- 
+{
+ "data": {
+  "labels": ["Tape","Optical","Other","Disk"],
+  "datasets": [
+   {
+    "data":[21,22,1,56],
+    "backgroundColor": [ "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)" ]
+   }
+  ]
+ }, 
+  "options": { 
+  "responsive": "true", 
+  "title": { 
+   "display": true,
+   "text": "264 Exabytes in 2007" 
+  }, 
+  "legend": { 
+   "position": "bottom", 
+   "labels": { 
+    "boxWidth": 13, 
+	"fontSize": 13 
+   } 
+  } 
+ }
+}
+-->
+                        </canvas>
+                    </div>
+                    <div style="font-size: 40%; color: #555; position: absolute; left: 230px; top: 600px">Source: John Gantz, IDC Corporation: The Expanding Digital Universe</div>
+                    <div style="font-size: 40%; color: #555; position: absolute; left: 900px; top: 600px; text-align: left;">slide from<br><a href="https://www.dataone.org/education-modules" border="0"><img src="../../common/assets/images-for-data/DataONE_LOGO.jpg" width="300"></a></div>
+                    <aside class="notes">
+                        The amount of available storage is not keeping up with the amount of data flooding in daily. How do we decide what data we keep? 
+                        This source is a little sketchy ... but DataOne put it out: <a href="https://www.dataone.org/education-modules">https://www.dataone.org/education-modules</a> (see lesson 1)
+                    </aside>
+                </section>
+				
+                <section>
+					<div style="position: absolute; left: 300px; top: 0px; font-weight: bold; font-size: 110%;">Data Growth<br><br></div>
+                    <img src="../../common/assets/images-for-data/growth2020_IDC2012.png" style="max-width: 800px;">
+                    <div style="position: absolute; bottom: -60px; width: 100%; text-align: center; font-size: 40%; line-height: normal;">Gantz, J., & Reinsel, D. (2012). The Digital Universe in 2020: Big Data, Bigger Digital Shadows, and Biggest Growth in the Far East.<br>Retrieved from <a href="https://www.emc.com/collateral/analyst-reports/idc-the-digital-universe-in-2020.pdf">https://www.emc.com/collateral/analyst-reports/idc-the-digital-universe-in-2020.pdf.</a> page 3.</div>
+                </section>
+				
+                <section>
+                    <img src="../../common/assets/images-for-data/OracleData.png" style="max-width: 800px;">
+                    <div style="position: absolute; bottom: -60px; width: 100%; text-align: center; font-size: 40%; line-height: normal;">Navarro, Fran (2014). Foco en Almacenamiento. <a target="_blank" href="http://www.slideshare.net/franmod/tendencias-storage">http://www.slideshare.net/franmod/tendencias-storage</a>. Slide 42.</div>
+                </section>
+				
+                <section data-background-image="../../common/assets/images-for-data/globalwarmingmontage.jpg">
+				    <aside class="notes">The world today is filled with science news, from climate change to hurricanes – and it all affects the people inhabiting the earth. From <a href="https://www.dataone.org/education-modules">https://www.dataone.org/education-modules</a> (see lesson 1)</aside>
+		        </section>
+				
+                <section>
+					<div style="position: absolute; left: 200px; top: -10px; font-weight: bold; font-size: 110%;">Data Deluge<br><br></div>
+					<div style="position: absolute; left: 160px; top: 60px; font-size: 60%; width: 600px;">Data is collected from sensors, sensor networks, remote sensing, observations, and more -  this calls for increased attention to data management and stewardship</div>
+                    <img src="../../common/assets/images-for-data/sensormontageDataONE.jpg" style="max-width: 950px;">
+                    <div style="font-size: 40%; color: #555; position: absolute; left: 900px; top: 610px; text-align: left;">slide from<br><a href="https://www.dataone.org/education-modules" border="0"><img src="../../common/assets/images-for-data/DataONE_LOGO.jpg" width="300"></a></div>
+                    <aside class="notes">Data is being generated in massive quantities daily. Improvements in technology enable higher precision and coverage in data acquisition and makes higher capacity systems store and migrate more data –increasing the importance of managing, integrating, and re-using data. From <a href="https://www.dataone.org/education-modules">https://www.dataone.org/education-modules</a> (see lesson 1)</aside>
+                </section>
+
+                <section data-background-image="../../common/assets/images-for-data/matrix.jpg" style="color: #92d050 !important;">
+                    <div style="background-color: rgba(0, 0, 0, 0.7); width: 100%;">
+                        <br><span style="font-weight: bold; font-size: 110%;">The Data Deluge<br></span>
+                        <div style="width: 80%; margin-left: auto; margin-right: auto; font-size: 80%; text-align: left; width: 75%; position: relative; left: 140px;"><br><span class="fragment">Data Sharing Requirements<br>
+                        <ul style="font-size: 80%;"><li style="position: relative; left: 23px;">NIH: October 2003</ul><br><br>
+                        </span><span class="fragment">Data Management Requirements<br>
+                        <ul style="font-size: 80%;"><li style="position: relative; left: 23px;">NSF: January 2011
+                            <li style="position: relative; left: 23px;">NEH: June 2011</ul><br><br>
+                        </span><span class="fragment">The 2013 OSTP Memo: Open Data<br>
+                        <ul style="font-size: 80%;"><li style="position: relative; left: 23px;">Federally funded research results should be made accessible to the public
+                            <li style="position: relative; left: 23px;">Both peer-reviewed publications and data</ul><br><br><br></span></div>
+                    </div>
+					<aside class="notes">The Matrix - 1999<br><br>Big Data . . .<br>Talk to the data deluge, what are the responses in academia? In the public sector? Perhaps this is why we are here today?<br>- NIH early data sharing requirements from grants over $500,000 – stringent controls for privacy and proprietary data<br>- The 2011 NSF requirement to have data management plans in the grant proposals – there are program specific requirements<br>- Most are simply two page documents with requirements to outline:<br>- Data types to be collected<br>- Standards to be used for metadata and data<br>- Sharing policies (access, privacy, IP, etc.)<br>- Re-use policies (distribution, derivatives<br>- Plans for archival<br><br>Note that these requirements caused quite the scramble. No grant money if you could not include a plan.<br>- Note that many foundations now also have data management requirements<br><br>Even private sector contracts require data management planning</aside>
+                </section>				
+
+                <section data-background-image="../../common/assets/images-for-data/matrix.jpg" style="color: #92d050 !important;">
+                    <div style="background-color: rgba(0, 0, 0, 0.7); width: 100%;">
+                        <br><div style="font-weight: bold; font-size: 110%; position: relative; left: -120px;">What is Data Management?</div>
+						<br><div class="fragment" style="font-size: 90%; line-height: normal; text-align: left; position: relative; left: 400px;">Data?</div>
+                        <div class="fragment" style="font-size: 70%; line-height: normal; text-align: left; position: relative; left: 400px; position: relative; top: 10px;">
+                        Numbers<br>
+                        Words<br>
+                        Citations / references<br>
+                        Notebooks / marginalia<br>
+                        Specimens<br>
+                        Field Samples<br>
+                        Images<br>
+                        Videos / sound recording<br>
+                        Relationships<br>
+                        Models<br>
+                        Code<br><br><br>
+                        </div>
+                    </div>
+                </section>
+
+                <section data-background-image="../../common/assets/images-for-data/matrix.jpg" style="color: #92d050 !important;">
+                    <div style="background-color: rgba(0, 0, 0, 0.7); width: 100%;">
+                        <br><div style="font-weight: bold; font-size: 110%; position: relative; left: -120px;">What is Data Management?</div>
+						<br><div class="fragment" style="font-size: 90%; line-height: normal; text-align: left; position: relative; left: 400px;">Data?</div>
+                        <br><div class="fragment" style="margin-left: auto; margin-right: auto; width: 60%; font-size: 80%; line-height: normal; border: 1px solid #92d050; background-color: rgba(0, 0, 0, 0.9); padding: 13px; text-align: left;">“Examples of Research Data and Materials include laboratory notebooks, notes of any type, photographs, films, digital images, original biological and environmental samples, protocols, numbers, graphs, charts, numerical raw experimental results, instrumental outputs from which Research Data can be derived and other deliverables under sponsored agreements.”</div><br><br>
+                        <div style="font-size: 50%">Johns Hopkins University (2008) - 
+                        <a target="_blank" href="http://jhuresearch.jhu.edu/Data_Management_Policy.pdf">http://jhuresearch.jhu.edu/Data_Management_Policy.pdf</a><br><br></div>
+                    </div>
+                </section>
+
+                <section data-background-image="../../common/assets/images-for-data/matrix.jpg" style="color: #92d050 !important;">
+                    <div style="background-color: rgba(0, 0, 0, 0.7); width: 100%;">
+                        <br><div style="font-weight: bold; font-size: 110%; position: relative; left: -120px;">What is Data Management?</div>
+						<br><div class="fragment" style="font-size: 90%; line-height: normal; text-align: left; position: relative; left: 400px;">Data?</div>
+                        <div class="fragment" style="position: relative; top: 10px; margin-left: auto; margin-right: auto; width: 80%; font-size: 70%; line-height: normal; border: 1px solid #92d050; background-color: rgba(0, 0, 0, 0.9); padding: 13px; text-align: left;">Definitions: The term “Research Data” in this document refers to information recorded and/or collected for research performed at or under the auspices of the University regardless of the form or the media upon which it is recorded. This term includes, but is not limited to, computer programs (code and documentation), computer databases, instrumental outputs, raw numerical results, original biological or environmental samples, photographs, digital images, films, protocols, graphs, and other deliverables produced under sponsored agreements. Research Data also includes any records related to the design, conduct or reporting of the research that would be necessary to reconstruct the reported research results. Research data can be intangible (statistics, findings, conclusions, etc.) and tangible (notebooks, printouts, etc.).</div><br><br>
+                    </div>
+                </section>
+
+                <section>
+					<div style="position: absolute; left: 200px; top: -10px; font-size: 110%; font-family: times new roman, serif; color: rgb(255,102,0);">What is Research Data?</div>
+					<div style="position: relative; width: 60%; margin-left: auto; margin-right: auto; top: 100px; font-size: 60%; background-color: #bbb; border-radius: 23px; padding: 23px; text-align: left;">
+					    “Unlike other types of information, research data are collected, observed, or created, for the <span style="color: rgb(84,130,53); font-size: 120%">purposes of analysis to produce and validate original research results</span>.”
+						<div style="width: 60%; margin-left: auto; text-align: right; font-size: 70%">University of Edinburgh<br>MANTRA Research Data Management Training,<br>‘Research Data Explained’<br><a href="http://datalib.edina.ac.uk/mantra/">http://datalib.edina.ac.uk/mantra/</a></div>
+				    </div>
+                    <div style="font-size: 40%; color: #555; position: relative; width: 90%; margin-left: auto; margin-right: auto; top: 200px;"><img src="../../common/assets/images-for-data/whitmirefooter.jpg" style="max-width: 1000px;"><br>Whitmire, Amanda L. (2014). Research Data Management Curriculum, Lecture 1: Introduction to Research Data Management. Oregon State University Libraries.<br>Retrieved 11/04/2015 from: <a href="http://figshare.com/articles/GRAD521_Research_Data_Management_Lectures/1003835">http://figshare.com/articles/GRAD521_Research_Data_Management_Lectures/1003835</a></div>
+                    <aside class="notes">…”Data may be viewed as the lowest level of abstraction from which information and knowledge are derived.”</aside>
+                </section>
+
+				<section>
+					<div style="position: absolute; left: 200px; top: -10px; font-size: 110%; font-family: times new roman, serif; color: rgb(255,102,0);">Research Data is:</div>
+					<div style="position: relative; width: 60%; margin-left: auto; margin-right: auto; top: 100px; font-size: 60%; background-color: #bbb; border-radius: 23px; padding: 23px; text-align: left;">
+					    “…the recorded factual material commonly accepted in the scientific community as necessary to <span style="color: rgb(84,130,53); font-size: 120%">validate</span> research findings, but not any of the following: preliminary analyses, drafts of scientific papers, plans for future research, peer reviews, or communications with colleagues. This "recorded" material excludes physical objects (e.g., laboratory samples).”
+						<div style="width: 60%; margin-left: auto; text-align: right; font-size: 70%"><br>U.S. Office of Management and Budget, Circular A-110<br><a href="https://www.whitehouse.gov/omb/circulars_a110">https://www.whitehouse.gov/omb/circulars_a110</a></div>
+				    </div>
+                    <div style="font-size: 40%; color: #555; position: relative; width: 90%; margin-left: auto; margin-right: auto; top: 180px;"><img src="../../common/assets/images-for-data/whitmirefooter.jpg" style="max-width: 1000px;"><br>Whitmire, Amanda L. (2014). Research Data Management Curriculum, Lecture 1: Introduction to Research Data Management. Oregon State University Libraries.<br>Retrieved 11/04/2015 from: <a href="http://figshare.com/articles/GRAD521_Research_Data_Management_Lectures/1003835">http://figshare.com/articles/GRAD521_Research_Data_Management_Lectures/1003835</a></div>
+                    <aside class="notes">Does not include, “any of the following: preliminary analyses, drafts of scientific papers, plans for future research, peer reviews, or communications with colleagues. This "recorded" material excludes physical objects (e.g., laboratory samples).”<br><br>This narrow definition mostly takes a retrospective view of your dataset, in that it does not account for raw and intermediate data that may be critical to the research process but that don’t become part of the ’final’ dataset.<br><br>Data types could be:<br>- Observational<br>- Experimental<br>- Simulated<br>- Derived<br>- Reference or canonical<br></aside>
+                </section>
+
+                <section data-background-image="../../common/assets/images-for-data/matrix.jpg" style="color: #92d050 !important;">
+                    <div style="background-color: rgba(0, 0, 0, 0.7); width: 100%;">
+                        <br><span style="font-weight: bold; font-size: 110%; position: relative; left: -100px;">Why Manage Data</span><br><br>
+                        <div style="font-size: 85%; text-align: left; width: 75%; position: relative; left: 250px;">
+                        <ul><li>Productivity
+                            <ul style="font-size: 85%;">
+                                <li style="position: relative; left: 23px;">Publishing
+                                <li style="position: relative; left: 23px;">Knowledge creation
+                                <li style="position: relative; left: 23px;">Career advancement</ul></ul><br><br><br>
+                        <ul><li style="position: relative; left: 42px;">Compliance
+                            <ul style="font-size: 85%;">
+                                <li style="position: relative; left: 65px;">Grant writing
+                                <li style="position: relative; left: 65px;">University policy
+                                <li style="position: relative; left: 65px;">Research Ethics</ul></ul><br><br><br><br>
+                        </div>
+                    </div>
+                    <div style="position: absolute; left:750px; top: 120px;"><image src="../../common/assets/images-for-data/carrot.png" style="background: none !important; max-width: 70%;"></div>
+                    <div style="position: absolute; left:800px; top: 360px;"><image src="../../common/assets/images-for-data/stick.png" style="background: none !important;  max-width: 70%;"></div>
+                    <div class="fragment" style="background-color: #000; border: 1px solid #92d050; position: absolute; left:390px; top: 300px; font-size: 120%; padding: 20px; padding-left: 100px; padding-right: 100px; -ms-transform: rotate(335deg); -webkit-transform: rotate(335deg); transform: rotate(335deg);">¿SOMETHING ELSE?</div>
+                </section>				
+
+                <section>
+					<div style="position: absolute; left: 200px; top: -10px; font-weight: bold; font-size: 110%;">The World of Data Around Us: Data Loss<br><br></div>
+					<div style="position: absolute; right: 60px; top: 120px; font-size: 60%; width: 600px;">
+					    <ul>
+						    <li>Natural disaster 
+						    <li>Facilities infrastructure failure 
+						    <li>Storage failure 
+						    <li>Server hardware/software failure
+						    <li>Application software failure
+						    <li>External dependencies (e.g. PKI failure)
+						    <li>Format obsolescence
+						    <li>Legal encumbrance 
+						    <li>Human error
+						    <li>Malicious attack by human or automated agents
+						    <li>Loss of staffing competencies
+						    <li>Loss of institutional commitment 
+						    <li>Loss of financial stability 
+						    <li>Changes in user expectations and requirements
+                        </ul>
+					</div>
+                    <div style="position: absolute; left: 100px; top: 60px; font-size: 60%; width: 600px;"><img src="../../common/assets/images-for-data/datadisasterpics.jpg" style="max-width: 500px;"></div>
+                    <div style="font-size: 40%; color: #555; position: absolute; left: 900px; top: 610px; text-align: left;">slide from<br><a href="https://www.dataone.org/education-modules" border="0"><img src="../../common/assets/images-for-data/DataONE_LOGO.jpg" width="300"></a></div>
+                    <aside class="notes">From <a href="https://www.dataone.org/education-modules">https://www.dataone.org/education-modules</a> (see lesson 1)</aside>
+                </section>				
+
+                <section>
+					<div style="position: absolute; left: 200px; top: 0px; font-weight: bold; font-size: 110%;">Poor Data Management Affects Everyone <br><br></div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; width: 80%; font-size: 55%; text-align: left;"><br><br><br>
+						<b>“MEDICARE PAYMENT ERRORS NEAR $20B”</b> (CNN) December 2004
+							 Miscoding and Billing Errors from Doctors and Hospitals totaled $20,000,000,000 in FY 
+							 2003    (9.3% error rate) . The error rate measured claims that were paid despite being 
+							 medically unnecessary, inadequately documented or improperly coded. In some 
+							 instances, Medicare asked health care providers for medical records to back up their 
+							 claims and got no response.  The survey did not document instances of alleged fraud.    
+							This error rate actually was an improvement over the previous fiscal year (9.8% error rate).
+                         <br><br>
+						<b>“AUDIT:  JUSTICE STATS ON ANTI-TERROR CASES FLAWED”</b> (AP) February 2007
+							 The Justice Department Inspector General found only two sets of data out of 26  
+							 concerning terrorism attacks were accurate.  The Justice Department uses these   
+							 statistics to argue for their budget.  The Inspector General said the data “appear to be 
+							 the result of decentralized and haphazard methods of collections … and do not appear 
+							 to be intentional.” 
+                         <br><br>
+						<b>“OOPS! TECH ERROR WIPES OUT Alaska Info”</b> (AP) March 2007
+							 A technician managed to delete the data and backup for the $38 billion Alaska oil   
+							 revenue fund – money received by residents of the State.  Correcting the errors cost the 
+							 State an additional $220,700 (which of course was taken off the receipts to Alaska 
+							 residents.)
+					</div>
+                    <div style="position: relative; margin-left: 10%; top: 30px; width: 600px;"><img src="../../common/assets/images-for-data/error.jpg" style="max-width: 200px;"></div>
+                    <div style="font-size: 40%; color: #555; position: absolute; left: 900px; top: 610px; text-align: left;">slide from<br><a href="https://www.dataone.org/education-modules" border="0"><img src="../../common/assets/images-for-data/DataONE_LOGO.jpg" width="300"></a><br>courtesy of BLM</div>
+                    <aside class="notes">From <a href="https://www.dataone.org/education-modules">https://www.dataone.org/education-modules</a> (see lesson 1)</aside>
+                </section>					
+
+                <section>
+					<div style="font-weight: bold; font-size: 110%;">Poor Science Data Management Example<br><br></div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; width: 80%; font-size: 65%; text-align: left;">
+						A wildlife biologist for a small field office was the in-house GIS expert and provided support for all the staff’s GIS needs.  However, the data was stored on her own workstation.  When the biologist relocated to another office, no one understood how the data was stored or managed.
+						<br><br>
+						<b>Solution:</b> A state office GIS specialist retrieved the workstation and sifted through files trying to salvage relevant data. 
+						<br><br>
+						<b>Cost:</b> 1 work month ($4,000) plus the value of <br>
+							data that was not recovered
+						<br><br><br>
+						<div style="font-size: 85%; margin-left: auto; margin-right: auto; width: 80%;">Consider that the situation could have been worse, because the data was not being backed up as it would have been if stored on a server.</div>
+					</div>
+                    <div style="position: absolute; right: 300px; top: 310px;"><img src="../../common/assets/images-for-data/workstation.jpg" style="max-width: 220px;"></div>
+                    <div style="font-size: 40%; color: #555; position: absolute; left: 900px; top: 610px; text-align: left;">slide from<br><a href="https://www.dataone.org/education-modules" border="0"><img src="../../common/assets/images-for-data/DataONE_LOGO.jpg" width="300"></a></div>
+                    <aside class="notes">From <a href="https://www.dataone.org/education-modules">https://www.dataone.org/education-modules</a> (see lesson 1)</aside>
+                </section>						
+
+                <section>
+					<div style="font-weight: bold; font-size: 110%;">Poor Data Management Federal Agency Example<br><br></div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; width: 80%; font-size: 65%; text-align: left;">
+						In preparation for a Resource Management Plan, an office discovered 14 duplicate GPS inventories of roads.  However, because none of the inventories had enough metadata, it was impossible to know which inventory was best or if any of the inventories actually met their requirements.
+						<br><br>
+						<b>Solution:</b> Re-Inventory roads
+						<br><br>
+						<b>Cost:</b> Estimated 9 work months/inventory<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@$4,000/wm <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(14 inventories = $504,000)
+					</div>
+                    <div style="position: absolute; right: 300px; top: 270px;"><img src="../../common/assets/images-for-data/interchange.jpg" style="max-width: 300px;"></div>
+                    <div style="font-size: 40%; color: #555; position: absolute; left: 900px; top: 610px; text-align: left;">slide from<br><a href="https://www.dataone.org/education-modules" border="0"><img src="../../common/assets/images-for-data/DataONE_LOGO.jpg" width="300"></a></div>
+                    <aside class="notes">From <a href="https://www.dataone.org/education-modules">https://www.dataone.org/education-modules</a> (see lesson 1)</aside>
+                </section>		
+
+                <section>
+					<div style="font-weight: bold; font-size: 110%;">Importance of Data Management<br></div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; width: 75%; font-size: 65%; text-align: left; top: 13px;">
+						“Please forgive my paranoia about protocols, standards, and data review.  I'm in the latter stages of a long career with USGS (30 years, and counting), and have experienced much.  Experience is the knowledge you get just after you needed it. 
+						<br><br>
+						Several times, I've seen colleagues called to court in order to testify about conditions they have observed.  
+						<br><br>
+						Without a strong tradition of constant review and approval of basic data, they would've been in deep trouble under cross-examination.  Instead, they were able to produce field notes, data approval records, and the like, to back up their testimony.  
+						<br><br>
+						It's one thing to be questioned by a college student who is working on a project for school.  <u>It's another entirely to be grilled by an attorney under oath with the media present</u>.”
+						<br><br>
+						<div style="width: 50%; position: relative; margin-right: 0px; text-align: right">- Nelson Williams, Scientist<br>US Geological Survey</div>
+					</div>
+                    <div style="font-size: 40%; color: #555; position: absolute; left: 900px; top: 610px; text-align: left;">slide from<br><a href="https://www.dataone.org/education-modules" border="0"><img src="../../common/assets/images-for-data/DataONE_LOGO.jpg" width="300"></a></div>
+                    <aside class="notes">From <a href="https://www.dataone.org/education-modules">https://www.dataone.org/education-modules</a> (see lesson 1)</aside>
+                </section>		
+				
+                <section>
+					<div style="font-weight: bold; font-size: 110%;">Importance of Data Management<br></div>
+					<div style="position: relative; left: 700px; width: 35%; font-size: 65%; text-align: left; top: 130px; z-index: 100; background-color: #fff; border: solid 1px black; padding: 23px;">
+						The climate scientists at the centre of a media storm over leaked emails were yesterday cleared of accusations that they fudged their results and silenced critics, but a review found they had failed to be open enough about their work.
+					</div>
+                    <div style="position: absolute; left: 100px; top: 70px;"><img src="../../common/assets/images-for-data/guardianclimategate.jpg" style="max-width: 650px;"></div>
+                    <div style="font-size: 40%; color: #555; position: absolute; left: 900px; top: 610px; text-align: left;">slide from<br><a href="https://www.dataone.org/education-modules" border="0"><img src="../../common/assets/images-for-data/DataONE_LOGO.jpg" width="300"></a></div>
+                    <aside class="notes">From <a href="https://www.dataone.org/education-modules">https://www.dataone.org/education-modules</a> (see lesson 1)</aside>
+                </section>		
+
+                <section>
+					<div style="font-weight: bold; font-size: 110%;">Why Manage Data?<br></div>
+					<div style="position: relative; font-size: 65%; top: 30px; ">From this ...</div>
+                    <div style="position: relative; top: 70px;"><img src="../../common/assets/images-for-data/lostdatacat.jpg" style="max-width: 350px;"></div>
+                    <div style="position: relative; font-size: 40%; color: #555; top: 210px;"><a href="http://www.thesundaytimes.co.uk/sto/multimedia/archive/00051/Panic-cartoon-580x35_51233a.jpg">http://www.thesundaytimes.co.uk/sto/multimedia/archive/00051/Panic-cartoon-580x35_51233a.jpg</a></div>
+                </section>						
+
+                <section>
+					<div style="position: relative; font-size: 65%; top: 30px; ">... to this ...</div>
+                    <div style="position: relative; top: 70px;"><img src="../../common/assets/images-for-data/loststudent.jpg" style="max-width: 600px;"></div>
+                    <div style="position: relative; font-size: 40%; color: #555; top: 210px;"><a href="http://abcnews.go.com/blogs/business/2013/04/rutgers-student-offers-1000-for-data-on-stolen-laptop/">http://abcnews.go.com/blogs/business/2013/04/rutgers-student-offers-1000-for-data-on-stolen-laptop/</a> - last visited 12/14/15</div>
+                </section>						
+
+                <section>
+					<div style="position: relative; font-size: 65%; top: 30px; ">... to this!!<br><br></div>
+                    <div style="position: relative; top: 30px;"><img src="../../common/assets/images-for-data/retractionwatch.jpg" style="max-width: 1100px;"></div>
+                    <div style="position: relative; font-size: 40%; color: #555; top: 90px;"><a href="http://retractionwatch.com/2015/01/20/prominent-geneticist-nets-retraction-two-corrections-lot-questions/#more-25256 ">http://retractionwatch.com/2015/01/20/prominent-geneticist-nets-retraction-two-corrections-lot-questions/#more-25256 </a> - last visited 12/14/15</div>
+                </section>		
+
+                <section>
+					<div style="font-weight: bold; font-size: 110%;">Reading for Next Class</div>
+                    <div style="position: relative; top: 30px; font-size: 60%; text-align: left; width: 80%; margin-right: auto; margin-left: auto;">
+					    <ul>
+						    <li>Holdren, J (2013). Increasing Access to the Results of Federally Funded Scientific Research. Office of Science and Technology Policy, Executive Office of the President <a href="https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf">https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf</a>
+						    <li>National Science Foundation. Dissemination and Sharing of Research Results. <a href="http://www.nsf.gov/bfa/dias/policy/dmp.jsp">http://www.nsf.gov/bfa/dias/policy/dmp.jsp</a>. <b>Read only</b> the <a href="https://www.nsf.gov/pubs/policydocs/pappguide/nsf15001/aag_6.jsp#VID4">sharing</a> and <a href="https://www.nsf.gov/pubs/policydocs/pappguide/nsf15001/gpg_2.jsp#dmp">data management</a> sections.
+						</ul>
+					</div>
+                    <div style="position: relative; top: 80px; font-size: 55%; text-align: left; width: 80%; margin-right: auto; margin-left: auto;">
+						Highly Recomended:
+					    <ul>
+						    <li>Karasti, H., Baker, K. S., & Halkola, E. (2006). Enriching the Notion of Data Curation in E-Science: Data Managing and Information Infrastructuring in the Long Term Ecological Research (LTER) Network. <i>Computer Supported Cooperative Work (CSCW)</i>, 15(4), 321-358. <a href="https://dx.doi.org/10.1007/s10606-006-9023-2">https://dx.doi.org/10.1007/s10606-006-9023-2</a>.
+						    <li>Posner, (2013). "Embarrassments of riches: managing research assets." <a href="http://miriamposner.com/blog/?p=982">http://miriamposner.com/blog/?p=982</a>.
+							<li>Gantz, J., & Reinsel, D. (2012). "The Digital Universe in 2020: Big Data, Bigger Digital Shadows, and Biggest Growth in the Far East." Retrieved from <a href="https://www.emc.com/collateral/analyst-reports/idc-the-digital-universe-in-2020.pdf">https://www.emc.com/collateral/analyst-reports/idc-the-digital-universe-in-2020.pdf</a>.
+						</ul>
+					</div>
+					<br><br><br>
+                </section>	
+
+				<section>
+					... break for next session ...
+				</section>
+				
+<!-- ########################################################################################################################## -->
+<!-- ##               end of session one - transition to session two                                                                                                                                                                                 ## -->				
+<!-- ########################################################################################################################## -->		
+
+                <section>
+                    <div style="width: 65%; margin-right: auto; margin-left: auto; position: relative; top: -20px;">
+                        <span style="font-weight: bold; font-size: 110%;">The Data Management Nightmare</span>
+                    </div>
+                    <div style="text-align: center;"><a href="https://www.youtube.com/watch?v=N2zK3sAtr-4" border=0 target="_blank"><img src="../../common/assets/images-for-data/nightmare.png" style="max-width: 800px;"></a></div>
+					<div style="font-size: 50%; text-align: center; line-height: 120%;">
+					    Karen Hanson, Alisa Surkis, and Karen Yacobucci, NYU Health Sciences Libraries<br>
+						<a href="https://www.youtube.com/watch?v=N2zK3sAtr-4" target="_blank">https://www.youtube.com/watch?v=N2zK3sAtr-4</a>
+				    </div>
+                </section>						
+
+	            <section>
+					<div style="font-weight: bold; font-size: 110%;">Why Manage Data<br>Researcher Perspective<br><br></div>
+					<div style="width: 70%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%;"">
+                        <ul><li>Manage your data for <i>yourself</i>: 
+                            <ul style="font-size: 85%;">
+                                <li style="position: relative; left: 23px; top: 10px;"><i>Keep yourself organized</i> – be able to find your files (data inputs, analytic scripts, outputs at various stages of the analytic process, etc) 
+                                <li style="position: relative; left: 23px; top: 20px;"><i>Track your science processes for reproducibility</i> – be able to match up your outputs with exact inputs and transformations that produced them
+                                <li style="position: relative; left: 23px; top: 30px;"><i>Better control versions of data</i> – identify easily versions that can be periodically purged
+								<li style="position: relative; left: 23px; top: 40px;"><i>Quality control your data more efficiently</i>
+							</ul>
+						</ul>
+					</div>
+                    <div style="font-size: 40%; color: #555; position: absolute; left: 900px; top: 610px; text-align: left;">slide from<br><a href="https://www.dataone.org/education-modules" border="0"><img src="../../common/assets/images-for-data/DataONE_LOGO.jpg" width="300"></a></div>
+                    <aside class="notes">From <a href="https://www.dataone.org/education-modules">https://www.dataone.org/education-modules</a> (see lesson 1)</aside>
+                </section>		
+
+	            <section>
+					<div style="font-weight: bold; font-size: 110%;">Why Manage Data<br>Researcher Perspective<br><br></div>
+					<div style="width: 70%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%;"">
+						<ul style="font-size: 85%;">
+							<li style="position: relative; left: 23px; top: 10px;">Make backups to avoid data loss
+							<li style="position: relative; left: 23px; top: 20px;">Format your data for re-use (by yourself or others)
+							<li style="position: relative; left: 23px; top: 30px;">Be prepared: Document your data for your own recollection, accountability, and re-use (by yourself or others)
+							<li style="position: relative; left: 23px; top: 40px;">Prepare it to share it – gain credibility and recognition for your science efforts!
+						</ul>
+					</div>
+                    <div style="font-size: 40%; color: #555; position: absolute; left: 900px; top: 610px; text-align: left;">slide from<br><a href="https://www.dataone.org/education-modules" border="0"><img src="../../common/assets/images-for-data/DataONE_LOGO.jpg" width="300"></a></div>
+                    <aside class="notes">From <a href="https://www.dataone.org/education-modules">https://www.dataone.org/education-modules</a> (see lesson 1)</aside>
+                </section>		
+
+	            <section>
+					<div style="font-weight: bold; font-size: 110%;">Why Manage Data<br>Foundation to Advance Science</div>
+					<div style="width: 80%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+						<ul style="font-size: 85%;">
+							<li style="position: relative; left: 23px; top: 10px;">Data is a valuable asset – it is expensive and time consuming to collect 
+							<li style="position: relative; left: 23px; top: 20px;">Data should be managed to:
+							<ul style="font-size: 85%;">
+								<li style="position: relative; left: 23px; top: 30px;">maximize the effective use and value of data and information assets
+								<li style="position: relative; left: 23px; top: 30px;">continually improve the quality including: data accuracy, integrity, integration, timeliness of data capture and presentation, relevance and usefulness
+								<li style="position: relative; left: 23px; top: 30px;">ensure appropriate use of data and information
+								<li style="position: relative; left: 23px; top: 30px;">facilitate data sharing
+								<li style="position: relative; left: 23px; top: 30px;">ensure sustainability and accessibility in long term for re-use in science
+						</ul>
+					</div>
+                    <div style="font-size: 40%; color: #555; position: absolute; left: 900px; top: 610px; text-align: left;">slide from<br><a href="https://www.dataone.org/education-modules" border="0"><img src="../../common/assets/images-for-data/DataONE_LOGO.jpg" width="300"></a></div>
+                    <aside class="notes">From <a href="https://www.dataone.org/education-modules">https://www.dataone.org/education-modules</a> (see lesson 1)</aside>
+                </section>		
+
+	            <section>
+					<div style="font-weight: bold; font-size: 110%;">Well managed, publically accessible data is important: why?<br><br></div>
+					<div style="width: 70%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%;">
+						Here are a few reasons (from the UK Data Archive):<br><br>
+						<ul style="font-size: 85%;">
+							<li style="position: relative; left: 23px; top: 10px;">Increases the impact and visibility of research 
+							<li style="position: relative; left: 23px; top: 10px;">Promotes innovation and potential new data uses
+							<li style="position: relative; left: 23px; top: 10px;">Leads to new collaborations between data users and creators
+							<li style="position: relative; left: 23px; top: 10px;">Maximizes transparency and accountability
+							<li style="position: relative; left: 23px; top: 10px;">Enables scrutiny of research findings
+							<li style="position: relative; left: 23px; top: 10px;">Encourages improvement and validation of research methods
+							<li style="position: relative; left: 23px; top: 10px;">Reduces cost of duplicating data collection
+							<li style="position: relative; left: 23px; top: 10px;">Provides important resources for education and training
+						</ul><br><br><br>
+					</div>
+                </section>		
+
+	            <section>
+					<div style="font-weight: bold; font-size: 110%; position: relative; top: -20px;">New Discoveries</div>
+					<div style="width: 80%; margin-left: auto; margin-right: auto; font-size: 65%; text-align: left; top: 130px; line-height: 120%;">
+						A new image processing technique reveals something not before seen in this Hubble Space Telescope image taken 11 years ago: A faint planet (arrows), the outermost of three discovered with ground-based telescopes last year around the young star HR 8799.D. Lafrenière et al., Astrophysical Journal Letters.
+					</div>
+					<div style="height: 250px;">
+						<div style="font-size: 70%; color: #555; position: absolute; left: 300px; top: 240px; text-align: left; width: 400px;">“Planet hidden in Hubble archives” <i>Science News</i><br>(Feb. 27, 2009)</div>
+						<div style="position: absolute; left: 800px; top: 220px; text-align: left;"><img src="../../common/assets/images-for-data/hubble.jpg" width="320"></div>	
+                    </div>					
+					<div style="width: 80%; margin-left: auto; margin-right: auto; font-size: 65%; text-align: left; top: 130px; line-height: 120%;">
+						“The first thing it tells you is how valuable maintaining long-term archives can be. Here is a major discovery that’s been lurking in the data for about 10 years!” comments Matt Mountain, director of the Space Telescope Science Institute in Baltimore, which operates Hubble.<br>
+						<br>“The second thing its tells you is having a well calibrated archive is necessary but not sufficient to make breakthroughs — it also takes a very innovative group of people to develop very smart extraction routines that can get rid of all the artifacts to reveal the planet hidden under all that telescope and detector structure.”
+					</div>
+                </section>
+
+                <section>
+                    <div style="width: 65%; margin-right: auto; margin-left: auto; position: relative; top: -20px;">
+                        <span style="font-weight: bold; font-size: 110%;">Where a majority of data end up now…</span>
+                    </div>
+                    <div style="text-align: center;"><img src="../../common/assets/images-for-data/klump01.jpg" style="max-width: 700px;"></a></div>
+					<div style="font-size: 50%; text-align: center; line-height: 120%;">
+					    <i>recreated from Klump et al 2006</i><br><br>
+				    </div>
+                </section>						
+
+                <section>
+                    <div style="width: 65%; margin-right: auto; margin-left: auto; position: relative; top: -20px;">
+                        <span style="font-weight: bold; font-size: 110%;">Imagine if data were more accessible….</span>
+                    </div>
+                    <div style="text-align: center;"><img src="../../common/assets/images-for-data/klump02.jpg" style="max-width: 700px;"></a></div>
+					<div style="font-size: 50%; text-align: center; line-height: 120%;">
+					    <i>recreated from Klump et al 2006</i><br><br>
+				    </div>
+                </section>	
+
+	            <section>
+					<div style="font-weight: bold; font-size: 110%;">Quick Review</div>
+					<div style="width: 50%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 43px;">
+						<ul style="font-size: 85%; line-height: 140%">
+							<li style="position: relative; left: 23px;">Lots of data, what to do with it?
+							<li style="position: relative; left: 23px;">Many researcher benefits of data management
+							<ul style="font-size: 85%;">
+								<li style="position: relative; left: 23px;">Greater exposure of research
+								<li style="position: relative; left: 23px;">Easier workflows, less frustration, more productivity
+							</ul>
+							<li style="position: relative; left: 23px;">Many scientific/social benefits of data management
+							<ul style="font-size: 85%;">
+								<li style="position: relative; left: 23px;">Sharing and re-use
+								<li style="position: relative; left: 23px;">New discoveries
+							</ul>
+							<li style="position: relative; left: 23px;">Not managing data is NOT an option
+							<ul style="font-size: 85%;">
+								<li style="position: relative; left: 23px;">Cost are to high (both personal and professional)
+							</ul>
+						</ul>
+					</div><br><br><br>
+                </section>		
+				
+				<section>
+					... resources for reading review ...
+				</section>
+				
+				<section>
+                    <br><span style="font-weight: bold; font-size: 110%; position: relative; left: -100px; top: -50px;">The 2013 OSTP Memo</span><br><br>
+                    <div style="font-size: 80%; text-align: left; width: 75%; position: relative; left: 150px;">
+                        <ul>
+                            <li>Transparency and efficiency
+                            <li>Growth, security, value
+                            <li>Commercial re-use and innovation
+                        </ul>
+                        <br><br>
+                        <ul>
+                            <li>Data (from OMB Circular 110): 
+                        </ul>
+                        <div style="font-size: 80%; position: relative; left: 30px;">
+                            “Data is defined … as the digitally recorded factual material commonly accepted in the scientific community as necessary to validate research findings including data sets used to support scholarly publications, but does not include laboratory notebooks, preliminary analyses, drafts of scientific papers, plans for future research, peer review reports, communications with colleagues, or physical objects, such as laboratory specimens.”<BR><BR><BR>
+                        </div>
+                    </div>
+                    <div style="position: absolute; bottom: -55px; left: 40px; width: 100%; text-align: left; font-size: 50%; line-height: normal;">
+						OSTP Memo: <a target="_blank" href="https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf">https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf</a><br>
+						OMB Circular 110: <a href="https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/omb/circulars/a110/2cfr215-0.pdf">https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/omb/circulars/a110/2cfr215-0.pdf</a> (p 58).
+					</div>
+                    <div style="position: absolute; left:700px; top: 120px; width: 400px;">Lots of sticks!!</div>
+                    <div style="position: absolute; left:750px; top: 160px;"><image src="../../common/assets/images-for-data/stick.png" style="background: none !important; max-width: 40% !important;"></div>
+                    <div style="position: absolute; left:850px; top: 160px;"><image src="../../common/assets/images-for-data/stick.png" style="background: none !important; max-width: 40% !important;"></div>
+                    <div style="position: absolute; left:900px; top: 160px;"><image src="../../common/assets/images-for-data/stick.png" style="background: none !important; max-width: 40% !important;"></div>
+                    <div style="position: absolute; left:950px; top: 160px;"><image src="../../common/assets/images-for-data/stick.png" style="background: none !important; max-width: 40% !important;"></div>
+                    <div style="position: absolute; left:800px; top: 160px;"><image src="../../common/assets/images-for-data/stick.png" style="background: none !important; max-width: 40% !important;"></div>
+                </section>
+				
+                <section>
+                    <span style="font-weight: bold; font-size: 110%;">Agency Response</span><br>
+                    <table border=0 cellspacing=0 cellpadding=0 width=100% style="font-size: 42%;">
+                     <tr style='height:27.25pt'>
+                      <td width=56 valign=bottom style='width:42.0pt;background:white;padding:1.55pt .8pt 1.55pt .8pt;  height:27.25pt'></td>
+                      <td width=785 style='width:589.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt'></td>
+                      <td width=195 style='width:146.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt'></td>
+                      <td width=157 colspan=2 style='width:118.0pt;border:none;border-bottom:solid black 1.0pt; background:white;padding:.8pt .8pt 0in .8pt;height:27.25pt'><b>Policy Coverage</b></td>
+                     </tr>
+                     <tr style='height:27.25pt'>
+                      <td width=56 style='width:42.0pt;border:none;border-bottom:solid black 1.0pt; background:white;padding:.8pt .8pt 0in .8pt;height:27.25pt'><b>Funder</b></td>
+                      <td width=785 style='width:589.0pt;border:none;border-bottom:solid black 1.0pt; background:white;padding:.8pt .8pt 0in .8pt;height:27.25pt'><b>Link to Response</b></td>
+                      <td width=195 style='width:146.0pt;border:none;border-bottom:solid black 1.0pt; background:white;padding:.8pt .8pt 0in .8pt;height:27.25pt'><b>Timeline to Implement</b></td>
+                      <td width=79 style='width:59.0pt;border:none;border-bottom:solid black 1.0pt; background:white;padding:.8pt .8pt 0in .8pt;height:27.25pt'><b>Published Outputs</b></td>
+                      <td width=79 style='width:59.0pt;border-top:solid black 1.0pt;border-left: none;border-bottom:solid black 1.0pt;border-right:none;background:white; padding:.8pt .8pt 0in .8pt;height:27.25pt'><b>Data</b></td>
+                     </tr>
+                     <tr style='height:16.5pt; border-bottom: 1px solid black;'>
+                      <td width=56 style='width:42.0pt;border:none;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'><b>AHRQ</b></td>
+                      <td width=785 style='width:589.0pt;border:none;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>
+                      <a href="http://www.ahrq.gov/funding/policies/publicaccess/index.html">http://www.ahrq.gov/funding/policies/publicaccess/index.html</a></td>
+                      <td width=195 style='width:146.0pt;border:none;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>Feb 2015 (A), Oct 2015 (D)</td>
+                      <td width=79 style='width:59.0pt;border:none;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                      <td width=79 style='width:59.0pt;border:none;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                     </tr>
+                     <tr style='height:16.5pt'>
+                      <td width=56 style='width:42.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'><b>ASPR</b></td>
+                      <td width=785 style='width:589.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>
+                      <a href="http://www.phe.gov/Preparedness/planning/science/Pages/AccessPlan.aspx">http://www.phe.gov/Preparedness/planning/science/Pages/AccessPlan.aspx</a></td>
+                      <td width=195 style='width:146.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>Oct 2015 (A, D)</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                     </tr>
+                     <tr style='height:16.5pt'>
+                      <td width=56 style='width:42.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'><b>CDC</b></td>
+                      <td width=785 style='width:589.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>
+                      <a href="http://www.cdc.gov/od/science/docs/Final-CDC-Public-Access-Plan-Jan-2015_508-Compliant.pdf">http://www.cdc.gov/od/science/docs/Final-CDC-Public-Access-Plan-Jan-2015_508-Compliant.pdf</a></td>
+                      <td width=195 style='width:146.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>Jul 2013 (A), Oct 2015 (D)</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                     </tr>
+                     <tr style='height:16.5pt'>
+                      <td width=56 style='width:42.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'><b>DOD</b></td>
+                      <td width=785 style='width:589.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>
+                      <a href="http://www.dtic.mil/dtic/pdf/dod_public_access_plan_feb2015.pdf">http://www.dtic.mil/dtic/pdf/DoD_PublicAccessPlan_Feb2015.pdf</a></td>
+                      <td width=195 style='width:146.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>estimate fiscal year 2015</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                     </tr>
+                     <tr style='height:16.55pt'>
+                      <td width=56 style='width:42.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.55pt'><b>DOE</b></td>
+                      <td width=785 style='width:589.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.55pt'>
+                      <a href="http://www.energy.gov/datamanagement/doe-policy-digital-research-data-management">http://www.energy.gov/datamanagement/doe-policy-digital-research-data-management</a></td>
+                      <td width=195 style='width:146.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.55pt'>Oct 2014 (A) Oct 2015 (D)</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.55pt'>full</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.55pt'>full</td>
+                     </tr>
+                     <tr style='height:16.5pt'>
+                      <td width=56 style='width:42.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'><b>DOT</b></td>
+                      <td width=785 style='width:589.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>
+                      <a href="https://www.transportation.gov/open/official-dot-public-access-plan">https://www.transportation.gov/open/official-dot-public-access-plan</a></td>
+                      <td width=195 style='width:146.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>Jan 2016</td>
+
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>TBD</td>
+                     </tr>
+                     <tr style='height:16.5pt'>
+                      <td width=56 style='width:42.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'><b>FDA</b></td>
+                      <td width=785 style='width:589.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>
+                      <a href="http://www.fda.gov/downloads/ScienceResearch/AboutScienceResearchatFDA/UCM435418.pdf">http://www.fda.gov/downloads/ScienceResearch/AboutScienceResearchatFDA/UCM435418.pdf</a></td>
+                      <td width=195 style='width:146.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>Oct 2015 (A, D)</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                     </tr>
+                     <tr style='height:32.05pt'>
+                      <td width=56 style='width:42.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:32.05pt'><b>NASA</b></td>
+                      <td width=785 style='width:589.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:32.05pt'>
+                      <a href="http://science.nasa.gov/media/medialibrary/2014/12/05/NASA_Plan_for_increasing_access_to_results_of_federally_funded_research.pdf">http://science.nasa.gov/media/medialibrary/2014/12/05 NASA_Plan_for_increasing_access_to_results_of_federally_funded_research.pdf</a></td>
+                      <td width=195 style='width:146.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:32.05pt'>Oct 2015 (A, D)</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:32.05pt'>full</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:32.05pt'>full</td>
+                     </tr>
+                     <tr style='height:16.5pt'>
+                      <td width=56 style='width:42.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'><b>NIH</b></td>
+                      <td width=785 style='width:589.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>
+                      <a href="http://grants.nih.gov/grants/NIH-Public-Access-Plan.pdf">http://grants.nih.gov/grants/NIH-Public-Access-Plan.pdf</a></td>
+                      <td width=195 style='width:146.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>In effect (A, D), Dec 2015 (D)</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                     </tr>
+                     <tr style='height:16.5pt'>
+                      <td width=56 style='width:42.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'><b>NIST</b></td>
+                      <td width=785 style='width:589.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>
+                      <a href="http://www.nist.gov/data/upload/NIST-Plan-for-Public-Access.pdf">http://www.nist.gov/data/upload/NIST-Plan-for-Public-Access.pdf</a></td>
+                      <td width=195 style='width:146.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>Oct. 2015 (A, D)</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>partial</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                     </tr>
+                     <tr style='height:16.5pt'>
+                      <td width=56 style='width:42.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'><b>NOAA</b></td>
+                      <td width=785 style='width:589.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>
+                      <a href="http://docs.lib.noaa.gov/noaa_documents/NOAA_Research_Council/NOAA_PARR_Plan_v5.04.pdf">http://docs.lib.noaa.gov/noaa_documents/NOAA_Research_Council/NOAA_PARR_Plan_v5.04.pdf</a></td>
+                      <td width=195 style='width:146.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>FY2016, Q2 (A, D) (Jan 2016)</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                     </tr>
+                     <tr style='height:16.5pt'>
+                      <td width=56 style='width:42.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'><b>NSF</b></td>
+                      <td width=785 style='width:589.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>
+                      <a href="http://www.nsf.gov/pubs/2015/nsf15052/nsf15052.pdf">http://www.nsf.gov/pubs/2015/nsf15052/nsf15052.pdf
+                      </a></td>
+                      <td width=195 style='width:146.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>Jan 2016 (A, D)</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                     </tr>
+                     <tr style='height:16.5pt'>
+                      <td width=56 style='width:42.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'><b>SI</b></td>
+                      <td width=785 style='width:589.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>
+                      <a href="http://public.media.smithsonianmag.com/file_upload_plugin/1f143b54-a9f9-4746-bef5-1c76151e3c7a.pdf">http://public.media.smithsonianmag.com//file_upload_plugin/1f143b54-a9f9-4746-bef5-1c76151e3c7a.pdf</a></td>
+                      <td width=195 style='width:146.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>Oct. 2015 (A, D)</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                     </tr>
+                     <tr style='height:16.5pt'>
+                      <td width=56 style='width:42.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'><b>USDA</b></td>
+                      <td width=785 style='width:589.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>
+                      <a href="http://www.usda.gov/documents/USDA-Public-Access-Implementation-Plan.pdf">http://www.usda.gov/documents/USDA-Public-Access-Implementation-Plan.pdf</a></td>
+                      <td width=195 style='width:146.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>Jan 2016 (A)</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>partial</td>
+                     </tr>
+                     <tr style='height:16.5pt'>
+                      <td width=56 style='width:42.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'><b>USAID</b></td>
+                      <td width=785 style='width:589.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>
+                      <a href="http://blog.usaid.gov/2014/10/announcing-usaids-open-data-policy/">http://blog.usaid.gov/2014/10/announcing-usaids-open-data-policy/</a></td>
+                      <td width=195 style='width:146.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>October 1, 2014 (D)</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>none</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                     </tr>
+                     <tr style='height:16.5pt'>
+                      <td width=56 style='width:42.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'><b>USGS</b></td>
+                      <td width=785 style='width:589.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>
+                      <a href="http://www.usgs.gov/usgs-manual/im/IM-OSQI-2015-01.html">http://www.usgs.gov/usgs-manual/im/IM-OSQI-2015-01.html</a></td>
+                      <td width=195 style='width:146.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>Feb 19, 2015 (D)</td>
+                      <td width=79 valign=bottom style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>&nbsp;</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>full</td>
+                     </tr>
+                     <tr style='height:16.5pt; border-bottom: 1px solid black;'>
+                      <td width=56 style='width:42.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'><b>VA</b></td>
+                      <td width=785 style='width:589.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>
+                      <a href="http://www.va.gov/ORO/Docs/Guidance/VA_RSCH_DATA_ACCESS_PLAN_07_23_2015.pdf">http://www.va.gov/ORO/Docs/Guidance/VA_RSCH_DATA_ACCESS_PLAN_07_23_2015.pdf</a></td>
+                      <td width=195 style='width:146.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>October 1, 2015 (A, D)</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>partial</td>
+                      <td width=79 style='width:59.0pt;background:white;padding:.8pt .8pt 0in .8pt;  height:16.5pt'>partial</td>
+                     </tr>
+                    </table>
+                    <br><span style="font-size: 50%;">adapted from <a target="_blank" href="http://bit.ly/FedOASummary ">http://bit.ly/FedOASummary</a></span>
+                </section>	
+
+				<section>
+					... open data ...
+				</section>
+
+	            <section>
+					<div style="font-weight: bold; font-size: 110%;">Open Data</div>
+					<div style="width: 80%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+						<ul style="font-size: 80%;">
+							<li style="position: relative; left: 23px; top: 20px;">‘Open Data’ is considered a (social) movement
+							<li style="position: relative; left: 23px; top: 20px;">Open Data is related to, but not the same as, open access (publishing)
+							<li style="position: relative; left: 23px; top: 20px;">Data cannot be copyrighted, but it can be owned
+							<li style="position: relative; left: 23px; top: 20px;">Open Data, like Open Access, is really a misnomer in the global context
+							<ul style="font-size: 85%">
+								<li>While data may be ‘open’, many people still don’t have access to it
+								<li>Often tools and/or knowledge are not available for access to open data
+							</ul>
+							<li style="position: relative; left: 23px; top: 20px;">Open data is different for:
+							<ul style="font-size: 85%">
+								<li>Government: <a href="https://www.data.gov/">https://www.data.gov/</a>
+								<li>Research: <a href="http://www.opendataresearch.org/">http://www.opendataresearch.org/</a>
+								<li>Business ...
+							</ul>
+							<li style="position: relative; left: 23px; top: 20px;">Some data cannot be shared due to privacy concerns (human subjects)
+							<li style="position: relative; left: 23px; top: 20px;">Often the term open data refers to ‘open linked data’ (we will discuss this more later in the course)
+						</ul>
+					</div>
+					<br><br><br>
+                </section>						
+
+	            <section>
+					<div style="font-weight: bold; font-size: 110%;">What is Open?</div>
+					<div style="width: 80%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+						<ul style="font-size: 80%;">
+							<li style="position: relative; left: 23px; top: 20px;">Access – <span style="font-size: 80%">who can access the data? How?</span>
+							<li style="position: relative; left: 23px; top: 20px;">Redistribution – <span style="font-size: 80%">how is the data redistributed? Who controls?</span>
+							<li style="position: relative; left: 23px; top: 20px;">Reuse – <span style="font-size: 80%">How is the data documented, formatted, and packaged. Is it possible for anyone to reuse?</span>
+							<li style="position: relative; left: 23px; top: 20px;">Absence of technological restriction – <span style="font-size: 80%">Is there proprietary software needed?</span>
+							<li style="position: relative; left: 23px; top: 20px;">Attribution – <span style="font-size: 80%">Who is the author (really)? Where did the data come from (sensor)?</span>
+							<li style="position: relative; left: 23px; top: 20px;">Integrity – <span style="font-size: 80%">just because it is open, does not mean it is good data. Problem?</span>
+							<li style="position: relative; left: 23px; top: 20px;">Discrimination (against groups or beliefs) – <span style="font-size: 80%">remember all data is contextual. Might data be produced from a discriminatory stance or lead to discriminatory conclusions?</span>
+							<li style="position: relative; left: 23px; top: 20px;">License – <span style="font-size: 80%">How is the license distributed? Does this change if a data set grows or is a derived from another data set? Does the license propagate</span>
+						</ul>
+					</div>
+					<br><br><br>
+				</section>		
+
+	            <section>
+					<div style="font-weight: bold; font-size: 110%;">FAIR Data</div>
+					<div style="width: 18%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+						<br><br>
+						<ul>
+							<li style="position: relative; left: 23px; top: 20px;">Findable
+							<li style="position: relative; left: 23px; top: 20px;">Accesible
+							<li style="position: relative; left: 23px; top: 20px;">Interoperable
+							<li style="position: relative; left: 23px; top: 20px;">Re-usable
+						</ul>
+					</div>
+					<br><br><br>
+                    <div style="font-size: 40%; color: #555; position: absolute; left: 500px; top: 610px; text-align: left;">read more ... <a href="https://www.force11.org/group/fairgroup/fairprinciples">https://www.force11.org/group/fairgroup/fairprinciples</a></div>
+                </section>					
+				
+				<section>
+					<div style="font-weight: bold; font-size: 110%;">Levels of Open Data</div>
+					<div style="width: 70%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+						<ol style="font-size: 80%;">
+							<li style="position: relative; left: 23px; top: 20px;">Non-machine readable
+							<li style="position: relative; left: 23px; top: 20px;">Machine readable but in proprietary format
+							<li style="position: relative; left: 23px; top: 20px;">Machine readable in non-proprietary format
+							<li style="position: relative; left: 23px; top: 20px;">Machine readable in non-proprietary format with URI and RDF
+							<ul style="font-size: 85%">
+								<li>URI – Uniform Resource Identifier
+								<li>RDF – Resource Description Framework 
+								<li>These are both Internet terms (we will discuss later in the class)
+							</ul>
+							<li style="position: relative; left: 23px; top: 20px;">Machine readable in non-proprietary format with URI and RDF – linked to other metadata
+							<ul style="font-size: 85%">
+								<li>this last level is the requisite for the ‘semantic web’ (we will discuss later in class)
+							</ul>
+						</ul>
+					</div>
+					<br><br><br>
+				<div style="position: absolute; top: 160px; left: 1200px; "><object data="../../common/assets/images-for-data/doublearrow.svg" type="image/svg+xml"></object></div>
+				<div style="position: absolute; top: 160px; left: 100px; "><object data="../../common/assets/images-for-data/doublearrow.svg" type="image/svg+xml"></object></div>
+				<div style="position: absolute; top: 85px; left: 75px; font-size: 45%; width: 100px;">Easy to create</div>
+				<div style="position: absolute; top: 490px; left: 75px; font-size: 45%; width: 100px;">Hard to create</div>
+				<div style="position: absolute; top: 85px; left: 1175px; font-size: 45%; width: 100px;">Hard to Re-use</div>
+				<div style="position: absolute; top: 490px; left: 1175px; font-size: 45%; width: 100px;">Easy to Re-use</div>
+				</section>		
+
+	            <section>
+					<div style="font-weight: bold; font-size: 110%;">The Case for Open Data</div>
+					<div style="width: 55%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+						<ul style="font-size: 80%;">
+							<li style="position: relative; left: 23px; top: 20px;">Transparency (in government, business and research)
+							<li style="position: relative; left: 23px; top: 20px;">Democracy (better informed decisions and debates)
+							<li style="position: relative; left: 23px; top: 20px;">Increased efficiencies in workflows and production
+							<li style="position: relative; left: 23px; top: 20px;">Publicity campaigns and social license (like green business)
+							<li style="position: relative; left: 23px; top: 20px;">More innovation possible
+						</ul>
+					</div>
+					<br><br><br>
+                </section>		
+
+	            <section>
+					<div style="font-weight: bold; font-size: 110%;">The Case against Open Data</div>
+					<div style="width: 70%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+						<ul style="font-size: 80%;">
+							<li style="position: relative; left: 23px; top: 20px;">Privatization of public services (kind of like ‘free trade’)
+							<ul style="font-size: 85%">
+								<li>Freely available data benefits big business!!!
+								<li>Will open data be captured by big business in the guise of ‘transparency’
+							</ul>
+							<li style="position: relative; left: 23px; top: 20px;">Empowers the empowered even more
+							<ul style="font-size: 85%">
+								<li>How is data used? For whose interests?
+								<li>Open Data can be captured (usually by a business interest) and repurposed outside of its original research context
+							</ul>
+							<li style="position: relative; left: 23px; top: 20px;">Lacks sustainability, scalability and usability
+							<ul style="font-size: 85%">
+								<li>Often Open Data is promoted by volunteer time (enthusiasts, hackathons, etc)
+								<li>Who will have the means to support this in the long run?
+							</ul>
+						</ul>
+					</div>
+					<br><br><br>
+                </section>
+
+                <section>
+                    <div style="position: absolute; left: 50px; top: 0px; font-size: 110%; font-weight: bold;">Federal Movement Towards Open Data</div>
+                    <br><img src="../../common/assets/images-for-data/federalmovement.png" style="width: 70%; max-width: 100% !important;">
+                    <div style="position: absolute; bottom: -70px; left: 130px; width: 100%; text-align: left; font-size: 50%; line-height: normal;">Whitmire, Amanda L. (2014). Research Data Management Curriculum, Lecture 2: Introduction to Research Data Management.<br> Oregon State University Libraries. <a target="_blank" href="http://figshare.com/articles/GRAD521_Research_Data_Management_Lectures/1003835">http://figshare.com/articles/GRAD521_Research_Data_Management_Lectures/1003835</a></div>
+                </section>
+
+                <section>
+                    <div style="float: right; position: relative; top: 100px; right: 100px; font-size: 110%; font-weight: bold;">Next Steps?</div>
+                    <div style="width: 45%; float: left;"><img src="../../common/assets/images-for-data/opentransition.png" style="max-width: 100% !important; position: relative; left: 15%; top: -15px;"></div>
+                    <div style="width: 55%; font-size: 50%; line-height: normal; position: absolute; top: 550px; right: 0px;">
+                        <a href="http://opendataenterprise.org/reports/transition-report.pdf">http://opendataenterprise.org/reports/transition-report.pdf</a>
+                    </div>
+                </section>				
+
+				<section>
+					... introduction to thinking about data mangement ...
+				</section>
+				
+                <section data-background-image="../../common/assets/images-for-data/disk3.5.jpg">
+					<div style="position: absolute; left: 200px; top: -10px; font-size: 110%; font-family: times new roman, serif; color: rgb(255,102,0);">What is Data Management?</div>
+					<div style="position: relative; width: 60%; margin-left: auto; margin-right: auto; top: 100px; font-size: 90%;  text-align: left;">
+						<br>Actions that contribute to effective <span style="color: rgb(84,130,53); font-size: 120%">storage</span>,  <span style="color: rgb(84,130,53); font-size: 120%">preservation</span> and  <span style="color: rgb(84,130,53); font-size: 120%">reuse</span> of data and documentation throughout the research lifecycle.<br><br><br><br>
+				    </div>
+                    <div style="font-size: 40%; color: #555; position: relative; width: 90%; margin-left: auto; margin-right: auto; top: 200px;">Whitmire, Amanda L. (2014). Research Data Management Curriculum, Lecture 1: Introduction to Research Data Management. Oregon State University Libraries.<br>Retrieved 11/04/2015 from: <a href="http://figshare.com/articles/GRAD521_Research_Data_Management_Lectures/1003835">http://figshare.com/articles/GRAD521_Research_Data_Management_Lectures/1003835</a></div>
+                    <aside class="notes">
+						<ul>
+							<li>Data management is a verb – it involves intentional effort and activity. 
+							<li>The main goals of DM are preservation and reuse, for you and for others.
+							<li>Covers all aspects of the data lifecycle from planning digital data capture methods, whittling down, ingestion to databases, providing for access and reuse, to transformation.
+						</ul>
+					</aside>
+                </section>	
+
+                <section>
+					<div style="position: absolute; left: 150px; top: -10px; font-size: 110%; font-family: times new roman, serif; color: rgb(255,102,0);">Data Management is not</div>
+					<div style="position: relative; width: 35%; margin-left: auto; margin-right: auto; top: 100px; font-size: 90%;  text-align: left;">
+						Data science<br>Computational science<br>Database administration<br>A research method:<br>
+						<ul style="font-size: 90%;">
+							<li>what data to collect
+							<li>how to collect them
+							<li>how to design an experiment 
+						</ul>
+						<br><br>
+				    </div>
+                    <div style="font-size: 40%; color: #555; position: relative; width: 90%; margin-left: auto; margin-right: auto; top: 200px;">Whitmire, Amanda L. (2014). Research Data Management Curriculum, Lecture 1: Introduction to Research Data Management. Oregon State University Libraries.<br>Retrieved 11/04/2015 from: <a href="http://figshare.com/articles/GRAD521_Research_Data_Management_Lectures/1003835">http://figshare.com/articles/GRAD521_Research_Data_Management_Lectures/1003835</a></div>
+                    <div style="position: absolute; margin-left: auto; margin-right: auto; top: 50px; left: 450px;"><img src="../../common/assets/images-for-data/no.png" style="max-width: 450px;"></div>
+                    <aside class="notes">if this is why you are here you signed up for the wrong class</aside>
+                </section>	
+
+                <section data-background-image="../../common/assets/images-for-data/matrix.jpg" style="color: #92d050 !important;">
+                    <div style="background-color: rgba(0, 0, 0, 0.7); width: 100%; height: 100%;">
+                        <br><div style="font-weight: bold; font-size: 110%; position: relative; left: -120px; top: -30px;">What is DATA Management?</div>
+						<br><div style="font-size: 90%; line-height: normal; text-align: left; position: relative; left: 250px; top: -50px">Data?</div>
+                        <div style="font-size: 60%; line-height: normal; text-align: left; position: relative; left: 250px; position: relative; top: -40px;">
+                        Numbers<br>
+                        Words<br>
+                        Citations / references<br>
+                        Notebooks / marginalia<br>
+                        Specimens<br>
+                        Field Samples<br>
+                        Images<br>
+                        Videos / sound recording<br>
+                        Relationships<br>
+                        Models<br>
+                        Code<br><br><br>
+                        </div>
+						<div class="fragment" style="font-size: 90%; line-height: normal; text-align: left; position: absolute; left: 700px; top: 120px;">Data Management?</div>
+                        <div class="fragment" style="font-size: 60%; line-height: normal; text-align: left; position: absolute; left: 700px; top: 180px;">
+                        File System Organization<br>
+                        File Naming Conventions<br>
+                        Privacy/Security Considerations<br>
+                        File Format Choice<br>
+                        Documentation and metadata<br>
+                        Roles and responsibilities in research environment<br>
+                        Storage and backup strategies<br>
+                        Acquiring and cleaning data<br>
+                        Sharing and collaboration strategies<br>
+                        Ownership of data<br>
+                        Access strategies / Access restrictions<br>
+                        Data publication / Data citation<br>
+                        </div>
+                    </div>
+					<div class="fragment" style="background-color: #000; border: 1px solid #92d050; position: absolute; left:190px; top: 300px; font-size: 120%; padding: 20px; padding-left: 100px; padding-right: 100px; -ms-transform: rotate(325deg); -webkit-transform: rotate(325deg); transform: rotate(325deg);">¿TOOLS?</div>
+					<div class="fragment" style="background-color: #000; border: 1px solid #92d050; position: absolute; left:590px; top: 300px; font-size: 120%; padding: 20px; padding-left: 100px; padding-right: 100px; -ms-transform: rotate(325deg); -webkit-transform: rotate(325deg); transform: rotate(325deg);">¿VISUALIZATION?</div>
+                </section>
+
+                <section data-background-image="../../common/assets/images-for-data/matrix.jpg" style="color: #92d050 !important;">
+                    <div style="background-color: rgba(0, 0, 0, 0.7); width: 100%; height: 100%; position: relative; top: -50px;">
+                        <span style="color: #92d050 !important; font-size: 110%; font-weight: bold; position: relative; top: 50px;"><i>Research</i> Data Management</span><div style="width: 100%; height: 480px"></div>
+                        <div class="fragment" style="position: absolute; top: 162px; left: 220px; font-size: 70%; line-height: normal; text-align: left;">
+                        Before: Data Management Planning / Grant Process<br><br><br><br>
+                        During: Compliance and Productivity<br><br><br><br>
+                        After: Publication and/or Repository Deposit<br><br><br><br>
+                        </div><br><br>
+                        <div class="fragment current-visible" style="position: absolute; top: 162px; left: 220px; font-size: 70%; line-height: normal; text-align: left;">
+                        Before: Data Management Planning / Grant Process<br><br><br><br>
+                        <span style="opacity: 0.4">During: Compliance and Productivity<br><br><br><br>
+                        After: Publication and/or Repository Deposit<br><br><br><br></span>
+                        <div style="position: absolute; top: 50px; left: 50px; font-size: 80%; line-height: normal; margin: 1px; border: 2px solid #92d050; background-color: rgba(0, 0, 0, 0.9); padding: 13px; text-align: left; width: 90%;">
+                            Privacy/Security Considerations<br>
+                            Storage and backup strategies<br>
+                            File System Organization<br>
+                            File Naming Conventions<br>
+                            File Format Choice<br>
+                            Documentation and metadata<br>
+                            Roles and responsibilities in research environment<br>
+                            Sharing and collaboration strategies<br>
+                            Ownership of data<br>
+                            Access strategies / Access restrictions
+                        </div>
+                        </div>
+                        <div class="fragment current-visible" style="position: absolute; top: 162px; left: 220px; font-size: 70%; line-height: normal; text-align: left;">
+                        <span style="opacity: 0.4">Before: Data Management Planning / Grant Process<br><br><br><br></span>
+                        During: Compliance and Productivity<br><br><br><br>
+                        <span style="opacity: 0.4">After: Publication and/or Repository Deposit<br><br><br><br></span>
+                        <div style="position: absolute; top: 200px; left: 50px; font-size: 80%; line-height: normal; margin: 2px; border: 1px solid #92d050; background-color: rgba(0, 0, 0, 0.9); padding: 13px; text-align: left; width: 90%;">
+                            Follow file naming, organization and format conventions<br>
+                            Documentation and metadata<br>
+                            Acquiring and cleaning data<br>
+                            Regularly backup all data<br>
+                            Be mindful when sharing / version control<br>
+                            Access / privacy policy enforcement
+                        </div>
+                        </div>
+                        <div class="fragment current-visible" style="position: absolute; top: 162px; left: 220px; font-size: 70%; line-height: normal; text-align: left;">
+                        <span style="opacity: 0.4">Before: Data Management Planning / Grant Process<br><br><br><br>
+                        During: Compliance and Productivity<br><br><br><br></span>
+                        After: Publication and/or Repository Deposit<br><br><br><br>
+                        <div style="position: absolute; top: 360px; left: 50px; font-size: 80%; line-height: normal; border: 1px solid #92d050; background-color: rgba(0, 0, 0, 0.9); padding: 13px; text-align: left; width: 90%;">
+                            Publish<br>
+                            Deposit in a repository<br>
+                        </div>
+                        </div>
+                    </div>
+                </section>			
+
+                <section>
+					<div style="font-weight: bold; font-size: 110%;">Reading for Next Class</div>
+                    <div style="position: relative; top: 30px; font-size: 65%; text-align: left; width: 90%; margin-right: auto; margin-left: auto;">
+					    <ul>
+							<li style="position: relative; top: 10px;">Choose a DMP to read from <a href="https://dmptool.org/public_dmps">https://dmptool.org/public_dmps</a>.<br> NOTE: “They are not vetted for quality, completeness, or adherence to funder guidelines.”
+							<li style="position: relative; top: 20px;">If your research lab has an existing DMP bring it to class
+						    <li style="position: relative; top: 140px; font-size: 85%;">Office of Management and Budget (2013). Open Data Policy—Managing Information as an Asset.<br> - <a href="https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf">https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf</a><br>
+							alternate html: <a href="https://project-open-data.cio.gov/policy-memo/">https://project-open-data.cio.gov/policy-memo/</a><br>
+						    <li style="position: relative; top: 150px; font-size: 85%;">Committee on Ensuring the Utility and Integrity of Research Data in a Digital Age (2009). “Promoting the Stewardship of Research Data” (Chap 4) in Ensuring the Integrity, Accessibility, and Stewardship of Research Data in the Digital Age. National Academies Press, Washington D.C.<br> - <a href="http://www.nap.edu/catalog/12615/ensuring-the-integrity-accessibility-and-stewardship-of-research-data-in-the-digital-age">http://www.nap.edu/catalog/12615/ensuring-the-integrity-accessibility-and-stewardship-of-research-data-in-the-digital-age</a>
+						</ul>
+						<br><br><br><br>
+					</div>
+                    <div style="position: absolute; top: 240px; font-size: 75%; text-align: left; width: 60%; margin-right: 10%; margin-left: 30%;"><u>Bring DMP for this coming Wednesday January 25th!!!</u></div>
+					<div style="position: absolute; top: 290px; font-size: 65%; text-align: left; width: 60%; margin-right: 35%; margin-left: 5%;">for next week</div>
+					<br><br><br>
+                </section>	
+
+<!-- ########################################################################################################################## -->
+<!-- ##               end of session two - extra slides follow                                                                                                                                                                ## -->				
+<!-- ########################################################################################################################## -->					
+				
+            </div>
+        </div>
+        <script src="../../common/java/reveal.js"></script>
+	    <script src="../../common/java/notes.js"></script>
+	    <script src="../../common/java/head.min.js"></script>
+        <script>
+            Reveal.initialize({
+                width: 1366, height: 768, margin: 0.05,
+                controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+				chart: {
+					defaults: { 
+						global: { 
+							defaultFontSize: 20,
+							title: { fontColor: "#333" }, 
+							legend: {
+								position: "top",
+								labels: { fontColor: "#333" },
+							},
+							tooltips: {
+								labels: { fontColor: "#333" },
+							},
+						}, 
+						scale: { 
+							scaleLabel: { fontColor: "#333" }, 
+							gridLines: { color: "#333", zeroLineColor: "#333" }, 
+							ticks: { fontColor: "#333" }, 
+						} 
+					},
+				},
+                dependencies: [
+                    { src: '../../common/java/Chart.min.js' },
+                    { src: '../../common/java/csv2chart.js' }
+                ] 
+            });
+        </script>
+    </body>
+</html>

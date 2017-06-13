@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../../common/css/reveal.css">
+        <link rel="stylesheet" href="../../common/css/white.css">
+        <link rel="stylesheet" href="../../common/css/overrides.css">
+	    <script src="../../common/java/print.js"></script>
+        <title>Research Data Management - 14</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+
+                <section data-background-image="../../common/assets/images-for-data/DataCurationCover.png">
+                    <div style="position: absolute; left: 340px; top: 125px; font-size: 150%; line-height: 100%;"><strong>Data Management in the<br>Research Environment</strong></div>
+                    <div style="position: absolute; left: 750px; top: 285px; font-size: 90%">RSM 674 Spring <script>var today = new Date();document.write(today.getFullYear());</script></div>
+                    <div style="position: absolute; left: 460px; top: 390px; font-size: 50%; text-align: left">Dr. Timothy Norris - Data Curation Fellow - <a href="mailto:tnorris@miami.edu" style="color: #222 !important; text-decoration: underline;">tnorris@miami.edu</a><br>Angela Clark - Librarian Associate Professor RSMAS - <a href="mailto:tnorris@miami.edu" style="color: #222 !important; text-decoration: underline;">aclark@rsmas.miami.edu</a></div>
+		        </section>
+				
+				<section>
+					<div style="font-weight: bold; font-size: 110%;">Todays Outline</div>
+					<div style="width: 25%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+						<ul style="font-size: 80%;">
+							<li style="position: relative; left: 23px; top: 20px;">Semantic Web
+							<li style="position: relative; left: 23px; top: 20px;">Final Project
+							</ul>
+					</div>
+					<br><br><br><br><br><br>
+					<div style="position: absolute; bottom: 0px; left: 500px; text-align: left; font-size: 60%; line-height: normal;">
+						<a href="https://etherpad.net/p/Data_Management_Keywords">https://etherpad.net/p/Data_Management_Keywords</a><br>
+					</div>
+				</section>
+				
+				<section>
+					<div style="font-weight: bold; font-size: 110%; line-height: 95%;">the Semantic Web</div>
+                    <div style="position: relative; top: 42px; font-size:105%; text-align: left; width: 85%; margin-right: auto; margin-left: 30%;">
+						<ul style="font-size: 80%;">
+							<li>Tim Berners Lee
+							<li>tables -> trees -> triples
+							<li>Linked Open Data
+							<li>ontologies
+							<li>SPARQL
+							<li>LOD triple stores<br>
+							<a href="http://lod-cloud.net/versions/2017-02-20/lod.svg" target="_blank">http://lod-cloud.net/versions/2017-02-20/lod.svg</a>
+						</ul>
+					</div>
+					<br><br><br>
+                </section>
+				
+				<section>
+					<div style="font-weight: bold; font-size: 110%;">Linked Open Data</div>
+					<div style="margin-right: auto; margin-left: auto; font-size: 85%; top: 50px; position: relative;">
+						<img src="../../common/assets/images-for-data/lod.png" style="max-width: 1000px; width: 800px;">
+					</div>
+					<div style="margin-right: auto; margin-left: auto; font-size: 50%; top: 50px; position: relative; color: #aaa;">
+						Berners-Lee, <a href="http://5stardata.info/en/">http://5stardata.info/en/</a>, accessed 03-27-2016
+					</div><br><br>
+				</section>
+				
+                <section>
+                    <span style="font-weight: bold; font-size: 110%;">Linked Open Data</span><br><br>
+                    <table style="font-size: 70%; width: 85%;" class="bluetable"><tbody>
+					  <tr style="background-color: rgb(210,222,239); border-bottom: solid white 1px !important;">
+                         <td>*</td><td>make your stuff available on the Web (whatever format) under an open license</td>
+                      </tr><tr style="background-color: rgb(234,239,247); border-bottom: solid white 1px !important;;">
+                         <td>**</td><td>make it available as structured data (e.g., Excel instead of image scan of a table)</td>
+                      </tr><tr style="background-color: rgb(210,222,239); border: solid white 1px !important;;">
+                         <td>***</td><td>make it available in a non-proprietary open format (e.g., CSV as well as of Excel)</td>
+                      </tr><tr style="background-color: rgb(234,239,247); border: solid white 1px !important;;">
+                         <td>****</td><td>use URIs to denote things, so that people can point at your stuff</td>
+                       </tr><tr style="background-color: rgb(210,222,239); border: solid white 1px !important;;">
+                         <td>*****</td><td>link your data to other data to provide context</td>
+                      </tr>
+					</tbody></table><br>
+					<div style="margin-right: auto; margin-left: auto; font-size: 50%; top: 50px; position: relative; color: #aaa;">
+						Adapted from Berners-Lee, <a href="http://5stardata.info/en/">http://5stardata.info/en/</a>, accessed 03-27-2016
+					</div><br><br>
+				</section>	
+				
+				<section>
+					... break ...
+				</section>
+				
+				<section>
+					<div style="font-weight: bold; font-size: 110%; line-height: 95%;">Final Project<br><span style="font-size: 60%">both types of project</span></div>
+                    <div style="position: relative; top: 42px; font-size:105%; text-align: left; width: 85%; margin-right: auto; margin-left: 10%;">
+						<ul style="font-size: 80%;">
+							<li>An abstract with a clear description of purpose
+							<li>Clear use of ‘data’ language (data types, data formats, data stages)
+							<li>Clear use of ‘file system’ language (file names, folder structures)
+							<li>Clear description of process steps from ‘raw’ data to ‘published’ data
+							<li>A assessment of the data accuracy (known errors, problems with process)
+							<li>Clear statement on ownership of data and how it is to be shared (license)
+							<li>Description and rationalization of metadata standard used (or not)
+							<li>A description of past and future versions of the data (or not)
+						</ul>
+					</div>
+					<br><br><br>
+					<div style="font-weight: bold; position: absolute; bottom: 0px; left: 720px; text-align: left; font-size: 90%; line-height: normal;">
+						Due: May 5th 2016
+					</div>
+                </section>
+				
+				<section>
+					<div style="font-weight: bold; font-size: 110%; line-height: 95%;">Final Project<br><span style="font-size: 60%">data management plan</span></div>
+                    <div style="position: relative; top: 42px; font-size:105%; text-align: left; width: 85%; margin-right: auto; margin-left: 13%;">
+						<ul style="font-size: 80%;">
+							<li>Include an abstract as ‘extra’ to the Data Management Plan
+							<ul style="font-size: 90%;">
+								<li>A brief description of the research project, purpose, and questions
+								<li>Include the agency to which the grant proposal will be submitted
+								<li>250 words or less
+							</ul>
+							<li style="margin-top: 23px;">Data management Plan Content
+							<ul style="font-size: 90%;">
+								<li>Headings and sub-headings (look to examples and agency specifications)
+								<li>Look back to Week 2, address each stage of the data life cycle
+							</ul>
+							<li style="margin-top: 23px;">Data Management Plan Format
+							<ul style="font-size: 90%;">
+								<li>Look to agency specifications
+							</ul>
+						</ul>
+					</div>
+					<br><br>
+					<div style="font-weight: bold; position: absolute; bottom: 0px; left: 720px; text-align: left; font-size: 90%; line-height: normal;">
+						Due: May 5th 2016
+					</div>
+                </section>
+				
+				<section>
+					<div style="font-weight: bold; font-size: 110%; line-height: 95%;">Final Project<br><span style="font-size: 60%">data deposit</span></div>
+                    <div style="position: relative; top: 42px; font-size:105%; text-align: left; width: 85%; margin-right: auto; margin-left: 13%;">
+						<ul style="font-size: 80%;">
+							<li>Include an abstract as ‘extra’ to the Data Deposit
+							<ul style="font-size: 90%;">
+								<li>A brief description of the research project, purpose, and questions
+								<li>Include the named destination repository
+								<li>250 words or less
+							</ul>
+							<li style="margin-top: 23px;">Data Package Content
+							<ul style="font-size: 90%;">
+								<li>Well formed data
+								<li>Well formed metadata for the data
+								<li>Well formed metadata for the project
+							</ul>
+							<li style="margin-top: 23px;">Data Package Format (both for data and metadata)
+							<ul style="font-size: 90%;">
+								<li>Follow repository guidelines
+							</ul>
+						</ul>
+					</div>
+					<br><br>
+					<div style="font-weight: bold; position: absolute; bottom: 0px; left: 720px; text-align: left; font-size: 90%; line-height: normal;">
+						Due: May 5th 2016
+					</div>
+                </section>
+
+            </div>
+        </div>
+        <script src="../../common/java/reveal.js"></script>
+	    <script src="../../common/java/notes.js"></script>
+	    <script src="../../common/java/head.min.js"></script>
+        <script>
+            Reveal.initialize({
+                width: 1366, height: 768, margin: 0.05,
+                controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+				chart: {
+					defaults: { 
+						global: { 
+							defaultFontSize: 20,
+							title: { fontColor: "#333" }, 
+							legend: {
+								position: "top",
+								labels: { fontColor: "#333" },
+							},
+							tooltips: {
+								labels: { fontColor: "#333" },
+							},
+						}, 
+						scale: { 
+							scaleLabel: { fontColor: "#333" }, 
+							gridLines: { color: "#333", zeroLineColor: "#333" }, 
+							ticks: { fontColor: "#333" }, 
+						} 
+					},
+				},
+                dependencies: [
+                    { src: '../../common/java/Chart.min.js' },
+                    { src: '../../common/java/csv2chart.js' }
+                ] 
+            });
+        </script>
+    </body>
+</html>

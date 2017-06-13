@@ -1,0 +1,2517 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../../common/css/reveal.css">
+        <link rel="stylesheet" href="../../common/css/white.css">
+        <link rel="stylesheet" href="../../common/css/overrides.css">
+	    <script src="../../common/java/print.js"></script>
+        <title>Research Data Management - 05</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+
+                <section data-background-image="../../common/assets/images-for-data/DataCurationCover.png">
+                    <div style="position: absolute; left: 340px; top: 125px; font-size: 150%; line-height: 100%;"><strong>Data Management in the<br>Research Environment</strong></div>
+                    <div style="position: absolute; left: 750px; top: 285px; font-size: 90%">RSM 674 Spring <script>var today = new Date();document.write(today.getFullYear());</script></div>
+                    <div style="position: absolute; left: 460px; top: 390px; font-size: 50%; text-align: left">Dr. Timothy Norris - Data Curation Fellow - <a href="mailto:tnorris@miami.edu" style="color: #222 !important; text-decoration: underline;">tnorris@miami.edu</a><br>Angela Clark - Librarian Associate Professor RSMAS - <a href="mailto:tnorris@miami.edu" style="color: #222 !important; text-decoration: underline;">aclark@rsmas.miami.edu</a></div>
+		        </section>
+				
+				<section>
+					<div style="font-weight: bold; font-size: 110%;">Todays Outline</div>
+					<div style="width: 30%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+						<ul style="font-size: 80%;">
+							<li style="position: relative; left: 23px; top: 20px;">Open Data
+							<li style="position: relative; left: 23px; top: 20px;">Open Software
+							<li style="position: relative; left: 23px; top: 20px;">UM Policies
+						</ul>
+					</div>
+					<br><br><br><br>
+					<div style="position: absolute; bottom: 0px; left: 500px; text-align: left; font-size: 60%; line-height: normal;">
+						<a href="https://etherpad.net/p/Data_Management_Keywords">https://etherpad.net/p/Data_Management_Keywords</a><br>
+					</div>
+				</section>
+
+				<section>
+					<div style="font-weight: bold; font-size: 110%;">Open</div>
+					<div style="width: 30%; margin-left: auto; margin-right: auto; font-size: 600%; text-align: center; top: 0px; position: relative;">?</div>
+				</section>
+
+				<section>
+                    <img src="../../common/assets/images-for-data/DataCycle.png" style="max-width: 75%;"><br>
+					<div class="fragment" style="width: 300px; left: 110px; top: 255px; position: absolute;">
+						<svg width="300px;" height="300px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 100px;" viewbox="0 0 300 300">
+							<ellipse cx="150" cy="150" rx="148" ry="65" style="fill: none; stroke: red; stroke-width: 4" />
+						</svg>
+					</div>
+					<div class="fragment" style="width: 340px; left: 490px; top: 310px; position: absolute;">
+						<svg width="340px;" height="300px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 100px;" viewbox="0 0 340 300">
+							<ellipse cx="170" cy="150" rx="168" ry="65" style="fill: none; stroke: red; stroke-width: 4" />
+						</svg>
+					</div>
+					<div class="fragment" style="width: 360px; left: 650px; top: -30px; position: absolute;">
+						<svg width="460px;" height="300px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 100px;" viewbox="0 0 460 300">
+							<ellipse cx="230" cy="150" rx="220" ry="85" style="fill: none; stroke: red; stroke-width: 4" />
+						</svg>
+					</div>
+					<div class="fragment" style="width: 340px; left: 270px; top: -95px; position: absolute;">
+						<svg width="340px;" height="300px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 100px;" viewbox="0 0 340 300">
+							<ellipse cx="170" cy="150" rx="168" ry="80" style="fill: none; stroke: red; stroke-width: 4" />
+						</svg>
+					</div>
+                    <div style="position: absolute; bottom: -40px; right: 50px; width: 400px; text-align: left; font-size: 50%; line-height: normal;"><a target="_blank" href="http://library.miami.edu/datacuration/">http://library.miami.edu/datacuration/</a></div>
+                </section>
+				
+				<section>
+					<div style="font-weight: bold; font-size: 110%;">Open</div>
+					<div style="width: 30%; margin-left: auto; margin-right: auto; font-size: 600%; text-align: center; top: 0px; position: relative;">?</div>
+				</section>
+
+				<section>
+					<div style="font-weight: bold; font-size: 110%;">Open Data</div>
+					<div style="width: 85%; margin-left: auto; margin-right: auto; font-size: 90%; text-align: center; top: 50px; line-height: 140%; position: relative;">
+						“data is open if anyone is free to use, reuse, and redistribute it – subject only, at most, to the requirement to attribute and/or share-alike.”<br>
+					</div>
+					<div style="font-size: 55%; width: 70%; line-height: 110%; text-align: left; position: relative; top: 130px; margin-left: auto; margin-right: auto;">Pollack, R (2006). ‘The value of the public domain’, Institue for Public Policy Research, <a href="http://www.ippr.org/publication/55/1526/the-value-of-the-public-domain">http://www.ippr.org/publication/55/1526/the-value-of-the-public-domain</a>, quoted from<br>Kitchin, R (2014). The Data Revolution. Sage, Los Angeles. P. 49-50.</div>
+					<br><br><br><br>
+				</section>
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Open Data</div>
+					<div class="fragment" style="position: relative; margin-left: 60px; margin-right: auto; top: 30px; font-size: 82%; width: 50%; text-align: left;">
+						<span style="padding-left: 13px;"><a href="http://opendefinition.org">opendefinition.org</a> *</span>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px; top: 20px;">Accessible
+							<li style="position: relative; left: 23px; top: 20px;">Redistributable (w or w/o license)
+							<li style="position: relative; left: 23px; top: 20px;">Reusable
+							<li style="position: relative; left: 23px; top: 20px;">No Technological restrictions
+							<li style="position: relative; left: 23px; top: 20px;">Attribution
+							<li style="position: relative; left: 23px; top: 20px;">Integrity maintained
+							<li style="position: relative; left: 23px; top: 20px;">Non-discriminatory
+							<li style="position: relative; left: 23px; top: 20px;">License is redistributable, non-specific, and non-restrictive for derivative works
+						</ul><br><br><br><br>
+					</div>
+					<div class="fragment" style="position: absolute; left: 810px; top: 90px; font-size: 82%; width: 43%; text-align: left;">
+						<span style="padding-left: 13px;"><a href="http://www.opengovdata.org">www.opengovdata.org</a> °</span>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px; top: 20px;">Complete
+							<li style="position: relative; left: 23px; top: 20px;">Primary
+							<li style="position: relative; left: 23px; top: 20px;">Timely
+							<li style="position: relative; left: 23px; top: 20px;">Accessible
+							<li style="position: relative; left: 23px; top: 20px;">Machine processable
+							<li style="position: relative; left: 23px; top: 20px;">Non-discriminatory
+							<li style="position: relative; left: 23px; top: 20px;">Non-proprietary formats
+							<li style="position: relative; left: 23px; top: 20px;">License Free
+							<li style="position: relative; left: 23px; top: 20px;">Open for Compliance Review
+						</ul>
+					</div>
+                    <div class="fragment" style="position: absolute; left: 100px; top: 580px; text-align: left; width: 350px; font-size: 55%;">
+						* As a sub-project of the open knowledge foundation, <a href="https://okfn.org/">okfn.org</a>
+					</div>
+                    <div class="fragment" style="position: absolute; width: 250px; left: 1060px; top: 200px; text-align: left; font-size: 55%;">
+						° From a 2007 open data workshop. Influenced heavily by Larry Lessig 
+					</div>
+                    <div class="fragment" style="color: #aaa; position: absolute; left: 500px; top: 630px; text-align: left; font-size: 55%; width: 800px;">
+						Adapted from Kitchin, R (2014). The Data Revolution. Sage, Los Angeles. P. 50-51
+					</div>
+                </section>
+
+				
+				<section>
+					<div style="font-weight: bold; font-size: 110%;">Linked Open Data</div>
+					<div style="margin-right: auto; margin-left: auto; font-size: 85%; top: 50px; position: relative;">
+						<img src="../../common/assets/images-for-data/lod.png" style="max-width: 1000px; width: 800px;">
+					</div>
+					<div style="margin-right: auto; margin-left: auto; font-size: 50%; top: 50px; position: relative; color: #aaa;">
+						Berners-Lee, <a href="http://5stardata.info/en/">http://5stardata.info/en/</a>, accessed 03-27-2016
+					</div><br><br>
+				</section>
+				
+                <section>
+                    <span style="font-weight: bold; font-size: 110%;">Linked Open Data</span><br><br>
+                    <table style="font-size: 70%; width: 85%;" class="bluetable"><tbody>
+					  <tr style="background-color: rgb(210,222,239); border-bottom: solid white 1px !important;">
+                         <td>*</td><td>make your stuff available on the Web (whatever format) under an open license</td>
+                      </tr><tr style="background-color: rgb(234,239,247); border-bottom: solid white 1px !important;;">
+                         <td>**</td><td>make it available as structured data (e.g., Excel instead of image scan of a table)</td>
+                      </tr><tr style="background-color: rgb(210,222,239); border: solid white 1px !important;;">
+                         <td>***</td><td>make it available in a non-proprietary open format (e.g., CSV as well as of Excel)</td>
+                      </tr><tr style="background-color: rgb(234,239,247); border: solid white 1px !important;;">
+                         <td>****</td><td>use URIs to denote things, so that people can point at your stuff</td>
+                       </tr><tr style="background-color: rgb(210,222,239); border: solid white 1px !important;;">
+                         <td>*****</td><td>link your data to other data to provide context</td>
+                      </tr>
+					</tbody></table><br>
+					<div style="margin-right: auto; margin-left: auto; font-size: 50%; top: 50px; position: relative; color: #aaa;">
+						Adapted from Berners-Lee, <a href="http://5stardata.info/en/">http://5stardata.info/en/</a>, accessed 03-27-2016
+					</div><br><br>
+				</section>	
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Open Data in the Research Environment</div>
+					<div class="fragment" style="position: relative; margin-left: 120px; margin-right: auto; top: 90px; font-size: 82%; width: 50%; text-align: left;">
+						<span style="padding-left: 13px;">Benefits<br></span>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px; top: 20px;">Reproduction
+							<li style="position: relative; left: 23px; top: 20px;">Meta-analyses
+							<li style="position: relative; left: 23px; top: 20px;">Scientific Inquiry Approaches
+							<li style="position: relative; left: 23px; top: 20px;">New Questions
+							<li style="position: relative; left: 23px; top: 20px;">Meet Requirements
+							<li style="position: relative; left: 23px; top: 20px;">Increase Impact/Visibility
+						</ul><br><br><br><br>
+					</div>
+					<div class="fragment" style="position: absolute; left: 810px; top: 150px; font-size: 82%; width: 43%; text-align: left;">
+						<span style="padding-left: 13px;">Barriers<br></span>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px; top: 20px;">Competition
+							<li style="position: relative; left: 23px; top: 20px;">Lack of recognition
+							<li style="position: relative; left: 23px; top: 20px;">Difficult and time consuming
+							<li style="position: relative; left: 23px; top: 20px;">Sensitivity issues
+						</ul>
+					</div>
+					<div style="margin-right: auto; margin-left: auto; font-size: 50%; top: 50px; position: relative; color: #aaa;">
+						See also, <a href="http://swcarpentry.github.io/git-novice/10-open/">http://swcarpentry.github.io/git-novice/10-open/</a>
+					</div><br><br>
+                </section>
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Open Data in the Research Environment</div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 90px; font-size: 82%; width: 55%; text-align: left; line-height: 200%;">
+						Competition > embargos<br>
+						Lack of recognition > citations<br>
+						Difficult and time consuming > data repositories<br>
+						Sensitivity issues > restrict access
+					</div><br><br><br>
+                </section>
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Open Data in the World Writ Large</div>
+					<div class="fragment" style="position: relative; margin-left: 120px; margin-right: auto; top: 90px; font-size: 82%; width: 42%; text-align: left; line-height: 140%;">
+						<span style="padding-left: 13px;">Benefits<br></span>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px; top: 20px;">Transparency
+							<li style="position: relative; left: 23px; top: 20px;">Informed choice (democracy)
+							<li style="position: relative; left: 23px; top: 20px;">Improved efficiencies/productivities
+							<li style="position: relative; left: 23px; top: 20px;">Organizational Branding (like “greening” of a business)
+							<li style="position: relative; left: 23px; top: 20px;">Commercial Value
+						</ul><br><br><br><br>
+					</div>
+					<div class="fragment" style="position: absolute; left: 810px; top: 150px; font-size: 82%; width: 33%; text-align: left;">
+						<span style="padding-left: 13px;">Barriers<br></span>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px; top: 20px;">Makes valuable resources selectively accessible
+							<li style="position: relative; left: 23px; top: 20px;">May be co-opted by corporate business for profit
+							<li style="position: relative; left: 23px; top: 20px;">Should businesses “open” their data?
+						</ul>
+					</div>
+                </section>
+			
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Open Data in the World Writ Large</div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 90px; font-size: 82%; width: 45%; text-align: left; line-height: 140%;">
+						Sustainability (who pays)?<br>
+						Open Data  %LIKE%  Free Trade?<br>
+						Who does it empower (social justice)?<br>
+						Who does the work for whom?<br>
+						Data Shadows and Dataveillance<br>
+					</div><br><br><br>
+                </section>
+				
+				<section>
+					... break ...
+				</section>
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Open Source</div>
+					<div style="position: relative; margin-left: 30%; margin-right: auto; top: 30px; font-size: 82%; width: 50%; text-align: left;">
+						1. Free Redistribution<br>
+						2. Source Code<br>
+						3. Derived Works<br>
+						4. Integrity of The Author's Source Code<br>
+						5. No Discrimination Against Persons or Groups<br>
+						6. No Discrimination Against Fields of Endeavor<br>
+						7. Distribution of License<br>
+						8. License Must Not Be Specific to a Product<br>
+						9. License Must Not Restrict Other Software<br>
+						10. License Must Be Technology-Neutral
+					</div>
+					<div style="margin-right: auto; margin-left: auto; font-size: 50%; top: 90px; position: relative; color: #aaa;">
+						<a href="https://opensource.org/osd">https://opensource.org/osd</a>
+					</div><br>
+				</section>
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Open Source Example</div>
+					<div style="position: relative; margin-left: 10%; margin-right: auto; top: 30px; font-size: 82%; width: 75%; text-align: left;">
+						<pre><code>
+This set of tools is distributed under the GNU General Public License
+<a href="http://www.gnu.org/licenses/gpl-3.0.en.html">http://www.gnu.org/licenses/gpl-3.0.en.html</a>
+						</code></pre>
+						<br>-- or –-<br><br>
+						<pre><code>
+/* googleTiles.php is adapted by Tim Norris 07/18/2008 from the perl script   */
+/* googleTiles.pl published under the GNU general public license:             */
+/* <a href="http://www.gnu.org/licenses/gpl-3.0.en.html">http://www.gnu.org/licenses/gpl-3.0.en.html</a>                                */
+/* The original perl script was found here:                                   */
+/* <a href="http://www.usnaviguide.com/google-tile.htm">http://www.usnaviguide.com/google-tile.htm</a>                                 */
+						</code></pre>
+					</div><br>
+				</section>
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Free Software</div>
+					<div style="position: relative; margin-left: 5%; margin-right: auto; top: 40px; font-size: 82%; width: 85%; text-align: left;">
+						<span style="padding-left: 13px;">Benefits<br></span>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px; top: 20px;">The freedom to run the program as you wish, for any purpose (freedom 0).
+							<li style="position: relative; left: 23px; top: 20px;">The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this. 
+							<li style="position: relative; left: 23px; top: 20px;">The freedom to redistribute copies so you can help your neighbor (freedom 2). 
+							<li style="position: relative; left: 23px; top: 20px;">The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this. 
+						</ul>
+					</div>
+					<div style="margin-right: auto; margin-left: auto; font-size: 50%; top: 90px; position: relative; color: #aaa;">
+						<a href="http://www.gnu.org/philosophy/free-sw.html">http://www.gnu.org/philosophy/free-sw.html</a>
+					</div><br>
+                </section>				
+
+				<section>
+					<div style="position: relative; width: 50%; margin-left: 15%; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Some Open Source Licenses</div>
+					<div style="width: 75%; position: relative; margin-left: 17%; margin-right: auto; top: 40px; text-align: center; line-height: 100%;">
+						<ul style="font-size: 85%;">
+							<li style="position: relative; left: 23px; top: 20px;">Apache License, 2.0 (Apache-2.0)
+							<li style="position: relative; left: 23px; top: 20px;">BSD 3-Clause "New" or "Revised" license (BSD-3-Clause)
+							<li style="position: relative; left: 23px; top: 20px;">BSD 2-Clause "Simplified" or "FreeBSD" license (BSD-2-Clause)
+							<li style="position: relative; left: 23px; top: 20px;">GNU General Public License (GPL)
+							<li style="position: relative; left: 23px; top: 20px;">GNU Library or "Lesser" General Public License (LGPL)
+							<li style="position: relative; left: 23px; top: 20px;">MIT license (MIT)
+							<li style="position: relative; left: 23px; top: 20px;">Mozilla Public License 2.0 (MPL-2.0)
+						</ul>
+					</div>
+					<div style="position: absolute; top: 50px; left: 10px; width: 100%; text-align: left; font-size: 50%; line-height: normal;"><img src="../../common/assets/images-for-data/gnu.png" width= 200></div>
+					<div style="position: absolute; top: 400px; left: 80px; width: 100%; text-align: left; font-size: 50%; line-height: normal;"><img src="../../common/assets/images-for-data/mit.png" width= 180></div>
+					<div style="position: absolute; top: 450px; left: 450px; width: 100%; text-align: left; font-size: 50%; line-height: normal;"><img src="../../common/assets/images-for-data/bsd.png" width= 180></div>
+					<div style="position: absolute; top: 380px; left: 950px; width: 100%; text-align: left; font-size: 50%; line-height: normal;"><img src="../../common/assets/images-for-data/mozilla.jpg" width= 300></div>
+					<div style="position: absolute; top: -30px; left: 1000px; width: 100%; text-align: left; font-size: 50%; line-height: normal;"><img src="../../common/assets/images-for-data/apache.png" width= 400></div>
+					<div style="position: absolute; top: 650px; left: 700px; width: 100%; text-align: left; font-size: 50%; line-height: normal;"><a href="https://opensource.org/licenses/category">https://opensource.org/licenses/category</a></div>
+				</section>
+				
+                <section>
+					<div style="width: 60%; position: relative; margin-left: 5%; margin-right: auto; top: -10px; font-weight: bold; font-size: 110%;">Open Source Software</div>
+					<div style="position: relative; margin-left: 120px; margin-right: auto; top: 40px; font-size: 72%; width: 42%; text-align: left;">
+						<span style="padding-left: 13px;">Linux<br></span>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px;">Fedora/Redhat
+							<li style="position: relative; left: 23px;">Debian
+							<li style="position: relative; left: 23px;">Ubuntu
+							<li style="position: relative; left: 23px;">OpenSUSE
+						</ul><br>
+						<span style="padding-left: 13px;">Apache<br></span>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px;">Webservers
+							<li style="position: relative; left: 23px;">Flex
+							<li style="position: relative; left: 23px;">Solr/Lucene
+						</ul><br>
+						<span style="padding-left: 13px;">Databases<br></span>
+						<ul style="font-size: 95%;">						
+							<li style="position: relative; left: 23px;">MySQL
+							<li style="position: relative; left: 23px;">PostgreSQL
+							<li style="position: relative; left: 23px;">MongoDB
+							<li style="position: relative; left: 23px;">SQLite
+						</ul><br>
+					</div>
+					<div style="position: absolute; left: 500px; top: 100px; font-size: 72%; width: 33%; text-align: left;">
+						<span style="padding-left: 13px;">Languages<br></span>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px;">Java and javascript
+							<li style="position: relative; left: 23px;">C++ (on linux)
+							<li style="position: relative; left: 23px;">PHP
+							<li style="position: relative; left: 23px;">Python
+							<li style="position: relative; left: 23px;">R
+						</ul><br>
+						<span style="padding-left: 13px;">Content Management Systems<br></span>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px;">Wordpress
+							<li style="position: relative; left: 23px;">Drupal
+							<li style="position: relative; left: 23px;">Joomla
+						</ul><br>
+						<span style="padding-left: 13px;">Office<br></span>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px;">Open Office
+							<li style="position: relative; left: 23px;">Libre Office
+							<li style="position: relative; left: 23px;">Notepad++
+						</ul>
+					</div>
+					<div style="position: absolute; left: 950px; top: -10px; font-size: 72%; width: 33%; text-align: left;">
+						<span style="padding-left: 13px;">Maps and GIS<br></span>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px;">QGIS
+							<li style="position: relative; left: 23px;">Mapserver
+							<li style="position: relative; left: 23px;">GDAL/OGR
+						</ul><br>
+						<span style="padding-left: 13px;">Desktop<br></span>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px;">Mozilla Firefox
+							<li style="position: relative; left: 23px;">Mozilla Thunderbird
+							<li style="position: relative; left: 23px;">7-zip
+							<li style="position: relative; left: 23px;">KeePass (password manager)
+							<li style="position: relative; left: 23px;">Virtual Box (machine sims)
+						</ul><br>
+						<span style="padding-left: 13px;">Graphics<br></span>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px;">GIMP (like photoshop)
+							<li style="position: relative; left: 23px;">Handbrake (video processor)
+							<li style="position: relative; left: 23px;">VLC (video tools)
+							<li style="position: relative; left: 23px;">InkScape (drawing)
+							<li style="position: relative; left: 23px;">Meshlab (3D model editor)
+							<li style="position: relative; left: 23px;">Blender (3D animation)
+						</ul>
+					</div>
+                </section>
+				
+				<section>
+					... break ...
+				</section>
+
+				<section>
+					<div style="position: relative; width: 70%; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">What about data in the research environment</div>
+					<div style="width: 75%; position: relative; margin-left: 17%; margin-right: auto; top: 40px; text-align: center; line-height: 100%;">
+						<ul style="font-size: 85%;">
+							<li style="position: relative; left: 23px; top: 20px;">What happens if a researcher leaves the institution?
+							<li style="position: relative; left: 23px; top: 20px;">What if someone needs access to my data?
+							<li style="position: relative; left: 23px; top: 20px;">How long do I have to keep them and how should I discard them?
+							<li style="position: relative; left: 23px; top: 20px;">How do I set policy for my team, my lab or myself?
+							<li style="position: relative; left: 23px; top: 20px;">But I’m collaborating: whose policy wins?
+							<li style="position: relative; left: 23px; top: 20px;">What if there isn’t a policy?
+							<li style="position: relative; left: 23px; top: 20px;">What help can I get?
+						</ul>
+					</div>
+					<div style="color: #aaa; position: absolute; top: 650px; left: 10px; width: 100%; text-align: left; font-size: 50%; line-height: normal;">Briney, K., Goben, A., & Zilinski, L. (2015). Do You Have an Institutional Data Policy? A Review of the Current Landscape of Library Data Services and Institutional Data Policies. Journal of Librarianship and Scholarly Communication, 3(2), eP1232. <a href="http://dx.doi.org/10.7710/2162-3309.1232">http://dx.doi.org/10.7710/2162-3309.1232</a></div>
+				</section>
+
+				<section>
+					<img src="../../common/assets/images-for-data/briney01.png" style="max-height: 650px; position: relative; top:-42px;">
+					<div style="color: #aaa; position: absolute; top: 650px; left: 10px; width: 100%; text-align: left; font-size: 50%; line-height: normal;">Briney, K., Goben, A., & Zilinski, L. (2015). Do You Have an Institutional Data Policy? A Review of the Current Landscape of Library Data Services and Institutional Data Policies. Journal of Librarianship and Scholarly Communication, 3(2), eP1232. <a href="http://dx.doi.org/10.7710/2162-3309.1232">http://dx.doi.org/10.7710/2162-3309.1232</a></div>
+				</section>
+				
+				<section>
+					<img src="../../common/assets/images-for-data/briney02.png" style="max-height: 400px; position: relative; top: 100px;">
+					<div style="color: #aaa; position: absolute; top: 650px; left: 10px; width: 100%; text-align: left; font-size: 50%; line-height: normal;">Briney, K., Goben, A., & Zilinski, L. (2015). Do You Have an Institutional Data Policy? A Review of the Current Landscape of Library Data Services and Institutional Data Policies. Journal of Librarianship and Scholarly Communication, 3(2), eP1232. <a href="http://dx.doi.org/10.7710/2162-3309.1232">http://dx.doi.org/10.7710/2162-3309.1232</a></div>
+				</section>				
+
+				<section>
+					<img src="../../common/assets/images-for-data/briney03.png" style="max-height: 650px; position: relative; top:-42px;">
+					<div style="color: #aaa; position: absolute; top: 650px; left: 10px; width: 100%; text-align: left; font-size: 50%; line-height: normal;">Briney, K., Goben, A., & Zilinski, L. (2015). Do You Have an Institutional Data Policy? A Review of the Current Landscape of Library Data Services and Institutional Data Policies. Journal of Librarianship and Scholarly Communication, 3(2), eP1232. <a href="http://dx.doi.org/10.7710/2162-3309.1232">http://dx.doi.org/10.7710/2162-3309.1232</a></div>
+				</section>
+
+				<section>
+					<div style="line-height: 100%; font-size: 53%; width: 100%; position: relative; top:-42px;">
+						<table border=0 cellspacing=0 cellpadding=0 style='width: 1300px; border-collapse:collapse'>
+						 <tr>
+						  <td valign=bottom style='width:300px;'><b><span>Peer Institutions</span></b></td>
+						  <td width=54 valign=bottom style='width:40.5pt;'><b><span>last revised</span></b></td>
+						  <td width=60 valign=bottom style='width:45.0pt;'><b><span>responsible party</span></b></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'><b><span>ownership stated</span></b></td>
+						  <td width=84 valign=bottom style='width:63.0pt;'><b><span>&quot;research data&quot; defined</span></b></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'><b><span>data retention (min.)</span></b></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'><b><span>data access</span></b></td>
+						  <td width=36 valign=bottom style='width:27.0pt;'><b><span>PI moves</span></b></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'><b><span>disputes</span></b></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'><b><span>take-down</span></b></td>
+						  <td width=120 valign=bottom style='width:1.25in;'><b><span>notes</span></b></td>
+						 </tr>
+						 <tr style=''>
+						  <td valign=bottom style='width:280px;'>Case Western Reserve University</td>
+						  <td width=54 valign=bottom style='width:40.5pt;'>2000</td>
+						  <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>&nbsp;</td>
+						  <td width=84 valign=bottom style='width:63.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>3 years</td>
+						  <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+						  <td width=36 valign=bottom style='width:27.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+						  <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+						  <td width=120 valign=bottom style='width:1.25in;'>&nbsp;</td>
+						 </tr>
+						 <tr style=''>
+						  <td valign=bottom style='width:280px;'>New York University</td>
+						  <td width=54 valign=bottom style='width:40.5pt;'>2010</td>
+						  <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+						  <td width=84 valign=bottom style='width:63.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>3 years</td>
+						  <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+						  <td width=36 valign=bottom style='width:27.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+						  <td width=120 valign=bottom style='width:1.25in;'></td>
+						 </tr>
+						 <tr style=''>
+						  <td valign=bottom style='width:280px;'>University of Rochester</td>
+						  <td width=54 valign=bottom style='width:40.5pt;'>2014</td>
+						  <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+						  <td width=84 valign=bottom style='width:63.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>3 years</td>
+						  <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+						  <td width=36 valign=bottom style='width:27.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'></td>
+						  <td width=120 valign=bottom style='width:1.25in;'></td>
+						 </tr>
+						 <tr style=''>
+						  <td valign=bottom style='width:280px;'><i>University of Miami</i></td>
+						  <td width=54 valign=bottom style='width:40.5pt;'><i>2014</i></td>
+						  <td width=60 valign=bottom style='width:45.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=84 valign=bottom style='width:63.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'><i>7 years</i></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'></td>
+						  <td width=36 valign=bottom style='width:27.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'></td>
+						  <td width=120 valign=bottom style='width:1.25in;'><i>in faculty manual</i></td>
+						 </tr>
+						 <tr style=''>
+						  <td valign=bottom style='width:280px;'>Emory University</td>
+						  <td width=54 valign=bottom style='width:40.5pt;'>2007</td>
+						  <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=84 valign=bottom style='width:63.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>7 years</td>
+						  <td width=42 valign=bottom style='width:31.5pt;'></td>
+						  <td width=36 valign=bottom style='width:27.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'></td>
+						  <td width=120 valign=bottom style='width:1.25in;'>in faculty
+						  manual</td>
+						 </tr>
+						 <tr style=''>
+						  <td valign=bottom style='width:280px;'>Brandeis University</td>
+						  <td width=54 valign=bottom style='width:40.5pt;'>2003</td>
+						  <td width=60 valign=bottom style='width:45.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+						  <td width=84 valign=bottom style='width:63.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'></td>
+						  <td width=36 valign=bottom style='width:27.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'></td>
+						  <td width=120 valign=bottom style='width:1.25in;'>in IP policy</td>
+						 </tr>
+						 <tr style=''>
+						  <td valign=bottom style='width:280px;'>University of Southern California</td>
+						  <td width=54 valign=bottom style='width:40.5pt;'>2001</td>
+						  <td width=60 valign=bottom style='width:45.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+						  <td width=84 valign=bottom style='width:63.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'></td>
+						  <td width=36 valign=bottom style='width:27.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'></td>
+						  <td width=120 valign=bottom style='width:1.25in;'>in IP policy </td>
+						 </tr>
+						 <tr style=''>
+						  <td valign=bottom style='width:280px;'>Carnegie Mellon University</td>
+						  <td width=54 valign=bottom style='width:40.5pt;'></td>
+						  <td width=60 valign=bottom style='width:45.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=84 valign=bottom style='width:63.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'></td>
+						  <td width=36 valign=bottom style='width:27.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'></td>
+						  <td width=120 valign=bottom style='width:1.25in;'></td>
+						 </tr>
+						 <tr style=''>
+						  <td valign=bottom style='width:280px;'>Syracuse University</td>
+						  <td width=54 valign=bottom style='width:40.5pt;'></td>
+						  <td width=60 valign=bottom style='width:45.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=84 valign=bottom style='width:63.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'></td>
+						  <td width=36 valign=bottom style='width:27.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'></td>
+						  <td width=120 valign=bottom style='width:1.25in;'></td>
+						 </tr>
+						 <tr style=''>
+						  <td valign=bottom style='width:280px;'>Tulane University</td>
+						  <td width=54 valign=bottom style='width:40.5pt;'></td>
+						  <td width=60 valign=bottom style='width:45.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=84 valign=bottom style='width:63.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'></td>
+						  <td width=36 valign=bottom style='width:27.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'></td>
+						  <td width=120 valign=bottom style='width:1.25in;'></td>
+						 </tr>
+						 <tr style=''>
+						  <td valign=bottom style='width:280px;'>Vanderbilt University</td>
+						  <td width=54 valign=bottom style='width:40.5pt;'>&nbsp;</td>
+						  <td width=60 valign=bottom style='width:45.0pt;'>&nbsp;</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>&nbsp;</td>
+						  <td width=84 valign=bottom style='width:63.0pt;'>&nbsp;</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>&nbsp;</td>
+						  <td width=42 valign=bottom style='width:31.5pt;'>&nbsp;</td>
+						  <td width=36 valign=bottom style='width:27.0pt;'>&nbsp;</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>&nbsp;</td>
+						  <td width=42 valign=bottom style='width:31.5pt;'>&nbsp;</td>
+						  <td width=120 valign=bottom style='width:1.25in;'>&nbsp;</td>
+						 </tr>
+						</table>
+					</div>
+					<div style="color: #aaa; position: absolute; top: 650px; left: 50px; width: 100%; text-align: left; font-size: 50%; line-height: normal;">Norris, T., and S. Shreeves. “Data Curation Initiative: 2015-16 Report and Recommendations.” University of Miami Libraries. Miami, FL.</div>
+				</section>
+						 
+				<section>
+					<div style="line-height: 100%; font-size: 53%; width: 100%;">
+						<table border=0 cellspacing=0 cellpadding=0 style='width: 1300px; border-collapse:collapse'>
+						 <tr>
+						  <td valign=bottom style='width:300px;'><b><span>Non-Peer Institutions</span></b></td>
+						  <td width=54 valign=bottom style='width:40.5pt;'><b><span>last revised</span></b></td>
+						  <td width=60 valign=bottom style='width:45.0pt;'><b><span>responsible party</span></b></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'><b><span>ownership stated</span></b></td>
+						  <td width=84 valign=bottom style='width:63.0pt;'><b><span>&quot;research data&quot; defined</span></b></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'><b><span>data retention (min.)</span></b></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'><b><span>data access</span></b></td>
+						  <td width=36 valign=bottom style='width:27.0pt;'><b><span>PI moves</span></b></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'><b><span>disputes</span></b></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'><b><span>take-down</span></b></td>
+						  <td width=120 valign=bottom style='width:1.25in;'><b><span>notes</span></b></td>
+						 </tr>
+						 <tr style=''><td valign=bottom style='width:280px;
+						  border-top:none;'>University of Kentucky</td>
+						  <td width=54 valign=bottom style='width:40.5pt;'>2011</td>
+						  <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+						  <td width=84 valign=bottom style='width:63.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>5 years</td>
+						  <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+						  <td width=36 valign=bottom style='width:27.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+						  <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+						  <td width=120 valign=bottom style='width:1.25in;'></td>
+						 </tr>
+						 <tr style=''>
+						  <td valign=bottom style='width:280px;'>Johns Hopkins University</td>
+						  <td width=54 valign=bottom style='width:40.5pt;'>2008</td>
+						  <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+						  <td width=84 valign=bottom style='width:63.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>5 years</td>
+						  <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+						  <td width=36 valign=bottom style='width:27.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+						  <td width=120 valign=bottom style='width:1.25in;'></td>
+						 </tr>
+						 <tr style=''>
+						  <td valign=bottom style='width:280px;'>Duke University</td>
+						  <td width=54 valign=bottom style='width:40.5pt;'>2007</td>
+						  <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+						  <td width=84 valign=bottom style='width:63.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>5 Years</td>
+						  <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+						  <td width=36 valign=bottom style='width:27.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'></td>
+						  <td width=120 valign=bottom style='width:1.25in;'></td>
+						 </tr>
+						 <tr style=''>
+						  <td valign=bottom style='width:280px;'>The University of Edinburgh</td>
+						  <td width=54 valign=bottom style='width:40.5pt;'>2011</td>
+						  <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=84 valign=bottom style='width:63.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+						  <td width=36 valign=bottom style='width:27.0pt;'></td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+						  <td width=120 valign=bottom style='width:1.25in;'>not really a policy</td>
+						 </tr>
+						 <tr style=''>
+						  <td valign=bottom style='width:280px;'>University of Pittsburg</td>
+						  <td width=54 valign=bottom style='width:40.5pt;'>2009</td>
+						  <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+						  <td width=84 valign=bottom style='width:63.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>7 years</td>
+						  <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+						  <td width=36 valign=bottom style='width:27.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'></td>
+						  <td width=120 valign=bottom style='width:1.25in;'></td>
+						 </tr>
+						 <tr style=''>
+						  <td valign=bottom style='width:280px;'>Pennsylvania State</td>
+						  <td width=54 valign=bottom style='width:40.5pt;'>2003</td>
+						  <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+						  <td width=84 valign=bottom style='width:63.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>5 years</td>
+						  <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+						  <td width=36 valign=bottom style='width:27.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'></td>
+						  <td width=42 valign=bottom style='width:31.5pt;'></td>
+						  <td width=120 valign=bottom style='width:1.25in;'>set of guidelines</td>
+						 </tr>
+						 <tr style=''>
+						  <td valign=bottom style='width:280px;'>Stanford</td>
+						  <td width=54 valign=bottom style='width:40.5pt;'>1997</td>
+						  <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+						  <td width=84 valign=bottom style='width:63.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>3 years</td>
+						  <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+						  <td width=36 valign=bottom style='width:27.0pt;'>X</td>
+						  <td width=66 valign=bottom style='width:49.5pt;'>&nbsp;</td>
+						  <td width=42 valign=bottom style='width:31.5pt;'>&nbsp;</td>
+						  <td width=120 valign=bottom style='width:1.25in;'>&nbsp;</td>
+						 </tr>
+						</table>
+					</div>
+					<div style="color: #aaa; position: absolute; top: 650px; left: 50px; width: 100%; text-align: left; font-size: 50%; line-height: normal;">Norris, T., and S. Shreeves. “Data Curation Initiative: 2015-16 Report and Recommendations.” University of Miami Libraries. Miami, FL.</div>
+				</section>
+				
+				<section>
+					<div style="position: relative; width: 50%; margin-left: 25%; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">UM Faculty Manual</div>
+					<div style="font-size: 90%; width: 90%; position: relative; margin-left: auto; margin-right: auto; top: 30px; text-align: left; line-height: 130%;">
+						<b>Innovations:</b> patentable or un-patentable inventions, discoveries, processes, compositions, research tools, <b>data</b>, ideas, <b>databases</b>, know-how, copyrightable works that are not scholarly or artistic Creations and tangible property, including biological organisms, engineering prototypes, drawings, and software created, conceived or made by Applicable Personnel within their normal duties (including clinical duties), course of studies, field of research or scholarly expertise or making more than Incidental Use of University’s resources. (p. 136)		
+					</div>
+					<div style="font-size: 90%; width: 90%; position: relative; margin-left: auto; margin-right: auto; top: 80px; text-align: left; line-height: 130%;">
+						<b>3.3</b> Innovations are <b>owned by the University</b>; revenues derived from commercialization of Innovations will be shared with the Applicable Personnel as detailed in Section VI. (p. 138)
+					</div><br><br>
+				</section>
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Innovations at UM</div>
+					<div style="position: relative; margin-left: 60px; margin-right: auto; top: 30px; font-size: 82%; width: 80%; text-align: left;">
+						<span style="padding-left: 13px;">Concept to commercialization seminars (C2C)</span>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px;"><a href="http://www.miami.edu/index.php/u_innovation/resources_for_um/C2C/">http://www.miami.edu/index.php/u_innovation/resources_for_um/C2C/</a>
+						</ul><br><br>
+						<span style="padding-left: 13px; margin-top: 10px;">Submit an invention</span>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px;"><a href="http://www.miami.edu/index.php/u_innovation/submit_an_invention/">http://www.miami.edu/index.php/u_innovation/submit_an_invention/</a>
+						</ul><br><br><br><br>
+					</div>
+					<div style="position: absolute; top: 450px; left: 900px; text-align: left; font-size: 50%; line-height: normal;"><img src="../../common/assets/images-for-data/uminnovation.jpg" width= 400><br><a href="http://www.miami.edu/index.php/u_innovation/">http://www.miami.edu/index.php/u_innovation/</a></div>
+				</section>
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">UM Faculty Manual</div>
+					<div style="position: relative; margin-left: 60px; margin-right: auto; top: 30px; font-size: 82%; width: 90%; text-align: left;">
+						<ul style="font-size: 95%; line-height: 140%;">
+							<li style="position: relative; left: 23px;">Page 21 – all data with respect to hiring, promotion, and tenure of faculty
+							<li style="position: relative; left: 23px;">Page 26 – senate appointments and voting
+						    <br><br>
+							<li style="position: relative; left: 23px;"><b>Page 124 – Policies and Procedures of the University of Miami Relating to Allegations of Misconduct in Research </b>
+							<br><div style="width: 95%; margin-left:23px; margin-top: 10px;">
+								<i>In order to respond to allegations regarding the integrity of any published report, adequate records of the original protocols and research records, including all <b>raw data</b>, must be <b>preserved for at least seven years</b> (or longer if required by the funding agency), so they can be made available for inspection...</i>
+							</div>
+							<div style="width: 95%; margin-left:23px; font-size: 70%; margin-top: 10px;">
+								<i>...Fabrication is making up data or results and recording or reporting them. Falsification is manipulating research materials, equipment, or processes, or changing or omitting data or results such that the research is not accurately represented in the research record.</i>
+							</div>
+						</ul><br><br>
+					</div>
+				</section>
+				
+				<section>
+					<div style="position: relative; width: 50%; margin-left: 25%; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Grad Student Handbook</div>
+					<div style="font-size: 90%; width: 88%; position: relative; margin-left: auto; margin-right: auto; top: 30px; text-align: left; line-height: 130%;">
+						The University of Miami expects all graduate students to adhere to the highest standards of ethics and academic integrity. All forms of academic fraud are strictly prohibited. These include, but are not limited to, plagiarism, cheating, collusion, falsification, violation of professional ethics, or misrepresentation of <b>research data</b>. Students certify that all work (whether an examination, dissertation, thesis, research paper, research project, form of creative expression, <b>experimental data</b>, or any other academic undertaking) submitted for evaluation, presentation, or publication meets these standards. (p. 16)
+					</div><br>
+				</section>
+				
+				<section>
+					... break ...
+				</section>
+				
+                <section>
+					<div style="font-weight: bold; font-size: 110%;">Assignment #2</div>
+                    <div style="position: relative; top: 30px; font-size:75%; text-align: left; width:70%; margin-right: auto; margin-left: auto; line-height: 130%;">
+					    <ul style="position: relative; margin-bottom: 43px;">
+						    <li style="position: relative; font-size: 85%;">write a <b>one-paragraph statement</b> on <b>sharing and access policy</b> for your data
+								<ul style="position: relative; margin-bottom: 23px; font-size: 95%;">
+									<li>can be for your research lab, your internship, or some other relevant work
+									<li><b>one project only</b>
+								</ul>
+						    <li style="position: relative; font-size: 85%;"><b>Due</b> Next <b>Wednesday February 22nd</b> by end of the day
+						    <li style="position: relative;  font-size: 85%;"><b>Email</b> to <a href="mailto:tnorris@miami.edu">tnorris@miami.edu</a> and <a href="mailto:aclark@rsmas.miami.edu">aclark@rsmas.miami.edu</a>
+						    <li style="position: relative;  font-size: 85%;"><b>Filename:</b> 201702&lt;twoDigitDate&gt;_&lt;yourLastName&gt;_RSM674.Assignment02.doc
+						</ul>
+						<div class="fragment" style="position: relative; margin-left: 140px;">What we are looking for<br>
+					    <ul style="font-size: 95%;">
+						    <li style="position: relative; font-size: 85%;">Use of correct terminology for licenses (look them up!!)
+						    <li style="position: relative; font-size: 85%;">Thoughtful consideration of how and why reuse will take place
+						    <li style="position: relative; font-size: 85%;">the filename is correct
+						    <li style="position: relative; font-size: 85%;">Simple but clear
+						</ul></div>
+					</div>
+					<br><br>
+                </section>	
+				
+                <section>
+					<div style="font-weight: bold; font-size: 110%;">Reading for Next Week</div>
+                    <div style="position: relative; top: 30px; font-size:75%; text-align: left; width:70%; margin-right: auto; margin-left: auto;">
+						Monday<br>
+					    <ul style="position: relative; margin-bottom: 23px;">
+						    <li style="position: relative; font-size: 85%;">Download the Data Curation Profiles Toolkit from <a href="http://docs.lib.purdue.edu/dcptoolkit/">http://docs.lib.purdue.edu/dcptoolkit/</a>. Read the introduction and skim the rest.
+						</ul>
+						Wednesday<br>
+						<ul>
+						    <li style="position: relative; font-size: 85%;">Download and use/modify the interview guide template from <a href="http://bit.ly/1Ll8gl7">http://bit.ly/1Ll8gl7</a>.
+						    <li style="position: relative; font-size: 85%;">Choose one data curation profile to read from <a href="http://docs.lib.purdue.edu/dcp/">http://docs.lib.purdue.edu/dcp/</a>.
+						</ul>
+						<br><br>
+					</div>
+					<br><br>
+                </section>
+				
+				<section>
+					... break ...
+				</section>
+				
+                <section>
+                    <div style="width: 65%; margin-right: auto; margin-left: auto; position: relative; top: -50px;">
+                        <br><span style="font-weight: bold; font-size: 110%;">Course Overview<br><br></span>
+                        <div style="font-size: 70%; text-align: left; line-height: 170%; position: relative; left: 70px;">
+                            <ul>
+                                <li style="position: relative; left: 23px;">Why manage data / what is data management
+                                <li style="position: relative; left: 23px;">Data lifecycle and data management plans
+                                <li style="position: relative; left: 23px;">Data types, stages and formats
+                                <li style="position: relative; left: 23px;">Data organization / tips, tools and techniques
+                                <li style="position: relative; left: 23px;">Intellectual property and licensing
+                                <li style="position: relative; left: 23px; color: #999;">Research data profiles
+                                <li style="position: relative; left: 23px; color: #999;">Contextual Metadata
+                                <li style="position: relative; left: 23px; color: #999;">Software carpentry: command line, python, and r
+                                <li style="position: relative; left: 23px; color: #999;">Sharing data, data repositories and data preservation
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+				
+	            <section>
+					<div style="font-weight: bold; font-size: 110%;">Why manage data?</div>
+					<div style="width: 50%; margin-left: 15%; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 43px;">
+						<ul style="font-size: 85%; line-height: 140%; color: #999">
+							<li style="position: relative; left: 23px;">Lots of data, what to do with it?
+							<li style="position: relative; left: 23px;">Many researcher benefits of data management
+							<ul style="font-size: 85%;">
+								<li style="position: relative; left: 23px;">Greater exposure of research
+								<li style="position: relative; left: 23px;">Easier workflows, less frustration, more productivity
+							</ul>
+							<li style="position: relative; left: 23px;">Many scientific/social benefits of data management
+							<ul style="font-size: 85%;">
+								<li style="position: relative; left: 23px;">Sharing and re-use
+								<li style="position: relative; left: 23px;">New discoveries
+							</ul>
+							<li style="position: relative; left: 23px;">Not managing data is NOT an option
+							<ul style="font-size: 85%;">
+								<li style="position: relative; left: 23px;">Cost are to high (both personal and professional)
+							</ul>
+						</ul>
+					</div><br><br><br>
+					<div class="fragment" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+                    <div style="position: absolute; left: 900px; top: 100px;"><image src="../../common/assets/images-for-data/carrot.png" style="background: none !important; max-width: 70%;"></div>
+                    <div style="position: absolute; left: 950px; top: 340px;"><image src="../../common/assets/images-for-data/stick.png" style="background: none !important;  max-width: 70%;"></div>
+					<div style="position: absolute; left: 350px; top: 550px; font-weight: bold; font-size: 100%;">Is there more?</div>
+					<div style="position: absolute; left: 1150px; top: 160px; font-weight: bold; font-size: 100%;">Values?</div>
+					</div>
+                </section>	
+				
+				<section>
+                    <div style="position: absolute; width: 30%; right: 50px;">
+						<div style="font-size: 110%; font-weight: bold; text-align: center;">DMP</div><br>
+                            <ol style="font-size: 70%">
+                                <li style="position: relative; left: 23px; margin-bottom: 10px;">Information about Data and Data Formats
+                                <li style="position: relative; left: 23px; margin-bottom: 10px;">Metadata Content and Format
+                                <li style="position: relative; left: 23px; margin-bottom: 10px;">Policies for access sharing and re-use
+                                <li style="position: relative; left: 23px; margin-bottom: 10px;">Long-term storage and preservation
+                                <li style="position: relative; left: 23px; margin-bottom: 10px;">Budget
+                            </ol><br><br><br>
+					</div>
+                    <div style="position: absolute; top: 0px; left: 0px; width: 100%; text-align: left;"><img src="../../common/assets/images-for-data/DataCycle.png" style="position: relative; max-width: 60%; left: 10px;"></div>
+                </section>
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Data</div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 40px; font-size: 75%; width: 63%; text-align: left;">
+						<b>Types</b>
+						<div style="margin-left: 40px;">quant/qual – structured/unstructured – captured/derived – indexical/attribute/metadata – primary/tertiary</div><br>
+						<b>Levels</b><br>
+						<div style="margin-left: 40px;">unprocessed – processed/derived – analyzed - published</div><br>
+						<b>Formats</b><br>
+						<div style="margin-left: 40px;">proprietary/open/mixed – lossy/lossless – text/images/other</div>
+					</div><br><br><br>
+                </section>		
+
+				<section>
+				
+					<section>
+						<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Organization</div>
+						<div style="position: relative; margin-left: auto; margin-right: auto; top: 40px; font-size: 75%; width: 63%; text-align: left;">
+							<b>File System Structure</b>
+							<div style="margin-left: 40px;">time/space (project) – data levels/types/formats</div><br>
+							<b>File Naming Conventions</b><br>
+							<div style="margin-left: 40px;">time/space (project) – human/machine</div><br>
+						</div><br><br><br>
+					</section>
+					
+					<section>
+						<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Data Organization</div>
+						<div style="position: relative; margin-left: auto; margin-right: auto; top: 40px; font-size: 75%; width: 25%; text-align: left;">
+							File System Structure<br>
+							File Naming Conventions<br>
+							Tagging<br>
+						</div><br><br><br>
+					</section>
+					
+					<section data-background-image="../../common/assets/images-for-data/timeAndSpace.jpg">
+						<div style="position: absolute; left: 260px; top: -0px; font-size: 110%; line-height: 100%; color: #ddd;"><strong>Data Organization</strong></div>
+						<div style="position: absolute; left: 350px; top: 160px; font-size: 90%; color: #ddd;">Think about time and space<br>
+							<ul style="font-size: 85%; line-height: 140%; color: #ddd">
+								<li style="position: relative; left: 23px;">Directory Structure
+								<li style="position: relative; left: 23px;">File Naming Convention
+							</ul>
+						</div>
+						<div style="position: absolute; left: 440px; top: 450px; font-size: 90%; text-align: left; color: #ddd;">Save time and space</div>
+					</section>
+					
+					<section>
+						<div style="font-weight: bold; font-size: 110%;">... again ...</div>
+						<div style="width: 40%; font-size: 85%; top: 150px; left: 150px; position: relative;">
+							this will get personal
+						</div>
+						<br><br><br><br><br>
+					</section>
+					
+					<section>
+						<div style="font-weight: bold; font-size: 110%;">So ....</div>
+						<div style="width: 75%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 43px;">
+							<ul style="font-size: 85%; line-height: 120%;">
+								<li style="position: relative; left: 23px;">Take a moment, think about your file naming for your articles that you save
+								<ul style="font-size: 85%;">
+									<li style="position: relative; left: 23px;">Are you consistent?
+									<li style="position: relative; left: 23px;">Is it easy to find what you want several months later?
+								</ul>
+								<li style="position: relative; left: 23px; margin-top: 50px;">Now think about your file structure for your downloaded articles
+								<ul style="font-size: 85%;">
+									<li style="position: relative; left: 23px;">Where are the actual files on the computer?
+									<li style="position: relative; left: 23px;">How many folders are you using?
+									<li style="position: relative; left: 23px;">Are they logically organized?
+								</ul>
+							</ul>
+						</div><br><br><br>
+					</section>
+					
+					<section>
+						<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">The benefits of consistent data file labeling are:</div>
+						<div style="position: relative; margin-left: auto; margin-right: auto; margin-top: 40px; font-size: 75%; width: 85%; text-align: left;">
+							<ul style="font-size: 95%;">
+								<li style="position: relative; left: 23px;">Data files are distinguishable from each other within their containing folders
+								<li style="position: relative; left: 23px;">Data file naming prevents confusion when multiple people are working on shared files
+								<li style="position: relative; left: 23px;">Data files are easier to locate and browse
+								<li style="position: relative; left: 23px;">Data files can be retrieved not only by the creator but by other users
+								<li style="position: relative; left: 23px;">Data files can be sorted in logical sequence
+								<li style="position: relative; left: 23px;">Data files are not accidentally overwritten or deleted
+								<li style="position: relative; left: 23px;">Different versions of data files can be identified
+								<li style="position: relative; left: 23px;">If data files are moved to other storage platform their names will retain useful context 
+							</ul>
+						</div>
+						<div style="position: relative; margin-top: 120px; margin-left: auto; margin-right: auto; width: 700px; text-align: left; font-size: 50%"><a href="http://datalib.edina.ac.uk/mantra/organisingdata/">http://datalib.edina.ac.uk/mantra/organisingdata/</a></div>
+					</section>
+
+					<section>
+						<img src="../../common/assets/images-for-data/versions.gif" style="max-width: 800px;">
+						<br><br>
+						<div style="font-size: 50%; margin-left: auto; margin-right: auto; width: 600px;"><a href="http://phdcomics.com/comics.php?f=1531">http://phdcomics.com/comics.php?f=1531</a></div>
+					</section>
+				
+					<section>
+						<img src="../../common/assets/images-for-data/final.gif" style="max-width: 800px;">
+						<div style="font-size: 50%; margin-left: auto; margin-right: auto; width: 600px;"><a href="http://phdcomics.com/comics.php?f=1531">http://phdcomics.com/comics.php?f=1531</a></div>
+					</section>				
+
+					<section>
+						<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Retraction Watch</div>
+						<div style="position: relative; margin-left: auto; margin-right: auto; margin-top: 40px; font-size: 75%; width: 85%; text-align: left;">
+							“A problem with a malfunctioning computer and image storage and <span style="color: #f00">mislabeling</span> led to the assembling by one of the co-authors of images that were previously published by our research group. I didn’t detect the problem when the manuscript was sent for publication. Although the conclusions were not compromised in any of the two papers, we retract the papers precisely because some images were wrongly used.”
+							<br><br>
+							Principal investigator Jorge Leitão
+						</div>
+						<div style="position: relative; margin-top: 120px; margin-left: auto; margin-right: auto; width: 1100px; text-align: left; font-size: 45%"><a href="http://retractionwatch.com/2014/10/17/this-situation-left-me-ashamed-and-infuriated-with-myself-scientist-retracts-two-papers/">http://retractionwatch.com/2014/10/17/this-situation-left-me-ashamed-and-infuriated-with-myself-scientist-retracts-two-papers/</a></div>
+					</section>
+					
+					<section>
+						<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Retraction Watch</div>
+						<div style="position: relative; margin-left: auto; margin-right: auto; margin-top: 40px; font-size: 75%; width: 85%; text-align: left;">
+							“In the 2011 paper (<a href="http://jb.asm.org/content/196/22/3980">http://jb.asm.org/content/196/22/3980</a>), it was first submitted to other 2 journal (JBC and RNA Biology), whom requested a lot of modifications, and therefore, <span style="color: #f00;">we accumulated a lot of processed data files</span>. In between the process, the hard-drive of the computer that was used to store the data files (which is <span style="color: #f00;">shared by 5 research groups</span>) stopped working due <span style="color: #f00;">data overloading</span>. Nonetheless, we were able to retrieve the original data, or so we thought. At the time, I was responsible for composing the final figures of each paper that we produced, and asked the team members to give me the files. In Figure 8 of this paper, it seemed that there has been a <span style="color: #f00;">labeling error</span> in the source files, and I did not realize that some images where duplicated in the experiment that was being represented, neither that parts of the image had already been published. I should stress that that the images were produced in our lab and represent our data.”
+							<br><br>
+							First author <a href="http://groups.ist.utl.pt/bsrg/Team/cramos.html">Christian Ramos</a>
+						</div>
+						<div style="position: relative; margin-top: 20px; margin-left: auto; margin-right: auto; width: 1100px; text-align: left; font-size: 45%"><a href="http://retractionwatch.com/2014/10/17/this-situation-left-me-ashamed-and-infuriated-with-myself-scientist-retracts-two-papers/">http://retractionwatch.com/2014/10/17/this-situation-left-me-ashamed-and-infuriated-with-myself-scientist-retracts-two-papers/</a></div>
+					</section>
+					
+					<section>
+						<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">The Bottom Line: File Naming Conventions<br><span style="font-size: 90%">[ best practices ]</span></div>
+						<div style="position: relative; margin-left: 20px; margin-right: auto; top: 30px; font-size: 75%; width: 50%; text-align: left;">
+							<span class="fragment" style="padding-left: 13px;">DO</span><br>
+							<ul style="font-size: 95%;">
+								<li class="fragment" style="position: relative; left: 23px; top: 20px;">useCamelCasing.docx
+								<li class="fragment" style="position: relative; left: 23px; top: 20px;">use_underscores.txt
+								<li class="fragment" style="position: relative; left: 23px; top: 20px;">2015_put_The_Date_First.csv
+								<li class="fragment" style="position: relative; left: 23px; top: 20px;">20150214_useTwoDidgitDateNumbers.xls
+								<li class="fragment" style="position: relative; left: 23px; top: 20px;">startASeriesWithLeadingZeros_001.doc
+								<li class="fragment" style="position: relative; left: 23px; top: 20px;">20150214_UM_date-place.shp
+								<li class="fragment" style="position: relative; left: 23px; top: 20px;">useFileExtensions.jpg
+							</ul><br><br><br><br>
+						</div>
+						<div class="fragment" style="position: absolute; left: 50px; top: 560px; text-align: left; font-size: 45%; width: 300px;">
+							Mac: Finder: Finder -> Preferences ... : "Advanced" tab, check box next to "Show all filename extensions"
+						</div>
+						<div class="fragment" style="position: absolute; left: 1050px; top: 560px; text-align: left; font-size: 45%; width: 300px;">
+							Win 8 and above: File Explorer: "view" tab, check the box next to: "File name extensions"
+						</div>
+						<div style="position: absolute; left: 620px; top: 150px; font-size: 75%; width: 55%; text-align: left;">
+							<span class="fragment" style="padding-left: 13px;">DON'T</span><br>
+							<ul style="font-size: 95%;">
+								<li class="fragment" style="position: relative; left: 23px; top: 20px;">Leave spaces in the file name.xls
+								<li class="fragment" style="position: relative; left: 23px; top: 20px;">Use the default save name from MS word that is simply the long first sentence in your file.doc
+								<li class="fragment" style="position: relative; left: 23px; top: 20px;">January 5 2015 Samples with the month first.xls
+								<li class="fragment" style="position: relative; left: 23px; top: 20px;">Label as final version.doc
+								<li class="fragment" style="position: relative; left: 23px; top: 20px;">special characters: & , * % # ; * ( ) ! @$ ^ ~ ' { } [ ] ? < > - + /
+								<li class="fragment" style="position: relative; left: 23px; top: 20px;">No more than about 25 characters
+							</ul><br><br><br><br>
+						</div>
+						<div style="position: relative; margin-left: auto; margin-right: auto; top: -60px; text-align: center; font-size: 45%; width: 50%;">
+							<img src="../../common/assets/images-for-data/dilbertFileNaming.gif"><br><a href="http://assets.amuniversal.com/42ec27b03718012ea5cb00163e41dd5b">http://assets.amuniversal.com/42ec27b03718012ea5cb00163e41dd5b</a>
+						</div>
+					</section>
+
+					<section>
+						<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">The Bottom Line: File Naming Conventions<br><span style="font-size: 90%">[ best practices ]</span></div>
+						<div style="position: relative; margin-left: 20px; margin-right: auto; top: 30px; font-size: 75%; width: 50%; text-align: left; color: #aaa;">
+							<span style="padding-left: 13px;">DO</span><br>
+							<ul style="font-size: 95%;">
+								<li style="position: relative; left: 23px; top: 20px;">useCamelCasing.docx
+								<li style="position: relative; left: 23px; top: 20px;">use_underscores.txt
+								<li style="position: relative; left: 23px; top: 20px;">2015_put_The_Date_First.csv
+								<li style="position: relative; left: 23px; top: 20px;">20150214_useTwoDidgitDateNumbers.xls
+								<li style="position: relative; left: 23px; top: 20px;">startASeriesWithLeadingZeros_001.doc
+								<li style="position: relative; left: 23px; top: 20px;">20150214_UM_date-place.shp
+								<li style="position: relative; left: 23px; top: 20px;">useFileExtensions.jpg
+							</ul><br><br><br><br>
+						</div>
+						<div style="position: absolute; left: 620px; top: 150px; font-size: 75%; width: 55%; text-align: left; color: #aaa;">
+							<span style="padding-left: 13px;">DON'T</span><br>
+							<ul style="font-size: 95%;">
+								<li style="position: relative; left: 23px; top: 20px;">Leave spaces in the file name.xls
+								<li style="position: relative; left: 23px; top: 20px;">Use the default save name from MS word that is simply the long first sentence in your file.doc
+								<li style="position: relative; left: 23px; top: 20px;">January 5 2015 Samples with the month first.xls
+								<li style="position: relative; left: 23px; top: 20px;">Label as final version.doc
+								<li style="position: relative; left: 23px; top: 20px;">special characters: & , * % # ; * ( ) ! @$ ^ ~ ' { } [ ] ? < > - + /
+								<li style="position: relative; left: 23px; top: 20px;">No more than about 25 characters
+							</ul><br><br><br><br>
+						</div>
+						<div style="position: relative; margin-left: auto; margin-right: auto; top: -60px; text-align: center; font-size: 45%; width: 50%;">
+							<img src="../../common/assets/images-for-data/dilbertFileNaming.gif"><br><a href="http://assets.amuniversal.com/42ec27b03718012ea5cb00163e41dd5b">http://assets.amuniversal.com/42ec27b03718012ea5cb00163e41dd5b</a>
+						</div>
+						<div style="color: #aaa; position: absolute; left: 50px; top: 560px; text-align: left; font-size: 45%; width: 300px;">
+							Mac: Finder: Finder -> Preferences ... : "Advanced" tab, check box next to "Show all filename extensions"
+						</div>
+						<div style="color: #aaa; position: absolute; left: 1050px; top: 560px; text-align: left; font-size: 45%; width: 300px;">
+							Win 8 and above: File Explorer: "view" tab, check the box next to: "File name extensions"
+						</div>
+						<div style="position: absolute; left: 130px; top: 160px; font-size: 200%; width: 1100px; text-align: center; border: 4px red solid; padding-top: 80px; padding-bottom: 80px; background-color: #fff;">Be Consistent</div>
+					</section>
+					
+					<section>
+						<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Information in the Filename</div>
+						<div style="position: relative; margin-left: auto; margin-right: auto; margin-top: 40px; font-size: 75%; width: 65%; text-align: left; line-height: 140%;">
+							<ul style="font-size: 95%;">
+								<li style="position: relative; left: 23px;">Version number
+								<li style="position: relative; left: 23px;">Date of creation
+								<li style="position: relative; left: 23px;">Name of creator
+								<li style="position: relative; left: 23px;">Description of content
+								<li style="position: relative; left: 23px;">Name of research team/department associated with the data
+								<li style="position: relative; left: 23px;">Publication date
+								<li style="position: relative; left: 23px;">Project number
+							</ul>
+						</div>
+						<div style="position: relative; margin-top: 120px; margin-left: auto; margin-right: auto; width: 700px; text-align: left; font-size: 50%"><a href="http://datalib.edina.ac.uk/mantra/organisingdata/">http://datalib.edina.ac.uk/mantra/organisingdata/</a></div>
+						<div class="fragment" style="position: absolute; top: 120px; left: 800px; width: 300px; text-align: left; font-size: 90%"><b>metadata</b></div>
+					</section>
+					
+					<section>
+						<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Quick Review</div>
+						<div style="position: relative; margin-left: auto; margin-right: auto; margin-top: 40px; font-size: 75%; width: 25%; text-align: left; line-height: 140%;">
+							<ul style="position: relative; left: 43px;">
+								<li>Organization
+								<li>Context
+								<li>Consistency
+							</ul>
+							<div style="font-size: 70%; text-align: middle; margin-top: 50px;">YYYYMMDD_projectID_place_001.ext</div>
+						</div>
+					</section>
+					
+					<section>
+						<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">File Naming Strategies</span></div>
+						<div style="position: relative; margin-left: 140px; margin-right: auto; top: 30px; font-size: 75%; width: 50%; text-align: left;">
+							<span class="fragment" style="padding-left: 13px;">Order by date:</span><br>
+							<div class="fragment" style="padding-left: 23px;font-size: 75%; ">19550412_notes_MassObs.docx<br>19550412_questionnaire_MassObs.pdf<br>19631215_notes_Gorer.docx<br>19631215_questionnaire_Gorer.pdf</div><br>
+							<span class="fragment" style="padding-left: 13px;">Order by subject:</span><br>
+							<div class="fragment" style="padding-left: 23px;font-size: 75%; ">Gorer_notes_19631215.docx<br>Gorer_questionnaire_19631215.pdf<br>MassObs_notes_19550412.docx<br>MassObs_questionnaire_19550412.pdf</div>
+						</div>
+						<div style="position: absolute; left: 720px; top: 90px; font-size: 75%; width: 55%; text-align: left;">
+							<span class="fragment" style="padding-left: 13px;">Order by type:</span><br>
+							<div class="fragment" style="padding-left: 23px;font-size: 75%; ">Notes_Gorer_19631215.docx<br>Notes_MassObs_19550412.docx<br>Questionnaire_Gorer_19631215.pdf<br>Questionnaire_MassObs_19550412.pdf</div><br>
+							<span class="fragment" style="padding-left: 13px;">Forced order with numbering:</span><br>
+							<div class="fragment" style="padding-left: 23px;font-size: 75%; ">01_MassObs_questionnaire_19550412.pdf<br>02_MassObs_notes_19550412.docx<br>03_Gorer_questionnaire_19631215.pdf<br>04_Gorer_notes_19631215.doc</div>
+						</div>
+						<div style="position: relative; margin-left: auto; margin-right: auto; top: 150px; text-align: center; font-size: 35%; width: 80%; color: #999;">
+							Whitmire, Amanda L. (2014). Research Data Management Curriculum, Lecture 4: Data Organization Oregon State University Libraries. Retrieved 11/04/2015 from: <a href="http://figshare.com/articles/GRAD521_Research_Data_Management_Lectures/1003835">http://figshare.com/articles/GRAD521_Research_Data_Management_Lectures/1003835</a>
+						</div>
+					</section>
+					
+					<section>
+						<div style="position: absolute; left: 80px; top: 60px; font-weight: bold; font-size: 110%; width: 400px; text-align: left;">On using dates in file names…</div>
+						<div style="font-size: 30%; text-align: right; margin-left: 45%; width: 40%;">
+							<table border=0 cellpadding=0 cellspacing=0 width=405 style='border-collapse:
+							 collapse;table-layout:fixed;width:304pt'>
+							 <col width=119 style='mso-width-source:userset;mso-width-alt:4352;width:89pt'>
+							 <col width=96 style='mso-width-source:userset;mso-width-alt:3510;width:72pt'>
+							 <col width=94 style='mso-width-source:userset;mso-width-alt:3437;width:71pt'>
+							 <col width=96 style='mso-width-source:userset;mso-width-alt:3510;width:72pt'>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl74 dir=LTR width=119 style='height:15.75pt;width:89pt'>US
+							  standard</td>
+							  <td class=xl68 dir=LTR width=96 style='border-left:none;width:72pt'>MM/DD/YY</td>
+							  <td class=xl71 dir=LTR width=94 style='border-left:none;width:71pt'>DD/MM/YY</td>
+							  <td class=xl65 dir=LTR width=96 style='border-left:none;width:72pt'>YYYY-MM-DD</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>12-January-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>01-12-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>12-01-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-01-12</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>15-February-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>02-15-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>15-02-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-02-15</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>27-March-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>03-27-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>27-03-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-03-27</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>11-April-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>04-11-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>11-04-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-04-11</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>20-May-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>05-20-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>20-05-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-05-20</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>06-June-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>06-06-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>06-06-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-06-06</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>18-July-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>07-18-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>18-07-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-07-18</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>07-August-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>08-07-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>07-08-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-08-07</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>09-September-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>09-09-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>09-09-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-09-09</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>14-October-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>10-14-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>14-10-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-10-14</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>24-November-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>11-24-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>24-11-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-11-24</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>18-December-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>12-18-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>18-12-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-12-18</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>19-January-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>01-19-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>19-01-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-01-19</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>27-February-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>02-27-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>27-02-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-02-27</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>15-March-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>03-15-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>15-03-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-03-15</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>27-April-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>04-27-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>27-04-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-04-27</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>11-May-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>05-11-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>11-05-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-05-11</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>17-June-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>06-17-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>17-06-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-06-17</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>16-July-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>07-16-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>16-07-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-07-16</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>04-August-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>08-04-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>04-08-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-08-04</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>14-September-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>09-14-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>14-09-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-09-14</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>26-October-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>10-26-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>26-10-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-10-26</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>26-November-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>11-26-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>26-11-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-11-26</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>08-December-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>12-08-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>08-12-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-12-08</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>22-January-13</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>01-22-13</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>22-01-13</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2013-01-22</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>20-February-13</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>02-20-13</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>20-02-13</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2013-02-20</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>26-March-13</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>03-26-13</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>26-03-13</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2013-03-26</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>18-April-13</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>04-18-13</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>18-04-13</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2013-04-18</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>23-May-13</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>05-23-13</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>23-05-13</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2013-05-23</td>
+							 </tr>
+							</table>
+						</div>
+						<div style="position: absolute; left: 665px; top: -5px;">
+							<svg width="160px;" height="820px" xmlns="https://www.w3.org/TR/SVG/" viewbox="0 0 160 820">
+								<rect width="135" height="815" style="fill: none; stroke: red; stroke-width: 6" />
+							</svg>
+						</div>
+						<div style="position: absolute; left: 180px; top: 400px; font-size: 60%">
+							based on collection date
+						</div>
+					</section>
+
+					<section>
+						<div style="position: absolute; left: 80px; top: 60px; font-weight: bold; font-size: 110%; width: 400px; text-align: left;">On using number order in file names…</div>
+						<div style="font-size: 30%; text-align: right; margin-left: 45%; width: 40%;">
+							<table border=0 cellpadding=0 cellspacing=0 width=442 style='border-collapse:
+							 collapse;table-layout:fixed;width:332pt'>
+							 <col width=150 style='mso-width-source:userset;mso-width-alt:5485;width:113pt'>
+							 <col width=96 style='mso-width-source:userset;mso-width-alt:3510;width:72pt'>
+							 <col width=97 style='mso-width-source:userset;mso-width-alt:3547;width:73pt'>
+							 <col width=99 style='mso-width-source:userset;mso-width-alt:3620;width:74pt'>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl74 dir=LTR width=150 style='height:15.75pt;width:113pt'>US
+							  standard</td>
+							  <td class=xl68 dir=LTR width=96 style='border-left:none;width:72pt'>MM/DD/YY</td>
+							  <td class=xl71 dir=LTR width=97 style='border-left:none;width:73pt'>DD/MM/YY</td>
+							  <td class=xl65 dir=LTR width=99 style='border-left:none;width:74pt'>YYYY-MM-DD</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>12-January-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>01-12-11</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>12-01-11</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2011-01-12</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>19-January-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>01-19-12</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>19-01-12</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2012-01-19</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>22-January-13</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>01-22-13</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>22-01-13</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2013-01-22</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>15-February-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>02-15-11</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>15-02-11</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2011-02-15</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>20-February-13</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>02-20-13</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>20-02-13</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2013-02-20</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>27-February-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>02-27-12</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>27-02-12</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2012-02-27</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>15-March-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>03-15-12</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>15-03-12</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2012-03-15</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>26-March-13</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>03-26-13</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>26-03-13</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2013-03-26</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>27-March-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>03-27-11</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>27-03-11</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2011-03-27</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>11-April-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>04-11-11</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>11-04-11</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2011-04-11</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>18-April-13</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>04-18-13</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>18-04-13</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2013-04-18</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>27-April-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>04-27-12</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>27-04-12</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2012-04-27</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>11-May-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>05-11-12</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>11-05-12</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2012-05-11</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>20-May-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>05-20-11</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>20-05-11</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2011-05-20</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>23-May-13</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>05-23-13</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>23-05-13</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2013-05-23</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>06-June-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>06-06-11</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>06-06-11</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2011-06-06</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>17-June-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>06-17-12</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>17-06-12</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2012-06-17</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>16-July-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>07-16-12</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>16-07-12</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2012-07-16</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>18-July-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>07-18-11</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>18-07-11</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2011-07-18</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>04-August-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>08-04-12</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>04-08-12</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2012-08-04</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>07-August-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>08-07-11</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>07-08-11</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2011-08-07</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>09-September-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>09-09-11</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>09-09-11</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2011-09-09</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>14-September-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>09-14-12</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>14-09-12</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2012-09-14</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>14-October-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>10-14-11</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>14-10-11</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2011-10-14</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>26-October-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>10-26-12</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>26-10-12</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2012-10-26</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>24-November-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>11-24-11</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>24-11-11</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2011-11-24</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>26-November-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>11-26-12</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>26-11-12</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2012-11-26</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>08-December-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>12-08-12</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>08-12-12</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2012-12-08</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=150 style='height:15.75pt;width:113pt'>18-December-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>12-18-11</td>
+							  <td class=xl72 dir=LTR width=97 style='border-left:none;width:73pt'>18-12-11</td>
+							  <td class=xl66 dir=LTR width=99 style='border-left:none;width:74pt'>2011-12-18</td>
+							 </tr>
+							</table>
+						</div>
+						<div style="position: absolute; left: 810px; top: -5px;">
+							<svg width="120px;" height="820px" xmlns="https://www.w3.org/TR/SVG/" viewbox="0 0 130 820">
+								<rect width="85" height="815" style="fill: none; stroke: red; stroke-width: 6" />
+							</svg>
+						</div>
+						<div style="position: absolute; left: 180px; top: 400px; font-size: 60%">
+							based on month
+						</div>
+					</section>
+					
+					<section>
+						<div style="position: absolute; left: 80px; top: 60px; font-weight: bold; font-size: 110%; width: 400px; text-align: left;">On using number order in file names…</div>
+						<div style="font-size: 30%; text-align: right; margin-left: 45%; width: 40%;">					
+							<table border=0 cellpadding=0 cellspacing=0 width=427 style='border-collapse:
+							 collapse;table-layout:fixed;width:320pt'>
+							 <col width=120 style='mso-width-source:userset;mso-width-alt:4388;width:90pt'>
+							 <col width=105 style='mso-width-source:userset;mso-width-alt:3840;width:79pt'>
+							 <col width=107 style='mso-width-source:userset;mso-width-alt:3913;width:80pt'>
+							 <col width=95 style='mso-width-source:userset;mso-width-alt:3474;width:71pt'>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl74 dir=LTR width=120 style='height:15.75pt;width:90pt'>US
+							  standard</td>
+							  <td class=xl68 dir=LTR width=105 style='border-left:none;width:79pt'>MM/DD/YY</td>
+							  <td class=xl71 dir=LTR width=107 style='border-left:none;width:80pt'>DD/MM/YY</td>
+							  <td class=xl65 dir=LTR width=95 style='border-left:none;width:71pt'>YYYY-MM-DD</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>04-August-12</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>08-04-12</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>04-08-12</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2012-08-04</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>06-June-11</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>06-06-11</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>06-06-11</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2011-06-06</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>07-August-11</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>08-07-11</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>07-08-11</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2011-08-07</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>08-December-12</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>12-08-12</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>08-12-12</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2012-12-08</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>09-September-11</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>09-09-11</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>09-09-11</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2011-09-09</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>11-April-11</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>04-11-11</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>11-04-11</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2011-04-11</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>11-May-12</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>05-11-12</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>11-05-12</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2012-05-11</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>12-January-11</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>01-12-11</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>12-01-11</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2011-01-12</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>14-October-11</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>10-14-11</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>14-10-11</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2011-10-14</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>14-September-12</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>09-14-12</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>14-09-12</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2012-09-14</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>15-February-11</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>02-15-11</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>15-02-11</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2011-02-15</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>15-March-12</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>03-15-12</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>15-03-12</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2012-03-15</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>16-July-12</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>07-16-12</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>16-07-12</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2012-07-16</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>17-June-12</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>06-17-12</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>17-06-12</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2012-06-17</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>18-July-11</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>07-18-11</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>18-07-11</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2011-07-18</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>18-December-11</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>12-18-11</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>18-12-11</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2011-12-18</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>18-April-13</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>04-18-13</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>18-04-13</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2013-04-18</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>19-January-12</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>01-19-12</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>19-01-12</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2012-01-19</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>20-May-11</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>05-20-11</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>20-05-11</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2011-05-20</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>20-February-13</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>02-20-13</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>20-02-13</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2013-02-20</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>22-January-13</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>01-22-13</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>22-01-13</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2013-01-22</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>23-May-13</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>05-23-13</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>23-05-13</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2013-05-23</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>24-November-11</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>11-24-11</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>24-11-11</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2011-11-24</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>26-October-12</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>10-26-12</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>26-10-12</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2012-10-26</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>26-November-12</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>11-26-12</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>26-11-12</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2012-11-26</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>26-March-13</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>03-26-13</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>26-03-13</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2013-03-26</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>27-March-11</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>03-27-11</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>27-03-11</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2011-03-27</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>27-February-12</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>02-27-12</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>27-02-12</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2012-02-27</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=120 style='height:15.75pt;width:90pt'>27-April-12</td>
+							  <td class=xl69 dir=LTR width=105 style='border-left:none;width:79pt'>04-27-12</td>
+							  <td class=xl72 dir=LTR width=107 style='border-left:none;width:80pt'>27-04-12</td>
+							  <td class=xl66 dir=LTR width=95 style='border-left:none;width:71pt'>2012-04-27</td>
+							 </tr>
+							</table>
+						</div>
+						<div style="position: absolute; left: 895px; top: -5px;">
+							<svg width="130px;" height="820px" xmlns="https://www.w3.org/TR/SVG/" viewbox="0 0 130 820">
+								<rect width="80" height="815" style="fill: none; stroke: red; stroke-width: 6" />
+							</svg>
+						</div>
+						<div style="position: absolute; left: 180px; top: 400px; font-size: 60%">
+							based on day
+						</div>
+					</section>					
+
+					<section>
+						<div style="position: absolute; left: 80px; top: 60px; font-weight: bold; font-size: 110%; width: 400px; text-align: left;">On using number order in file names…</div>
+						<div style="font-size: 30%; text-align: right; margin-left: 45%; width: 40%;">
+							<table border=0 cellpadding=0 cellspacing=0 width=405 style='border-collapse:
+							 collapse;table-layout:fixed;width:304pt'>
+							 <col width=119 style='mso-width-source:userset;mso-width-alt:4352;width:89pt'>
+							 <col width=96 style='mso-width-source:userset;mso-width-alt:3510;width:72pt'>
+							 <col width=94 style='mso-width-source:userset;mso-width-alt:3437;width:71pt'>
+							 <col width=96 style='mso-width-source:userset;mso-width-alt:3510;width:72pt'>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl74 dir=LTR width=119 style='height:15.75pt;width:89pt'>US
+							  standard</td>
+							  <td class=xl68 dir=LTR width=96 style='border-left:none;width:72pt'>MM/DD/YY</td>
+							  <td class=xl71 dir=LTR width=94 style='border-left:none;width:71pt'>DD/MM/YY</td>
+							  <td class=xl65 dir=LTR width=96 style='border-left:none;width:72pt'>YYYY-MM-DD</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>12-January-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>01-12-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>12-01-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-01-12</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>15-February-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>02-15-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>15-02-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-02-15</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>27-March-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>03-27-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>27-03-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-03-27</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>11-April-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>04-11-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>11-04-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-04-11</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>20-May-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>05-20-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>20-05-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-05-20</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>06-June-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>06-06-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>06-06-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-06-06</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>18-July-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>07-18-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>18-07-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-07-18</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>07-August-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>08-07-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>07-08-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-08-07</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>09-September-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>09-09-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>09-09-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-09-09</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>14-October-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>10-14-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>14-10-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-10-14</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>24-November-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>11-24-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>24-11-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-11-24</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>18-December-11</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>12-18-11</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>18-12-11</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2011-12-18</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>19-January-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>01-19-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>19-01-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-01-19</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>27-February-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>02-27-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>27-02-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-02-27</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>15-March-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>03-15-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>15-03-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-03-15</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>27-April-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>04-27-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>27-04-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-04-27</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>11-May-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>05-11-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>11-05-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-05-11</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>17-June-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>06-17-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>17-06-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-06-17</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>16-July-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>07-16-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>16-07-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-07-16</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>04-August-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>08-04-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>04-08-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-08-04</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>14-September-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>09-14-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>14-09-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-09-14</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>26-October-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>10-26-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>26-10-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-10-26</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>26-November-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>11-26-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>26-11-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-11-26</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>08-December-12</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>12-08-12</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>08-12-12</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2012-12-08</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>22-January-13</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>01-22-13</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>22-01-13</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2013-01-22</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>20-February-13</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>02-20-13</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>20-02-13</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2013-02-20</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>26-March-13</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>03-26-13</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>26-03-13</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2013-03-26</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>18-April-13</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>04-18-13</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>18-04-13</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2013-04-18</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl75 dir=LTR width=119 style='height:15.75pt;width:89pt'>23-May-13</td>
+							  <td class=xl69 dir=LTR width=96 style='border-left:none;width:72pt'>05-23-13</td>
+							  <td class=xl72 dir=LTR width=94 style='border-left:none;width:71pt'>23-05-13</td>
+							  <td class=xl66 dir=LTR width=96 style='border-left:none;width:72pt'>2013-05-23</td>
+							 </tr>
+							</table>
+						</div>
+						<div style="position: absolute; left: 665px; top: -5px;">
+							<svg width="160px;" height="820px" xmlns="https://www.w3.org/TR/SVG/" viewbox="0 0 160 820">
+								<rect width="135" height="815" style="fill: none; stroke: red; stroke-width: 6" />
+							</svg>
+						</div>
+						<div style="position: absolute; left: 990px; top: -5px;">
+							<svg width="130px;" height="820px" xmlns="https://www.w3.org/TR/SVG/" viewbox="0 0 130 820">
+								<rect width="85" height="815" style="fill: none; stroke: red; stroke-width: 6" />
+							</svg>
+						</div>
+						<div style="position: absolute; left: 180px; top: 400px; font-size: 60%; width: 300px;">
+							based on <b>collection date</b> only works with <b>year-month-day</b>
+						</div>
+					</section>
+					
+					<section>
+						<div style="position: absolute; left: 80px; top: 60px; font-weight: bold; font-size: 110%; width: 440px; text-align: left;">On using leading zeros in filenames …</div>
+						<div style="font-size: 41%; text-align: right; margin-left: 45%; width: 40%;">					
+							<table border=0 cellpadding=0 cellspacing=0 width=192 style='border-collapse:
+							 collapse;table-layout:fixed;width:144pt'>
+							 <col width=64 span=3 style='width:48pt'>
+							 <tr height=21 style='height:15.75pt;mso-yfti-firstrow:yes;mso-yfti-irow:0'>
+							  <td height=21 class=xl65 width=64 style='height:15.75pt;width:48pt;
+							  padding-bottom:0in;padding-top:0in'>21</td>
+							  <td class=xl65 width=64 style='width:48pt;padding-bottom:0in;padding-top:
+							  0in'>160</td>
+							  <td class=xl65 width=64 style='width:48pt;padding-bottom:0in;padding-top:
+							  0in'>021</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:1'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>23</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>163</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>023</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:2'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>23</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>188</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>023</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:3'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>29</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>21</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>029</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:4'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>51</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>220</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>051</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:5'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>56</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>23</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>056</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:6'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>58</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>23</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>058</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:7'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>64</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>238</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>064</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:8'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>82</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>257</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>082</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:9'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>160</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>285</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>160</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:10'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>163</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>29</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>163</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:11'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>188</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>293</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>188</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:12'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>220</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>294</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>220</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:13'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>238</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>308</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>238</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:14'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>257</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>312</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>257</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:15'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>285</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>334</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>285</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:16'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>293</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>368</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>293</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:17'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>294</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>370</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>294</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:18'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>308</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>386</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>308</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:19'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>312</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>388</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>312</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:20'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>334</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>410</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>334</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:21'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>368</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>433</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>368</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:22'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>370</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>450</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>370</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:23'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>386</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>450</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>386</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:24'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>388</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>477</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>388</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:25'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>410</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>478</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>410</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:26'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>433</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>493</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>433</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:27'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>450</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>494</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>450</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:28'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>450</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>51</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>450</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:29'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>477</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>56</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>477</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:30'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>478</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>58</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>478</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:31'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>493</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>64</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>493</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt;mso-yfti-irow:32;mso-yfti-lastrow:yes'>
+							  <td height=21 class=xl65 style='height:15.75pt;padding-bottom:0in;padding-top:
+							  0in'>494</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>82</td>
+							  <td class=xl65 style='padding-bottom:0in;padding-top:0in'>494</td>
+							 </tr>
+							 <tr height=21 style='height:15.75pt'>
+							  <td height=21 class=xl66 style='height:15.75pt'></td>
+							  <td colspan=2 style='mso-ignore:colspan'></td>
+							 </tr>
+							</table>
+						</div>
+						<div class= "fragment" style="position: absolute; left: 0px; top: 0px; width 100%; height: 100%;">
+							<div class="fragment fade-out">
+								<div style="position: absolute; left: 775px; top: -5px;">
+									<svg width="130px;" height="796px" xmlns="https://www.w3.org/TR/SVG/" viewbox="0 0 130 810">
+										<rect width="70" height="796" style="fill: none; stroke: red; stroke-width: 6" />
+									</svg>
+								</div>
+								<div style="position: absolute; left: 180px; top: 400px; font-size: 60%; width: 300px;">
+									Human order
+								</div>
+							</div>
+						</div>
+						<div class= "fragment" style="position: absolute; left: 0px; top: 0px; width 100%; height: 100%;">
+							<div class="fragment fade-out">
+								<div style="position: absolute; left: 842px; top: -5px;">
+									<svg width="130px;" height="796px" xmlns="https://www.w3.org/TR/SVG/" viewbox="0 0 130 810">
+										<rect width="70" height="796" style="fill: none; stroke: red; stroke-width: 6" />
+									</svg>
+								</div>
+								<div style="position: absolute; left: 180px; top: 400px; font-size: 60%; width: 300px;">
+									Machine order
+								</div>
+							</div>
+						</div>
+						<div class= "fragment" style="position: absolute; left: 0px; top: 0px; width 100%; height: 100%;">
+							<div class="fragment fade-out">
+								<div style="position: absolute; left: 912px; top: -5px;">
+									<svg width="130px;" height="796px" xmlns="https://www.w3.org/TR/SVG/" viewbox="0 0 130 810">
+										<rect width="70" height="796" style="fill: none; stroke: red; stroke-width: 6" />
+									</svg>
+								</div>
+								<div style="position: absolute; left: 180px; top: 400px; font-size: 60%; width: 300px;">
+									Human <b><i>and</i></b> Machine order
+								</div>
+							</div>
+						</div>
+					</section>	
+					
+					<section>
+						<div style="font-weight: bold; font-size: 110%;">File Versioning</div>
+						<div style="width: 75%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 43px;">
+							<ul style="font-size: 85%; line-height: 120%;">
+								<li class="fragment" style="position: relative; left: 23px;">Turn on versioning or tracking in collaborative documents
+								<ul class="fragment" style="font-size: 85%;">
+									<li style="position: relative; left: 23px;">Word documents, excel, etc
+									<li style="position: relative; left: 23px;">Learn by doing!
+								</ul>
+								<li class="fragment" style="position: relative; left: 23px; margin-top: 50px;">Turn on versioning for storage utilities 
+								<ul class="fragment" style="font-size: 85%;">
+									<li style="position: relative; left: 23px;">Wikis
+									<li style="position: relative; left: 23px;">Google Docs, BOX
+								</ul>
+								<li class="fragment" style="position: relative; left: 23px; margin-top: 50px;">Consider using version control software 
+								<ul class="fragment" style="font-size: 85%;">
+									<li style="position: relative; left: 23px;">Subversion (apache foundation), TortoiseSVN (commerical subversion), git (Linus Torvalds), bitbukkit and/or github (both commercial versions of git)
+									<li style="position: relative; left: 23px;">Mostly designed for collaborative coding, but . . . 
+									<li style="position: relative; left: 23px;">Check with your lab/colleagues as to their preference
+								</ul>
+							</ul>
+						</div><br><br><br>
+					</section>
+					
+					<section>
+						<div style="font-weight: bold; font-size: 110%;">Batch Naming</div>
+						<div style="width: 35%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; margin-top: 90px; position: relative; top: 43px;">
+							<ul style="font-size: 85%; line-height: 110%;">
+								<li style="position: relative; left: 23px;">Photos
+								<li style="position: relative; left: 23px; margin-top: 20px;">Instrument data
+								<li style="position: relative; left: 23px; margin-top: 20px;">Moving files across languages 
+							</ul>
+						</div><br><br><br>
+					</section>
+					
+					<section>
+						<div style="font-weight: bold; font-size: 110%;">Tools for File Management: bulk rename</div>
+						<div style="width: 75%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 43px;">
+							<b>Windows</b><br>
+							<ul style="font-size: 85%; line-height: 120%; margin-bottom: 23px;">
+								<li style="position: relative; left: 23px;">Ant Renamer (<a href="http://www.antp.be/software/renamer">www.antp.be/software/renamer</a>)
+								<li style="position: relative; left: 23px;">RenameIT (<a href="http://sourceforge.net/prpjects/renameit">sourceforge.net/prpjects/renameit</a>)
+								<li style="position: relative; left: 23px;">Bulk Rename Utility (<a href="http://www.bulkrenameutility.co.uk/">www.bulkrenameutility.co.uk/</a>)
+							</ul><br>
+							<b>Mac</b><br>
+							<ul style="font-size: 85%; line-height: 120%; margin-bottom: 23px;">
+								<li style="position: relative; left: 23px;">Renamer4Mac (<a href="http://renamer4mac.com/">renamer4mac.com/</a>)
+								<li style="position: relative; left: 23px;">Name Changer (<a href="http://mrrsoftware.com/namechanger/">mrrsoftware.com/namechanger/</a>)
+								<li style="position: relative; left: 23px;">Name Mangler (<a href="http://manytricks.com/namemangler/">manytricks.com/namemangler/</a>)
+							</ul><br>
+							<b>Linux</b><br>
+							<ul style="font-size: 85%; line-height: 120%; margin-bottom: 23px;">
+								<li style="position: relative; left: 23px;">GNOME Commander (<a href="http://www.nongnu.org/gcmd/">www.nongnu.org/gcmd/</a>)
+								<li style="position: relative; left: 23px;">GPRename (<a href="http://gprename.sourceforge.net/">gprename.sourceforge.net/</a>)
+							</ul><br>
+							<b>Unix: </b>The use of <b>grep</b> command to search for regular expressions
+						</div><br><br><br>
+						<div style="position: absolute; left: 400px; top: 680px; font-size: 50%; width: 700px; color: #aaa;"><a href="http://datalib.edina.ac.uk/mantra/organisingdata/">http://datalib.edina.ac.uk/mantra/organisingdata/</a></div>
+					</section>
+					
+					<section>
+						<div style="font-weight: bold; font-size: 110%;">File Tagging: a *new* approach?</div>
+						<div style="width: 40%; margin-left: auto; margin-right: auto; font-size: 75%; text-align: left; top: 130px; line-height: 140%; position: relative; top: 43px;">
+							Think about your music library<br>
+							Think about article keywords<br>
+							Part of the <a href="http://www.w3.org/standards/semanticweb/">semantic web</a> conversation<br><br><br>
+							<span class="fragment">Mac<br>
+							<ul style="font-size: 85%; line-height: 120%; margin-bottom: 23px;">
+								<li style="position: relative; left: 23px;">Native on Mac (colors)
+								<li style="position: relative; left: 23px;">Not really searchable
+							</ul><br></span>
+							<span class="fragment">PC<br>
+							<ul style="font-size: 85%; line-height: 120%; margin-bottom: 23px;">
+								<li style="position: relative; left: 23px;">Native in Office (file->info)
+							</ul></span>
+						</div><br><br><br>
+					</section>
+					
+					<section>
+						<div style="font-weight: bold; font-size: 110%;">Lose a file?<br><span style="font-size: 75%;">Use file tagging systems to better keep track</span></div>
+						<div style="width: 65%; margin-left: auto; margin-right: auto; font-size: 75%; text-align: left; top: 130px; line-height: 140%; position: relative; top: 43px;">
+							<ul style="font-size: 85%; line-height: 120%; margin-bottom: 23px;">
+								<li style="position: relative; left: 23px;">for tagging files as they are created and then the tags are indexed
+								<li style="position: relative; left: 23px;">good for not losing things in the first place.
+							</ul><br><br></span>
+							<span class="fragment">Mac: <br>
+							<ul style="font-size: 80%; line-height: 120%; margin-bottom: 23px;">
+								<li style="position: relative; left: 23px;">"Yep" (Ironic software) - <a href="http://www.ironicsoftware.com/yep/">http://www.ironicsoftware.com/yep/</a>
+							</ul></span><br>
+							<span class="fragment">PC: <br>
+							<ul style="font-size: 80%; line-height: 120%; margin-bottom: 23px;">
+								<li style="position: relative; left: 23px;">Tabbles - <a href="http://tabbles.net/">http://tabbles.net/</a>
+								<li style="position: relative; left: 23px;">Omero (microscropy) - <a href="http://www.openmicroscopy.org/site/products/omero">http://www.openmicroscopy.org/site/products/omero</a>
+							</ul></span>
+						</div><br><br><br>
+					</section>
+					
+				</section>
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Storage and Security</div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 40px; font-size: 75%; width: 63%; text-align: left;">
+						<b>File System Structure</b>
+						<div style="margin-left: 40px;">Migration – value/time – feasibility</div><br>
+						<b>File Naming Conventions</b><br>
+						<div style="margin-left: 40px;">Corruption and access – privacy and IP value</div><br>
+					</div><br><br><br>
+                </section>
+				
+				<section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Midterm Calendar</div>
+					<div style="font-size: 50%; margin-top: 20px;">
+						<style> #Calendar {font-family:Arial, sans-serif;}  #Calendar h1 {font-family:Arial, Helvetica, sans-serif; font-size:12.0pt; font-weight:400; margin-top:0px; margin-bottom:0px;  font-weight:normal;} .monthNoCol { width: 3.2%} .monthTxtCol { width: 10.9%;} .Sapro9016184{padding-top:1px; color:navy; font-size:11.0pt; font-weight:700; text-align:center; vertical-align:middle; border-top:1.0pt solid #355986; border-left:1.5pt solid #355986; background:#F9F9E1; } .Sapro9116184{padding-top:1px; color:maroon; font-size:0.8em; text-align:left; vertical-align:middle; border-top:1.0pt solid #355986; background:#F9F9E1; } .Sapro9216184{padding-top:1px; color:navy; font-size:11.0pt; font-weight:700; text-align:center; vertical-align:middle; border-top:1.0pt solid #355986; border-left:1.0pt solid #355986; } .Sapro9316184{padding-top:1px; color:maroon; font-size:0.8em; text-align:left; vertical-align:middle; border-top:1.0pt solid #355986; } .Sapro9416184{padding-top:1px; color:navy; font-size:11.0pt; font-weight:700; text-align:center; vertical-align:middle; border-top:1.0pt solid #355986; border-left:1.0pt solid #355986; background:#F9F9E1; } .Sapro9516184{padding-top:1px; color:maroon; font-size:0.8em; text-align:left; vertical-align:middle; border-top:1.0pt solid #355986; border-right:1.5pt solid #355986; background:#F9F9E1; } .Sapro9616184{padding-top:1px; font-size:12.0pt; font-family:Calibri, sans-serif; vertical-align:bottom; } .Sapro9716184{padding-top:1px; color:white; font-size:10.0pt; text-align:center; vertical-align:middle; border-top:1.0pt solid white; border-right:1.0pt solid white; border-left:1.5pt solid #355986; background:#355986; } .Sapro9816184{padding-top:1px; color:white; font-size:10.0pt; text-align:center; vertical-align:middle; border-top:1.0pt solid white; border-right:1.0pt solid white; border-left:1.0pt solid white; background:#355986; } .Sapro10016184{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-top:1.0pt solid #355986; border-left:1.5pt solid #355986; background:#D9D9D9; white-space:normal;} .Sapro10116184{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-top:1.0pt solid #355986; background:#D9D9D9; white-space:normal;} .Sapro10216184{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-top:1.0pt solid #355986; border-left:1.0pt solid #355986; background:#D9D9D9; white-space:normal;} .Sapro10316184{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-left:1.5pt solid #355986; background:#D9D9D9; white-space:normal;} .Sapro10516184{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-left:1.0pt solid #355986; background:#D9D9D9; white-space:normal;} .Sapro10616184{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-left:1.0pt solid #355986; white-space:normal;} .Sapro10816184{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-left:1.0pt solid #355986; background:#F9F9E1; white-space:normal;} .Sapro11016184{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-left:1.5pt solid #355986; background:#F9F9E1; white-space:normal;} .Sapro11216184{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-top:1.0pt solid #355986; border-left:1.0pt solid #355986; background:#D9D9D9; } .Sapro11316184{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-top:1.0pt solid #355986; border-right:1.5pt solid #355986; background:#D9D9D9; white-space:normal;} .Sapro11416184{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-bottom:1.5pt solid #355986; border-left:1.5pt solid #355986; background:#F9F9E1; white-space:normal;} .Sapro11616184{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-bottom:1.5pt solid #355986; border-left:1.0pt solid #355986; white-space:normal;} .Sapro11816184{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-bottom:1.5pt solid #355986; border-left:1.0pt solid #355986; background:#D9D9D9; white-space:normal;} .Sapro12116184{padding-top:1px; color:white; font-size:12.0pt; text-align:center; vertical-align:middle; border-bottom:1.0pt solid white; background:#355986; } .Sapro12216184{padding-top:1px; color:#CDCDCD; font-size:0.8em; text-align:right; vertical-align:bottom; border-bottom:1.0pt solid white; background:#355986; } .Sapro12416184{padding-top:1px; color:#CDCDCD; font-size:0.8em; text-align:left; vertical-align:bottom; border-bottom:1.0pt solid white; background:#355986; } </style>						
+						<style> #Calendar {font-family:Arial, sans-serif;}  #Calendar h1 {font-family:Arial, Helvetica, sans-serif; font-size:12.0pt; font-weight:400; margin-top:0px; margin-bottom:0px;  font-weight:normal;} .monthNoCol { width: 3.2%} .monthTxtCol { width: 10.9%;} .Sapro9016156{padding-top:1px; color:navy; font-size:11.0pt; font-weight:700; text-align:center; vertical-align:middle; border-top:1.0pt solid #355986; border-left:1.5pt solid #355986; background:#F9F9E1; } .Sapro9116156{padding-top:1px; color:maroon; font-size:0.8em; text-align:left; vertical-align:middle; border-top:1.0pt solid #355986; background:#F9F9E1; } .Sapro9216156{padding-top:1px; color:navy; font-size:11.0pt; font-weight:700; text-align:center; vertical-align:middle; border-top:1.0pt solid #355986; border-left:1.0pt solid #355986; } .Sapro9316156{padding-top:1px; color:maroon; font-size:0.8em; text-align:left; vertical-align:middle; border-top:1.0pt solid #355986; } .Sapro9416156{padding-top:1px; color:navy; font-size:11.0pt; font-weight:700; text-align:center; vertical-align:middle; border-top:1.0pt solid #355986; border-left:1.0pt solid #355986; background:#F9F9E1; } .Sapro9516156{padding-top:1px; color:maroon; font-size:0.8em; text-align:left; vertical-align:middle; border-top:1.0pt solid #355986; border-right:1.5pt solid #355986; background:#F9F9E1; } .Sapro9616156{padding-top:1px; font-size:12.0pt; font-family:Calibri, sans-serif; vertical-align:bottom; } .Sapro9716156{padding-top:1px; color:white; font-size:10.0pt; text-align:center; vertical-align:middle; border-top:1.0pt solid white; border-right:1.0pt solid white; border-left:1.5pt solid #355986; background:#355986; } .Sapro9816156{padding-top:1px; color:white; font-size:10.0pt; text-align:center; vertical-align:middle; border-top:1.0pt solid white; border-right:1.0pt solid white; border-left:1.0pt solid white; background:#355986; } .Sapro10016156{padding-top:1px; color:#003366; font-size:6.0pt; text-align:left; vertical-align:bottom; border-bottom:1.5pt solid #355986; background:#D9D9D9; white-space:normal;} .Sapro10216156{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-top:1.0pt solid #355986; border-left:1.5pt solid #355986; background:#D9D9D9; white-space:normal;} .Sapro10316156{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-top:1.0pt solid #355986; background:#D9D9D9; white-space:normal;} .Sapro10416156{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-top:1.0pt solid #355986; border-left:1.0pt solid #355986; background:#D9D9D9; white-space:normal;} .Sapro10516156{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-left:1.5pt solid #355986; background:#D9D9D9; white-space:normal;} .Sapro10716156{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-left:1.0pt solid #355986; background:#D9D9D9; white-space:normal;} .Sapro10816156{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-left:1.0pt solid #355986; white-space:normal;} .Sapro11016156{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-left:1.0pt solid #355986; background:#F9F9E1; white-space:normal;} .Sapro11216156{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-left:1.5pt solid #355986; background:#F9F9E1; white-space:normal;} .Sapro11416156{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-top:1.0pt solid #355986; border-left:1.0pt solid #355986; background:#D9D9D9; } .Sapro11516156{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-top:1.0pt solid #355986; border-right:1.5pt solid #355986; background:#D9D9D9; white-space:normal;} .Sapro11616156{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-bottom:1.5pt solid #355986; border-left:1.5pt solid #355986; background:#F9F9E1; white-space:normal;} .Sapro11816156{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-bottom:1.5pt solid #355986; border-left:1.0pt solid #355986; white-space:normal;} .Sapro12016156{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-bottom:1.5pt solid #355986; border-left:1.0pt solid #355986; background:#D9D9D9; white-space:normal;} .Sapro12116156{padding-top:1px; font-size:0.8em; text-align:left; vertical-align:middle; border-bottom:1.5pt solid #355986; background:#D9D9D9; white-space:normal;} .Sapro12316156{padding-top:1px; color:white; font-size:12.0pt; text-align:center; vertical-align:middle; border-bottom:1.0pt solid white; background:#ddf; } .Sapro12416156{padding-top:1px; color:#CDCDCD; font-size:0.8em; text-align:right; vertical-align:bottom; border-bottom:1.0pt solid white; background:#ddf; } .Sapro12616156{padding-top:1px; color:#CDCDCD; font-size:0.8em; text-align:left; vertical-align:bottom; border-bottom:1.0pt solid white; background:#ddf; } </style>
+						<table id='Calendar' data-month=201702 border=0 cellpadding=0 cellspacing=0 style='border-collapse: collapse; width:80%; table-layout:fixed;'>
+						 <colgroup>
+						  <col class='monthNoCol'><col class='monthTxtCol'>
+						  <col class='monthNoCol'><col class='monthTxtCol'>
+						  <col class='monthNoCol'><col class='monthTxtCol'>
+						  <col class='monthNoCol'><col class='monthTxtCol'>
+						  <col class='monthNoCol'><col class='monthTxtCol'>
+						  <col class='monthNoCol'><col class='monthTxtCol'>
+						  <col class='monthNoCol'><col class='monthTxtCol'>
+						</colgroup>
+						<tr class=Sapro9616156 height=25>
+						  <td colspan=4 height=25 class=Sapro12616156 style='height:18.75pt;'></td>
+						  <td colspan=6 class=Sapro12316156 style="text-align: center;"><h1 style='font-size:1.1em;'><b>February - March 2017</b></h1></td>
+						  <td colspan=4 class=Sapro12416156></td>
+						 </tr>
+						 <tr height=21 style='height:15.75pt'>
+						  <td colspan=2 height=21 class=Sapro9716156 style='height:15.75pt'>Sun</td>
+						  <td colspan=2 class=Sapro9816156 style='border-left:none'>Mon</td>
+						  <td colspan=2 class=Sapro9816156 style='border-left:none'>Tue</td>
+						  <td colspan=2 class=Sapro9816156 style='border-left:none'>Wed</td>
+						  <td colspan=2 class=Sapro9816156 style='border-left:none'>Thu</td>
+						  <td colspan=2 class=Sapro9816156 style='border-left:none'>Fri</td>
+						  <td colspan=2 class=Sapro9816156 style='border-right:1.5pt solid #355986; border-left:none'>Sat</td>
+						 </tr>
+
+						 <tr height=18>
+						  <td colspan=2 height=18 class=Sapro11216156 style='height:13.5pt;'></td>
+						  <td colspan=2 class=Sapro10816156></td>
+						  <td colspan=2 class=Sapro10816156></td>
+						  <td colspan=2 class=Sapro10816156></td>
+						  <td colspan=2 class=Sapro10816156></td>
+						  <td colspan=2 class=Sapro10816156></td>
+						  <td colspan=2 class=Sapro11016156 style='border-right:1.5pt solid #355986;'></td>
+						 </tr>
+						 <tr height=20>
+						  <td height=20 class=Sapro9016156 style='height:15.0pt'>12</td>
+						  <td class=Sapro9116156> </td>
+						  <td class=Sapro9216156>13</td>
+						  <td class=Sapro9316156> </td>
+						  <td class=Sapro9216156>14</td>
+						  <td class=Sapro9316156> </td>
+						  <td class=Sapro9216156 style="background-color: #dd0;">15</td>
+						  <td class=Sapro9316156 style="background-color: #dd0;"> </td>
+						  <td class=Sapro9216156>16</td>
+						  <td class=Sapro9316156> </td>
+						  <td class=Sapro9216156>17</td>
+						  <td class=Sapro9316156> </td>
+						  <td class=Sapro9416156>18</td>
+						  <td class=Sapro9516156> </td>
+						 </tr>
+						 <tr height=18>
+						  <td colspan=2 height=18 class=Sapro11216156 style='height:13.5pt;'></td>
+						  <td colspan=2 class=Sapro10816156></td>
+						  <td colspan=2 class=Sapro10816156></td>
+						  <td colspan=2 class=Sapro10816156 style="background-color: #dd0;text-align: center;">today</td>
+						  <td colspan=2 class=Sapro10816156></td>
+						  <td colspan=2 class=Sapro10816156></td>
+						  <td colspan=2 class=Sapro11016156 style='border-right:1.5pt solid #355986;'></td>
+						 </tr>
+						 <tr height=20>
+						  <td height=20 class=Sapro9016156 style='height:15.0pt'>19</td>
+						  <td class=Sapro9116156> </td>
+						  <td class=Sapro9216156>20</td>
+						  <td class=Sapro9316156> </td>
+						  <td class=Sapro9216156>21</td>
+						  <td class=Sapro9316156> </td>
+						  <td class=Sapro9216156 style="background-color: #ee9;">22</td>
+						  <td class=Sapro9316156 style="background-color: #ee9;"> </td>
+						  <td class=Sapro9216156 style="background-color: #ee9;">23</td>
+						  <td class=Sapro9316156 style="background-color: #ee9;"> </td>
+						  <td class=Sapro9216156 style="background-color: #ee9;">24</td>
+						  <td class=Sapro9316156 style="background-color: #ee9;"> </td>
+						  <td class=Sapro9416156>25</td>
+						  <td class=Sapro9516156> </td>
+						 </tr>
+						 <tr height=18>
+						  <td colspan=2 height=18 class=Sapro11216156 style='height:13.5pt;'></td>
+						  <td colspan=2 class=Sapro10816156></td>
+						  <td colspan=2 class=Sapro10816156></td>
+						  <td colspan=6 class=Sapro10816156 style="background-color: #ee9; text-align: center;">arrange for interview</td>
+						  <td colspan=2 class=Sapro11016156 style='border-right:1.5pt solid #355986;'></td>
+						 </tr>
+						 <tr height=20>
+						  <td height=20 class=Sapro9016156 style='height:15.0pt'>26</td>
+						  <td class=Sapro9016156> </td>
+						  <td class=Sapro9216184 style="background-color: #ee9;">27</td>
+						  <td class=Sapro9316156 style="background-color: #ee9;"> </td>
+						  <td class=Sapro9216184 style="background-color: #ee9;">28</td>
+						  <td class=Sapro9316156 style="background-color: #ee9;">&nbsp;</td>
+						  <td class=Sapro921618 style="background-color: #ee9;"4>1</td>
+						  <td class=Sapro931618 style="background-color: #ee9;"4> </td>
+						  <td class=Sapro9216184 style="background-color: #ee9;">2</td>
+						  <td class=Sapro9316184 style="background-color: #ee9;"> </td>
+						  <td class=Sapro9216184 style="background-color: #ee9;">3</td>
+						  <td class=Sapro9316184 style="background-color: #ee9;"> </td>
+						  <td class=Sapro9416184>4</td>
+						  <td class=Sapro9516184> </td>
+						 </tr>
+						 <tr height=18>
+						  <td colspan=2 height=18 class=Sapro9016156 style='height:13.5pt;'> </td>
+						  <td colspan=10 class=Sapro10616184 style="background-color: #ee9; text-align: center;">arrange for interview</td>
+						  <td colspan=2 class=Sapro10816184 style='border-right:1.5pt solid #355986;'></td>
+						 </tr>
+						 <tr height=20>
+						  <td height=20 class=Sapro9016184 style='height:15.0pt'>5</td>
+						  <td class=Sapro9116184> </td>
+						  <td class=Sapro9216184>6</td>
+						  <td class=Sapro9316184> </td>
+						  <td class=Sapro9216184>7</td>
+						  <td class=Sapro9316184> </td>
+						  <td class=Sapro9216184>8</td>
+						  <td class=Sapro9316184> </td>
+						  <td class=Sapro9216184>9</td>
+						  <td class=Sapro9316184> </td>
+						  <td class=Sapro9216184 style="background-color: #d70;">10</td>
+						  <td class=Sapro9316184 style="background-color: #d70;"> </td>
+						  <td class=Sapro9416184>11</td>
+						  <td class=Sapro9516184> </td>
+						 </tr>
+						 <tr height=18>
+						  <td colspan=2 height=18 class=Sapro11016184 style='height:13.5pt;'></td>
+						  <td colspan=2 class=Sapro10616184></td>
+						  <td colspan=2 class=Sapro10616184></td>
+						  <td colspan=2 class=Sapro10616184></td>
+						  <td colspan=2 class=Sapro10616184></td>
+						  <td colspan=2 class=Sapro10616184 style="background-color: #d40;">Midterm Due</td>
+						  <td colspan=2 class=Sapro10816184 style='border-right:1.5pt solid #355986;'></td>
+						 </tr>
+						 <tr height=20>
+						  <td height=20 class=Sapro9016184 style='height:15.0pt'>12</td>
+						  <td class=Sapro9116184> </td>
+						  <td class=Sapro9216184 style="background-color: #ddf;">13</td>
+						  <td class=Sapro9316184 style="background-color: #ddf;"> </td>
+						  <td class=Sapro9216184 style="background-color: #ddf;">14</td>
+						  <td class=Sapro9316184 style="background-color: #ddf;"> </td>
+						  <td class=Sapro9216184 style="background-color: #ddf;">15</td>
+						  <td class=Sapro9316184 style="background-color: #ddf;"> </td>
+						  <td class=Sapro9216184 style="background-color: #ddf;">16</td>
+						  <td class=Sapro9316184 style="background-color: #ddf;"> </td>
+						  <td class=Sapro9216184 style="background-color: #ddf;">17</td>
+						  <td class=Sapro9316184 style="background-color: #ddf;"> </td>
+						  <td class=Sapro9416184>18</td>
+						  <td class=Sapro9516184> </td>
+						 </tr>
+						 <tr height=18>
+						  <td colspan=2 height=18 class=Sapro11016184 style='height:13.5pt;'></td>
+						  <td colspan=10 class=Sapro10616184 style="background-color: #ddf; text-align: center">Spring Break</td>
+						  <td colspan=2 class=Sapro10816184 style='border-right:1.5pt solid #355986;'></td>
+						 </tr>
+						</table>
+					</div>
+				</section>	
+				
+				<section>
+					... break ...
+				</section>		
+
+                <section>
+                    <span style="font-weight: bold; font-size: 110%;">Researcher perspectives on sharing</span><br>
+                    <table border=0 cellspacing=0 cellpadding=0 style="font-size: 50%;">
+                     <tr style='height:27.25pt'>
+                      <td valign=bottom style='width:500px;background:white;padding:1.55pt .8pt 1.55pt .8pt;  height:27.25pt; border: none !important;'></td>
+                      <td style='width:250px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; border: none !important;'></td>
+                      <td style='width:150px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; border: none !important;'></td>
+                     </tr>
+                     <tr style='height:27.25pt; font-weight: bold;'>
+                      <td valign=bottom style='width:500px;background:white;padding:1.55pt .8pt 1.55pt .8pt;  height:27.25pt'>Sharing analysis scripts and data sets</td>
+                      <td style='width:250px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt'>Frequency</td>
+                      <td style='width:150px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt'>percent (valid)</td>
+                     </tr>
+                     <tr style='height:20.25pt; border: none !important;'>
+                      <td valign=bottom style='width:500px;background:white;padding:1.55pt .8pt 1.55pt .8pt;  height:27.25pt; border: none !important;'>1. Willing to share publicly</td>
+                      <td style='width:250px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; border: none !important;'>120</td>
+                      <td style='width:150px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; border: none !important;'>25.9%</td>
+                     </tr>
+                     <tr style='height:20.25pt; border: none !important;'>
+                      <td valign=bottom style='width:500px;background:white;padding:1.55pt .8pt 1.55pt .8pt;  height:27.25pt; border: none !important;'>2. Willing to share under access control</td>
+                      <td style='width:250px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; border: none !important;'>98</td>
+                      <td style='width:150px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; border: none !important;'>21.1%</td>
+                     </tr>
+					 <tr style='height:20.25pt; border: none !important;'>
+                      <td valign=bottom style='width:500px;background:white;padding:1.55pt .8pt 1.55pt .8pt;  height:27.25pt; border: none !important;'>3. Willing to share only on request</td>
+                      <td style='width:250px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; border: none !important;'>163</td>
+                      <td style='width:150px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; border: none !important;'>35.1%</td>
+                     </tr>
+					 <tr style='height:20.25pt; border: none !important;'>
+                      <td valign=bottom style='width:500px;background:white;padding:1.55pt .8pt 1.55pt .8pt;  height:27.25pt; '>4. Not willing to share</td>
+                      <td style='width:250px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; '>83</td>
+                      <td style='width:150px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; '>17.9%</td>
+                     </tr>
+					 <tr style='height:20.25pt; border: none !important; font-weight: bold;'>
+                      <td valign=bottom style='width:500px;background:white;padding:1.55pt .8pt 1.55pt .8pt;  height:27.25pt; '>Sum</td>
+                      <td style='width:250px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; '>464</td>
+                      <td style='width:150px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; '>100%</td>
+                     </tr>
+					 <tr style='height:20.25pt; border: none !important;'>
+                      <td valign=bottom  colspan=3 style='width:500px;background:white;padding:1.55pt .8pt 1.55pt .8pt;  height:27.25pt; '>Source: SOEP User Survey 2013, own calculations</td>
+                     </tr>
+                    </table>
+                    <br><span style="font-size: 50%;">adapted from doi:<a target="_blank" href="http://dx.doi.org/10.1371/journal.pone.0118053.t005">10.1371/journal.pone.0118053.t005</a></span>
+ 					<div class="fragment" style="position: absolute; bottom: -70px; right: 120px; width: 30%; text-align: right; font-size: 50%; line-height: normal;">Age<br>Control<br>Resource<br>Returns<br>Discipline</div>
+					<aside class="notes">
+						Really spend some time on this, let people try to guess why some people share and others not. Then discuss the results from the paper.
+					</aside>
+               </section>
+
+				<section>
+                    <div style="width: 100%;">
+                        <div style="font-size: 40%; text-align: center; line-height: 100%;">
+                            <img src="../../common/assets/images-for-data/journal.pone.0118053.g004.PNG" style="width: 1000px"><br>
+							<a href="http://dx.doi.org/10.1371/journal.pone.0118053.g004">http://dx.doi.org/10.1371/journal.pone.0118053.g004</a>
+                        </div>
+                    </div>
+                </section>
+				
+            </div>
+        </div>
+        <script src="../../common/java/reveal.js"></script>
+	    <script src="../../common/java/notes.js"></script>
+	    <script src="../../common/java/head.min.js"></script>
+        <script>
+            Reveal.initialize({
+                width: 1366, height: 768, margin: 0.05,
+                controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+				chart: {
+					defaults: { 
+						global: { 
+							defaultFontSize: 20,
+							title: { fontColor: "#333" }, 
+							legend: {
+								position: "top",
+								labels: { fontColor: "#333" },
+							},
+							tooltips: {
+								labels: { fontColor: "#333" },
+							},
+						}, 
+						scale: { 
+							scaleLabel: { fontColor: "#333" }, 
+							gridLines: { color: "#333", zeroLineColor: "#333" }, 
+							ticks: { fontColor: "#333" }, 
+						} 
+					},
+				},
+                dependencies: [
+                    { src: '../../common/java/Chart.min.js' },
+                    { src: '../../common/java/csv2chart.js' }
+                ] 
+            });
+        </script>
+    </body>
+</html>

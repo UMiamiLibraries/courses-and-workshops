@@ -1,0 +1,27 @@
+img {
+   /* max-height: 70% !important; 
+   max-width: 70% !important; */
+   border: none !important;
+   box-shadow: none !important;
+}
+section {
+   padding: 0px !important;
+   /* max-height: 85% !important; */
+}
+.bluetable tr {
+	border: 2px solid white !important;
+}
+.bluetable td {
+	border: 2px solid white !important;
+}
+@media print {
+  body {
+	padding: 0px !important;
+    font-size: 9pt !important;
+	color: #727272;
+  }
+  #main {
+	  width: 100% !important; 
+	  max-width: 100% !important;
+  }
+}

@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../../common/css/reveal.css">
+        <link rel="stylesheet" href="../../common/css/white.css">
+        <link rel="stylesheet" href="../../common/css/overrides.css">
+	    <script src="../../common/java/print.js"></script>
+        <title>Research Data Management - 07</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+
+                <section data-background-image="../../common/assets/images-for-data/DataCurationCover.png">
+                    <div style="position: absolute; left: 340px; top: 125px; font-size: 150%; line-height: 100%;"><strong>Data Management in the<br>Research Environment</strong></div>
+                    <div style="position: absolute; left: 750px; top: 285px; font-size: 90%">RSM 674 Spring <script>var today = new Date();document.write(today.getFullYear());</script></div>
+                    <div style="position: absolute; left: 460px; top: 390px; font-size: 50%; text-align: left">Dr. Timothy Norris - Data Curation Fellow - <a href="mailto:tnorris@miami.edu" style="color: #222 !important; text-decoration: underline;">tnorris@miami.edu</a><br>Angela Clark - Librarian Associate Professor RSMAS - <a href="mailto:tnorris@miami.edu" style="color: #222 !important; text-decoration: underline;">aclark@rsmas.miami.edu</a></div>
+		        </section>
+				
+				<section>
+					<div style="font-weight: bold; font-size: 110%;">Todays Outline</div>
+					<div style="width: 55%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+						<ul style="font-size: 80%;">
+							<li style="position: relative; left: 23px; top: 20px;">The BASH shell
+							<li style="position: relative; left: 23px; top: 20px;">Follow along at: <a href="http://swcarpentry.github.io/shell-novice/">http://swcarpentry.github.io/shell-novice/</a>
+							<li style="position: relative; left: 23px; top: 20px;">Download "shell-novice-data.zip" from: <a href="http://swcarpentry.github.io/shell-novice/setup/">http://swcarpentry.github.io/shell-novice/setup/</a>
+						</ul>
+					</div>
+					<br><br><br><br>
+					<div style="position: absolute; bottom: 0px; left: 500px; text-align: left; font-size: 60%; line-height: normal;">
+						<a href="https://etherpad.net/p/Data_Management_Keywords">https://etherpad.net/p/Data_Management_Keywords</a><br>
+					</div>
+				</section>
+								
+                <section>
+					<div style="font-weight: bold; font-size: 110%;">for next week (Monday)</div>
+                    <div style="position: relative; top: 30px; font-size:80%; text-align: left; width:90%; margin-right: auto; margin-left: auto;">
+						<ul>
+						    <li style="position: relative; font-size: 85%;">Riley, “Seeing Standards.” <a href="http://jennriley.com/metadatamap/">http://jennriley.com/metadatamap/</a>. Study this poster for a while.
+						    <li style="position: relative; font-size: 85%;">Star, Castro, et al (2015). Achieving human and machine accessibility of cited data in scholarly publications. PeerJ Computer Science 1:e1 <a href="https://dx.doi.org/10.7717/peerj-cs.1">https://dx.doi.org/10.7717/peerj-cs.1</a>.<br><br>
+						    <li style="position: relative; font-size: 85%;">Choose one of the following and skim
+								<ul style="font-size: 80%; margin-bottom: 23px;">
+									<li>Curdt, Constanze, Dirk Hoffmeister, Guido Waldhoff, Christian Jekel, and Georg Bareth. "Scientific Research Data Management for Soil-Vegetation-Atmosphere Data—The TR32DB." International Journal of Digital Curation 7, no. 2 (2012): 68-80. <a href="http://www.ijdc.net/index.php/ijdc/article/view/220/295">http://www.ijdc.net/index.php/ijdc/article/view/220/295</a>.
+									<li>[ for ecology: skim the introduction through to 2.3.4 ] KNB (no date). “Ecological Metadata Language (EML) Specification.” The Knowledge Network, <a href="https://knb.ecoinformatics.org/#external//emlparser/docs/eml-2.1.1/index.html">https://knb.ecoinformatics.org/#external//emlparser/docs/eml-2.1.1/index.html</a>.
+									<li>[ for marine biology ] Neiswender (2010). "Introduction to Metadata." In The MMI Guides: Navigating the World of Marine Metadata. <a href="http://marinemetadata.org/guides/mdataintro">http://marinemetadata.org/guides/mdataintro</a>.
+									<li>[ for atmospheric science: skim the introduction through 2.6.2 ] Eaton, et al (2011). NetCDF Climate and Forecast (CF) Metadata Conventions. <a href="http://cfconventions.org/Data/cf-conventions/cf-conventions-1.6/build/cf-conventions.pdf">http://cfconventions.org/Data/cf-conventions/cf-conventions-1.6/build/cf-conventions.pdf</a>.
+									<li>[ for marine geology: skim the introduction through chapter 6 ] Norris, M.W.; Faichney, A.K. (Eds.) (2002). SEG Y rev1 Data Exchange format. <a href="http://www.seg.org/documents/10161/77915/seg_y_rev1.pdf">http://www.seg.org/documents/10161/77915/seg_y_rev1.pdf</a>.
+									<li>[ for geographic data: skim the introduction through page 31 ] FGDC (2000). Content Standard for Digital Geospatial Metadata Workbook, Version 2.0. <a href="https://www.fgdc.gov/metadata/documents/workbook_0501_bmk.pdf">https://www.fgdc.gov/metadata/documents/workbook_0501_bmk.pdf</a>.
+								</ul>
+						</ul>
+						<br><br>
+					</div>
+					<br><br>
+                </section>
+				
+				<section>
+					... break ...
+				</section>		
+				
+<!-- ########################################################################################################################## -->
+<!-- ##               end of session two - some extra slides                                                                                                                                                                                             ## -->				
+<!-- ########################################################################################################################## -->	
+
+            </div>
+        </div>
+        <script src="../../common/java/reveal.js"></script>
+	    <script src="../../common/java/notes.js"></script>
+	    <script src="../../common/java/head.min.js"></script>
+        <script>
+            Reveal.initialize({
+                width: 1366, height: 768, margin: 0.05,
+                controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+				chart: {
+					defaults: { 
+						global: { 
+							defaultFontSize: 20,
+							title: { fontColor: "#333" }, 
+							legend: {
+								position: "top",
+								labels: { fontColor: "#333" },
+							},
+							tooltips: {
+								labels: { fontColor: "#333" },
+							},
+						}, 
+						scale: { 
+							scaleLabel: { fontColor: "#333" }, 
+							gridLines: { color: "#333", zeroLineColor: "#333" }, 
+							ticks: { fontColor: "#333" }, 
+						} 
+					},
+				},
+                dependencies: [
+                    { src: '../../common/java/Chart.min.js' },
+                    { src: '../../common/java/csv2chart.js' }
+                ] 
+            });
+        </script>
+    </body>
+</html>

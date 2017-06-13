@@ -1,0 +1,36 @@
+##Session 3 - Conversations about data and the data curation profile 
+[back to syllabus](syllabus.md)  |  [slide deck](slides/slides03.html)
+
+---
+
+* July 6: 10 - 11:30 am 
+* July 11: 10 - 11:30 am
+
+---
+
+**Learning Objectives**  
+
+- Identify data challenges facecd by faculty, staff and students in their research activities
+- know best practices for file system management, backup and storage, security and privacy, and so on
+
+---
+
+**Preparation Before the Seminar**  
+
+_Skim the data curation profile handbooks:_
+
+*  Download the Data Curation Profiles Toolkit from [http://docs.lib.purdue.edu/dcptoolkit/](http://docs.lib.purdue.edu/dcptoolkit/). Read the introduction and skim the rest.
+
+_Consider past data conversations you have had with faculty, staff or students_
+
+* Write a few reflections on data conversations you have had with faculty, staff or students.
+
+---
+
+**Suggested Reading:**  
+
+-   Data Curation Profiles (various authors) from [http://docs.lib.purdue.edu/dcp/](http://docs.lib.purdue.edu/dcp/).
+
+---
+
+[...](lessons/lesson03.md)

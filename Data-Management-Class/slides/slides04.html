@@ -1,0 +1,1249 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../../common/css/reveal.css">
+        <link rel="stylesheet" href="../../common/css/white.css">
+        <link rel="stylesheet" href="../../common/css/overrides.css">
+	    <script src="../../common/java/print.js"></script>
+        <title>Research Data Management - 04</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+
+                <section data-background-image="../../common/assets/images-for-data/DataCurationCover.png">
+                    <div style="position: absolute; left: 340px; top: 125px; font-size: 150%; line-height: 100%;"><strong>Data Management in the<br>Research Environment</strong></div>
+                    <div style="position: absolute; left: 750px; top: 285px; font-size: 90%">RSM 674 Spring <script>var today = new Date();document.write(today.getFullYear());</script></div>
+                    <div style="position: absolute; left: 460px; top: 390px; font-size: 50%; text-align: left">Dr. Timothy Norris - Data Curation Fellow - <a href="mailto:tnorris@miami.edu" style="color: #222 !important; text-decoration: underline;">tnorris@miami.edu</a><br>Angela Clark - Librarian Associate Professor RSMAS - <a href="mailto:tnorris@miami.edu" style="color: #222 !important; text-decoration: underline;">aclark@rsmas.miami.edu</a></div>
+		        </section>
+				
+				<section>
+					<div style="font-weight: bold; font-size: 110%;">Todays Outline</div>
+					<div style="width: 30%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+						<ul style="font-size: 80%;">
+							<li style="position: relative; left: 23px; top: 20px;">Backups vs. Archiving
+							<li style="position: relative; left: 23px; top: 20px;">Methodological Considerations
+							<li style="position: relative; left: 23px; top: 20px;">Local Solutions
+							<li style="position: relative; left: 23px; top: 20px;">Online Solutions
+						</ul>
+					</div>
+					<br><br><br><br>
+					<div style="position: absolute; bottom: 0px; left: 500px; text-align: left; font-size: 60%; line-height: normal;">
+						<a href="https://etherpad.net/p/Data_Management_Keywords">https://etherpad.net/p/Data_Management_Keywords</a><br>
+					</div>
+				</section>
+
+				<section>
+					<div style="font-weight: bold; font-size: 110%;">How important is your data?</div><br>
+					<div style="width: 30%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: center; top: 130px; line-height: 200%; position: relative; top: 23px;">
+						take a moment of<br><b>silence</b> to <b>imagine</b><br>what would happen<br>if your <b>computer<br>failed today</b>
+					</div>
+					<br><br><br>
+				</section>
+				
+				<section>
+					<div style="font-weight: bold; font-size: 110%;">common data loss scenarios</div>
+					<div style="width: 55%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 100%; position: relative; top: 23px;">
+						<ul style="font-size: 80%;">
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;">Hardware failure
+							<ul style="font-size: 80%;">
+								<li>Disk drive in the computer
+								<li>Solid state memory devices (internal drives and external thumb drives)
+							</ul>
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;">Unexpected power problem
+							<ul style="font-size: 80%;">
+								<li>Power surge/drop
+								<li>Something touches your computer too much (child/pet)
+							</ul>
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;">Catastrophic event
+							<ul style="font-size: 80%;">
+								<li>Hurricane
+								<li>other
+							</ul>
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;">Device accidents
+							<ul style="font-size: 80%;">
+								<li>Stolen
+								<li>Dropped/spilled/etc
+								<li>Pressed format accidentally
+							</ul>
+						</ul>
+					</div>
+					<br><br>
+				</section>
+
+				<section>
+					<div style="font-weight: bold; font-size: 110%;">common data loss scenarios</div>
+					<div style="width: 70%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: center; top: 100px; line-height: 140%; position: relative;">
+						"Researchers don't delete data, they lose it"<br>
+						<span style="font-size: 80%">John Bixby - Vice Provost for Research at University of Miami</span>
+					</div>
+					<br><br><br><br><br>
+				</section>
+				
+				<section>
+					<div style="font-weight: bold; font-size: 110%;">a warning ...</div>
+					<div class="fragment" style="width: 40%; font-size: 85%; top: 50px; left: 150px; position: relative;">
+						this will get personal
+					</div>
+					<div class="fragment" style="width: 40%; font-size: 85%; top: 150px; left: 300px; position: relative;">
+						it CAN happen to you
+					</div>
+					<div class="fragment" style="width: 40%; font-size: 85%; top: 250px; left: 550px; position: relative;">
+						it is LIKELY that it will happen to you
+					</div>
+					<br><br><br><br><br><br><br>
+				</section>
+				
+				<section>
+                    <br><br><img src="../../common/assets/images-for-data/DataCycle.png" style="max-width: 75%;"><br>
+                    <div style="position: absolute; top: 0px; left: 100px; font-size: 110%; font-weight: bold;">in the Lifecycle?</div>
+					<div class="fragment" style="width: 300px; left: 620px; top: 300px; position: absolute;">
+						<svg width="300px;" height="300px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 100px;" viewbox="0 0 300 300">
+							<circle cx="150" cy="150" r="120" style="fill: none; stroke: red; stroke-width: 4" />
+						</svg>
+					</div>
+					<div class="fragment" style="width: 150px; left: 480px; top: 480px; position: absolute;">
+						<svg width="150px;" height="150px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 100px;" viewbox="0 0 150 150">
+							<circle cx="75" cy="75" r="72" style="fill: none; stroke: red; stroke-width: 4" />
+						</svg>
+					</div>
+                    <div style="position: absolute; bottom: -40px; right: 50px; width: 400px; text-align: left; font-size: 50%; line-height: normal;"><a target="_blank" href="http://library.miami.edu/datacuration/">http://library.miami.edu/datacuration/</a></div>
+                </section>
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: -10px; font-weight: bold; font-size: 110%;">Data Protection, Backups, Archiving, Preservation<br>Are They the Same Thing? Not Quite…</div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: -10px; font-size: 80%; width: 90%;">
+						<ul style="font-size: 85%;">
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;">Data Protection
+							<ul style="font-size: 80%;">
+								<li>Includes topics such as backups,  archives, and preservation
+								<li>also includes physical security, encryption, and others not addressed here (for later)...</span>
+							</ul>
+							<li class="fragment" style="position: relative; left: 23px; top: 35px;">Terms “backups” and “archives” are often used interchangeably, but do have different meanings
+							<ul style="font-size: 80%;">
+								<li>Backups: a copy (or copies) of the original file is made before the original is overwritten
+								<li>Archives: preservation of the file
+							</ul>
+							<li class="fragment" style="position: relative; left: 23px; top: 50px;">Catastrophic event
+							<ul style="font-size: 80%;">
+								<li>Hurricane
+								<li>other
+							</ul>
+							<li class="fragment" style="position: relative; left: 23px; top: 65px;">Data Preservation
+							<ul style="font-size: 80%;">
+								<li>Includes archiving in addition to processes such as data rescue, data reformatting, data conversion, metadata
+							</ul>
+						</ul>
+					</div>
+                    <div style="font-size: 40%; color: #555; position: absolute; left: 900px; top: 610px; text-align: left;">slide from<br><a href="https://www.dataone.org/education-modules" border="0"><img src="../../common/assets/images-for-data/DataONE_LOGO.jpg" width="300"></a></div>
+                    <aside class="notes">
+						The terms data protection, data backups, data archiving, and data preservation are often used interchangeably but they do have different meanings and purposes.  Data protection  covers a wide variety of topics including backups, archives, preservation, physical security (such as the use of smart cards), encryption, and others including laws which govern data security.  However, these slides will not focus on this broader topic but rather will look specifically at backups, archives, and data preservation.<br><br>
+						The terms data backups and data archiving are often used interchangeably as they both relate to saving a specific version of a file, but they do convey different processes.  The term “backup” is used specifically when making copies of various files with the knowledge that the files may change.  Backups are kept for a certain amount of time, but can be discarded after a specified time has passed.  Archiving is used when a file is to be preserved as-is, often at the end of a project and acts as a static (and usually final) record.<br><br>
+						Data preservation encompasses many of these same methodologies, but can also include things like data rescue, reformatting of files, converting data, and the creation of metadata.  These first three topics will be discuss briefly in this lesson; however, metadata will be covered in another lesson.
+					</aside>
+                </section>
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Backups vs. Archiving</div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-size: 90%; width: 75%;">
+						<ul style="font-size: 85%;">
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;">Backups
+							<ul style="font-size: 80%;">
+								<li>Used to take periodic snapshots of data in case the current version is destroyed or lost
+								<li>Backups are copies of files stored for short or near-long-term
+								<li>Often performed on a somewhat frequent schedule
+							</ul>
+							<li class="fragment" style="position: relative; left: 23px; top: 35px;">Archives
+							<ul style="font-size: 80%;">
+								<li>Used to preserve data for historical reference or potentially during disasters
+								<li>Archives are usually the final version, stored for long-term, and generally not copied over
+								<li>Often performed at the end of a project or during major milestones
+							</ul><br>
+							It is a good idea to have multiple copies of your backups and archives, in case one copy fails.
+						</ul>
+					</div>
+                    <div style="font-size: 40%; color: #555; position: absolute; left: 900px; top: 610px; text-align: left;">slide from<br><a href="https://www.dataone.org/education-modules" border="0"><img src="../../common/assets/images-for-data/DataONE_LOGO.jpg" width="300"></a></div>
+                    <aside class="notes">
+						The main difference between data backups and archiving is that backups deal with data that is copied elsewhere and potentially can be overwritten again as the data changes.  Archiving makes a record of data that is usually in its final state.
+						<br><br>When a user performs a backup, they are in essence taking a snapshot of the data at that moment in time.  This allows the user to restore the file as needed, such as when the current version of the file is corrupted, lost, or somehow destroyed or altered.  Backups are often used for short-term storage or near long-term storage, depending upon the user’s backup needs and procedures.  Backups are usually scheduled on a frequent basis.
+						<br><br>Archiving deals more with records that are no longer in use and is used to create a historical snapshot of the data.  This provides for preservation of the data for future needs.  Usually, archives are made when  a project ends, or when appropriate.
+						<br><br>Regardless of whether you are dealing with backups or archives, you should have multiple copies in case one (or many) versions fail.
+					</aside>
+                </section>
+
+                <section>
+					<div style="position: absolute; left: 10px; top: 40px; font-weight: bold; font-size: 110%; text-align: left; width: 250px;">Backup and Storage<br><br>Major Considerations</div>
+					<div style="position: absolute; left: 300px; top; 0px; margin-right: auto; top: 0px; font-size: 90%; width: 75%; line-height: 130%;">
+						<ul style="font-size: 85%;">
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;"><b>Who</b> is <b>responsible</b> for backup ?
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;">How <b>often</b> do you backup ?
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;"><b>Partial</b> vs. <b>full</b> backups ?
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;"><b>Non-digital</b> backups ?
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;"><b>Where</b> (literally) will the backups be located ?
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;">Do the backups need a description (<b>metadata</b>) ?
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;"><b>Manual vs automatic</b> ?
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;"><b>Recovery</b> procedures ?
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;"><b>Verification</b> – how do you know the backup was successful ?
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;"><b>How long</b> do you keep your backups ?
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;">What happens when the <b>project ends</b> ?
+						</ul><br><br><br>
+					</div>
+                </section>
+
+				<section>
+					<div style="font-weight: bold; font-size: 110%;">Don't forget</div>
+					<div style="width: 30%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+						<ul style="font-size: 80%;">
+							<li style="position: relative; left: 23px; top: 20px;">Data conversions and formats
+							<li style="position: relative; left: 23px; top: 20px;">Versioning
+							<li style="position: relative; left: 23px; top: 20px;">File Naming
+						</ul>
+					</div>
+					<br><br><br><br><br>
+				</section>				
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Data in real life</div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 40px; font-size: 90%; width: 75%;">
+						<ul style="font-size: 85%;">
+							<li style="position: relative; left: 23px; top: 20px;">A design firm was handling their own backups.  The system was working fine and the backup software was reporting that the data was successfully backed up. 
+						</ul><br>
+					</div>
+                    <div style="position: relative; margin-left: auto; margin-right: auto; top: 80px;"><img src="../../common/assets/images-for-data/backup_progress.jpg" width="1000"></a></div><br><br><br>
+                    <div style="font-size: 40%; color: #555; position: absolute; left: 900px; top: 610px; text-align: left;">slide from<br><a href="https://www.dataone.org/education-modules" border="0"><img src="../../common/assets/images-for-data/DataONE_LOGO.jpg" width="300"></a></div>
+                    <aside class="notes">
+						DATA IN REAL LIFE:  An architecture firm was handling their own backups.  The system was working fine – the backup software was reporting that the data was successfully backed up.
+					</aside>
+                </section>
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Data in real life</div>
+					<div style="position: relative; margin-left: 20%; margin-right: auto; top: 40px; font-size: 90%; width: 30%;">
+						<ul style="font-size: 85%;">
+							<li style="position: relative; left: 23px; top: 20px;">The administrator checked the backups immediately after they were done and confirmed they were good.
+						</ul><br>
+					</div>
+                    <div style="position: absolute; left: 750px; top: 80px;"><img src="../../common/assets/images-for-data/backup_action.jpg" width="350"></a></div>
+                    <div style="font-size: 40%; color: #555; position: absolute; left: 900px; top: 610px; text-align: left;">slide from<br><a href="https://www.dataone.org/education-modules" border="0"><img src="../../common/assets/images-for-data/DataONE_LOGO.jpg" width="300"></a></div>
+                </section>
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Data in real life</div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 40px; font-size: 80%; width: 80%;">
+						After a computer virus erased most of their files, they went back to their backups.  Unfortunately they found that the backups were all blank and all of the data was gone.  Only after some investigation did they discover that the computer tapes (which contained the backups) were placed against a wall that had an elevator on the other side of it.  When the elevator went past, the magnets inside erased all of the tapes.
+						<br><br>
+						<span style="color: red;">Had they checked their backups properly, they probably would have noticed this before there was an emergency</span>
+					</div>
+                    <div style="font-size: 40%; color: #555; position: absolute; left: 900px; top: 610px; text-align: left;">slide from<br><a href="https://www.dataone.org/education-modules" border="0"><img src="../../common/assets/images-for-data/DataONE_LOGO.jpg" width="300"></a></div>
+                </section>
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Validation<br><span style="font-size: 80%;">Do you trust your computer?</span></div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 20px; font-size: 90%; width: 75%;">
+						<ul style="font-size: 90%;">
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;">Always check file sizes after backing up
+							<ul style="font-size: 80%;">
+								<li>Or at least check periodically
+							</ul>
+							<li class="fragment" style="position: relative; left: 23px; top: 35px;">The MD5 checksum
+							<ul style="font-size: 80%;">
+								<li>With this you can monitor the <b>integrity</b> of your data over time
+								<li>Other checksums are CSC and SHA
+								<li>Like a fingerprint for a file
+								<li>Command line: <b>md5sum</b>
+							</ul><br><br><br>
+						</ul>
+					</div>
+                </section>				
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Syncronization<br><span style="font-size: 80%;">Do you trust your computer?</span></div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-size: 90%; width: 85%;">
+						<ul style="font-size: 85%;">
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;">Cloud based services (box, dropbox, etc.) are based on <b>Folder Synchronization</b>
+							<ul style="font-size: 80%;">
+								<li>Only copies newer files (that have changed or been created)
+								<li>Thus contains a "mirror image"
+							</ul>
+							<li class="fragment" style="position: relative; left: 23px; top: 35px;">There are commercial and free folder synchronization tools
+							<ul style="font-size: 80%;">
+								<li>All have privacy and user data issues
+								<li>All based on “command line” tools that already exist on your computer
+							</ul>
+							<li class="fragment" style="position: relative; left: 23px; top: 50px;">Command line interface (CLI) synching
+							<ul style="font-size: 80%;">
+								<li>Mac or Linux: <b>rsync</b>
+								<li>Windows: <b>xcopy</b> or <b>robocopy</b>
+							</ul><br><br><br>
+						</ul>
+					</div>
+                </section>
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Backup Media Options</div>
+					<div style="position: relative; margin-left: 15%; margin-right: auto; top: 40px; font-size: 90%; width: 40%;">
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px; top: 20px;">Local Machines
+							<ul style="font-size: 80%;">
+								<li>Hard disk in computer
+								<li>External hard drives
+							</ul>
+							<li style="position: relative; left: 23px; top: 40px;">Online Solutions
+							<ul style="font-size: 80%;">
+								<li>Networked drives (personal cloud)
+								<li>Repositories
+								<li>Versioning Tolls
+								<li>The "cloud"
+							</ul>
+						</ul><br><br><br>
+					</div>
+                    <div style="position: absolute; left: 850px; top: 80px;"><img src="../../common/assets/images-for-data/WD.jpg" width="450"></a></div>
+                    <div style="position: absolute; left: 600px; top: 350px;"><img src="../../common/assets/images-for-data/upBox.png" width="300"></a></div>
+                    <div style="position: absolute; left: 1100px; top: 400px; font-size: 35%;">2.5” 500 GB Western Digital SATA<br>Evan-Amos - CC BY-SA 3.0</div>
+                </section>
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Spinning (metal) disk: Laptop or Desktop</div>
+					<div style="position: relative; margin-left: 10%; margin-right: auto; top: 40px; font-size: 90%; width: 40%;">
+						<ul style="font-size: 95%;">
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;">Pros
+							<ul style="font-size: 80%;">
+								<li>High level of control over file system, naming, and physical location of disk
+								<li>Easy to backup
+								<li>Convenient
+							</ul>
+							<li class="fragment" style="position: relative; left: 23px; top: 50px;">Cons
+							<ul style="font-size: 80%;">
+								<li>Risk of malware (virus)
+								<li>Risk of theft, damage, loss, etc
+								<li>System can eventually corrupt the disk (especially pcs)
+								<li>Finite lifespan
+							</ul>
+						</ul><br><br><br>
+					</div>
+                    <div class="fragment" style="position: absolute; left: 650px; top: 275px; border: 2px blue solid; width: 560px; background-color: #bbe; text-align: left; font-size: 70%; padding: 5px; padding-left: 10px;">
+						RECOMMENDATIONS:<br>
+						<ul style="font-size: 90%;">
+							<li style="position: relative; left: 23px;">Never have master copies on your computer
+							<li style="position: relative; left: 23px;">Not for long term storage
+							<li style="position: relative; left: 23px;">Have a backup plan for this storage option
+						</ul>
+					</div>
+                </section>					
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Spinning (metal) disk: (Network) Server</div>
+					<div style="position: relative; margin-left: 5%; margin-right: auto; top: 40px; font-size: 90%; width: 75%;">
+						<ul style="font-size: 95%;">
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;">Pros
+							<ul style="font-size: 80%;">
+								<li>High level of control over file system, naming, and physical location of disk
+								<li>Likely has backup and maintenance schedule
+								<li>Possible duplicate (mirror) images – RAID systems
+								<li>Safe physical location
+							</ul>
+							<div style="position: absolute; left: 600px; top: 200px; font-size: 60%; width: 550px;"><b>R</b>edundant <b>A</b>rray of <b>I</b>ndependent <b>D</b>isks</div>
+							<li class="fragment" style="position: relative; left: 23px; top: 50px;">Cons
+							<ul style="font-size: 80%;">
+								<li>Expensive to maintain
+								<li>Migration can be difficult
+								<li>Susceptible to catastrophic events
+							</ul>
+						</ul><br><br><br><br><br>
+					</div>
+                    <div class="fragment" style="position: absolute; left: 700px; top: 450px; border: 2px blue solid; width: 410px; background-color: #bbe; text-align: left; font-size: 70%; padding: 5px; padding-left: 10px;">
+						RECOMMENDATIONS:<br>
+						<ul style="font-size: 90%;">
+							<li style="position: relative; left: 23px;">Good for master copies
+							<li style="position: relative; left: 23px;">Good for up to 5 year storage
+						</ul>
+					</div>
+                </section>		
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">External storage: memory and drives</div>
+					<div style="position: relative; margin-left: 0%; margin-right: auto; top: 40px; font-size: 90%; width: 80%;">
+						<ul style="font-size: 95%;">
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;">Pros
+							<ul style="font-size: 80%;">
+								<li>Drives are cheap (sort of) and portable
+								<li>Convenient
+								<li>Memory is cheap and portable
+							</ul>
+							<li class="fragment" style="position: relative; left: 23px; top: 50px;">Cons
+							<ul style="font-size: 80%;">
+								<li>Connection technologies change (USB, Firewire, SATA, and so on)
+								<li>Drive failure (both spinning drives and memory devices)
+								<li>Easily damaged, stolen or lost
+								<li>Finite space for large projects multiple drives may be necessary
+								<li>Malware can be propagated (think unsafe sex)
+							</ul>
+						</ul><br><br><br>
+					</div>
+                    <div class="fragment" style="position: absolute; left: 750px; top: 120px; border: 2px blue solid; width: 540px; background-color: #bbe; text-align: left; font-size: 70%; padding: 5px; padding-left: 10px;">
+						RECOMMENDATIONS:<br>
+						<ul style="font-size: 90%;">
+							<li style="position: relative; left: 23px;">Not for master copies
+							<li style="position: relative; left: 23px;">Not for long term storage
+							<li style="position: relative; left: 23px;">Have a backup plan for this storage option
+						</ul>
+					</div>
+					<div class="fragment" style="position: absolute; left: 500px; top: 600px; font-size: 50%; width: 700px;">Does anyone use CDs anymore??? ZIP disks??? NOT recommended!!</div>
+                </section>		
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">External storage: magnetic tapes</div>
+					<div style="position: relative; margin-left: 0%; margin-right: auto; top: 40px; font-size: 90%; width: 80%;">
+						<ul style="font-size: 95%;">
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;">Pros
+							<ul style="font-size: 80%;">
+								<li>Massive amunts of data, cheap
+								<li>Fast backup
+								<li>Reusable
+							</ul>
+							<li class="fragment" style="position: relative; left: 23px; top: 50px;">Cons
+							<ul style="font-size: 80%;">
+								<li>Slow retrevial
+								<li>Degradation over time
+								<li>Installation and maintenance is expensive
+							</ul>
+						</ul><br><br><br>
+					</div>
+                    <div class="fragment" style="position: absolute; left: 750px; top: 250px; border: 2px blue solid; width: 410px; background-color: #bbe; text-align: left; font-size: 70%; padding: 5px; padding-left: 10px;">
+						RECOMMENDATIONS:<br>
+						<ul style="font-size: 90%;">
+							<li style="position: relative; left: 23px;">Excellent for rolling backups
+						</ul>
+					</div>
+                </section>		
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Networked drives: personal cloud</div>
+					<div style="position: relative; margin-left: 20px; margin-right: auto; top: 40px; font-size: 90%; width: 70%;">
+						<ul style="font-size: 95%;">
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;">Pros
+							<ul style="font-size: 80%;">
+								<li>Drives are cheap (sort of) and portable
+								<li>Convenient access from anywhere
+								<li>Easy to install and sync
+								<li>Private: password protected
+							</ul>
+							<li class="fragment" style="position: relative; left: 23px; top: 50px;">Cons
+							<ul style="font-size: 80%;">
+								<li>Upload/download bottlenecks
+								<li>Susceptible to acts catastrophic events
+								<li>Needs permanent power
+								<li>Needs IP address
+							</ul>
+						</ul><br><br><br>
+					</div>
+                    <div class="fragment" style="position: absolute; left: 840px; top: 270px; border: 2px blue solid; width: 350px; background-color: #bbe; text-align: left; font-size: 70%; padding: 5px; padding-left: 10px;">
+						RECOMMENDATIONS:<br>
+						<ul style="font-size: 90%;">
+							<li style="position: relative; left: 23px;">Good "third" option
+						</ul>
+					</div>
+					<div class="fragment" style="position: absolute; left: 500px; top: 600px; font-size: 50%; width: 700px;">Western Digital, Seagate . . . <br>Perhaps buy online, out of state?</div>
+                </section>
+				
+				<section>
+                    <div style="width: 80%; margin-right: 10%; margin-left: auto;">
+                        <span style="font-weight: bold; font-size: 110%;">Data Repositories<br><br></span>
+                        <div style="font-size: 40%; text-align: center; line-height: 100%; position: relative; left: 20px;">
+                            <img src="../../common/assets/images-for-data/2014_SL_Neuro_Cartoon.jpg" style="max-width: 600px"><br>
+							<a href="http://www.kavlifoundation.org/sites/default/files/image/resources/2014_SL_Neuro_Cartoon.jpg">http://www.kavlifoundation.org/sites/default/files/image/resources/2014_SL_Neuro_Cartoon.jpg</a>
+                        </div>
+                    </div>
+					<div style="position: absolute; bottom: -90px; left: 420px; width: 100%; text-align: left; font-size: 50%; line-height: normal;"><a href="http://www.kavlifoundation.org/science-spotlights/breaking-down-data-barriers-neuroscience">http://www.kavlifoundation.org/science-spotlights/breaking-down-data-barriers-neuroscience</a></div>
+                </section>
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Repositories</div>
+					<div style="position: relative; margin-left: 0%; margin-right: auto; top: 40px; font-size: 90%; width: 90%;">
+						<ul style="font-size: 95%;">
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;">Pros
+							<ul style="font-size: 80%;">
+								<li>Maintained by others
+								<li>Your data is accessible, visible
+								<li>Mostly cost free
+							</ul>
+							<li class="fragment" style="position: relative; left: 23px; top: 50px;">Cons
+							<ul style="font-size: 80%;">
+								<li>Like journals, can be well recognized, but not necessarily 
+								<li>Takes time to format data and metadata correctly
+								<li>Your data is accessible, visible
+							</ul>
+						</ul><br><br><br>
+					</div>
+                    <div class="fragment" style="position: absolute; left: 840px; top: 170px; border: 2px blue solid; width: 350px; background-color: #bbe; text-align: left; font-size: 70%; padding: 5px; padding-left: 10px;">
+						RECOMMENDATIONS:<br>
+						<ul style="font-size: 90%;">
+							<li style="position: relative; left: 23px;">Good preservation option
+							<li style="position: relative; left: 23px;">Not good for working data
+						</ul>
+					</div>
+                </section>
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Online Versioning and Sharing Services</div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-size: 90%; width: 85%;">
+						<ul style="font-size: 85%;">
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;">For programmers only?
+							<ul style="font-size: 80%;">
+								<li>Github: <a href="http://github.com">http://github.com</a>
+								<li>Bitbucket: <a href="http://bitbucket.org">http://bitbucket.org</a>
+								<li>Subversion: <a href="https://subversion.apache.org/">https://subversion.apache.org</a>
+							</ul>
+							<li class="fragment" style="position: relative; left: 23px; top: 35px;">Project Management (for fee service)
+							<ul style="font-size: 80%;">
+								<li>Basecamp: <a href="http://basecamp.com">http://basecamp.com</a>
+								<li>Teamwork: <a href="http://teamwork.com">http://teamwork.com</a>
+							</ul><br><br><br>
+						</ul>
+					</div>
+                </section>
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Online Versioning and Sharing</div>
+					<div style="position: relative; margin-left: 30px; margin-right: auto; top: 40px; font-size: 90%; width: 70%;">
+						<ul style="font-size: 95%;">
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;">Pros
+							<ul style="font-size: 80%;">
+								<li>Maintained by others
+								<li>Often open text-based formats
+								<li>Excellent version control and backup
+
+							</ul>
+							<li class="fragment" style="position: relative; left: 23px; top: 50px;">Cons
+							<ul style="font-size: 80%;">
+								<li>Steep learning curve
+								<li>Doesn’t handle proprietary data well
+								<li>Your data is accessible, visible (sometimes)
+							</ul>
+						</ul><br><br><br><br>
+					</div>
+                    <div class="fragment" style="position: absolute; left: 840px; top: 210px; border: 2px blue solid; width: 430px; background-color: #bbe; text-align: left; font-size: 70%; padding: 5px; padding-left: 10px; padding-right: 10px;">
+						RECOMMENDATIONS:<br>
+						<ul style="font-size: 90%;">
+							<li style="position: relative; left: 23px;">Depending on data type, can be good for working data
+							<li style="position: relative; left: 23px;">Privacy concerns vary
+						</ul>
+					</div>
+                </section>
+				
+				<section>
+					<div style="font-weight: bold; font-size: 110%;">The Cloud</div>
+					<div style="width: 90%; margin-left: auto; margin-right: auto; font-size: 70%; text-align: left; top: 20px; line-height: 110%; position: relative;">
+						The term “cloud computing” (or just “cloud”, in the context of computing) is a marketing buzzword with no coherent meaning. It is used for a range of different activities whose only common characteristic is that they use the Internet for something beyond transmitting files. Thus, the term spreads confusion. If you base your thinking on it, your thinking will be confused.<br><br>
+						<span style="font-size: 60%; float: right; margin-right: 50px;">Richard Stallman - <a href="https://www.gnu.org/philosophy/words-to-avoid.html">https://www.gnu.org/philosophy/words-to-avoid.html</a></span><br>
+						<div style="text-align: center; width: 100%; position: relative; top: 13px;">
+							<img src="../../common/assets/images-for-data/cloudtweaks1.jpg" width="360px"> <img src="../../common/assets/images-for-data/cloudtweaks2.jpg" width="360px"><br>
+							<span style="font-size: 60%; color: #999;"><a  style="padding-right: 1em;" href="http://cloudtweaks.com/2012/02/the-lighter-side-of-the-cloud-future-cloud/">http://cloudtweaks.com/2012/02/the-lighter-side-of-the-cloud-future-cloud/</a><a style="padding-left: 1em; padding-right: 3em;" href="http://cloudtweaks.com/2012/04/the-lighter-side-of-the-cloud-the-fog/">http://cloudtweaks.com/2012/04/the-lighter-side-of-the-cloud-the-fog/</a></span>
+						</div>
+					</div>
+					<br><br><br><br><br>
+				</section>
+				
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Networked drives: the "cloud"</div>
+					<div style="position: relative; margin-left: 30px; margin-right: auto; top: 40px; font-size: 90%; width: 70%;">
+						<ul style="font-size: 95%;">
+							<li class="fragment" style="position: relative; left: 23px; top: 20px;">Pros
+							<ul style="font-size: 80%;">
+								<li>No failure or backup worries (they do it)
+								<li>Can be secure (depends)
+								<li>Convenient
+								<li>Good for catastrophic events
+							</ul>
+							<li class="fragment" style="position: relative; left: 23px; top: 50px;">Cons
+							<ul style="font-size: 80%;">
+								<li>Upload/download bottlenecks
+								<li>Fees?
+								<li>Long-term? No standards?
+								<li>How to get copies of all your data (try this for google drive)
+								<li>No control, AND you are responsible if something is hacked (according to US government export laws)
+							</ul>
+						</ul><br><br><br><br>
+					</div>
+                    <div class="fragment" style="position: absolute; left: 840px; top: 210px; border: 2px blue solid; width: 400px; background-color: #bbe; text-align: left; font-size: 70%; padding: 5px; padding-left: 10px; padding-right: 10px;">
+						RECOMMENDATIONS:<br>
+						<ul style="font-size: 90%;">
+							<li style="position: relative; left: 23px;">Good for quick and dirty collaborations
+							<li style="position: relative; left: 23px;"> a good “third” option
+							<li style="position: relative; left: 23px;">Not good for large data
+							<li style="position: relative; left: 23px;">Privacy concerns vary
+						</ul>
+					</div>
+                </section>
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Storage and Backup<br><span style="font-size: 80%">file-syncing software in the cloud</span></div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-size: 90%; width: 85%;">
+						<ul style="font-size: 85%;">
+							<li class="fragment" style="position: relative; left: 23px; top: 50px;">Google Drive? Drop Box? Sky Drive? iCloud?
+							<ul style="font-size: 80%;">
+								<li>Drop Box is good for temporary sharing
+								<li>Google Drive is good for collaborative work: synchronous file editing with multiple users
+								<li>What about security?? privacy??
+							</ul>
+							<li class="fragment" style="position: relative; left: 23px; top: 110px;">BOX - <a href="https://www.box.com/">https://www.box.com/</a>
+							<ul style="font-size: 80%;">
+								<li>University of Miami has an affiliation
+								<li>All content is encrypted
+								<li>All platforms are supported including smart phones
+								<li>Recently became “unlimited”
+							</ul><br><a href="http://www.miami.edu/it/index.php/about_it/aas/ps/documentation/box/">http://www.miami.edu/it/index.php/about_it/aas/ps/documentation/box/</a><br><br>
+							<div style="position: absolute; left: 400px; top: -100px;"><img src="../../common/assets/images-for-data/upBox.png" width="300"></a></div>
+						</ul>
+					</div>
+					<div class="fragment" style="width: 300px; left: 600px; top: -10px; position: absolute;">
+						<svg width="300px;" height="150px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 100px;" viewbox="0 0 300 150">
+							<line x1="10" y1="10" x2="200" y2="80" style="fill: none; stroke: red; stroke-width: 12" />
+							<line x1="10" y1="80" x2="200" y2="10" style="fill: none; stroke: red; stroke-width: 12" />
+						</svg>
+					</div>
+                </section>
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">The Bottom Line: Storage and Backup<br><span style="font-size: 90%">[ best practices ]</span></div>
+					<div class="fragment" style="position: relative; margin-left: 60px; margin-right: auto; top: 30px; font-size: 82%; width: 50%; text-align: left;">
+						<span style="padding-left: 13px;">DO</span>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px; top: 20px;">RAID storage
+							<li style="position: relative; left: 23px; top: 20px;">External hard drives (XFAT)
+							<li style="position: relative; left: 23px; top: 20px;">Cloud storage and file-syncing
+							<li style="position: relative; left: 23px; top: 20px;">Duplicate computers or hard drives
+							<li style="position: relative; left: 23px; top: 20px;">Write down roles and responsibilities
+							<li style="position: relative; left: 23px; top: 20px;">Organize, file naming conventions, versioning
+							<li style="position: relative; left: 23px; top: 20px;">Have automatic backups
+							<li style="position: relative; left: 23px; top: 20px;">Verify backups
+							<li style="position: relative; left: 23px; top: 20px;">Open formats
+						</ul><br><br><br><br>
+					</div>
+					<div class="fragment" style="position: absolute; left: 750px; top: 150px; font-size: 82%; width: 43%; text-align: left;">
+						<span style="padding-left: 13px;">DON'T</span>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px; top: 20px;">USB thumb drives
+							<li style="position: relative; left: 23px; top: 20px;">Email files to yourself
+							<li style="position: relative; left: 23px; top: 20px;">Save files without knowing their location in the computer’s file structure
+							<li style="position: relative; left: 23px; top: 20px;">Backup when you remember
+						</ul><br><br><br><br>
+					</div>
+                    <div class="fragment" style="position: absolute; left: 500px; top: 550px; text-align: left; font-size: 55%; width: 750px;">
+						The XFAT format is essential if you ever want to share between a mac and a pc
+						<br>Mac: Applications:Utilities:Disk Utility 
+						<br>PC: right click in explorer -> Format
+					</div>
+                </section>
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">The Bottom Line: Storage and Backup<br><span style="font-size: 90%">[ best practices ]</span></div>
+                    <div style="border: 4px solid red; position: relative; margin-left: auto; margin-right: auto; top: 50px; width: 100%; text-align: left; font-size: 85%; width: 750px;  padding: 40px; padding-left: 60px; padding-right: 60px;">
+						Have all your work in at least <b>three</b> places at all times: working version + two backups<br><br>
+						<span style="font-size: 70%; line-height: 110%;">Drives fail, computers break, viruses happen, computers get stolen, usb thumb drives ALWAYS fail, you will make a mistake and delete your work on accident, ex-partners seek revenge, and the list goes on . . . </span>
+					</div><br><br><br><br>
+                </section>
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: -13px; font-weight: bold; font-size: 110%;">Short-term solutions at UM<a href="#supa" title="None of these options are for long-term storage, please see our institutional repository or identify another disciplinary repository to meet this need."><sup>a</sup></a></div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 20px; font-size: 90%; width: 85%;">			
+						<table style="border: none !important; font-size: 60%">
+							<tbody>
+								<tr style="border-bottom: solid 2px black">
+								<td style="text-align: center;width: 130px;vertical-align: bottom"></td>
+								<td style="text-align: center;width: 130px;vertical-align: bottom;font-weight: bold">Size Limits</td>
+								<td style="text-align: center;width: 130px;vertical-align: bottom;font-weight: bold">HIPPA Compliant</td>
+								<td style="text-align: center;width: 130px;vertical-align: bottom;font-weight: bold">Collaboration and Sharing</td>
+								<td style="text-align: center;width: 130px;vertical-align: bottom;font-weight: bold">Relational Databases</td>
+								<td style="text-align: center;width: 130px;vertical-align: bottom;font-weight: bold">Self Guided</td>
+								<td style="text-align: center;width: 130px;vertical-align: bottom;font-weight: bold">No Costs</td>
+								</tr>
+								<tr>
+								<td style="text-align: center;vertical-align: middle;font-weight: bold"><a href="http://it.miami.edu/a-z-listing/box/index.html" target="_blank">Box Cloud-Based Storage</a></td>
+								<td style="text-align: center;vertical-align: middle"><span title="Single file upload limit 15GB. Also note that network speed and congestion affects performance.">unlimited <sup style="font-size: 90%"><a href="#supb">b</a></sup></span></td>
+								<td style="text-align: center;vertical-align: middle"><img src="../../common/assets/images-for-data/green-check-mark-hi-264x300.png" width="66" height="75" /></td>
+								<td style="text-align: center;vertical-align: middle"><img src="../../common/assets/images-for-data/green-check-mark-double-hi-300x277.png" width="81" height="75" /></td>
+								<td style="text-align: center;vertical-align: middle"><img src="../../common/assets/images-for-data/red-x-mark-hi-257x300.png" width="64" height="75" style="padding: 0px !important"  /></td>
+								<td style="text-align: center;vertical-align: middle"><img src="../../common/assets/images-for-data/green-check-mark-hi-264x300.png" width="66" height="75" /></td>
+								<td style="text-align: center;vertical-align: middle"><img src="../../common/assets/images-for-data/green-check-mark-double-hi-300x277.png" width="81" height="75"  /></td>
+								</tr>
+								<tr>
+								<td style="text-align: center;vertical-align: middle;font-weight: bold"><a href="http://ccs.miami.edu/resources/compute-systems" target="_blank">Cloud Storage (CCS)</a></td>
+								<td style="text-align: center;vertical-align: middle">&gt; 10 TB</td>
+								<td style="text-align: center;vertical-align: middle"><img src="../../common/assets/images-for-data/green-check-mark-hi-264x300.png" alt="" width="66" height="75"  /></td>
+								<td style="text-align: center;vertical-align: middle"><img src="../../common/assets/images-for-data/green-check-mark-hi-264x300.png" alt="" width="66" height="75"  /></td>
+								<td style="text-align: center;vertical-align: middle"><img src="../../common/assets/images-for-data/green-check-mark-hi-264x300.png" alt="" width="66" height="75"  /></td>
+								<td style="text-align: center;vertical-align: middle"><span title="Please see the advanced computing services at CCS or contact the High Performance Computing group directly for more information."><img src="../../common/assets/images-for-data/red-x-mark-hi-257x300.png" alt="" width="64" height="75"  /><a href="#supc">c</a></span></td>
+								<td style="text-align: center;vertical-align: middle"><img src="../../common/assets/images-for-data/red-x-mark-hi-257x300.png" alt="" width="64" height="75"  /></td>
+								</tr>
+								<tr style="border-bottom: solid 2px black">
+								<td style="text-align: center;vertical-align: middle;font-weight: bold"><a href="mailto:itsupportcenter@miami.edu" target="_blank">File Server (UMIT)</a></td>
+								<td style="text-align: center;vertical-align: middle"><span title="To begin the request process send an email to itsupportcenter@miami.edu or call the UM Information Technology help desk at (305) 284-6565.">&gt; 1 TB <sup style="font-size: 90%"><a href="#supd">d</a></sup></span></td>
+								<td style="text-align: center;vertical-align: middle"><img src="../../common/assets/images-for-data/green-check-mark-hi-264x300.png" alt="" width="66" height="75"  /></td>
+								<td style="text-align: center;vertical-align: middle"><img src="../../common/assets/images-for-data/green-check-mark-hi-264x300.png" alt="" width="66" height="75"  /></td>
+								<td style="text-align: center;vertical-align: middle"><img src="../../common/assets/images-for-data/red-x-mark-hi-257x300.png" alt="" width="64" height="75"  /></td>
+								<td style="text-align: center;vertical-align: middle"><span title="To begin the request process send an email to itsupportcenter@miami.edu or call the UM Information Technology help desk at (305) 284-6565."><img src="../../common/assets/images-for-data/red-x-mark-hi-257x300.png" alt="" width="64" height="75" /><a href="#supd">d</a></span></td>
+								<td style="text-align: center; vertical-align: middle"><span title="Every request is evaluated on a case-by-case basis. Evaluations are based on the requested resource needs and the current resource allocations across campus. If the request is exceptionally large there may be cost sharing requirements."><img src="../../common/assets/images-for-data/green-check-mark-hi-264x300.png" alt="" width="66" height="75" /><a href="#supe" title="Every request is evaluated on a case-by-case basis. Evaluations are based on the requested resource needs and the current resource allocations across campus. If the request is exceptionally large there may be cost sharing requirements.">e</a></span></td>
+								</tr>
+							</tbody>
+						</table>
+						<div style="font-size: 35%;">
+						<p style="text-align: left; font-size: 110%;">If one of these solutions does not meet your needs, you can consider self-managed solutions or please feel free to contact the <a href="http://it.miami.edu/help-and-support/index.html">UM Information Technology (UMIT) Service Desk</a>, <a href="mailto:researchdata@miami.edu">research data services</a> at the Libraries, or the <a href="mailto:hpc@ccs.miami.edu">advanced computing services</a> at CCS for further assistance.</p>
+						<hr style="border: 1px solid #e0e0e0" />
+						<ol style="list-style-type: lower-alpha;">
+							<li><a name="supa"></a>None of these options are for long-term storage, please see our <a href="http://library.miami.edu/datacuration/um-scholarly-repository/">institutional repository</a> or identify another <a href="http://library.miami.edu/datacuration/data-repositories/">disciplinary repository</a> to meet this need.</li>
+							<li><a name="supb"></a><a href="http://box.miami.edu/">Box&#8217;s</a> single file upload limit 15GB. Also note that network speed and congestion affects performance.</li>
+							<li><a name="supc"></a>Please see the <a href="http://ccs.miami.edu/resources/compute-systems/">advanced computing resources</a> at CCS or contact the <a href="mailto:hpc@ccs.miami.edu&amp;subject=Service%20Request-storage%20implementation">Advanced Computing</a> group directly for more information.</li>
+							<li><a name="supd"></a>To begin the request process, please contact the <a href="http://it.miami.edu/help-and-support/index.html">UMIT Service Desk</a>: email <a href="mailto:itsupportcenter@miami.edu">itsupportcenter@miami.edu</a> or call (305) 284-6565.</li>
+							<li><a name="supe"></a>Every request is evaluated on a case-by-case basis. Evaluations are based on the requested resource needs and the current resource allocations across campus. If the request is exceptionally large there may be cost sharing requirements.</li>
+						</ol>
+						</div>
+					</div>
+                </section>
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Short-term solutions at UM</span></div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 30px; font-size: 80%; width: 80%;">		
+						For general sharing and collaboration needs please see the cloud storage solutions that <a href="http://it.miami.edu/" target="_blank">Information Technology</a> provides for students, staff and faculty:<br><br>
+						<table style="border: none">
+							<tbody style="border: nne">
+								<tr style="border: none">
+								<td style="text-align: center;border: none"><a href="http://it.miami.edu/a-z-listing/box/index.html" target="_blank"><img  src="../../common/assets/images-for-data/box.png" alt="box" width="121" height="114" /></a><br />
+								<a href="http://it.miami.edu/a-z-listing/box/index.html" target="_blank">Box</a></td>
+								<td style="text-align: center;border: none"><a href="http://it.miami.edu/a-z-listing/google-drive/index.html" target="_blank"><img src="../../common/assets/images-for-data/google.png" alt="google" width="120" height="113" /></a><br />
+								<a href="http://it.miami.edu/a-z-listing/google-drive/index.html" target="_blank">Google Drive</a></td>
+								<td style="text-align: center;border: none"><a href="http://it.miami.edu/a-z-listing/office-365-onedrive-for-business/index.html" target="_blank"><img src="../../common/assets/images-for-data/onedrive.png" alt="onedrive" width="121" height="114" /></a><br />
+								<a href="http://it.miami.edu/a-z-listing/office-365-onedrive-for-business/index.html" target="_blank">OneDrive</a></td>
+								</tr>
+							</tbody>
+						</table><br><br><br><br><br>
+					</div>
+                </section>
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Short-term solutions at UM</span></div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 30px; font-size: 80%; width: 80%;">		
+						<ul>If you need more space at the University of Miami go to the Center for Computational Science (CCS)<br><br>
+						<ul style="font-size: 85%; position: relative; top: -40px;">
+							<li style="position: relative; left: 23px; top: 50px;">They sell space using the condo model
+							<li style="position: relative; left: 23px; top: 50px;">~28 TB for $7,000 (2015) – in perpetuity
+							<li style="position: relative; left: 23px; top: 50px;">Not necessarily backed up (but it is raided)
+							<li style="position: relative; left: 23px; top: 50px;">Talk to <a href="mailto:jzysman@miami.edu">Joel Zysman</a> at <a href="http://ccs.miami.edu/resources/compute-systems/">advanced computing resources</a>
+						</ul></ul><br><br><br><br><br>
+					</div>
+                </section>		
+
+                <section>
+					<div style="position: relative; margin-left: 100px; margin-right: auto; top: 40px; font-weight: bold; font-size: 110%; width: 50%;">Storage and Backup</span></div>
+					<div style="position: relative; margin-left: 120px; margin-right: auto; text-align: left; top: 80px; font-size: 80%; width: 40%;">		
+						File syncing tools that exist on your machine already:<br>
+						<ul style="font-size: 85%; position: relative; top: 10px;">
+							<li style="position: relative; left: 23px;">Mac and linux: rsync
+							<li style="position: relative; left: 23px;">PC: xcopy or robocopy
+						</ul><br><br>
+						You will have to understand the command line first:<br>
+						<ul style="font-size: 85%; position: relative; top: 30px;">
+							<li style="position: relative; left: 23px;">Mac: Applications/Utilities/Terminal
+							<li style="position: relative; left: 23px;">PC: Start Button->search “cmd”
+						</ul>
+					</div>
+					<div style="position: absolute; left: 700px; top: 0px; text-align: left;">
+						<img style="padding-left: 2em;" src="../../common/assets/images-for-data/terminal.png" width="460px"><br>
+						<img style="position: relative; top: -35px;" src="../../common/assets/images-for-data/cmd.jpg" width="460px">
+					</div>
+                </section>
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 40px; font-weight: bold; font-size: 110%; width: 50%;">Storage and Backup</span></div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; text-align: left; top: 80px; font-size: 80%; width: 85%;">
+						<ul style="font-size: 85%; position: relative; top: 10px;">
+							<li style="position: relative; left: 23px;">PC: xcopy
+						</ul>
+						<pre><code>
+C:\> xcopy &lt;source&gt; &lt;destination&gt; [&lt;options&gt;]
+
+C:\> xcopy c:\Users\tnorris\Documents\MapData\*.* G:\MapData /D /S /Y
+
+This copies all NEWER files from the MapData directory on the local machine
+to the backup MapData folder on an external hard drive.
+
+C:\> xcopy /?
+
+This will show all of the options for the xcopy command. You can see that:
+/D tells xcopy to only copy newer files
+/S goes through all sub-directories
+/Y tells xcopy to proceed without asking the user to confirm (be careful!!)
+						</code></pre><br><br><br>
+					</div>
+                </section>		
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 40px; font-weight: bold; font-size: 110%; width: 50%;">Storage and Backup</span></div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; text-align: left; top: 80px; font-size: 80%; width: 85%;">
+						<ul style="font-size: 85%; position: relative; top: 10px;">
+							<li style="position: relative; left: 23px;">Mac or linux: rsync
+						</ul>
+						<pre><code>
+% rsync [&lt;options&gt;] &lt;source&gt; &lt;destination&gt;
+
+% rsync -arvu /Users/tnorris/Documents/MapData/* /Volumes/MyDrive/MapDataFB
+ 
+This copies all NEWER files from the MapData directory on the local machine to 
+the backup MapDataFB folder on an external hard drive named “MyDrive”.
+
+% man rsync
+
+This will show all of the options for the rsync command. You can see that 
+ -a tells rsync preserve archival information (date stamps, owners, permissions)
+ -r tells rsync to go through all sub-directories
+ -v tells rsync to tell you what it is doing (which files it copied)
+ –u will only update newer files and skip older files.
+						</code></pre><br><br><br>
+					</div>
+                </section>
+				
+				<section>
+
+					<section>
+						<div style="font-weight: bold; font-size: 110%;">Reading for Next Class (Wednesday)</div>
+						<div style="position: relative; top: 30px; font-size:75%; text-align: left; width: 85%; margin-right: auto; margin-left: auto;">
+							<ul>
+								<li style="position: relative; font-size: 85%;">University of Miami Faculty Manual 2016-17. READ ONLY pp 135-138. SEARCH for "data" and scan relevant sections.
+									<a href="https://umshare.miami.edu/web/wda/facultysenate/FacultyManual.pdf">https://umshare.miami.edu/web/wda/facultysenate/FacultyManual.pdf</a>.
+								<li style="position: relative; font-size: 85%; top: 15px;">Carroll MW (2015) Sharing Research Data and Intellectual Property Law: A Primer. <i>PLoS Biol</i> 13(8): e1002235.
+									<a href="http://dx.doi.org/10.1371/journal.pbio.10022358">http://dx.doi.org/10.1371/journal.pbio.10022358</a>.
+								<li style="position: relative; font-size: 85%; top: 30px;">Briney, K., Goben, A., & Zilinski, L. (2015). Do You Have an Institutional Data Policy? A Review of the Current Landscape of Library Data Services and Institutional Data Policies
+									<i>Journal of Librarianship and Scholarly Communication</i>, 3(2). <a href="http://dx.dio.org/10.7710/2162-3309.1232">http://dx.dio.org/10.7710/2162-3309.1232</a>. SKIM THIS - LOOK MOSTLY AT THE RESULTS OF THE STUDY.
+								<li style="position: relative; font-size: 85%; top: 45px;">Johns Hopkins University Policy on Access and Retention of Research Data and Materials (2008).<br>
+									<a href=" http://dms.data.jhu.edu/files/2016/08/JHUDataRetentionPolicy2008_WithAppendices.pdf">http://dms.data.jhu.edu/files/2016/08/JHUDataRetentionPolicy2008_WithAppendices.pdf</a>.
+							</ul>
+							<br><br>
+						</div>
+						<br><br>
+					</section>						
+
+					<section>
+						<div style="font-weight: bold; font-size: 110%;"><i>Optional </i> Reading for Next Class (Wednesday)</div>
+						<div style="position: relative; top: 30px; font-size:65%; text-align: left; width: 90%; margin-right: auto; margin-left: auto;">
+							<ul>
+								<li style="position: relative; font-size: 85%;">Boyle (2003). The Second Enclosure Movement and the Construction of the Public Domain. <i>Law and Contemporary Problems</i>, 66:33(Winter/Spring), 33-74. <a href="http://scholarship.law.duke.edu/lcp/vol66/iss1/2/">http://scholarship.law.duke.edu/lcp/vol66/iss1/2/</a>.
+								<li style="position: relative; font-size: 85%; top: 15px;">David (2008). The Historical Origins of ‘Open Science’: An Essay on Patronage, Reputation and Common Agency Contracting in the Scientific Revolution. <i>Capitalism and Society</i> 3(2), Article 5. <a href="https://dx.doi.org/10.2202/1932-0213.1040">https://dx.doi.org/10.2202/1932-0213.1040</a>.
+								<li style="position: relative; font-size: 85%; top: 30px;">Center for Open Data Enterprise (2016). Open Data Transition Report: An action plan for the next administration. <a href="http://opendataenterprise.org/reports/transition-report.pdf">http://opendataenterprise.org/reports/transition-report.pdf</a>.
+								<li style="position: relative; font-size: 85%; top: 45px;">Uhlir, Paul (ed) (2016). "Legal Interoperability of Research Data: Principles and Implementation Guidelines." Research Data Alliance - Committee on Data for Science and Technology - Legal Interoperability Interest Group. <a href="https://zenodo.org/record/162241#.WDRQln17Ifg">https://zenodo.org/record/162241#.WDRQln17Ifg</a>
+								<li style="position: relative; font-size: 85%; top: 60px;">Madison (2011). “Knowledge Curation.” <i>Notre Dame Law Review</i>, Vol. 86, p. 1957, 2011; U. of Pittsburgh Legal Studies Research Paper No. 2011-13. Available at SSRN: <a href="http://ssrn.com/abstract=1848086">http://ssrn.com/abstract=1848086</a>
+								<li style="position: relative; font-size: 85%; top: 75px;">Mons, Barend , et al (2011). The value of Data. <i>Nature Genetics</i>, 43, pp 281-283. <a href="https://dx.doi.org/10.1038/ng0411-281">https://dx.doi.org/10.1038/ng0411-281</a>.
+							</ul>
+							<br><br>
+						</div>
+						<br><br>
+					</section>	
+
+				</section>
+				
+				<section>
+					... break for next session ...
+				</section>				
+
+<!-- ########################################################################################################################## -->
+<!-- ##               end of session one - transition to session two                                                                                                                                                                                 ## -->				
+<!-- ########################################################################################################################## -->						
+
+				<section>
+					<div style="font-weight: bold; font-size: 110%;">Todays Outline</div>
+					<div style="width: 25%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+						<ul style="font-size: 80%;">
+							<li style="position: relative; left: 23px; top: 20px;">Security and Privacy
+							<li style="position: relative; left: 23px; top: 20px;">File System Organization
+							<li style="position: relative; left: 23px; top: 20px;">Midterm Assignment
+						</ul>
+					</div>
+					<br><br><br><br><br>
+					<div style="position: absolute; bottom: 0px; left: 500px; text-align: left; font-size: 60%; line-height: normal;">
+						<a href="https://etherpad.net/p/Data_Management_Keywords">https://etherpad.net/p/Data_Management_Keywords</a><br>
+					</div>
+				</section>
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Spinning (metal) disk: Laptop or Desktop</div>
+					<div style="position: relative; margin-left: 10%; margin-right: auto; top: 40px; font-size: 90%; width: 40%;">
+						<ul style="font-size: 95%;">
+							<li  style="position: relative; left: 23px; top: 20px; color: #aaa;">Pros
+							<ul style="font-size: 80%;">
+								<li>High level of control over file system, naming, and physical location of disk
+								<li>Easy to backup
+								<li>Convenient
+							</ul>
+							<li  style="position: relative; left: 23px; top: 50px; color: #aaa;">Cons
+							<ul style="font-size: 80%;">
+								<li>Risk of malware (virus)
+								<li>Risk of theft, damage, loss, etc
+								<li>System can eventually corrupt the disk (especially pcs)
+								<li>Finite lifespan
+							</ul>
+						</ul><br><br><br>
+					</div>
+                    <div class="fragment" style="position: absolute; left: 750px; top: 275px; border: 2px blue solid; width: 420px; background-color: #bbe; text-align: left; font-size: 70%; padding: 5px; padding-left: 10px;">
+						SECURITY CONSIDERATIONS:<br>
+						<ul style="font-size: 90%;">
+							<li style="position: relative; left: 23px;">Virus Control
+							<li style="position: relative; left: 23px;">Theft or damage
+							<li style="position: relative; left: 23px;">Disk failure
+						</ul>
+					</div>
+                </section>					
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Spinning (metal) disk: (Network) Server</div>
+					<div style="position: relative; margin-left: 5%; margin-right: auto; top: 40px; font-size: 90%; width: 75%;">
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px; top: 20px; color: #aaa;">Pros
+							<ul style="font-size: 80%;">
+								<li>High level of control over file system, naming, and physical location of disk
+								<li>Likely has backup and maintenance schedule
+								<li>Possible duplicate (mirror) images – RAID systems
+								<li>Safe physical location
+							</ul>
+							<div style="position: absolute; left: 600px; top: 200px; font-size: 60%; width: 550px;"><b>R</b>edundant <b>A</b>rray of <b>I</b>ndependent <b>D</b>isks</div>
+							<li style="position: relative; left: 23px; top: 50px; color: #aaa;">Cons
+							<ul style="font-size: 80%;">
+								<li>Expensive to maintain
+								<li>Migration can be difficult
+								<li>Susceptible to catastrophic events
+							</ul>
+						</ul><br><br><br><br><br>
+					</div>
+                    <div class="fragment" style="position: absolute; left: 700px; top: 450px; border: 2px blue solid; width: 410px; background-color: #bbe; text-align: left; font-size: 70%; padding: 5px; padding-left: 10px;">
+						SECURITY CONCERNS:<br>
+						<ul style="font-size: 90%;">
+							<li style="position: relative; left: 23px;">Use SSL connections
+							<li style="position: relative; left: 23px;">Good control (physical location)
+							<li style="position: relative; left: 23px;">Encryption?
+						</ul>
+					</div>
+                </section>		
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">External storage: memory and drives</div>
+					<div style="position: relative; margin-left: 0%; margin-right: auto; top: 40px; font-size: 90%; width: 80%;">
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px; top: 20px; color: #aaa;">Pros
+							<ul style="font-size: 80%;">
+								<li>Drives are cheap (sort of) and portable
+								<li>Convenient
+								<li>Memory is cheap and portable
+							</ul>
+							<li style="position: relative; left: 23px; top: 50px; color: #aaa;">Cons
+							<ul style="font-size: 80%;">
+								<li>Connection technologies change (USB, Firewire, SATA, and so on)
+								<li>Drive failure (both spinning drives and memory devices)
+								<li>Easily damaged, stolen or lost
+								<li>Finite space for large projects multiple drives may be necessary
+								<li>Malware can be propagated (think unsafe sex)
+							</ul>
+						</ul><br><br><br>
+					</div>
+                    <div class="fragment" style="position: absolute; left: 770px; top: 90px; border: 2px blue solid; width: 470px; background-color: #bbe; text-align: left; font-size: 70%; padding: 5px; padding-left: 10px;">
+						SECURITY CONCERNS:<br>
+						<ul style="font-size: 90%;">
+							<li style="position: relative; left: 23px;">Theft and damage
+							<li style="position: relative; left: 23px;">Good control (physical location), but you are responsible
+							<li style="position: relative; left: 23px;">Encryption?
+							<li style="position: relative; left: 23px;">Virus protection
+						</ul>
+					</div>
+					<div style="position: absolute; left: 500px; top: 600px; font-size: 50%; width: 700px; color: #aaa;">Does anyone use CDs anymore??? ZIP disks??? NOT recommended!!</div>
+                </section>			
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Networked drives: personal cloud</div>
+					<div style="position: relative; margin-left: 20px; margin-right: auto; top: 40px; font-size: 90%; width: 70%;">
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px; top: 20px; color: #aaa;">Pros
+							<ul style="font-size: 80%;">
+								<li>Drives are cheap (sort of) and portable
+								<li>Convenient access from anywhere
+								<li>Easy to install and sync
+								<li>Private: password protected
+							</ul>
+							<li style="position: relative; left: 23px; top: 50px; color: #aaa;">Cons
+							<ul style="font-size: 80%;">
+								<li>Upload/download bottlenecks
+								<li>Susceptible to acts catastrophic events
+								<li>Needs permanent power
+								<li>Needs IP address
+							</ul>
+						</ul><br><br><br>
+					</div>
+                    <div class="fragment" style="position: absolute; left: 840px; top: 250px; border: 2px blue solid; width: 350px; background-color: #bbe; text-align: left; font-size: 70%; padding: 5px; padding-left: 10px;">
+						SECURITY CONCERNS:<br>
+						<ul style="font-size: 90%;">
+							<li style="position: relative; left: 23px;">Use SSL connections
+							<li style="position: relative; left: 23px;">Theft or damage
+							<li style="position: relative; left: 23px;">Encryption?
+						</ul>
+					</div>
+					<div style="position: absolute; left: 500px; top: 600px; font-size: 50%; width: 700px; color: #aaa;">Western Digital, Seagate . . . <br>Perhaps buy online, out of state?</div>
+                </section>
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Networked drives: the "cloud"</div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 90%;">Includes: Repositories, Online Versioning and Sharing</div>
+					<div style="position: relative; margin-left: 30px; margin-right: auto; top: 40px; font-size: 90%; width: 70%;">
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px; top: 20px; color: #aaa;">Pros
+							<ul style="font-size: 80%;">
+								<li>No failure or backup worries (they do it)
+								<li>Can be secure (depends)
+								<li>Convenient
+								<li>Good for catastrophic events
+							</ul>
+							<li style="position: relative; left: 23px; top: 50px; color: #aaa;">Cons
+							<ul style="font-size: 80%;">
+								<li>Upload/download bottlenecks
+								<li>Fees?
+								<li>Long-term? No standards?
+								<li>How to get copies of all your data (try this for google drive)
+								<li>No control
+							</ul>
+						</ul><br><br><br><br>
+					</div>
+                    <div class="fragment" style="position: absolute; left: 840px; top: 210px; border: 2px blue solid; width: 420px; background-color: #bbe; text-align: left; font-size: 70%; padding: 5px; padding-left: 10px; padding-right: 10px;">
+						SECURITY CONCERNS:<br>
+						<ul style="font-size: 90%;">
+							<li style="position: relative; left: 23px;">Check the service agreement for encryption algorithm
+							<li style="position: relative; left: 23px;">Use SSL connections
+							<li style="position: relative; left: 23px;">No control
+						</ul>
+					</div>
+                </section>
+
+				<section>
+					... break for privacy ...
+				</section>
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Privacy</div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 40px; font-size: 75%; width: 90%; text-align: left;">
+						<u>Data derived from human subjects research</u>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px;">Must meet federal compliance requirements for security and privacy 
+							<li style="position: relative; left: 23px;">As examples: HIPAA, FERPA, FISMA
+						</ul><br><br>
+						University of Miami Human Subjects Research Office<br>
+						<a style="font-size: 75%;" href="http://uresearch.miami.edu/regulatory-compliance-services/hsro">http://uresearch.miami.edu/regulatory-compliance-services/hsro</a><br><br>
+						<u>Personally Identifiable Information (PII)</u><br>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px; ">Name, SSN, Date of Birth, Drivers License, Address, IP Address, Phone Number, anything that can uniquely identify a person
+							<li style="position: relative; left: 23px; ">NIH Guide for Identifying Sensitive Information<br>
+							<a style="font-size: 75%;" href="https://oma.od.nih.gov/DMS/Documents/Privacy/Guide%20for%20Handling%20Sensitive%20Information%20at%20NIH.pdf">https://oma.od.nih.gov/DMS/Documents/Privacy/Guide%20for%20Handling%20Sensitive%20Information%20at%20NIH.pdf</a>    
+						</ul><br><br>
+					</div>
+                </section>		
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">UM Secure Storage Options</div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 40px; font-size: 75%; width: 65%; text-align: left; line-height: 180%">
+						<b>BOX</b> is HIPAA compliant<br>
+						<b>CCS</b> storage services are HIPAA compliant<br>
+						<b>Qualitrics</b> survey tool to build and manage secure online surveys<br>
+						<a style="font-size: 75%; top: -23px;" href="http://it.miami.edu/a-z-listing/survey-tools/index.html">http://it.miami.edu/a-z-listing/survey-tools/index.html</a>
+					</div><br><br><br><br>
+					<div style="position: absolute; left: 500px; top: 500px; font-size: 50%; width: 700px; color: #aaa;"><a href="https://www.hhs.gov/hipaa/for-professionals/security/laws-regulations/">Health Insurance Portability and Accountability Act of 1996 (HIPAA)</a></div>
+                </section>	
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">UM Office of Research</div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 40px; font-size: 75%; width: 65%; text-align: left;">
+						<b>Velos:</b> <a href="http://uresearch.miami.edu/research-resources/velos">http://uresearch.miami.edu/research-resources/velos</a><br>
+						<div style="font-size: 80%; position: relative; left: 23px; width: 85%;">Velos eResearch Clinical Trials Management Software is a tool for managing clinical trials data.</div><br><br>
+						<b>REDcap:</b> <a href="http://uresearch.miami.edu/research-resources/redcap">http://uresearch.miami.edu/research-resources/redcap</a><br>
+						<div style="font-size: 80%; position: relative; left: 23px; width: 85%;">Research Electronic Data Capture is an application that allows users to build and manage online surveys and databases quickly and securely.</div>
+					</div><br><br><br><br>
+                </section>	
+
+				<section>
+					... break for privacy ...
+				</section>
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Not all data has security and privacy "needs", BUT ...</div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 40px; font-size: 75%; width: 70%; text-align: left;">
+						<ul style="font-size: 95%;">
+							<b><li style="position: relative; left: 23px;">Use automatic updates (mostly for virus issues)</b>
+							<b><li style="position: relative; left: 23px;">Use anti-virus software (also anti-intrusion)</b>
+							<b><li style="position: relative; left: 23px;">Use a firewall (also password protect file-sharing)</b>
+							<li style="position: relative; left: 23px;">Never connect to untrusted wireless connections
+							<li style="position: relative; left: 23px;">Computer disposal?
+							<li style="position: relative; left: 23px;">Know HTTPS, SSH/SCP, sFTP
+							<li style="position: relative; left: 23px;">Understand certificate errors
+							<li style="position: relative; left: 23px;">Do not send confidential email 
+							<li style="position: relative; left: 23px;">Public computers
+							<ul style="font-size: 90%;">
+								<li>Always log out
+								<li>Never leave data/files
+							</ul>
+						</ul><br><br>
+					</div>
+					<div style="position: absolute; left: 700px; top: 300px; font-size: 35%; width: 700px; color: #aaa;"><img src="../../common/assets/images-for-data/wireless.png"><br><a href="http://www.cnet.com/news/a-word-of-warning-about-free-public-wi-fi/">http://www.cnet.com/news/a-word-of-warning-about-free-public-wi-fi/</a></div>
+                </section>						
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Common sense (?)</div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 40px; font-size: 75%; width: 70%; text-align: left;">
+						Password lock all devices (in case of theft or loss)
+						<ul style="font-size: 95%; margin-bottom: 23px;">
+							<li style="position: relative; left: 23px;">Set screen to lock 
+							<li style="position: relative; left: 23px;">This is not foolproof, any hacker knows how to get past a password. See: <a href="http://pogostick.net/~pnh/ntpasswd/">http://pogostick.net/~pnh/ntpasswd/</a> for example.
+						</ul><br>
+						Encryption<br>
+						<ul style="font-size: 95%; margin-bottom: 23px;">
+							<li style="position: relative; left: 23px;">UM Policy: http://www.miami.edu/it/index.php/policies/ 
+							<li style="position: relative; left: 23px;">Mac: System Preferences: Security and Privacy: FileVault
+							<li style="position: relative; left: 23px;">PC: Control Panel: BitLocker Drive Encryption
+						</ul><br>
+						Empty trash securely<br>
+						<ul style="font-size: 95%; margin-bottom: 23px;">
+							<li style="position: relative; left: 23px;">Mac: Finder->Preferences: Advanced Tab, “Empty Trash Securely”
+							<li style="position: relative; left: 23px;">PC: Eraser (open source GPL): http://eraser.heidi.ie/
+						</ul><br><br>
+					</div>
+                </section>
+
+                <section>
+					<div style="position: relative; margin-left: 200px; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%; width: 30%;">Encryption</div>
+					<div style="position: relative; margin-left: 10px; margin-right: auto; top: 40px; font-size: 90%; width: 55%; text-align: left;">
+						<pre><code>
+$ openssl
+
+$ openssl des3 -in test.txt -out encrypted.txt
+
+$ openssl des3 -d -in encrypted.txt -out testout.txt
+						</code></pre>					
+						<br><br>
+					</div>
+					<div style="position: absolute; left: 700px; top: 0px; width: 600px;"><img src="../../common/assets/images-for-data/codebook.jpg"></div>
+					<div style="position: absolute; left: 200px; top: 400px; font-size: 40%; width: 600px; color: #aaa; text-align: left;">Singh, S. 1999. The Code Book: the science of secrecy from ancient Egypt to quantum cryptography. Fourth Estate, London.</div>
+					<div style="position: absolute; left: 100px; top: 500px; font-size: 75%; width: 600px;">NOTE: encryption mistakes are irreversible</div>
+                </section>		
+
+				<section>
+					<div style="font-weight: bold; font-size: 110%;">Once again ...</div>
+					<div class="fragment" style="width: 40%; font-size: 85%; top: 50px; left: 150px; position: relative;">
+						this will get personal
+					</div>
+					<div class="fragment" style="width: 40%; font-size: 85%; top: 150px; left: 300px; position: relative;">
+						access and passwords
+					</div>
+					<div class="fragment" style="width: 40%; font-size: 85%; top: 250px; left: 550px; position: relative;">
+						online habits
+					</div>
+					<br><br><br><br><br><br><br>
+				</section>
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Access Terms (keywords)</div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 40px; font-size: 75%; width: 70%; text-align: left;">
+						<b>User ID / Password</b>
+						<div style="margin-left: 80px;">your UM account</div><br>
+						<b>Limited Network Access</b> -or- 	<b>local area network (LAN)</b><br>
+						<div style="margin-left: 80px;">some research labs, many government offices, many business offices: usually limited to physical presence within the network and <b>virtual private networks (VPN)</b></div><br>
+						<b>Role-Based Access Rights</b><br>
+						<div style="margin-left: 80px;">your computer login (administrator, standard, sharing only, guest)</div>
+					</div><br><br><br>
+                </section>				
+
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Password Management</div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 40px; font-size: 75%; width: 85%; text-align: left;">
+						<b>Mistakes leading to weak passwords</b> <span style="font-size: 80%">(Do not make these mistakes when choosing a password):</span>
+						<ul style="font-size: 95%;">
+							<li style="position: relative; left: 23px;">your username as a password (even backwards or mixed up).
+							<li style="position: relative; left: 23px;">using any name, or any word in any language.
+							<li style="position: relative; left: 23px;">obvious personal information (your year of birth, phone number, national insurance number, address, etc.).
+							<li style="position: relative; left: 23px;">all digits, or just one letter.
+							<li style="position: relative; left: 23px;">real words with only one or two obvious digit substitutions, like 'p4ssword' or '5ecret'.
+							<li style="position: relative; left: 23px;">fewer than eight characters ("brute force" attack cracks 7 letters in a few minutes).
+							<li style="position: relative; left: 23px;">characters from books, films, etc. (Gandalf, Sherlock), band names, song titles etc. (no matter how obscure).
+							<li style="position: relative; left: 23px;">passwords that are too easy or too difficult to type
+						</ul><br><br><br>
+					</div>
+                </section>		
+
+				<section>
+					<img src="../../common/assets/images-for-data/passwords.png">
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: -10px; font-size: 40%; width: 600px; color: #aaa; text-align: center;"><a href="http://www.explainxkcd.com/wiki/index.php/936:_Password_Strength">http://www.explainxkcd.com/wiki/index.php/936:_Password_Strength</a></div>
+				</section>
+				
+				<section>
+					<img src="../../common/assets/images-for-data/passwords.png">
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: -10px; font-size: 40%; width: 600px; color: #aaa; text-align: center;"><a href="http://www.explainxkcd.com/wiki/index.php/936:_Password_Strength">http://www.explainxkcd.com/wiki/index.php/936:_Password_Strength</a></div>
+					<div style="position: absolute; left: 130px; top: 160px; font-size: 200%; width: 1100px; text-align: center; border: 4px red solid; padding-top: 80px; padding-bottom: 80px; background-color: #fff;">Passwords should be long</div>
+				</section>
+				
+                <section>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">7 common cloud missteps</div>
+					<div style="position: relative; margin-left: auto; margin-right: auto; top: 40px; font-size: 75%; width: 85%; text-align: left;">
+						<b>Mistakes leading to weak passwords</b> <span style="font-size: 80%;">(Do not make these mistakes when choosing a password):</span>
+						<ol style="font-size: 95%;">
+							<li style="position: relative; left: 23px; margin-top: 10px;">You lost control of your data because of the fine print in a user agreement.
+							<br><div style="color: #999; font-size: 80%; margin-left: 23px; margin-bottom: 9px;">Do a google search “<theNewCloudService> shady user agreement”
+							<li style="position: relative; left: 23px;">You sent out a public link to a Google Doc so others could view and edit.
+							<br><div style="color: #999; font-size: 80%; margin-left: 23px; margin-bottom: 9px;">Invite people through emails
+							<li style="position: relative; left: 23px;">Your cloud account gets hacked (bad password).
+							<br><div style="color: #999; font-size: 80%; margin-left: 23px; margin-bottom: 9px;">Better password management
+							<li style="position: relative; left: 23px;">You use the same password for every app on your phone.
+							<br><div style="color: #999; font-size: 80%; margin-left: 23px; margin-bottom: 9px;">See above
+							<li style="position: relative; left: 23px;">Web trackers are storing information on the sites you visit online.
+							<br><div style="color: #999; font-size: 80%; margin-left: 23px; margin-bottom: 9px;">Private browsing? Don’t stay logged in to google all the time?
+							<li style="position: relative; left: 23px;">You granted an application (smartphone) every permission under the sun.
+							<br><div style="color: #999; font-size: 80%; margin-left: 23px; margin-bottom: 9px;">Be thoughtful when you install and run new apps
+							<li style="position: relative; left: 23px;">A small mobile app startup you know nothing about has access to your banking data.
+							<br><div style="color: #999; font-size: 80%; margin-left: 23px; margin-bottom: 9px;">Let you bank manage your banking data
+						</ol><br><br>
+					</div>
+					<div style="position: absolute; left: 700px; top: 700px; font-size: 40%; width: 500px; color: #aaa; text-align: center;"><a href="http://cloudtweaks.com/2015/11/7-common-cloud-security-missteps/">http://cloudtweaks.com/2015/11/7-common-cloud-security-missteps/</a></div>
+                </section>			
+				
+            </div>
+        </div>
+        <script src="../../common/java/reveal.js"></script>
+	    <script src="../../common/java/notes.js"></script>
+	    <script src="../../common/java/head.min.js"></script>
+        <script>
+            Reveal.initialize({
+                width: 1366, height: 768, margin: 0.05,
+                controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+				chart: {
+					defaults: { 
+						global: { 
+							defaultFontSize: 20,
+							title: { fontColor: "#333" }, 
+							legend: {
+								position: "top",
+								labels: { fontColor: "#333" },
+							},
+							tooltips: {
+								labels: { fontColor: "#333" },
+							},
+						}, 
+						scale: { 
+							scaleLabel: { fontColor: "#333" }, 
+							gridLines: { color: "#333", zeroLineColor: "#333" }, 
+							ticks: { fontColor: "#333" }, 
+						} 
+					},
+				},
+                dependencies: [
+                    { src: '../../common/java/Chart.min.js' },
+                    { src: '../../common/java/csv2chart.js' }
+                ] 
+            });
+        </script>
+    </body>
+</html>

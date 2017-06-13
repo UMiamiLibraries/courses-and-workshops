@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+ <head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="chrome=1">
+   <title>Lesson 01</title>
+   
+   <script type="text/javascript" src="../../common/java/markdown.js"></script>
+   <script type="text/javascript" src="../../common/java/readmd.js"></script>
+   
+   <link rel="stylesheet" href="../../common/css/styles.css">
+   <link rel="stylesheet" href="../../common/css/github-light.css">
+   <link rel="stylesheet" href="../../common/css/overrides.css">
+ </head>
+ 
+ <body>
+  <div id="main" class="wrapper" style="width: 80%; max-width: 800px;"></div>
+  <script type="text/javascript">
+   var mdContent = readTextFile("lesson01.md"),
+       htmlContent = markdown.toHTML(mdContent,'Maruku'),
+       mdView = document.getElementById('main');
+   mdView.innerHTML = htmlContent;       
+  </script>
+ </body>
+ 
+</html>
