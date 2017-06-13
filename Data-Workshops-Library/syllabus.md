@@ -33,8 +33,8 @@ Sessions 1 and 2 will be offered twice each in Fall 2016. Sessions 3 and 4 will 
 ####[Session 3](session03.md) - Conversations about research data and the Data Curation Profile
 > Conduct data curation profile interview with a faculty member (friendly)
 
-* July 6: 10 - 11:30 am 
-* July 11: 10 - 11:30 am
+* July 13: 10 - 11:30 am 
+* July 18: 10 - 11:30 am
 
 ####[Session 4](session04.md) - On campus Data Curation Resources and Research Data Services
 > Review on campus resources for research data management and data services
