@@ -11,7 +11,8 @@
 **Learning Objectives**  
 
 - Identify data challenges facecd by faculty, staff and students in their research activities
-- know best practices for file system management, backup and storage, security and privacy, and so on
+- Converse with faculty member about data challenges in the research process
+- Able to integrate data questions into research consultations for faculty, students and staff
 
 ---
 

@@ -10,8 +10,9 @@
 
 **Learning Objectives**  
 
-- Able to assist faculty, staff, and students with basic data services
-- Able to refer faculty, staff, and students to other library faculty for more complex data services
+- Able to assist faculty, staff, and students with basic data consultations
+- Identify existing research data services on the three University of Miami campuses 
+- Able to refer faculty, staff, and students to other library faculty or non-library campus units for more complex data services
 
 ---
 
