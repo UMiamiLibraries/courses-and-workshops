@@ -1,5 +1,5 @@
 ##Session 4 - Research Data Services at the University of Miami
-[back to syllabus](syllabus.md)  |  [slide deck](slides/slides02.html) 
+[back to syllabus](syllabus.md)  |  [slide deck](slides/slides04.html) 
 
 ---
 
