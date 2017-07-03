@@ -3,8 +3,8 @@
 
 ---
 
-* July 13: 10 - 11:30 am 
-* July 18: 10 - 11:30 am
+* July 13: 9 - 11:00 am (information literacy lab)
+* July 14: 10 - 11:30 am (information literacy lab)
 
 ---
 

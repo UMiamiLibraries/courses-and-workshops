@@ -1,4 +1,4 @@
-##[Data Curation for Liaison Librarians](https://github.com/tibbben/school.of.data/tree/master/UM_DataCurationWorkshops)
+##[Data Curation for Liaison Librarians](https://github.com/UMiamiLibraries/courses-and-workshops/tree/master/Data-Workshops-Library)
 ###University of Miami Libraries’ Internal Seminar Series
 
 As a part of the data curation initiative, Tim Norris will offer a series of four seminars/workshops covering fundamental aspects of data curation for liaison librarians. The structure of the workshops will be as follows:  
@@ -7,7 +7,7 @@ As a part of the data curation initiative, Tim Norris will offer a series of fou
 * In each session you will share out what you learned  
 * Additional information will be provided as needed
 
-###Workshop Learning Goals
+###Seminar Learning Goals
 1. Articulate challenges that students and faculty face in grant writing
 2. Explain challenges students and faculty face in depositing research results into a repository
 3. Facilitate faculty and student consultations about research data management and services
@@ -33,14 +33,14 @@ Sessions 1 and 2 will be offered twice each in Fall 2016. Sessions 3 and 4 will 
 ####[Session 3](session03.md) - Conversations about research data and the Data Curation Profile
 > Conduct data curation profile interview with a faculty member (friendly)
 
-* July 13: 10 - 11:30 am 
-* July 18: 10 - 11:30 am
+* July 13: 9 - 11:00 am (information literacy lab)
+* July 14: 10 - 11:30 am (information literacy lab)
 
 ####[Session 4](session04.md) - On campus Data Curation Resources and Research Data Services
 > Review on campus resources for research data management and data services
 
-* July 27: 10 - 11:30 am
-* August 1: 10 - 11:30 am
+* July 27: 10 - 11:30 am (information literacy lab)
+* July 28: 10 - 11:30 am (information literacy lab)
 
 ---
 

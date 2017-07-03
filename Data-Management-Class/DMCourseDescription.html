@@ -17,12 +17,11 @@
  <body>
   <div id="main" class="wrapper" style="width: 80%; max-width: 800px;"></div>
   <script type="text/javascript">
-   var mdDescription = readTextFile("DMCourseDescription.md"),
-       htmlDescription = markdown.toHTML(mdDescription,'Maruku'),
-	   mdSyllabus = readTextFile("DMClassSyllabus.md"),
-       htmlSyllabus = markdown.toHTML(mdSyllabus,'Maruku'),
+   var mdContent = readTextFile("DMCourseDescription.md"),
+       htmlContent = markdown.toHTML(mdContent,'Maruku'),
        mdView = document.getElementById('main');
-   mdView.innerHTML = htmlDescription + htmlSyllabus;       
+	   footer = '<p><strong>Course Resources:</strong></p><ul><li><a href="DMClassSyllabus.html"><em>Full Syllabus and Course Schedule</em></a></li><li><a href=""><em>Blackboard Site</em></a></li></ul>'
+   mdView.innerHTML = htmlContent + footer;       
   </script>
  </body>
  
