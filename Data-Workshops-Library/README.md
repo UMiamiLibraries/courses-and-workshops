@@ -3,7 +3,7 @@
 
 As a part of the data curation initiative this is series of three active learning workshops that will cover fundamental aspects of data curation for liason librarians.
 
-Please see the [hosted version](http://tibbben.github.io/school.of.data/UM_DataCurationWorkshops/syllabus.html) for more information.
+Please see the [hosted version](https://umiamilibraries.github.io/courses-and-workshops/Data-Workshops-Library/syllabus.html) for more information.
 
 Questions or comments please contact [Timothy Norris](mailto:tnorris@miami.edu)
 
