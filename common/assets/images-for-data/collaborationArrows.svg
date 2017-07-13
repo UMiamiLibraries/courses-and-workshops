@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600px" height="150px">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000" />
+    </marker>
+  </defs>
+  <style type="text/css"><![CDATA[
+    .myPath {fill:none; stroke:black; stroke-width:5;}
+  ]]></style>
+
+  <path class="myPath" d="M50,20 290,130" marker-end="url(#arrow)"/>
+  <path class="myPath" d="M550,20 310,130" marker-end="url(#arrow)"/>
+</svg>
