@@ -8,6 +8,6 @@
     .myPath {fill:none; stroke:black; stroke-width:5;}
   ]]></style>
 
-  <path class="myPath" d="M50,20 290,130" marker-end="url(#arrow)"/>
-  <path class="myPath" d="M550,20 310,130" marker-end="url(#arrow)"/>
+  <path class="myPath" d="M100,20 200,110" marker-end="url(#arrow)"/>
+  <path class="myPath" d="M460,20 360,110" marker-end="url(#arrow)"/>
 </svg>
