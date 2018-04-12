@@ -1,4 +1,4 @@
-##[The Data Management Challenge: wrangling data in the research environment](https://github.com/UMiamiLibraries/courses-and-workshops/tree/master/Data-Workshops-Library)
+##[The Data Management Challenge: wrangling data in the research environment](https://github.com/UMiamiLibraries/courses-and-workshops/tree/master/Data-Management-Seminar)
 
 As a part of the data curation initiative, this seminar is designed to:
 
