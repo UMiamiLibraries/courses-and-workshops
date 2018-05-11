@@ -1,4 +1,3 @@
-
 **Methods of Instruction:**  
 Lecture-discussion, demonstration, and practical out-of-class and
 in-class assignments. Students are expected to participate in the
@@ -60,25 +59,27 @@ here?*
 -   Holdren, J (2013). *Increasing Access to the Results of Federally
     Funded Scientific Research*. Office of Science and Technology
     Policy, Executive Office of the President.
-    [*https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf*](https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf)
+    [https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf](https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf)
 -   National
     Science Foundation. *Dissemination and Sharing of Research Results*.
-    [*http://www.nsf.gov/bfa/dias/policy/dmp.jsp*](http://www.nsf.gov/bfa/dias/policy/dmp.jsp)
+    [http://www.nsf.gov/bfa/dias/policy/dmp.jsp](http://www.nsf.gov/bfa/dias/policy/dmp.jsp)
     Read only the [sharing](https://www.nsf.gov/pubs/policydocs/pappguide/nsf15001/aag_6.jsp#VID4) and [data management](https://www.nsf.gov/pubs/policydocs/pappguide/nsf15001/gpg_2.jsp#dmp) sections.
 
 > Optional Reading:
 
 -   Posner, (2013). “Embarrassments of riches: managing research assets.”
-    [*http://miriamposner.com/blog/?p=982*](http://miriamposner.com/blog/?p=982).
+    [http://miriamposner.com/blog/?p=982](http://miriamposner.com/blog/?p=982).
 -   Karasti, H., Baker, K. S.,
     & Halkola, E. (2006). Enriching the Notion of Data Curation in
     E-Science: Data Managing and Information Infrastructuring in the
-    Long Term Ecological Research (LTER) Network. Computer Supported
-    Cooperative Work (CSCW), 15(4), 321-358.
-    [*https://dx.doi.org/10.1007/s10606-006-9023-2*](https://dx.doi.org/10.1007/s10606-006-9023-2).
+    Long Term Ecological Research (LTER) Network. *Computer Supported
+    Cooperative Work* (CSCW), 15(4), 321-358.
+    [https://dx.doi.org/10.1007/s10606-006-9023-2](https://dx.doi.org/10.1007/s10606-006-9023-2).
 -   Gantz, J., & Reinsel, D. (2012). "The Digital Universe in 2020: Big Data, Bigger Digital Shadows, and 
     Biggest Growth in the Far East." Retrieved from 
 	[https://www.emc.com/collateral/analyst-reports/idc-the-digital-universe-in-2020.pdf](https://www.emc.com/collateral/analyst-reports/idc-the-digital-universe-in-2020.pdf).
+-  Whyte, Angus & Tedds, Jonathan (2011). "Making the Case for Research Data Managment." *DCC Briefing Papers*, Edinburgh: Digital Curation Centre.
+   [http://www.dcc.ac.uk/resources/briefing-papers/making-case-rdm](http://www.dcc.ac.uk/resources/briefing-papers/making-case-rdm).
 
 > [slide deck](slides/slides01.html) [...](lessons/lesson01.html)
 

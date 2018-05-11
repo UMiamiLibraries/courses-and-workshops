@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+ <head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="chrome=1">
+   <title>The Data Management Challenge - Syllabus</title>
+   
+   <script type="text/javascript" src="../common/java/markdown.js"></script>
+   <script type="text/javascript" src="../common/java/readmd.js"></script>
+   
+   <link rel="stylesheet" href="../common/css/styles.css">
+   <link rel="stylesheet" href="../common/css/github-light.css">
+ </head>
+ 
+ <body>
+  <div class="wrapper">
+    <div id="main" class="mdcontent"></div>
+  </div>
+  <script type="text/javascript">
+   var mdContent = readTextFile("syllabus.md",'Maruku'),
+       htmlContent = markdown.toHTML(mdContent).replace(/.md/g,".html"),
+       mdView = document.getElementById('main');
+   mdView.innerHTML = htmlContent;
+   mdView.focus();
+  </script>
+ </body>
+ 
+</html>
