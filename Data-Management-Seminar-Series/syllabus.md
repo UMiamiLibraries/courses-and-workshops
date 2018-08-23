@@ -23,7 +23,7 @@ This series of seminars expands upon the introduction to
 - Understand federal policy context for data management and sharing
 - Explain the data lifecycle with attention to understanding “data” and “management”
 - Critically evaluate existing Data Management Plans
-- Able to identify key elements in a Data Management Plan
+- Be able to identify key elements in a Data Management Plan
 - Outline a data management plan for your research
 
 > [Slides](slides/slides_01.html)
@@ -35,7 +35,7 @@ This series of seminars expands upon the introduction to
 - Understand file format choices and their implications for data sharing, data publication, and data re-use 
 - Identify best practices for file system organization
 - Identify best practices for file naming conventions
-- Design a file system for your research
+- Select file formats and design a file system for your research
 
 > [Slides](slides/slides_02.html)
 
@@ -45,8 +45,8 @@ This series of seminars expands upon the introduction to
 
 - Identify disciplinary metadata standards (if they exist)
 - Describe discipline agnostic metadata standards
-- Understand how metadata facilitiates discover, sharing and access to data resources
-- Create metadata for some aspect of your reearch
+- Understand how metadata facilitates discovery, sharing and access to data resources
+- Create metadata for some parts of your research data
 
 > [Slides](slides/slides_03.html)
 
@@ -54,9 +54,9 @@ This series of seminars expands upon the introduction to
 
 > Learning objectives:
 
-- Identify disciline specific repositories
+- Identify discipline specific repositories
 - Understand data ownership in the context of research institutions
-- Able to decode repository requirements to publish data
+- Be able to decode repository requirements to publish data
 - Create correct citations for referencing data in publications
 - Create a deposit package for a data repository
 
