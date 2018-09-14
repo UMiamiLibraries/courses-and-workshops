@@ -25,16 +25,12 @@ section {
 	  max-width: 100% !important;
   }
 }
-.staff-meta h4{margin-bottom:.125rem}
+.staff-meta h4{margin: 20px 0px 0px 160px !important}
 .staff-meta h4 a{text-decoration:underline;color:#333;background-color:transparent}
 .staff-meta h4 a:active{color:#f17430}
-.staff-meta p{margin-bottom:.25rem;line-height:1.2}
+.staff-meta p{margin-bottom:.25rem;line-height:1.2; margin-left: 160px;}
 .staff-meta p br{display:none}
 .staff-meta p .smaller{margin:.5rem 0;display:inline-block;font-size:1rem;line-height:1.2}
-.staff-meta h4{margin-bottom:.125rem}
-.staff-meta h4 a{text-decoration:underline;color:#333;background-color:transparent}
-.staff-meta h4 a:active{color:#f17430}
-.staff-meta p{margin-bottom:.25rem;line-height:1.2}
-.staff-meta p{margin-bottom:.25rem;line-height:1.2}
-.staff-meta{padding-top:1rem}
-.staff-pic img{border-radius:50%;background-color:#ff9f55;padding-right:4px;width:74px;height:70px;max-width:74px;margin-right:1rem}
+.staff-meta {padding-top:1rem}
+.staff-pic img{border-radius:35%;background-color:#ff9f55;padding-right:4px;width:150px;height:150px;max-width:200px;margin-right:1rem}
+.staff-meta { font-size: 120% !important;}
