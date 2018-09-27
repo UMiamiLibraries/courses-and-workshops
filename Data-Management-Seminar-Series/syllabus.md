@@ -26,7 +26,7 @@ This series of seminars expands upon the introduction to
 - Be able to identify key elements in a Data Management Plan
 - Outline a data management plan for your research
 
-> [Slides](slides/slides_01.html)
+> [Slides](slides/slides01.html)
 
 ####[Session 2](session02.md) - File Formats and File System Organization
 
@@ -37,7 +37,7 @@ This series of seminars expands upon the introduction to
 - Identify best practices for file naming conventions
 - Select file formats and design a file system for your research
 
-> [Slides](slides/slides_02.html)
+> [Slides](slides/slides02.html)
 
 ####[Session 3](session03.md) - Data Description and Documentation
 
@@ -48,7 +48,7 @@ This series of seminars expands upon the introduction to
 - Understand how metadata facilitates discovery, sharing and access to data resources
 - Create metadata for some parts of your research data
 
-> [Slides](slides/slides_03.html)
+> [Slides](slides/slides03.html)
 
 ####[Session 4](session04.md) - Data Publication: Repositories and Sharing
 
@@ -60,9 +60,4 @@ This series of seminars expands upon the introduction to
 - Create correct citations for referencing data in publications
 - Create a deposit package for a data repository
 
-> [Slides](slides/slides_04.html)
-
-
-
-
-
+> [Slides](slides/slides04.html)

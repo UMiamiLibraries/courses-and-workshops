@@ -103,7 +103,7 @@ here?*
     [*http://www.nap.edu/catalog/12615/ensuring-the-integrity-accessibility-and-stewardship-of-research-data-in-the-digital-age*](http://www.nap.edu/catalog/12615/ensuring-the-integrity-accessibility-and-stewardship-of-research-data-in-the-digital-age)
 -   Office of Management and Budget (2013). Open Data Policy—Managing Information as an Asset. [https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf)
 -   Choose a DMP to read from
-    [*https://dmptool.org/public\_dmps*](https://dmptool.org/public_dmps).
+    [*https://dmptool.org/public_plans*](https://dmptool.org/public_plans).
     NOTE: “They are not vetted for quality, completeness, or adherence
     to funder guidelines.”
 -   If your research lab has an existing DMP bring it to class
