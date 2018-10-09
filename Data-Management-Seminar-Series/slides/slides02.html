@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../../common/css/reveal.css">
+        <link rel="stylesheet" href="../../common/css/white.css">
+        <link rel="stylesheet" href="../../common/css/overrides.css">
+      <script src="../../common/java/print.js"></script>
+        <title>Research Data Management - 02</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+
+                <section data-background-image="../../common/assets/images-for-data/DataCurationCover.png">
+                  <div style="position: aboslute; top: 0px; left: 0px; width: 100%; height: 100%;">
+                    <div style="position: absolute; left: 340px; top: 225px; font-size: 150%; line-height: 100%;"><strong>Data Management in the<br>Research Environment</strong></div>
+                    <div style="position: absolute; left: 620px; top: 410px; font-size: 90%">File Formats and File System Organization<br><span style="font-size: 90%">Library Workshop Series <script>var today = new Date();document.write(today.getFullYear());</script></span></div>
+                    <div style="position: absolute; left: 420px; top: 525px; font-size: 70%; text-align: left"><a href="https://bit.ly/2N7SbVt" style="color: #222 !important; text-decoration: underline;">https://bit.ly/2N7SbVt</a></div>
+                    <div style="position: absolute; left: 440px; top: 605px; font-size: 50%; text-align: left">Dr. Timothy Norris - Research Data Scientist - <a href="mailto:tnorris@miami.edu" style="color: #222 !important; text-decoration: underline;">tnorris@miami.edu</a></div>
+                  </div>
+                </section>
+
+           <!-- ***
+                 * data delluge (review)
+                 * -->
+
+                <section>
+
+                    <section>
+                        <div style="width: 80%; margin-right: 10%; margin-left: auto;">
+                            <br><span style="font-weight: bold; font-size: 110%;"><i>Quick Review:</i> Data Management Plans<br><br></span>
+                            <div style="font-size: 80%; text-align: left; line-height: 200%; position: relative; left: 200px;">
+                                <ul>
+                                    <li style="position: relative; left: 23px;">Information about Data and Data Formats
+                                    <li style="position: relative; left: 23px;">Metadata Content and Format
+                                    <li style="position: relative; left: 23px;">Policies for access sharing and re-use
+                                    <li style="position: relative; left: 23px;">Long-term storage and preservation
+                                    <li style="position: relative; left: 23px;">Budget
+                                </ul>
+                            </div>
+                            <br>
+                            <span style="font-weight: bold; font-style: italic; font-size: 70%;">BUT it always will depend on your goals and the funder’s goals</span>
+                        </div><br><br>
+                    </section>
+
+                </section>
+
+           <!-- ***
+                 * Suggested Readings
+                 * -->
+
+                <section>
+                    <div style="width: 80%; margin-right: 10%; margin-left: auto;">
+                        <br><span style="font-weight: bold; font-size: 110%;">Further Reading:<br><br></span>
+                        <div style="font-size: 70%; text-align: left; max-width: 80%; line-height: 200%; margin: 0px auto 0px auto;">
+                            <ul>
+                                <li><a target="_blank" href="https://www.whitehouse.gov/sites/default/files/microsites/ostp/ostp_public_access_memo_2013.pdf ">Office of Science and Technology (2013). Public Access Memo.</a>
+                                <li><a href="*http://uk.sagepub.com/sites/default/files/upm-binaries/63923\_Kitchin\_CH1.pdf">Kitchen, Rob. (2014) <i>The Data Revolution</i>. Washington DC: SAGE.</a>
+                                <li><a href="https://strategy.data.gov">https://strategy.data.gov</a>
+                                <li><a href="https://cdn.miami.edu/wda/facultysenate/Documents/FacultyManual.pdf">The 2017-18 UM Faculty Manual</a>
+                                <li><a href="https://dmptool.org">https://dmptool.org</a>
+                                <li><a href="https://osf.io/kh2y6/">The DART Project - A rubric for evaluating DMPs</a>
+                            </ul>
+                        </div>
+                        <br>
+                    </div><br><br>
+                </section>
+
+            </div>
+        </div>
+        <script src="../../common/java/reveal.js"></script>
+        <script src="../../common/java/notes.js"></script>
+        <script src="../../common/java/head.min.js"></script>
+        <script>
+            Reveal.initialize({
+                width: 1366, height: 768, margin: 0.05,
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                mouseWheel: true,
+                chart: {
+                  defaults: { 
+                    global: { 
+                      defaultFontSize: 20,
+                      title: { fontColor: "#333" }, 
+                      legend: {
+                        position: "top",
+                        labels: { fontColor: "#333" },
+                      },
+                      tooltips: {
+                        labels: { fontColor: "#333" },
+                      },
+                    }, 
+                    scale: { 
+                      scaleLabel: { fontColor: "#333" }, 
+                      gridLines: { color: "#333", zeroLineColor: "#333" }, 
+                      ticks: { fontColor: "#333" }, 
+                    } 
+                  },
+                },
+                dependencies: [
+                    { src: '../../common/java/Chart.min.js' },
+                    { src: '../../common/java/csv2chart.js' }
+                ] 
+            });
+        </script>
+    </body>
+</html>
