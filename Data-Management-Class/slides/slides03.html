@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="../../common/css/reveal.css">
         <link rel="stylesheet" href="../../common/css/white.css">
         <link rel="stylesheet" href="../../common/css/overrides.css">
-	    <script src="../../common/java/print.js"></script>
+      <script src="../../common/java/print.js"></script>
         <title>Research Data Management - 03</title>
         <meta charset="UTF-8">
     </head>
@@ -12,233 +12,230 @@
         <div class="reveal">
             <div class="slides">
 
-                <section data-background-image="../../common/assets/images-for-data/DataCurationCover.png">
-                    <div style="position: absolute; left: 340px; top: 125px; font-size: 150%; line-height: 100%;"><strong>Data Management in the<br>Research Environment</strong></div>
-                    <div style="position: absolute; left: 750px; top: 285px; font-size: 90%">RSM 674 Spring <script>var today = new Date();document.write(today.getFullYear());</script></div>
-                    <div style="position: absolute; left: 460px; top: 390px; font-size: 50%; text-align: left">Dr. Timothy Norris - Data Curation Fellow - <a href="mailto:tnorris@miami.edu" style="color: #222 !important; text-decoration: underline;">tnorris@miami.edu</a><br>Angela Clark - Librarian Associate Professor RSMAS - <a href="mailto:tnorris@miami.edu" style="color: #222 !important; text-decoration: underline;">aclark@rsmas.miami.edu</a></div>
-		        </section>
-				
-				<section>
-					<div style="font-weight: bold; font-size: 110%;">Todays Outline</div>
-					<div style="width: 75%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
-						<ul style="font-size: 80%;">
-							<li style="position: relative; left: 23px; top: 20px;">Reading review - Keywords at <a href="https://etherpad.net/p/Data_Management_Keywords">https://etherpad.net/p/Data_Management_Keywords</a>
-							<li style="position: relative; left: 23px; top: 20px;">Categorizing Data
-							<li style="position: relative; left: 23px; top: 20px;">Data in the Research Data Lifecycle
-						</ul>
-					</div>
-					<br><br><br>
-				</section>
-				
-				<section>
-					
-					<section>
-						<div style="font-weight: bold; font-size: 110%;">Promoting the Stewardship of Research Data</div>
-						<div style="width: 70%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
-							<ul style="font-size: 80%;">
-								<li style="position: relative; left: 23px; top: 20px;">National Academy of the Sciences - 
-								<ul style="font-size: 85%">
-									<li>Committee on Ensuring the Utility and Integrity of Research Data in a Digital Age
-									<li><a href="http://www.nap.edu/author/COSEPUP">Committee on Science, Engineering, and Public Policy</a>
-									<li><a href="http://www.nap.edu/author/PGA">Policy and Global Affairs</a>
-									<li><a href="http://www.nap.edu/author/IOM">Institute of Medicine</a>
-								</ul><br>
-								<li style="position: relative; left: 23px; top: 20px;">Keywords??<br><br>
-								<li style="position: relative; left: 23px; top: 20px;">Value
-								<ul style="font-size: 85%">
-									<li>how does the value of data change over time?
-									<li>why is some data more valuable than others?
-									<li>what kinds of value are there?
-								</ul>
-							</ul>
-						</div>
-						<br><br><br>
-					</section>
+              <section data-background-image="../../common/assets/images-for-data/DataCurationCover.png">
+                  <div style="position: absolute; left: 340px; top: 125px; font-size: 150%; line-height: 100%;"><strong>Data Management in the<br>Research Environment</strong></div>
+                  <div style="position: absolute; left: 750px; top: 285px; font-size: 90%">RSM 674 Spring <script>var today = new Date();document.write(today.getFullYear());</script></div>
+                  <div style="position: absolute; left: 460px; top: 390px; font-size: 50%; text-align: left">Dr. Timothy Norris - Data Curation Fellow - <a href="mailto:tnorris@miami.edu" style="color: #222 !important; text-decoration: underline;">tnorris@miami.edu</a><br>Angela Clark - Librarian Associate Professor RSMAS - <a href="mailto:tnorris@miami.edu" style="color: #222 !important; text-decoration: underline;">aclark@rsmas.miami.edu</a></div>
+              </section>
 
-					<section>
-						<span style="font-weight: bold; font-size: 100%;">ICPSR LEADS project findings for NSF- and NIH-sponsored awards that created social science data (2008)<br><br></span>
-						<div style="width: 800px; position: relative; top: 0px; margin-right: auto; margin-left: auto;">                    
-							<canvas data-chart="bar" class="stretch">
-							<!-- 
-							{
-							 "data": {
-							  "labels": ["NIH (n=661)","NSF (n=938)"],
-							  "datasets": [
-							   {
-								"label": "Archived",
-								"data":[57,270],
-								"backgroundColor": [ "rgba(20,220,20,.8)", "rgba(20,220,20,.8)" ]
-							   },
-							   {
-								"label": "Available",
-								"data":[461,415],
-								"backgroundColor": [ "rgba(220,220,20,.8)", "rgba(220,220,20,.8)" ]
-							   },
-							   {
-								"label": "Lost",
-								"data":[143,253],
-								"backgroundColor": [ "rgba(220,20,20,.8)", "rgba(220,20,20,.8)" ]
-							   }
-							  ]
-							 }, 
-							  "options": { 
-							  "responsive": "true", 
-							  "legend": { 
-							   "position": "bottom", 
-							   "labels": { 
-								"boxWidth": 13, 
-								"fontSize": 20 
-							   } 
-							  } 
-							 }
-							}
-							-->
-							</canvas>
-						</div>
-						<div style="font-size: 40%; color: #555; position: relative; top: 30px; margin-right: auto; margin-left: auto;">Adapted from: Committee on Ensuring the Utility and Integrity of Research Data in a Digital Age (2009). “Promoting the Stewardship of Research Data” (Chap 4) in <i>Ensuring the Integrity, Accessibility, and Stewardship of Research Data in the Digital Age</i>. National Academies Press, Washington D.C.<br><a href="http://www.nap.edu/catalog/12615/ensuring-the-integrity-accessibility-and-stewardship-of-research-data-in-the-digital-age">http://www.nap.edu/catalog/12615/ensuring-the-integrity-accessibility-and-stewardship-of-research-data-in-the-digital-age</a></div>
-					</section>
+               <section>
+                 <div style="font-weight: bold; font-size: 110%;">Todays Outline</div>
+                 <div style="width: 75%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+                   <ul style="font-size: 80%;">
+                     <li style="position: relative; left: 23px; top: 20px;">Reading review - Keywords at <a href="https://etherpad.net/p/Data_Management_Keywords">https://etherpad.net/p/Data_Management_Keywords</a>
+                     <li style="position: relative; left: 23px; top: 20px;">Categorizing Data
+                     <li style="position: relative; left: 23px; top: 20px;">Data in the Research Data Lifecycle
+                   </ul>
+                 </div>
+                 <br><br><br>
+               </section>
+               
+               <section>
+                 <section>
+                   <div style="font-weight: bold; font-size: 110%;">Promoting the Stewardship of Research Data</div>
+                   <div style="width: 70%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+                     <ul style="font-size: 80%;">
+                       <li style="position: relative; left: 23px; top: 20px;">National Academy of the Sciences - 
+                       <ul style="font-size: 85%">
+                         <li>Committee on Ensuring the Utility and Integrity of Research Data in a Digital Age
+                         <li><a href="http://www.nap.edu/author/COSEPUP">Committee on Science, Engineering, and Public Policy</a>
+                         <li><a href="http://www.nap.edu/author/PGA">Policy and Global Affairs</a>
+                         <li><a href="http://www.nap.edu/author/IOM">Institute of Medicine</a>
+                       </ul><br>
+                       <li style="position: relative; left: 23px; top: 20px;">Keywords??<br><br>
+                       <li style="position: relative; left: 23px; top: 20px;">Value
+                       <ul style="font-size: 85%">
+                         <li>how does the value of data change over time?
+                         <li>why is some data more valuable than others?
+                         <li>what kinds of value are there?
+                       </ul>
+                     </ul>
+                   </div>
+                   <br><br><br>
+                 </section>
 
-					<section>
-						<div style="font-weight: bold; font-size: 110%;">Promoting the Stewardship of Research Data</div>
-						<div style="width: 80%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
-							<ul style="font-size: 80%;">
-								<li style="position: relative; left: 23px; top: 20px;">ICPSR: <a href="http://www.icpsr.umich.edu/icpsrweb/">http://www.icpsr.umich.edu/icpsrweb/</a>
-								<li style="position: relative; left: 23px; top: 20px;">ESA - the National Ecological Data Center has not materialized to date, BUT<br>
-								The Long Term Ecological Research Program (LTER) has made significant contributions through the National Ecological Observatory Network (NEON): <a href="http://www.neonscience.org/">http://www.neonscience.org/</a> 
-								<li style="position: relative; left: 23px; top: 20px;">Arxiv: <a href="https://arxiv.org/">https://arxiv.org/</a>
-								<li style="position: relative; left: 23px; top: 20px;">NCEI: <a href="https://www.ncdc.noaa.gov/">https://www.ncdc.noaa.gov/</a><br>
-								formerly: National Climactic Data Center (NCDC)
-							</ul>
-						</div>
-						<br><br><br>
-					</section>					
+                 <section>
+                   <span style="font-weight: bold; font-size: 100%;">ICPSR LEADS project findings for NSF- and NIH-sponsored awards that created social science data (2008)<br><br></span>
+                   <div style="width: 800px; position: relative; top: 0px; margin-right: auto; margin-left: auto;">                    
+                     <canvas data-chart="bar" class="stretch">
+                     <!-- 
+                     {
+                      "data": {
+                       "labels": ["NIH (n=661)","NSF (n=938)"],
+                       "datasets": [
+                        {
+                       "label": "Archived",
+                       "data":[57,270],
+                       "backgroundColor": [ "rgba(20,220,20,.8)", "rgba(20,220,20,.8)" ]
+                        },
+                        {
+                       "label": "Available",
+                       "data":[461,415],
+                       "backgroundColor": [ "rgba(220,220,20,.8)", "rgba(220,220,20,.8)" ]
+                        },
+                        {
+                       "label": "Lost",
+                       "data":[143,253],
+                       "backgroundColor": [ "rgba(220,20,20,.8)", "rgba(220,20,20,.8)" ]
+                        }
+                       ]
+                      }, 
+                       "options": { 
+                       "responsive": "true", 
+                       "legend": { 
+                        "position": "bottom", 
+                        "labels": { 
+                       "boxWidth": 13, 
+                       "fontSize": 20 
+                        } 
+                       } 
+                      }
+                     }
+                     -->
+                     </canvas>
+                   </div>
+                   <div style="font-size: 40%; color: #555; position: relative; top: 30px; margin-right: auto; margin-left: auto;">Adapted from: Committee on Ensuring the Utility and Integrity of Research Data in a Digital Age (2009). “Promoting the Stewardship of Research Data” (Chap 4) in <i>Ensuring the Integrity, Accessibility, and Stewardship of Research Data in the Digital Age</i>. National Academies Press, Washington D.C.<br><a href="http://www.nap.edu/catalog/12615/ensuring-the-integrity-accessibility-and-stewardship-of-research-data-in-the-digital-age">http://www.nap.edu/catalog/12615/ensuring-the-integrity-accessibility-and-stewardship-of-research-data-in-the-digital-age</a></div>
+                 </section>
 
-					<section>
-						<div style="font-weight: bold; font-size: 110%;">Promoting the Stewardship of Research Data</div>
-						<div style="width: 60%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
-							"The question of who pays, how much, and for how long are at the heart of the problem of how to ensure long-term stewardship of research data." (p 113)
-						</div>
-						<br><br><br>
-					</section>	
+                 <section>
+                   <div style="font-weight: bold; font-size: 110%;">Promoting the Stewardship of Research Data</div>
+                   <div style="width: 80%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+                     <ul style="font-size: 80%;">
+                       <li style="position: relative; left: 23px; top: 20px;">ICPSR: <a href="http://www.icpsr.umich.edu/icpsrweb/">http://www.icpsr.umich.edu/icpsrweb/</a>
+                       <li style="position: relative; left: 23px; top: 20px;">ESA - the National Ecological Data Center has not materialized to date, BUT<br>
+                       The Long Term Ecological Research Program (LTER) has made significant contributions through the National Ecological Observatory Network (NEON): <a href="http://www.neonscience.org/">http://www.neonscience.org/</a> 
+                       <li style="position: relative; left: 23px; top: 20px;">Arxiv: <a href="https://arxiv.org/">https://arxiv.org/</a>
+                       <li style="position: relative; left: 23px; top: 20px;">NCEI: <a href="https://www.ncdc.noaa.gov/">https://www.ncdc.noaa.gov/</a><br>
+                       formerly: National Climactic Data Center (NCDC)
+                     </ul>
+                   </div>
+                   <br><br><br>
+                 </section>          
 
-					<section>
-						<div style="float: left; margin-left: 100px;"><object data="../../common/assets/images-for-data/Transistor_Count_and_Moore's_Law_-_2011.svg" type="image/svg+xml"></object></div>
-						<div style="position: absolute; bottom: 200px; right: 30px; width: 70%; text-align: right; font-size: 40%; line-height: normal;">Wgsimon (2011), Licensed under CC BY-SA 3.0 via Commons<br>
-						<a target="_blank" href="https://en.wikipedia.org/wiki/Moore's_law#/media/File:Transistor_Count_and_Moore%27s_Law_-_2011.svg">https://en.wikipedia.org/wiki/Moore's_law#/media/File:Transistor_Count_and_Moore%27s_Law_-_2011.svg</a></div>
-					</section>	
+                 <section>
+                   <div style="font-weight: bold; font-size: 110%;">Promoting the Stewardship of Research Data</div>
+                   <div style="width: 60%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+                     "The question of who pays, how much, and for how long are at the heart of the problem of how to ensure long-term stewardship of research data." (p 113)
+                   </div>
+                   <br><br><br>
+                 </section>  
 
-				</section>
+                 <section>
+                   <div style="float: left; margin-left: 100px;"><object data="../../common/assets/images-for-data/Transistor_Count_and_Moore's_Law_-_2011.svg" type="image/svg+xml"></object></div>
+                   <div style="position: absolute; bottom: 200px; right: 30px; width: 70%; text-align: right; font-size: 40%; line-height: normal;">Wgsimon (2011), Licensed under CC BY-SA 3.0 via Commons<br>
+                   <a target="_blank" href="https://en.wikipedia.org/wiki/Moore's_law#/media/File:Transistor_Count_and_Moore%27s_Law_-_2011.svg">https://en.wikipedia.org/wiki/Moore's_law#/media/File:Transistor_Count_and_Moore%27s_Law_-_2011.svg</a></div>
+                 </section>  
 
-				<section>
-				
-					<section>
-						<div style="font-weight: bold; font-size: 110%;">The 2013 OMB Memorandum</div>
-						<div style="width: 70%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
-							<ul style="font-size: 80%;">
-								<li style="position: relative; left: 23px;">Value – “manage information as an asset throughout its lifecycle”
-								<li style="position: relative; left: 23px; top: 30px;">Privacy, security, ownership
+               </section>
 
-								<li style="position: relative; left: 23px; top: 60px;">Data:<br>
-									<span style="position: relative; top: 10px; font-size: 90%">“refers to all structured information, unless otherwise noted.”</span>
-								<li style="position: relative; left: 23px; top: 100px;">Information Life Cycle<br>
-									<span style="position: relative;  top: 10px; font-size: 90%">“means the stages through which information passes, typically characterized as creation, collection processing, dissemination, use, storage, and disposition.”</span>
-						</div>
-						<br><br><br><br><br>
-					</section>	
+               <section>
+        
+                 <section>
+                   <div style="font-weight: bold; font-size: 110%;">The 2013 OMB Memorandum</div>
+                   <div style="width: 70%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+                     <ul style="font-size: 80%;">
+                       <li style="position: relative; left: 23px;">Value – “manage information as an asset throughout its lifecycle”
+                       <li style="position: relative; left: 23px; top: 30px;">Privacy, security, ownership
 
-					<section>
-						<div style="font-weight: bold; font-size: 110%;">The 2013 OMB Memorandum</div>
-						<div style="width: 30%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
-							<ul style="font-size: 90%;">
-								<li style="position: relative; left: 23px; top: 20px;">Open Data
-								<ul style="font-size: 85%">
-									<li>Public
-									<li>Accessible
-									<li>Described
-									<li>Reuseable
-									<li>Complete
-									<li>Timely
-									<li>Managed Post-Release
-								</ul><br>
-							</ul>
-						</div>
-						<br><br>
-						<div style="position: absolute; bottom: 100px; right: 90px; width: 70%; text-align: right; font-size: 50%; line-height: normal;"><a href="https://project-open-data.github.io/">https://project-open-data.github.io/</a></div>
-						<br>
-					</section>
-					
-					<section>
-						<div style="font-weight: bold; font-size: 110%;">The 2013 OMB Memorandum</div>
-						<div style="width: 60%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
-							<ul style="font-size: 90%;">
-								<li style="position: relative; left: 23px; top: 20px;">Policy Requirements
-								<ul style="font-size: 85%">
-									<li>Collect information in a way that supports downstream use
-									<li>Machine readable formats
-									<li>Use data standards
-									<li>Open licenses
-									<li>Common core and extensible metadata
-								</ul><br>
-							</ul>
-						</div>
-						<br><br>
-						<div style="position: absolute; bottom: 100px; right: 90px; width: 70%; text-align: right; font-size: 50%; line-height: normal;"><a href="https://project-open-data.cio.gov/v1.1/schema/">https://project-open-data.cio.gov/v1.1/schema/</a></div>
-						<br><br>
-					</section>		
-					
-                </section>
-				
-	            <section>
-					<div style="width: 400px; height: 580px; font-size: 110%; font-weight: bold; text-align: left; margin-left: 30%; margin-right: auto; position: relative;top: -20px;">On Data</div>
-					
-					<div class="fragment" style="width: 400px; font-size: 82%; font-weight: bold; text-align: left; left: 80px; top: 100px; position: absolute;">Qualitative - Quantitative</div>
-					<div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 0px; top: 20px; position: absolute;">Non-numeric<br>Text, Image, Sound</div>
-					<div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 280px; top: 150px; position: absolute;">Nominal, Ordinal, Interval, Ratio</div>
+                       <li style="position: relative; left: 23px; top: 60px;">Data:<br>
+                         <span style="position: relative; top: 10px; font-size: 90%">“refers to all structured information, unless otherwise noted.”</span>
+                       <li style="position: relative; left: 23px; top: 100px;">Information Life Cycle<br>
+                         <span style="position: relative;  top: 10px; font-size: 90%">“means the stages through which information passes, typically characterized as creation, collection processing, dissemination, use, storage, and disposition.”</span>
+                   </div>
+                   <br><br><br><br><br>
+                 </section>  
 
-					<div class="fragment" style="position: relative; width: 80%; font-size: 50%; line-heigt: normal; top: 20px; margin-left: auto; margin-right: auto;">Kitchin, R (2014). “Conceptualizing Data” in Kitchin, R The Data Revolution. Washington DC: Sage.<br>
-						<a href="http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf">http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf</a></div>	
-                    <aside class="notes">mentionthe Latin meaning of datum (that which is given), its use in GIS and its different meaning for most other uses (that which is taken)</aside>
-                </section>
+                 <section>
+                   <div style="font-weight: bold; font-size: 110%;">The 2013 OMB Memorandum</div>
+                   <div style="width: 30%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+                     <ul style="font-size: 90%;">
+                       <li style="position: relative; left: 23px; top: 20px;">Open Data
+                       <ul style="font-size: 85%">
+                         <li>Public
+                         <li>Accessible
+                         <li>Described
+                         <li>Reuseable
+                         <li>Complete
+                         <li>Timely
+                         <li>Managed Post-Release
+                       </ul><br>
+                     </ul>
+                   </div>
+                   <br><br>
+                   <div style="position: absolute; bottom: 100px; right: 90px; width: 70%; text-align: right; font-size: 50%; line-height: normal;"><a href="https://project-open-data.github.io/">https://project-open-data.github.io/</a></div>
+                   <br>
+                 </section>
+          
+                 <section>
+                   <div style="font-weight: bold; font-size: 110%;">The 2013 OMB Memorandum</div>
+                   <div style="width: 60%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+                     <ul style="font-size: 90%;">
+                       <li style="position: relative; left: 23px; top: 20px;">Policy Requirements
+                       <ul style="font-size: 85%">
+                         <li>Collect information in a way that supports downstream use
+                         <li>Machine readable formats
+                         <li>Use data standards
+                         <li>Open licenses
+                         <li>Common core and extensible metadata
+                       </ul><br>
+                     </ul>
+                   </div>
+                   <br><br>
+                   <div style="position: absolute; bottom: 100px; right: 90px; width: 70%; text-align: right; font-size: 50%; line-height: normal;"><a href="https://project-open-data.cio.gov/v1.1/schema/">https://project-open-data.cio.gov/v1.1/schema/</a></div>
+                   <br><br>
+                 </section>    
+          
+               </section>
+        
+               <section>
+                 <div style="width: 400px; height: 580px; font-size: 110%; font-weight: bold; text-align: left; margin-left: 30%; margin-right: auto; position: relative;top: -20px;">On Data</div>
+                 <div class="fragment" style="width: 400px; font-size: 82%; font-weight: bold; text-align: left; left: 80px; top: 100px; position: absolute;">Qualitative - Quantitative</div>
+                 <div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 0px; top: 20px; position: absolute;">Non-numeric<br>Text, Image, Sound</div>
+                 <div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 280px; top: 150px; position: absolute;">Nominal, Ordinal, Interval, Ratio</div>
+                 <div class="fragment" style="position: relative; width: 80%; font-size: 50%; line-heigt: normal; top: 20px; margin-left: auto; margin-right: auto;">Kitchin, R (2014). “Conceptualizing Data” in Kitchin, R The Data Revolution. Washington DC: Sage.<br>
+                   <a href="http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf">http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf</a></div>  
+                 <aside class="notes">mentionthe Latin meaning of datum (that which is given), its use in GIS and its different meaning for most other uses (that which is taken)</aside>
+               </section>
 
-                <section>
-                    <span style="font-weight: bold; font-size: 110%;">What is Data?</span><br><br>
-                    <table style="font-size: 55%; width: 80%;" class="bluetable"><tbody>
-					  <tr style="font-weight: bold; color: #fff; background-color: rgb(91,155,213); border-bottom: solid white 3px !important; vertical-align: bottom !important;">
-                         <td width="170px">Measurement Level</td><td width="780px">Definition</td><td width="220px">Example</td>
-                      </tr><tr style="background-color: rgb(210,222,239); border-bottom: solid white 1px !important;">
-                         <td>Nominal</td><td>Categorical in nature, with observations recorded into discrete units.</td><td>Unmarried, married, divorced, widowed</td>
-                      </tr><tr style="background-color: rgb(234,239,247); border-bottom: solid white 1px !important;;">
-                         <td>Ordinal</td><td>Observations that are placed in a rank order, where certain observations are greater than others</td><td>Low, medium, high</td>
-                      </tr><tr style="background-color: rgb(210,222,239); border: solid white 1px !important;;">
-                         <td>Interval</td><td>Measurements along a scale which possesses a fixed but arbitrary interval and an arbitrary origin. Addition or multiplication by a constant will not alter the interval nature of the observations. Data can either be continuous or discrete in nature.</td><td>Temperature along the Celsius scale</td>
-                      </tr><tr style="background-color: rgb(234,239,247); border: solid white 1px !important;;">
-                         <td>Ratio</td><td>Similar to interval data except the scale possesses a true zero origin, and multiplication by a constant will not alter the ratio nature of the observations.</td><td>Exam marks on a scale of 0–10</td>
-                    </tr></tbody></table><br><br>
-					<div style="position: relative; width: 80%; font-size: 50%; line-heigt: normal; top: 20px; margin-left: auto; margin-right: auto;">Kitchin, R (2014). “Conceptualizing Data” in Kitchin, R The Data Revolution. Washington DC: Sage.<br>
- 						<a href="http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf">http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf</a></div>	
-				</section>
+               <section>
+                 <span style="font-weight: bold; font-size: 110%;">What is Data?</span><br><br>
+                 <table style="font-size: 55%; width: 80%;" class="bluetable"><tbody>
+                   <tr style="font-weight: bold; color: #fff; background-color: rgb(91,155,213); border-bottom: solid white 3px !important; vertical-align: bottom !important;">
+                      <td width="170px">Measurement Level</td><td width="780px">Definition</td><td width="220px">Example</td>
+                   </tr><tr style="background-color: rgb(210,222,239); border-bottom: solid white 1px !important;">
+                      <td>Nominal</td><td>Categorical in nature, with observations recorded into discrete units.</td><td>Unmarried, married, divorced, widowed</td>
+                   </tr><tr style="background-color: rgb(234,239,247); border-bottom: solid white 1px !important;;">
+                      <td>Ordinal</td><td>Observations that are placed in a rank order, where certain observations are greater than others</td><td>Low, medium, high</td>
+                   </tr><tr style="background-color: rgb(210,222,239); border: solid white 1px !important;;">
+                      <td>Interval</td><td>Measurements along a scale which possesses a fixed but arbitrary interval and an arbitrary origin. Addition or multiplication by a constant will not alter the interval nature of the observations. Data can either be continuous or discrete in nature.</td><td>Temperature along the Celsius scale</td>
+                   </tr><tr style="background-color: rgb(234,239,247); border: solid white 1px !important;;">
+                      <td>Ratio</td><td>Similar to interval data except the scale possesses a true zero origin, and multiplication by a constant will not alter the ratio nature of the observations.</td><td>Exam marks on a scale of 0–10</td>
+                 </tr></tbody></table><br><br>
+                 <div style="position: relative; width: 80%; font-size: 50%; line-heigt: normal; top: 20px; margin-left: auto; margin-right: auto;">Kitchin, R (2014). “Conceptualizing Data” in Kitchin, R The Data Revolution. Washington DC: Sage.<br>
+                    <a href="http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf">http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf</a></div>  
+               </section>
 
-	            <section>
-					<div style="width: 400px; height: 580px; font-size: 110%; font-weight: bold; text-align: left; margin-left: 30%; margin-right: auto; position: relative;top: -20px;">On Data</div>
-					
-					<div style="width: 400px; font-size: 82%; font-weight: bold; text-align: left; left: 80px; top: 100px; position: absolute;">Qualitative - Quantitative</div>
-					<div style="width: 250px; font-size: 65%; text-align: left; left: 0px; top: 20px; position: absolute;">Non-numeric<br>Text, Image, Sound</div>
-					<div style="width: 250px; font-size: 65%; text-align: left; left: 280px; top: 150px; position: absolute;">Nominal, Ordinal, Interval, Ratio</div>
+               <section>
+                 <div style="width: 400px; height: 580px; font-size: 110%; font-weight: bold; text-align: left; margin-left: 30%; margin-right: auto; position: relative;top: -20px;">On Data</div>
+          
+                 <div style="width: 400px; font-size: 82%; font-weight: bold; text-align: left; left: 80px; top: 100px; position: absolute;">Qualitative - Quantitative</div>
+                 <div style="width: 250px; font-size: 65%; text-align: left; left: 0px; top: 20px; position: absolute;">Non-numeric<br>Text, Image, Sound</div>
+                 <div style="width: 250px; font-size: 65%; text-align: left; left: 280px; top: 150px; position: absolute;">Nominal, Ordinal, Interval, Ratio</div>
 
-					<div style="position: relative; width: 80%; font-size: 50%; line-heigt: normal; top: 20px; margin-left: auto; margin-right: auto;">Kitchin, R (2014). “Conceptualizing Data” in Kitchin, R The Data Revolution. Washington DC: Sage.<br>
-						<a href="http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf">http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf</a></div>
-					
-					<div class="fragment" style="width: 650px; font-size: 82%; font-weight: bold; text-align: left; left: 80px; top: 420px; position: absolute;">Captured, Exhaust, Transient, Derived</div>
-					<div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 0px; top: 310px; position: absolute;">Observed<br>Experimental,<br>Modeled</div>
-					<div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 230px; top: 475px; position: absolute;">Modeled<br>Technical Metadata</div>
-					<div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 355px; top: 380px; position: absolute;">Non-Observed</div>
-					<div class="fragment" style="width: 3000px; font-size: 65%; text-align: left; left: 550px; top: 475px; position: absolute;">Not "Raw"<br>Levels (more in a moment)</div>
-                </section>
+                 <div style="position: relative; width: 80%; font-size: 50%; line-heigt: normal; top: 20px; margin-left: auto; margin-right: auto;">Kitchin, R (2014). “Conceptualizing Data” in Kitchin, R The Data Revolution. Washington DC: Sage.<br>
+                   <a href="http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf">http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf</a></div>
+          
+                 <div class="fragment" style="width: 650px; font-size: 82%; font-weight: bold; text-align: left; left: 80px; top: 420px; position: absolute;">Captured, Exhaust, Transient, Derived</div>
+                 <div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 0px; top: 310px; position: absolute;">Observed<br>Experimental,<br>Modeled</div>
+                 <div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 230px; top: 475px; position: absolute;">Modeled<br>Technical Metadata</div>
+                 <div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 355px; top: 380px; position: absolute;">Non-Observed</div>
+                 <div class="fragment" style="width: 3000px; font-size: 65%; text-align: left; left: 550px; top: 475px; position: absolute;">Not "Raw"<br>Levels (more in a moment)</div>
+              </section>
 
-                <section>
+              <section>
                     <span style="font-weight: bold; font-size: 110%;">Data Levels (as described by NASA)</span><br><br>
                     <table style="font-size: 55%; width: 80%;" class="bluetable"><tbody>
-					  <tr style="font-weight: bold; color: #fff; background-color: rgb(91,155,213); border-bottom: solid white 3px !important; vertical-align: bottom !important;">
+                      <tr style="font-weight: bold; color: #fff; background-color: rgb(91,155,213); border-bottom: solid white 3px !important; vertical-align: bottom !important;">
                          <td width="170px">Data Level</td><td width="980px">Description</td>
                       </tr><tr style="background-color: rgb(210,222,239); border-bottom: solid white 1px !important;">
                          <td>Level 0</td><td>Reconstructed, unprocessed instrument and payload data at full resolution, with any and all communications artefacts (e.g., synchronisation frames, communications headers, duplicate data) Removed.</td>
@@ -252,14 +249,14 @@
                          <td>Level 3</td><td>Variables mapped on uniform space-time grid scales, usually with some completeness and consistency</td>
                       </tr><tr style="background-color: rgb(234,239,247); border: solid white 1px !important;;">
                          <td>Level 4</td><td>Model output or results from analyses of lower-level data (e.g., variables derived from multiple measurements).</td>
-					  </tr></tbody></table><br>
-					<div style="position: relative; width: 80%; font-size: 50%; line-heigt: normal; top: 20px; margin-left: auto; margin-right: auto;"><a href="https://earthdata.nasa.gov/user-resources/standards-and-references">https://earthdata.nasa.gov/user-resources/standards-and-references</a><br>
-						<span class="fragment"><a href="http://science.nasa.gov/earth-science/earth-science-data/data-processing-levels-for-eosdis-data-products/">http://science.nasa.gov/earth-science/earth-science-data/data-processing-levels-for-eosdis-data-products/</a></span><br>
- 					</div>	
+                      </tr></tbody></table><br>
+                    <div style="position: relative; width: 80%; font-size: 50%; line-heigt: normal; top: 20px; margin-left: auto; margin-right: auto;"><a href="https://earthdata.nasa.gov/user-resources/standards-and-references">https://earthdata.nasa.gov/user-resources/standards-and-references</a><br>
+                      <span class="fragment"><a href="http://science.nasa.gov/earth-science/earth-science-data/data-processing-levels-for-eosdis-data-products/">http://science.nasa.gov/earth-science/earth-science-data/data-processing-levels-for-eosdis-data-products/</a></span><br>
+                    </div>  
                     <aside class="notes">Do an exercise – the referenced link in the kitchin book is outdated and broken – have them spend one minute trying to find the updated link (search skills)</aside>
-				</section>		
-		
-                <section>
+                  </section>
+
+                  <section>
                     <span style="font-weight: bold; font-size: 110%;">Sensors and Data Levels</span><br><br>
                     <table style="font-size: 60%; border: solid black 1px; width: 80%;"><tablebody><tr style="font-style: italic">
                         <td>Active vs. Static:</td><td>Data Storage:</td><td>Example or Focus:</td><td>Typical File Formats:</td>
@@ -273,85 +270,85 @@
                         <td>STATIC</td><td>Finalized, Published Data:</td><td>Do the data support hypothesis?</td><td>.csv</td>
                     </tr></tablebody></table>
                     <br><br><span style="font-size: 50%;">adapted from <a target="_blank" href="http://classguides.lib.uconn.edu/">http://classguides.lib.uconn.edu/</a></span>
-                </section>	
+                </section>  
 
-	            <section>
-					<div style="width: 400px; height: 580px; font-size: 110%; font-weight: bold; text-align: left; margin-left: 30%; margin-right: auto; position: relative;top: -20px;">On Data</div>
-					
-					<div style="width: 400px; font-size: 82%; font-weight: bold; text-align: left; left: 80px; top: 100px; position: absolute;">Qualitative - Quantitative</div>
-					<div style="width: 250px; font-size: 65%; text-align: left; left: 0px; top: 20px; position: absolute;">Non-numeric<br>Text, Image, Sound</div>
-					<div style="width: 250px; font-size: 65%; text-align: left; left: 280px; top: 150px; position: absolute;">Nominal, Ordinal, Interval, Ratio</div>
+              <section>
+          <div style="width: 400px; height: 580px; font-size: 110%; font-weight: bold; text-align: left; margin-left: 30%; margin-right: auto; position: relative;top: -20px;">On Data</div>
+          
+          <div style="width: 400px; font-size: 82%; font-weight: bold; text-align: left; left: 80px; top: 100px; position: absolute;">Qualitative - Quantitative</div>
+          <div style="width: 250px; font-size: 65%; text-align: left; left: 0px; top: 20px; position: absolute;">Non-numeric<br>Text, Image, Sound</div>
+          <div style="width: 250px; font-size: 65%; text-align: left; left: 280px; top: 150px; position: absolute;">Nominal, Ordinal, Interval, Ratio</div>
 
-					<div style="position: relative; width: 80%; font-size: 50%; line-heigt: normal; top: 20px; margin-left: auto; margin-right: auto;">Kitchin, R (2014). “Conceptualizing Data” in Kitchin, R The Data Revolution. Washington DC: Sage.<br>
-						<a href="http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf">http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf</a></div>
-					
-					<div style="width: 650px; font-size: 82%; font-weight: bold; text-align: left; left: 80px; top: 420px; position: absolute;">Captured, Exhaust, Transient, Derived</div>
-					<div style="width: 250px; font-size: 65%; text-align: left; left: 0px; top: 310px; position: absolute;">Observed<br>Experimental,<br>Modeled</div>
-					<div style="width: 250px; font-size: 65%; text-align: left; left: 230px; top: 475px; position: absolute;">Modeled<br>Technical Metadata</div>
-					<div style="width: 250px; font-size: 65%; text-align: left; left: 355px; top: 380px; position: absolute;">Non-Observed</div>
-					<div style="width: 3000px; font-size: 65%; text-align: left; left: 550px; top: 475px; position: absolute;">Not "Raw"<br>Levels (more in a moment)</div>
+          <div style="position: relative; width: 80%; font-size: 50%; line-heigt: normal; top: 20px; margin-left: auto; margin-right: auto;">Kitchin, R (2014). “Conceptualizing Data” in Kitchin, R The Data Revolution. Washington DC: Sage.<br>
+            <a href="http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf">http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf</a></div>
+          
+          <div style="width: 650px; font-size: 82%; font-weight: bold; text-align: left; left: 80px; top: 420px; position: absolute;">Captured, Exhaust, Transient, Derived</div>
+          <div style="width: 250px; font-size: 65%; text-align: left; left: 0px; top: 310px; position: absolute;">Observed<br>Experimental,<br>Modeled</div>
+          <div style="width: 250px; font-size: 65%; text-align: left; left: 230px; top: 475px; position: absolute;">Modeled<br>Technical Metadata</div>
+          <div style="width: 250px; font-size: 65%; text-align: left; left: 355px; top: 380px; position: absolute;">Non-Observed</div>
+          <div style="width: 3000px; font-size: 65%; text-align: left; left: 550px; top: 475px; position: absolute;">Not "Raw"<br>Levels (more in a moment)</div>
 
-					<div class="fragment" style="width: 850px; font-size: 82%; font-weight: bold; text-align: left; left: 710px; top: 80px; position: absolute;">Structured, Semi-structured, Unstructured</div>
-					<div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 880px; top: 0px; position: absolute;">Irregular, Flexible<br>Nested, Trees, Tagged</div>
-					<div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 650px; top: 135px; position: absolute;">Data model, Schema,<br>Relational Database</div>
+          <div class="fragment" style="width: 850px; font-size: 82%; font-weight: bold; text-align: left; left: 710px; top: 80px; position: absolute;">Structured, Semi-structured, Unstructured</div>
+          <div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 880px; top: 0px; position: absolute;">Irregular, Flexible<br>Nested, Trees, Tagged</div>
+          <div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 650px; top: 135px; position: absolute;">Data model, Schema,<br>Relational Database</div>
 
-					<div class="fragment" style="width: 850px; font-size: 82%; font-weight: bold; text-align: left; left: 890px; top: 380px; position: absolute;">Primary, Secondary, Tertiary</div>
-					<div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 1040px; top: 310px; position: absolute;">Incorporated<br>Re-used</div>
-					<div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 800px; top: 425px; position: absolute;">Created, Collected</div>
-					<div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 1220px; top: 425px; position: absolute;">Released<br>Truncated</div>	
+          <div class="fragment" style="width: 850px; font-size: 82%; font-weight: bold; text-align: left; left: 890px; top: 380px; position: absolute;">Primary, Secondary, Tertiary</div>
+          <div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 1040px; top: 310px; position: absolute;">Incorporated<br>Re-used</div>
+          <div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 800px; top: 425px; position: absolute;">Created, Collected</div>
+          <div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 1220px; top: 425px; position: absolute;">Released<br>Truncated</div>  
                 </section>
-				
-	            <section>
-					<div style="font-weight: bold; font-size: 110%;">Data: Primary, Secondary, and Tertiary</div>
-					<div style="width: 75%; margin-left: 15%; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
-						<ul style="font-size: 80%;">
-							<li style="position: relative; left: 23px; top: 20px;">Primary: research generated (from instruments or observations)
-							<li style="position: relative; left: 23px; top: 20px;">Secondary: acquired for research project from another source
-							<li style="position: relative; left: 23px; top: 20px;">Tertiary: derivative of primary or secondary data (anonymized, annotated, bundled, and so on)
-						</ul>
-					</div>
-					<br><br><br>
+        
+              <section>
+          <div style="font-weight: bold; font-size: 110%;">Data: Primary, Secondary, and Tertiary</div>
+          <div style="width: 75%; margin-left: 15%; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+            <ul style="font-size: 80%;">
+              <li style="position: relative; left: 23px; top: 20px;">Primary: research generated (from instruments or observations)
+              <li style="position: relative; left: 23px; top: 20px;">Secondary: acquired for research project from another source
+              <li style="position: relative; left: 23px; top: 20px;">Tertiary: derivative of primary or secondary data (anonymized, annotated, bundled, and so on)
+            </ul>
+          </div>
+          <br><br><br>
                 </section>
-				
-	            <section>
-					<div style="width: 400px; height: 580px; font-size: 110%; font-weight: bold; text-align: left; margin-left: 30%; margin-right: auto; position: relative;top: -20px;">On Data</div>
-					
-					<div style="width: 400px; font-size: 82%; font-weight: bold; text-align: left; left: 80px; top: 100px; position: absolute;">Qualitative - Quantitative</div>
-					<div style="width: 250px; font-size: 65%; text-align: left; left: 0px; top: 20px; position: absolute;">Non-numeric<br>Text, Image, Sound</div>
-					<div style="width: 250px; font-size: 65%; text-align: left; left: 280px; top: 150px; position: absolute;">Nominal, Ordinal, Interval, Ratio</div>
+        
+              <section>
+          <div style="width: 400px; height: 580px; font-size: 110%; font-weight: bold; text-align: left; margin-left: 30%; margin-right: auto; position: relative;top: -20px;">On Data</div>
+          
+          <div style="width: 400px; font-size: 82%; font-weight: bold; text-align: left; left: 80px; top: 100px; position: absolute;">Qualitative - Quantitative</div>
+          <div style="width: 250px; font-size: 65%; text-align: left; left: 0px; top: 20px; position: absolute;">Non-numeric<br>Text, Image, Sound</div>
+          <div style="width: 250px; font-size: 65%; text-align: left; left: 280px; top: 150px; position: absolute;">Nominal, Ordinal, Interval, Ratio</div>
 
-					<div style="position: relative; width: 80%; font-size: 50%; line-heigt: normal; top: 20px; margin-left: auto; margin-right: auto;">Kitchin, R (2014). “Conceptualizing Data” in Kitchin, R The Data Revolution. Washington DC: Sage.<br>
-						<a href="http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf">http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf</a></div>
-					
-					<div style="width: 650px; font-size: 82%; font-weight: bold; text-align: left; left: 80px; top: 420px; position: absolute;">Captured, Exhaust, Transient, Derived</div>
-					<div style="width: 250px; font-size: 65%; text-align: left; left: 0px; top: 310px; position: absolute;">Observed<br>Experimental,<br>Modeled</div>
-					<div style="width: 250px; font-size: 65%; text-align: left; left: 230px; top: 475px; position: absolute;">Modeled<br>Technical Metadata</div>
-					<div style="width: 250px; font-size: 65%; text-align: left; left: 355px; top: 380px; position: absolute;">Non-Observed</div>
-					<div style="width: 3000px; font-size: 65%; text-align: left; left: 550px; top: 475px; position: absolute;">Not "Raw"<br>Levels (more in a moment)</div>
+          <div style="position: relative; width: 80%; font-size: 50%; line-heigt: normal; top: 20px; margin-left: auto; margin-right: auto;">Kitchin, R (2014). “Conceptualizing Data” in Kitchin, R The Data Revolution. Washington DC: Sage.<br>
+            <a href="http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf">http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf</a></div>
+          
+          <div style="width: 650px; font-size: 82%; font-weight: bold; text-align: left; left: 80px; top: 420px; position: absolute;">Captured, Exhaust, Transient, Derived</div>
+          <div style="width: 250px; font-size: 65%; text-align: left; left: 0px; top: 310px; position: absolute;">Observed<br>Experimental,<br>Modeled</div>
+          <div style="width: 250px; font-size: 65%; text-align: left; left: 230px; top: 475px; position: absolute;">Modeled<br>Technical Metadata</div>
+          <div style="width: 250px; font-size: 65%; text-align: left; left: 355px; top: 380px; position: absolute;">Non-Observed</div>
+          <div style="width: 3000px; font-size: 65%; text-align: left; left: 550px; top: 475px; position: absolute;">Not "Raw"<br>Levels (more in a moment)</div>
 
-					<div style="width: 850px; font-size: 82%; font-weight: bold; text-align: left; left: 710px; top: 80px; position: absolute;">Structured, Semi-structured, Unstructured</div>
-					<div style="width: 250px; font-size: 65%; text-align: left; left: 880px; top: 0px; position: absolute;">Irregular, Flexible<br>Nested, Trees, Tagged</div>
-					<div style="width: 250px; font-size: 65%; text-align: left; left: 650px; top: 135px; position: absolute;">Data model, Schema,<br>Relational Database</div>
+          <div style="width: 850px; font-size: 82%; font-weight: bold; text-align: left; left: 710px; top: 80px; position: absolute;">Structured, Semi-structured, Unstructured</div>
+          <div style="width: 250px; font-size: 65%; text-align: left; left: 880px; top: 0px; position: absolute;">Irregular, Flexible<br>Nested, Trees, Tagged</div>
+          <div style="width: 250px; font-size: 65%; text-align: left; left: 650px; top: 135px; position: absolute;">Data model, Schema,<br>Relational Database</div>
 
-					<div style="width: 850px; font-size: 82%; font-weight: bold; text-align: left; left: 890px; top: 380px; position: absolute;">Primary, Secondary, Tertiary</div>
-					<div style="width: 250px; font-size: 65%; text-align: left; left: 1040px; top: 310px; position: absolute;">Incorporated<br>Re-used</div>
-					<div style="width: 250px; font-size: 65%; text-align: left; left: 800px; top: 425px; position: absolute;">Created, Collected</div>
-					<div style="width: 250px; font-size: 65%; text-align: left; left: 1220px; top: 425px; position: absolute;">Released<br>Truncated</div>
-					
-					<div class="fragment" style="width: 850px; font-size: 82%; font-weight: bold; text-align: left; left: 450px; top: 280px; position: absolute;">Indexical, Attribute, Metadata</div>
-					<div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 400px; top: 245px; position: absolute;">Identifiers</div>
-					<div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 810px; top: 245px; position: absolute;">Descriptions</div>
-					<div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 580px; top: 330px; position: absolute;">Characteristics</div>
+          <div style="width: 850px; font-size: 82%; font-weight: bold; text-align: left; left: 890px; top: 380px; position: absolute;">Primary, Secondary, Tertiary</div>
+          <div style="width: 250px; font-size: 65%; text-align: left; left: 1040px; top: 310px; position: absolute;">Incorporated<br>Re-used</div>
+          <div style="width: 250px; font-size: 65%; text-align: left; left: 800px; top: 425px; position: absolute;">Created, Collected</div>
+          <div style="width: 250px; font-size: 65%; text-align: left; left: 1220px; top: 425px; position: absolute;">Released<br>Truncated</div>
+          
+          <div class="fragment" style="width: 850px; font-size: 82%; font-weight: bold; text-align: left; left: 450px; top: 280px; position: absolute;">Indexical, Attribute, Metadata</div>
+          <div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 400px; top: 245px; position: absolute;">Identifiers</div>
+          <div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 810px; top: 245px; position: absolute;">Descriptions</div>
+          <div class="fragment" style="width: 250px; font-size: 65%; text-align: left; left: 580px; top: 330px; position: absolute;">Characteristics</div>
                 </section>
 
-	            <section>
-					<div style="font-weight: bold; font-size: 110%;">On Metadata</div>
-					<div style="width: 55%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: center; top: 130px; line-height: 120%; position: relative; top: 23px;">
-						One persons data is another persons metadata
-					</div>
-					<br><br><br><br><br><br>
-                </section>		
-				
+              <section>
+          <div style="font-weight: bold; font-size: 110%;">On Metadata</div>
+          <div style="width: 55%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: center; top: 130px; line-height: 120%; position: relative; top: 23px;">
+            One persons data is another persons metadata
+          </div>
+          <br><br><br><br><br><br>
+                </section>    
+        
                 <section>
                     <div style="float: right; top: 0px; font-weight: bold; font-size: 110%; position: relative; right: 150px;">Some Useful Abstractions</div>
                     <div style="width: 45%; float: left;"><img src="../../common/assets/images-for-data/Pyramid.png" style="max-width: 110% !important; position: relative; left: 15%;"></div>
@@ -367,75 +364,75 @@
                     </div>
                 </section>
 
-	            <section>
-					<div style="font-weight: bold; font-size: 110%;">Another Way of Seeing</div>
-					<br><br><br>
+              <section>
+          <div style="font-weight: bold; font-size: 110%;">Another Way of Seeing</div>
+          <br><br><br>
                     <aside class="notes">Just a reminder that data can not tell us everything we need to know for good decisions ... </aside>
                 </section>
-				
+        
                 <section>
                     <div style="width: 80%; margin-right: auto; margin-left: auto; position: relative; top: -50px;">
                         <br><span style="font-weight: bold; font-size: 110%; position: relative; top: -30px;">Framing Data</span><br>
                         <div style="width: 70%; font-size: 75%; text-align: left; line-height: 110%; position: relative; margin-left: 25%; margin-right: auto;">
-							<ul>
-								<li>Technical Perspective
-								  <ul style="font-size: 85%">
-									<li>quality, validity, reliability, authenticity, and useability
-									<li>process, structure, share, analysis
-								  </ul>
-								<li style="position: relative; top: 13px;">Ethical Perspective
-								  <ul style="font-size: 85%">
-									<li>purpose and use
-								  </ul>
-								<li style="position: relative; top: 26px;">Political - Economic Perspective
-								  <ul style="font-size: 85%">
-									<li>public goods and private ownership
-									<li>governance
-								  </ul>
-								<li style="position: relative; top: 39px;">Spatial - Temporal Perspective
-								  <ul style="font-size: 85%">
-									<li>mutable mobiles ... (Latour)
-								  </ul>									
-								<li style="position: relative; top: 52px;">Philosophical Perspective
-								  <ul style="font-size: 85%">
-									<li>ontologies and epistemologies
-								  </ul>	
-							</ul>
+              <ul>
+                <li>Technical Perspective
+                  <ul style="font-size: 85%">
+                  <li>quality, validity, reliability, authenticity, and useability
+                  <li>process, structure, share, analysis
+                  </ul>
+                <li style="position: relative; top: 13px;">Ethical Perspective
+                  <ul style="font-size: 85%">
+                  <li>purpose and use
+                  </ul>
+                <li style="position: relative; top: 26px;">Political - Economic Perspective
+                  <ul style="font-size: 85%">
+                  <li>public goods and private ownership
+                  <li>governance
+                  </ul>
+                <li style="position: relative; top: 39px;">Spatial - Temporal Perspective
+                  <ul style="font-size: 85%">
+                  <li>mutable mobiles ... (Latour)
+                  </ul>                  
+                <li style="position: relative; top: 52px;">Philosophical Perspective
+                  <ul style="font-size: 85%">
+                  <li>ontologies and epistemologies
+                  </ul>  
+              </ul>
                         </div><br>
                     </div>
-					<div style="position: relative; width: 80%; font-size: 50%; line-heigt: normal; top: 20px; margin-left: auto; margin-right: auto;">Kitchin, R (2014). “Conceptualizing Data” in Kitchin, R The Data Revolution. Washington DC: Sage.<br>
-						<a href="http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf">http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf</a></div>
-                </section>			
-				
+          <div style="position: relative; width: 80%; font-size: 50%; line-heigt: normal; top: 20px; margin-left: auto; margin-right: auto;">Kitchin, R (2014). “Conceptualizing Data” in Kitchin, R The Data Revolution. Washington DC: Sage.<br>
+            <a href="http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf">http://uk.sagepub.com/sites/default/files/upm-binaries/63923_Kitchin_CH1.pdf</a></div>
+                </section>      
+        
                 <section>
                     <div style="width: 80%; margin-right: auto; margin-left: auto;">
                         <br><span style="font-weight: bold; font-size: 110%; position: relative; top: -30px;">What data will you collect / create / wrangle ?</span><br><br>
                         <div style="font-size: 70%; text-align: left; line-height: 120%; position: relative; left: 50px;">
                             <ul>
                                 <li style="position: relative; left: 23px;">Will you use sensors? - OBSERVATIONAL<br><br>
-								<ul style="font-size: 85%">
-									<li>Captured <i>in situ</i>?
-									<li>Can’t be recreated, recaptured or replaced - VALUE
-									<li>Includes survey instruments and hired research assistants
-									<li>But, will you collect data, buy data from a provider, or receive data as a contracted service?
-								</ul>
+                <ul style="font-size: 85%">
+                  <li>Captured <i>in situ</i>?
+                  <li>Can’t be recreated, recaptured or replaced - VALUE
+                  <li>Includes survey instruments and hired research assistants
+                  <li>But, will you collect data, buy data from a provider, or receive data as a contracted service?
+                </ul>
                             </ul>
                         </div><br><br><br>
                     </div>
                     <aside class="notes">Examples: sensor readings (list is long), surveys (both human and non-human)<br><br>Part of content from Whitmire</aside>
-                </section>					
-				
+                </section>          
+        
                 <section>
                     <div style="width: 80%; margin-right: auto; margin-left: auto;">
                         <br><span style="font-weight: bold; font-size: 110%; position: relative; top: -30px;">What data will you collect / create / wrangle ?</span><br><br>
                         <div style="font-size: 70%; text-align: left; line-height: 120%; position: relative; left: 100px;">
                             <ul>
                                 <li style="position: relative; left: 23px;">Will you conduct and experiment? - EXPERIMENTAL<br><br>
-								<ul style="font-size: 85%">
-									<li><i>In situ</i> or laboratory based (also considered are natural experiments)?
-									<li>Should be reproducuble, but can be expensive
-									<li>May include sensors and observations
-								</ul>
+                <ul style="font-size: 85%">
+                  <li><i>In situ</i> or laboratory based (also considered are natural experiments)?
+                  <li>Should be reproducuble, but can be expensive
+                  <li>May include sensors and observations
+                </ul>
                             </ul>
                         </div><br><br><br>
                     </div>
@@ -448,12 +445,12 @@
                         <div style="font-size: 70%; text-align: left; line-height: 120%; position: relative; left: 250px;">
                             <ul>
                                 <li style="position: relative; left: 23px;">Will you build models? - SIMULATED<br><br>
-								<ul style="font-size: 85%">
-									<li>Will you write code?
-									<li>How will you parametrize the model?
-									<li>Inouts may be more valuable than outputs
-									<li>What software (or other tools) will you use?
-								</ul>
+                <ul style="font-size: 85%">
+                  <li>Will you write code?
+                  <li>How will you parametrize the model?
+                  <li>Inouts may be more valuable than outputs
+                  <li>What software (or other tools) will you use?
+                </ul>
                             </ul>
                         </div><br><br><br>
                     </div>
@@ -466,12 +463,12 @@
                         <div style="font-size: 70%; text-align: left; line-height: 120%; position: relative; left: 0px;">
                             <ul>
                                 <li style="position: relative; left: 23px;">Will you combine and analyze previously shared data to create new data? – DERIVED or COMPILED<br><br>
-								<ul style="font-size: 85%">
-									<li style="position: relative; left: 240px;">Integration from several sources
-									<li style="position: relative; left: 240px;">Recreation can be very expensive
-									<li style="position: relative; left: 240px;">Again, software and tools?
-									<li style="position: relative; left: 240px;">Are there copyright concerns?
-								</ul>
+                <ul style="font-size: 85%">
+                  <li style="position: relative; left: 240px;">Integration from several sources
+                  <li style="position: relative; left: 240px;">Recreation can be very expensive
+                  <li style="position: relative; left: 240px;">Again, software and tools?
+                  <li style="position: relative; left: 240px;">Are there copyright concerns?
+                </ul>
                             </ul>
                         </div><br><br><br>
                     </div>
@@ -484,257 +481,257 @@
                         <div style="font-size: 70%; text-align: left; line-height: 120%; position: relative; left: 50px;">
                             <ul>
                                 <li style="position: relative; left: 23px;">Will you draw from previously published materials? – REFERENCE or CANONICAL<br><br>
-								<ul style="font-size: 85%">
-									<li>Peer reviewed
-									<li>Can be data or textual
-								</ul><br><br>
-							</ul><br>
+                <ul style="font-size: 85%">
+                  <li>Peer reviewed
+                  <li>Can be data or textual
+                </ul><br><br>
+              </ul><br>
                             <span class="fragment" style="position: relative; left: 23px; color: green">"This is the most creative, important and valuable aspect of research data."<br><br>
-								<ul style="font-size: 85%; color: black">
-									<li style="position: relative; left: 43px;">Do you agree?
-									<li style="position: relative; left: 43px;">Write a paragraph on why or why not you agree with this statement
-								</ul>
+                <ul style="font-size: 85%; color: black">
+                  <li style="position: relative; left: 43px;">Do you agree?
+                  <li style="position: relative; left: 43px;">Write a paragraph on why or why not you agree with this statement
+                </ul>
                             </span>
                         </div><br><br><br>
                     </div>
                     <aside class="notes">How important is the biblliography, the fact that we are "standing on the shoulders of giants" (Newton)</aside>
-                </section>					
+                </section>          
 
-	            <section>
-					<div style="width: 350px; margin-left: auto; margin-right: auto; position: relative; top: 100px;"><img src="../../common/assets/images-for-data/huayhuashSmall.png"></div>
-					
-					<div class="fragment" style="width: 300px; font-size: 50%; font-weight: bold; left: 40px; top: 100px; position: absolute;">
-						<svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 100px;" viewbox="0 0 300 80">
-							<ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(197,90,17); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="45%" text-anchor="middle" fill="#fff">National Geograpahic<tspan x="50%" y="75%">Institute</tspan></text>
-						</svg><br>
-						<svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 50px; top: 70px;" viewbox="0 0 300 80">
-							<ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(197,90,17); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="45%" text-anchor="middle" fill="#fff">Ministry of the<tspan x="50%" y="75%">Environment</tspan></text>
-						</svg><br>
-						<svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px; top: 140px;" viewbox="0 0 300 80">
-							<ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(197,90,17); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="45%" text-anchor="middle" fill="#fff">Ministry of Energy<tspan x="50%" y="75%">and Mines</tspan></text>
-						</svg>
-					</div>
+              <section>
+          <div style="width: 350px; margin-left: auto; margin-right: auto; position: relative; top: 100px;"><img src="../../common/assets/images-for-data/huayhuashSmall.png"></div>
+          
+          <div class="fragment" style="width: 300px; font-size: 50%; font-weight: bold; left: 40px; top: 100px; position: absolute;">
+            <svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 100px;" viewbox="0 0 300 80">
+              <ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(197,90,17); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="45%" text-anchor="middle" fill="#fff">National Geograpahic<tspan x="50%" y="75%">Institute</tspan></text>
+            </svg><br>
+            <svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 50px; top: 70px;" viewbox="0 0 300 80">
+              <ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(197,90,17); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="45%" text-anchor="middle" fill="#fff">Ministry of the<tspan x="50%" y="75%">Environment</tspan></text>
+            </svg><br>
+            <svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px; top: 140px;" viewbox="0 0 300 80">
+              <ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(197,90,17); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="45%" text-anchor="middle" fill="#fff">Ministry of Energy<tspan x="50%" y="75%">and Mines</tspan></text>
+            </svg>
+          </div>
 
-					<div class="fragment" style="width: 400px; font-size: 50%; font-weight: bold; left: 30px; top: 400px; position: absolute; text-align: right;">
-						<svg width="300px;" height="60px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 50px; top: 0px;" viewbox="0 0 300 60">
-							<ellipse cx="150" cy="30" rx="150" ry="30" style="fill: rgb(132,60,12); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Previous Area Studies</text>
-						</svg><br>
-						<svg width="280px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 160px; top: 45px;" viewbox="0 0 280 50">
-							<ellipse cx="140" cy="25" rx="140" ry="25" style="fill: rgb(132,60,12); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Systemic Theories</text>
-						</svg><br>
-						<svg width="170px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; top: 50px; left: -15px;" viewbox="0 0 170 50">
-							<ellipse cx="85" cy="25" rx="85" ry="25" style="fill: rgb(132,60,12); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Methods</text>
-						</svg><br>
-					</div>
+          <div class="fragment" style="width: 400px; font-size: 50%; font-weight: bold; left: 30px; top: 400px; position: absolute; text-align: right;">
+            <svg width="300px;" height="60px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 50px; top: 0px;" viewbox="0 0 300 60">
+              <ellipse cx="150" cy="30" rx="150" ry="30" style="fill: rgb(132,60,12); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Previous Area Studies</text>
+            </svg><br>
+            <svg width="280px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 160px; top: 45px;" viewbox="0 0 280 50">
+              <ellipse cx="140" cy="25" rx="140" ry="25" style="fill: rgb(132,60,12); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Systemic Theories</text>
+            </svg><br>
+            <svg width="170px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; top: 50px; left: -15px;" viewbox="0 0 170 50">
+              <ellipse cx="85" cy="25" rx="85" ry="25" style="fill: rgb(132,60,12); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Methods</text>
+            </svg><br>
+          </div>
 
-					<div class="fragment" style="width: 300px; font-size: 50%; font-weight: bold; text-align: left; left: 580px; top: 410px; position: absolute; ">
-						<svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px;">
-							<ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(128,113,0); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="45%" text-anchor="middle" fill="#fff">USGS / NASA<tspan x="50%" y="75%">satellite imagery</tspan></text>
-						</svg><br>
-						<svg width="500px;" height="60px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 50px; top: 70px">
-							<ellipse cx="150" cy="30" rx="150" ry="30" style="fill: rgb(128,113,0); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">SRTM togographic data</text>
-						</svg><br>
-					</div>
-					
-					<div class="fragment" style="width: 300px; font-size: 50%; font-weight: bold; text-align: left; left: 900px; top: 270px; position: absolute; ">
-						<svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 60px;">
-							<ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(84,130,53); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="45%" text-anchor="middle" fill="#fff">Six county<tspan x="50%" y="75%">governments</tspan></text>
-						</svg><br>
-						<svg width="500px;" height="60px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px; top: 70px">
-							<ellipse cx="150" cy="30" rx="150" ry="30" style="fill: rgb(84,130,53); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Ten communities</text>
-						</svg><br>
-						<svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 110px; top: 120px;">
-							<ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(84,130,53); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="45%" text-anchor="middle" fill="#fff">Three state<tspan x="50%" y="75%">governments</tspan></text>
-						</svg><br>
-						<svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 195px; top: 56px;">
-							<ellipse cx="150" cy="40" rx="100" ry="40" style="fill: rgb(84,130,53); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="45%" text-anchor="middle" fill="#fff">SURVEY<tspan x="50%" y="75%">INTERVIEWS</tspan></text>
-						</svg>
-					</div>
-					
-					<div class="fragment" style="width: 300px; font-size: 50%; font-weight: bold; text-align: left; left: 780px; top: 50px; position: absolute;">
-						<svg width="320px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px; top: 0px;">
-							<ellipse cx="160" cy="25" rx="120" ry="25" style="fill: rgb(56,87,35); stroke: gray; stroke-width: 1" />
-							<text x="53%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Pasture Transects</text>
-						</svg><br>
-						<svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 110px; top: 40px;">
-							<ellipse cx="150" cy="40" rx="120" ry="40" style="fill: rgb(56,87,35); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="45%" text-anchor="middle" fill="#fff">Water Quality<tspan x="50%" y="75%">Analysis</tspan></text>
-						</svg><br>
-						<svg width="500px;" height="60px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 130px; top: 110px;">
-							<ellipse cx="150" cy="30" rx="150" ry="30" style="fill: rgb(56,87,35); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">GPS Data Collected</text>
-						</svg><br>
-					</div>
-					
-					<div class="fragment" style="width: 300px; font-size: 50%; font-weight: bold; text-align: left; left: 620px; top: -80px; position: absolute;">
-						<svg width="260px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 210px; top: 0px;" viewbox="0 0 260 50">
-							<ellipse cx="130" cy="25" rx="130" ry="25" style="fill: rgb(112,48,160); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Productivity Model</text>
-						</svg><br>
-						<svg width="320px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 310px; top: 40px;">
-							<ellipse cx="160" cy="25" rx="120" ry="25" style="fill: rgb(112,48,160); stroke: gray; stroke-width: 1" />
-							<text x="53%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Disturbance Model</text>
-						</svg><br>
-						<svg width="320px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px; top: 25px;">
-							<ellipse cx="160" cy="25" rx="120" ry="25" style="fill: rgb(112,48,160); stroke: gray; stroke-width: 1" />
-							<text x="53%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Topographic Model</text>
-						</svg><br>
-					</div>
-					
-					<div class="fragment" style="width: 400px; font-size: 50%; font-weight: bold; text-align: left; left: 240px; top: -60px; position: absolute;">
-						<svg width="320px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px; top: 45px;" viewbox="0 0 320 50">
-							<ellipse cx="160" cy="25" rx="160" ry="25" style="fill: rgb(0,112,192); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Conservation Zoning Maps</text>
-						</svg><br>
-						<svg width="240px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 30px; top: 0px;" viewbox="0 0 240 50">
-							<ellipse cx="120" cy="25" rx="120" ry="25" style="fill: rgb(0,112,192); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Land Use Maps</text>
-						</svg><br>
-					</div>
-					
-					<div class="fragment" style="width: 400px; font-size: 60%; color: rgb(132,60,12); font-weight: bold; text-align: left; left: 250px; top: 530px; position: absolute;">
-						Reference / Canonical
-					</div>
-					<div class="fragment" style="width: 400px; font-size: 60%; color: rgb(56,87,35); font-weight: bold; text-align: left; left: 950px; top: 480px; position: absolute;">
-						Observational
-					</div>
-					<div class="fragment" style="width: 400px; font-size: 60%; color: rgb(112,48,160); font-weight: bold; text-align: left; left:1170px; top: 20px; position: absolute;">
-						Simulated
-					</div>
-					<div class="fragment" style="width: 400px; font-size: 60%; color: rgb(31,78,121); font-weight: bold; text-align: left; left: 100px; top: -30px; position: absolute;">
-						Compiled
-					</div>
-                </section>					
+          <div class="fragment" style="width: 300px; font-size: 50%; font-weight: bold; text-align: left; left: 580px; top: 410px; position: absolute; ">
+            <svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px;">
+              <ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(128,113,0); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="45%" text-anchor="middle" fill="#fff">USGS / NASA<tspan x="50%" y="75%">satellite imagery</tspan></text>
+            </svg><br>
+            <svg width="500px;" height="60px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 50px; top: 70px">
+              <ellipse cx="150" cy="30" rx="150" ry="30" style="fill: rgb(128,113,0); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">SRTM togographic data</text>
+            </svg><br>
+          </div>
+          
+          <div class="fragment" style="width: 300px; font-size: 50%; font-weight: bold; text-align: left; left: 900px; top: 270px; position: absolute; ">
+            <svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 60px;">
+              <ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(84,130,53); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="45%" text-anchor="middle" fill="#fff">Six county<tspan x="50%" y="75%">governments</tspan></text>
+            </svg><br>
+            <svg width="500px;" height="60px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px; top: 70px">
+              <ellipse cx="150" cy="30" rx="150" ry="30" style="fill: rgb(84,130,53); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Ten communities</text>
+            </svg><br>
+            <svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 110px; top: 120px;">
+              <ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(84,130,53); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="45%" text-anchor="middle" fill="#fff">Three state<tspan x="50%" y="75%">governments</tspan></text>
+            </svg><br>
+            <svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 195px; top: 56px;">
+              <ellipse cx="150" cy="40" rx="100" ry="40" style="fill: rgb(84,130,53); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="45%" text-anchor="middle" fill="#fff">SURVEY<tspan x="50%" y="75%">INTERVIEWS</tspan></text>
+            </svg>
+          </div>
+          
+          <div class="fragment" style="width: 300px; font-size: 50%; font-weight: bold; text-align: left; left: 780px; top: 50px; position: absolute;">
+            <svg width="320px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px; top: 0px;">
+              <ellipse cx="160" cy="25" rx="120" ry="25" style="fill: rgb(56,87,35); stroke: gray; stroke-width: 1" />
+              <text x="53%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Pasture Transects</text>
+            </svg><br>
+            <svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 110px; top: 40px;">
+              <ellipse cx="150" cy="40" rx="120" ry="40" style="fill: rgb(56,87,35); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="45%" text-anchor="middle" fill="#fff">Water Quality<tspan x="50%" y="75%">Analysis</tspan></text>
+            </svg><br>
+            <svg width="500px;" height="60px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 130px; top: 110px;">
+              <ellipse cx="150" cy="30" rx="150" ry="30" style="fill: rgb(56,87,35); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">GPS Data Collected</text>
+            </svg><br>
+          </div>
+          
+          <div class="fragment" style="width: 300px; font-size: 50%; font-weight: bold; text-align: left; left: 620px; top: -80px; position: absolute;">
+            <svg width="260px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 210px; top: 0px;" viewbox="0 0 260 50">
+              <ellipse cx="130" cy="25" rx="130" ry="25" style="fill: rgb(112,48,160); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Productivity Model</text>
+            </svg><br>
+            <svg width="320px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 310px; top: 40px;">
+              <ellipse cx="160" cy="25" rx="120" ry="25" style="fill: rgb(112,48,160); stroke: gray; stroke-width: 1" />
+              <text x="53%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Disturbance Model</text>
+            </svg><br>
+            <svg width="320px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px; top: 25px;">
+              <ellipse cx="160" cy="25" rx="120" ry="25" style="fill: rgb(112,48,160); stroke: gray; stroke-width: 1" />
+              <text x="53%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Topographic Model</text>
+            </svg><br>
+          </div>
+          
+          <div class="fragment" style="width: 400px; font-size: 50%; font-weight: bold; text-align: left; left: 240px; top: -60px; position: absolute;">
+            <svg width="320px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px; top: 45px;" viewbox="0 0 320 50">
+              <ellipse cx="160" cy="25" rx="160" ry="25" style="fill: rgb(0,112,192); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Conservation Zoning Maps</text>
+            </svg><br>
+            <svg width="240px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 30px; top: 0px;" viewbox="0 0 240 50">
+              <ellipse cx="120" cy="25" rx="120" ry="25" style="fill: rgb(0,112,192); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Land Use Maps</text>
+            </svg><br>
+          </div>
+          
+          <div class="fragment" style="width: 400px; font-size: 60%; color: rgb(132,60,12); font-weight: bold; text-align: left; left: 250px; top: 530px; position: absolute;">
+            Reference / Canonical
+          </div>
+          <div class="fragment" style="width: 400px; font-size: 60%; color: rgb(56,87,35); font-weight: bold; text-align: left; left: 950px; top: 480px; position: absolute;">
+            Observational
+          </div>
+          <div class="fragment" style="width: 400px; font-size: 60%; color: rgb(112,48,160); font-weight: bold; text-align: left; left:1170px; top: 20px; position: absolute;">
+            Simulated
+          </div>
+          <div class="fragment" style="width: 400px; font-size: 60%; color: rgb(31,78,121); font-weight: bold; text-align: left; left: 100px; top: -30px; position: absolute;">
+            Compiled
+          </div>
+                </section>          
 
-	            <section>
-					<div style="width: 350px; margin-left: auto; margin-right: auto; position: relative; top: 100px;"><img src="../../common/assets/images-for-data/huayhuashSmall.png"></div>
-					
-					<div style="width: 300px; font-size: 50%; font-weight: bold; left: 40px; top: 100px; position: absolute;">
-						<svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 100px;" viewbox="0 0 300 80">
-							<ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(197,90,17); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="45%" text-anchor="middle" fill="#fff">National Geograpahic<tspan x="50%" y="75%">Institute</tspan></text>
-						</svg><br>
-						<svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 50px; top: 70px;" viewbox="0 0 300 80">
-							<ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(197,90,17); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="45%" text-anchor="middle" fill="#fff">Ministry of the<tspan x="50%" y="75%">Environment</tspan></text>
-						</svg><br>
-						<svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px; top: 140px;" viewbox="0 0 300 80">
-							<ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(197,90,17); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="45%" text-anchor="middle" fill="#fff">Ministry of Energy<tspan x="50%" y="75%">and Mines</tspan></text>
-						</svg>
-					</div>
+              <section>
+          <div style="width: 350px; margin-left: auto; margin-right: auto; position: relative; top: 100px;"><img src="../../common/assets/images-for-data/huayhuashSmall.png"></div>
+          
+          <div style="width: 300px; font-size: 50%; font-weight: bold; left: 40px; top: 100px; position: absolute;">
+            <svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 100px;" viewbox="0 0 300 80">
+              <ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(197,90,17); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="45%" text-anchor="middle" fill="#fff">National Geograpahic<tspan x="50%" y="75%">Institute</tspan></text>
+            </svg><br>
+            <svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 50px; top: 70px;" viewbox="0 0 300 80">
+              <ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(197,90,17); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="45%" text-anchor="middle" fill="#fff">Ministry of the<tspan x="50%" y="75%">Environment</tspan></text>
+            </svg><br>
+            <svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px; top: 140px;" viewbox="0 0 300 80">
+              <ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(197,90,17); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="45%" text-anchor="middle" fill="#fff">Ministry of Energy<tspan x="50%" y="75%">and Mines</tspan></text>
+            </svg>
+          </div>
 
-					<div style="width: 400px; font-size: 50%; font-weight: bold; left: 30px; top: 400px; position: absolute; text-align: right;">
-						<svg width="300px;" height="60px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 50px; top: 0px;" viewbox="0 0 300 60">
-							<ellipse cx="150" cy="30" rx="150" ry="30" style="fill: rgb(132,60,12); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Previous Area Studies</text>
-						</svg><br>
-						<svg width="280px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 160px; top: 45px;" viewbox="0 0 280 50">
-							<ellipse cx="140" cy="25" rx="140" ry="25" style="fill: rgb(132,60,12); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Systemic Theories</text>
-						</svg><br>
-						<svg width="170px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; top: 50px; left: -15px;" viewbox="0 0 170 50">
-							<ellipse cx="85" cy="25" rx="85" ry="25" style="fill: rgb(132,60,12); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Methods</text>
-						</svg><br>
-					</div>
+          <div style="width: 400px; font-size: 50%; font-weight: bold; left: 30px; top: 400px; position: absolute; text-align: right;">
+            <svg width="300px;" height="60px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 50px; top: 0px;" viewbox="0 0 300 60">
+              <ellipse cx="150" cy="30" rx="150" ry="30" style="fill: rgb(132,60,12); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Previous Area Studies</text>
+            </svg><br>
+            <svg width="280px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 160px; top: 45px;" viewbox="0 0 280 50">
+              <ellipse cx="140" cy="25" rx="140" ry="25" style="fill: rgb(132,60,12); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Systemic Theories</text>
+            </svg><br>
+            <svg width="170px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; top: 50px; left: -15px;" viewbox="0 0 170 50">
+              <ellipse cx="85" cy="25" rx="85" ry="25" style="fill: rgb(132,60,12); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Methods</text>
+            </svg><br>
+          </div>
 
-					<div style="width: 300px; font-size: 50%; font-weight: bold; text-align: left; left: 580px; top: 410px; position: absolute; ">
-						<svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px;">
-							<ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(128,113,0); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="45%" text-anchor="middle" fill="#fff">USGS / NASA<tspan x="50%" y="75%">satellite imagery</tspan></text>
-						</svg><br>
-						<svg width="500px;" height="60px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 50px; top: 70px">
-							<ellipse cx="150" cy="30" rx="150" ry="30" style="fill: rgb(128,113,0); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">SRTM togographic data</text>
-						</svg><br>
-					</div>
-					
-					<div style="width: 300px; font-size: 50%; font-weight: bold; text-align: left; left: 900px; top: 270px; position: absolute; ">
-						<svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 60px;">
-							<ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(84,130,53); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="45%" text-anchor="middle" fill="#fff">Six county<tspan x="50%" y="75%">governments</tspan></text>
-						</svg><br>
-						<svg width="500px;" height="60px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px; top: 70px">
-							<ellipse cx="150" cy="30" rx="150" ry="30" style="fill: rgb(84,130,53); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Ten communities</text>
-						</svg><br>
-						<svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 110px; top: 120px;">
-							<ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(84,130,53); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="45%" text-anchor="middle" fill="#fff">Three state<tspan x="50%" y="75%">governments</tspan></text>
-						</svg><br>
-						<svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 195px; top: 56px;">
-							<ellipse cx="150" cy="40" rx="100" ry="40" style="fill: rgb(84,130,53); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="45%" text-anchor="middle" fill="#fff">SURVEY<tspan x="50%" y="75%">INTERVIEWS</tspan></text>
-						</svg>
-					</div>
-					
-					<div style="width: 300px; font-size: 50%; font-weight: bold; text-align: left; left: 780px; top: 50px; position: absolute;">
-						<svg width="320px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px; top: 0px;">
-							<ellipse cx="160" cy="25" rx="120" ry="25" style="fill: rgb(56,87,35); stroke: gray; stroke-width: 1" />
-							<text x="53%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Pasture Transects</text>
-						</svg><br>
-						<svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 110px; top: 40px;">
-							<ellipse cx="150" cy="40" rx="120" ry="40" style="fill: rgb(56,87,35); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="45%" text-anchor="middle" fill="#fff">Water Quality<tspan x="50%" y="75%">Analysis</tspan></text>
-						</svg><br>
-						<svg width="500px;" height="60px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 130px; top: 110px;">
-							<ellipse cx="150" cy="30" rx="150" ry="30" style="fill: rgb(56,87,35); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">GPS Data Collected</text>
-						</svg><br>
-					</div>
-					
-					<div style="width: 300px; font-size: 50%; font-weight: bold; text-align: left; left: 620px; top: -80px; position: absolute;">
-						<svg width="260px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 210px; top: 0px;" viewbox="0 0 260 50">
-							<ellipse cx="130" cy="25" rx="130" ry="25" style="fill: rgb(112,48,160); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Productivity Model</text>
-						</svg><br>
-						<svg width="320px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 310px; top: 40px;">
-							<ellipse cx="160" cy="25" rx="120" ry="25" style="fill: rgb(112,48,160); stroke: gray; stroke-width: 1" />
-							<text x="53%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Disturbance Model</text>
-						</svg><br>
-						<svg width="320px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px; top: 25px;">
-							<ellipse cx="160" cy="25" rx="120" ry="25" style="fill: rgb(112,48,160); stroke: gray; stroke-width: 1" />
-							<text x="53%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Topographic Model</text>
-						</svg><br>
-					</div>
-					
-					<div style="width: 400px; font-size: 50%; font-weight: bold; text-align: left; left: 240px; top: -60px; position: absolute;">
-						<svg width="320px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px; top: 45px;" viewbox="0 0 320 50">
-							<ellipse cx="160" cy="25" rx="160" ry="25" style="fill: rgb(0,112,192); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Conservation Zoning Maps</text>
-						</svg><br>
-						<svg width="240px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 30px; top: 0px;" viewbox="0 0 240 50">
-							<ellipse cx="120" cy="25" rx="120" ry="25" style="fill: rgb(0,112,192); stroke: gray; stroke-width: 1" />
-							<text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Land Use Maps</text>
-						</svg><br>
-					</div>
-					
-					<div class="fragment" style="width: 400px; font-size: 60%; color: rgb(56,87,35); font-weight: bold; text-align: left; left: 950px; top: 480px; position: absolute;">
-						Raw
-					</div>
-					<div class="fragment" style="width: 400px; font-size: 60%; color: rgb(112,48,160); font-weight: bold; text-align: left; left:1170px; top: 20px; position: absolute;">
-						Analyzed
-					</div>
-					<div class="fragment" style="width: 400px; font-size: 60%; color: rgb(31,78,121); font-weight: bold; text-align: left; left: 100px; top: -30px; position: absolute;">
-						Processed
-					</div>
-					<div class="fragment" style="width: 400px; font-size: 60%; color: rgb(132,60,12); font-weight: bold; text-align: left; left: 250px; top: 530px; position: absolute;">
-						Finalized / Published
-					</div>
-                </section>	
+          <div style="width: 300px; font-size: 50%; font-weight: bold; text-align: left; left: 580px; top: 410px; position: absolute; ">
+            <svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px;">
+              <ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(128,113,0); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="45%" text-anchor="middle" fill="#fff">USGS / NASA<tspan x="50%" y="75%">satellite imagery</tspan></text>
+            </svg><br>
+            <svg width="500px;" height="60px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 50px; top: 70px">
+              <ellipse cx="150" cy="30" rx="150" ry="30" style="fill: rgb(128,113,0); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">SRTM togographic data</text>
+            </svg><br>
+          </div>
+          
+          <div style="width: 300px; font-size: 50%; font-weight: bold; text-align: left; left: 900px; top: 270px; position: absolute; ">
+            <svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 60px;">
+              <ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(84,130,53); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="45%" text-anchor="middle" fill="#fff">Six county<tspan x="50%" y="75%">governments</tspan></text>
+            </svg><br>
+            <svg width="500px;" height="60px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px; top: 70px">
+              <ellipse cx="150" cy="30" rx="150" ry="30" style="fill: rgb(84,130,53); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Ten communities</text>
+            </svg><br>
+            <svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 110px; top: 120px;">
+              <ellipse cx="150" cy="40" rx="150" ry="40" style="fill: rgb(84,130,53); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="45%" text-anchor="middle" fill="#fff">Three state<tspan x="50%" y="75%">governments</tspan></text>
+            </svg><br>
+            <svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 195px; top: 56px;">
+              <ellipse cx="150" cy="40" rx="100" ry="40" style="fill: rgb(84,130,53); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="45%" text-anchor="middle" fill="#fff">SURVEY<tspan x="50%" y="75%">INTERVIEWS</tspan></text>
+            </svg>
+          </div>
+          
+          <div style="width: 300px; font-size: 50%; font-weight: bold; text-align: left; left: 780px; top: 50px; position: absolute;">
+            <svg width="320px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px; top: 0px;">
+              <ellipse cx="160" cy="25" rx="120" ry="25" style="fill: rgb(56,87,35); stroke: gray; stroke-width: 1" />
+              <text x="53%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Pasture Transects</text>
+            </svg><br>
+            <svg width="300px;" height="80px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 110px; top: 40px;">
+              <ellipse cx="150" cy="40" rx="120" ry="40" style="fill: rgb(56,87,35); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="45%" text-anchor="middle" fill="#fff">Water Quality<tspan x="50%" y="75%">Analysis</tspan></text>
+            </svg><br>
+            <svg width="500px;" height="60px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 130px; top: 110px;">
+              <ellipse cx="150" cy="30" rx="150" ry="30" style="fill: rgb(56,87,35); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">GPS Data Collected</text>
+            </svg><br>
+          </div>
+          
+          <div style="width: 300px; font-size: 50%; font-weight: bold; text-align: left; left: 620px; top: -80px; position: absolute;">
+            <svg width="260px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 210px; top: 0px;" viewbox="0 0 260 50">
+              <ellipse cx="130" cy="25" rx="130" ry="25" style="fill: rgb(112,48,160); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Productivity Model</text>
+            </svg><br>
+            <svg width="320px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 310px; top: 40px;">
+              <ellipse cx="160" cy="25" rx="120" ry="25" style="fill: rgb(112,48,160); stroke: gray; stroke-width: 1" />
+              <text x="53%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Disturbance Model</text>
+            </svg><br>
+            <svg width="320px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px; top: 25px;">
+              <ellipse cx="160" cy="25" rx="120" ry="25" style="fill: rgb(112,48,160); stroke: gray; stroke-width: 1" />
+              <text x="53%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Topographic Model</text>
+            </svg><br>
+          </div>
+          
+          <div style="width: 400px; font-size: 50%; font-weight: bold; text-align: left; left: 240px; top: -60px; position: absolute;">
+            <svg width="320px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 0px; top: 45px;" viewbox="0 0 320 50">
+              <ellipse cx="160" cy="25" rx="160" ry="25" style="fill: rgb(0,112,192); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Conservation Zoning Maps</text>
+            </svg><br>
+            <svg width="240px;" height="50px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 30px; top: 0px;" viewbox="0 0 240 50">
+              <ellipse cx="120" cy="25" rx="120" ry="25" style="fill: rgb(0,112,192); stroke: gray; stroke-width: 1" />
+              <text x="50%" y="50%" text-anchor="middle" fill="#fff" dy="0.3em">Land Use Maps</text>
+            </svg><br>
+          </div>
+          
+          <div class="fragment" style="width: 400px; font-size: 60%; color: rgb(56,87,35); font-weight: bold; text-align: left; left: 950px; top: 480px; position: absolute;">
+            Raw
+          </div>
+          <div class="fragment" style="width: 400px; font-size: 60%; color: rgb(112,48,160); font-weight: bold; text-align: left; left:1170px; top: 20px; position: absolute;">
+            Analyzed
+          </div>
+          <div class="fragment" style="width: 400px; font-size: 60%; color: rgb(31,78,121); font-weight: bold; text-align: left; left: 100px; top: -30px; position: absolute;">
+            Processed
+          </div>
+          <div class="fragment" style="width: 400px; font-size: 60%; color: rgb(132,60,12); font-weight: bold; text-align: left; left: 250px; top: 530px; position: absolute;">
+            Finalized / Published
+          </div>
+                </section>  
 
                 <section>
                     <div style="width: 80%; margin-right: auto; margin-left: auto;">
@@ -742,54 +739,54 @@
                         <div style="font-size: 70%; text-align: left; line-height: 120%; position: relative; left: 50px;">
                             <ul>
                                 <li style="position: relative; left: 23px;">Think about your research project – if you don’t have one, partner with someone who does OR imagine your future internship<br><br>
-								<ul style="font-size: 85%">
-									<li>DRAW your RESEARCH LIFE CYCLE
-									<ul style="font-size: 85%">
-										<li>Remember: before, during, after
-									</ul><br>
-									<li>CONSIDER DATA as
-									<ul style="font-size: 85%">
-										<li>Qualitative and Quantitative
-										<li>observational, experimental, derived, simulated, refere
-										<li>raw, processed, analyzed, published
-										<li>primary, secondary, tertiary
-									</ul><br>
-									<li>MATCH the STAGES of the research lifecycle with DATA TYPES
-									<ul style="font-size: 85%">
-										<li>Think about management/wrangling at each research stage with each data type 
-									</ul><br>
-								</ul><br>
+                <ul style="font-size: 85%">
+                  <li>DRAW your RESEARCH LIFE CYCLE
+                  <ul style="font-size: 85%">
+                    <li>Remember: before, during, after
+                  </ul><br>
+                  <li>CONSIDER DATA as
+                  <ul style="font-size: 85%">
+                    <li>Qualitative and Quantitative
+                    <li>observational, experimental, derived, simulated, refere
+                    <li>raw, processed, analyzed, published
+                    <li>primary, secondary, tertiary
+                  </ul><br>
+                  <li>MATCH the STAGES of the research lifecycle with DATA TYPES
+                  <ul style="font-size: 85%">
+                    <li>Think about management/wrangling at each research stage with each data type 
+                  </ul><br>
+                </ul><br>
                             </ul>
                         </div><br>
                     </div>
                 </section>
 
-				<section>
-					... break for intro to formats ...
-				</section>
-				
-	            <section>
-					<div style="font-weight: bold; font-size: 110%;">File Formats</div>
-					<div style="width: 85%; margin-left: auto; margin-right: auto; font-size: 70%; text-align: left; line-height: 120%; position: relative; top: 23px; height: 250px;">
-						“A <span style="color: rgb(84,130,53); font-size: 115%"> file format</span> is a standard way that information is encoded for storage in a computer file. It specifies how bits are used to encode information in a digital storage medium.”    - Wikipedia
-					</div><br><br>
-					<div style="width: 300px; font-size: 60%; text-align: center; position: absolute; top: 240px; left: 200px;">
-						<span style="color: rgb(127,96,0); font-size: 130%; font-weight: bold;">Data type</span><br>
-						<div style="position: relative; top: 13px;">Qualitative, tabular<br>experimental data</div>
-					</div>
-					<div style="width: 100px; font-size: 500%; text-align: center; position: absolute; top: 220px; left: 590px;">
-						{
-					</div>
-					<div style="width: 360px; font-size: 60%; text-align: center; position: absolute; top: 240px; left: 800px;">
-						<span style="color: rgb(127,96,0); font-size: 130%; font-weight: bold;%">Possible formats</span><br>
-						<div style="position: relative; top: 13px;">Excel spreadsheet (.xlsx)<br>Comma-delimited text (.csv)<br>Access database (.mdb/,accdb)<br>Google Spreadsheet<br>SPSS portable file (.por)<br>XML file</div>
-					</div>
+        <section>
+          ... break for intro to formats ...
+        </section>
+        
+              <section>
+          <div style="font-weight: bold; font-size: 110%;">File Formats</div>
+          <div style="width: 85%; margin-left: auto; margin-right: auto; font-size: 70%; text-align: left; line-height: 120%; position: relative; top: 23px; height: 250px;">
+            “A <span style="color: rgb(84,130,53); font-size: 115%"> file format</span> is a standard way that information is encoded for storage in a computer file. It specifies how bits are used to encode information in a digital storage medium.”    - Wikipedia
+          </div><br><br>
+          <div style="width: 300px; font-size: 60%; text-align: center; position: absolute; top: 240px; left: 200px;">
+            <span style="color: rgb(127,96,0); font-size: 130%; font-weight: bold;">Data type</span><br>
+            <div style="position: relative; top: 13px;">Qualitative, tabular<br>experimental data</div>
+          </div>
+          <div style="width: 100px; font-size: 500%; text-align: center; position: absolute; top: 220px; left: 590px;">
+            {
+          </div>
+          <div style="width: 360px; font-size: 60%; text-align: center; position: absolute; top: 240px; left: 800px;">
+            <span style="color: rgb(127,96,0); font-size: 130%; font-weight: bold;%">Possible formats</span><br>
+            <div style="position: relative; top: 13px;">Excel spreadsheet (.xlsx)<br>Comma-delimited text (.csv)<br>Access database (.mdb/,accdb)<br>Google Spreadsheet<br>SPSS portable file (.por)<br>XML file</div>
+          </div>
                     <div style="font-size: 40%; color: #555; position: relative; width: 90%; margin-left: auto; margin-right: auto; top: 200px;">Whitmire, Amanda L. (2014). Research Data Management Curriculum, Lecture 3: Introduction to Research Data Management. Oregon State University Libraries.<br>Retrieved 11/04/2015 from: <a href="http://figshare.com/articles/GRAD521_Research_Data_Management_Lectures/1003835">http://figshare.com/articles/GRAD521_Research_Data_Management_Lectures/1003835</a></div>
-				</section>
-				
-	            <section>
-					<div style="font-weight: bold; font-size: 110%;">File Formats</div>
-					<div class="fragment" style="width: 100%; font-size: 6%; text-align: left; -webkit-column-count: 5; -moz-column-count: 5; column-count: 5; position: relative; top: 20px;"><pre>Archive and compressed
+        </section>
+        
+              <section>
+          <div style="font-weight: bold; font-size: 110%;">File Formats</div>
+          <div class="fragment" style="width: 100%; font-size: 6%; text-align: left; -webkit-column-count: 5; -moz-column-count: 5; column-count: 5; position: relative; top: 20px;"><pre>Archive and compressed
 Main article: List of archive formats
 
     .cab — A cabinet (.cab) file is a library of compressed files stored as a single file. Cabinet files are used to organize installation files that are copied to the user's system.[1]
@@ -1173,7 +1170,7 @@ These files store formatted text and plain text.
     ODT — OpenDocument text document
     OTT — OpenDocument text document template
 
-	
+  
 
     OMM — OmmWriter text document
     PAGES — Apple Pages document
@@ -2466,301 +2463,301 @@ Incomplete transfers
     PART (.part) — partially completed downloads in Mozilla Firefox
     CRDOWNLOAD (.crdownload) - partially completed downloads in Google Chrome
     OPDOWNLOAD (.opdownload) - partially completed downloads in Opera</pre>
-					</div>
+          </div>
                     <div style="font-size: 40%; color: #555; position: relative; width: 90%; margin-left: auto; margin-right: auto; top: 40px;">retrieved from: <a href="http://en.wikipedia.org/wiki/List_of_file_formats">http://en.wikipedia.org/wiki/List_of_file_formats</a> - accessed Jan 28 2017</div>
-				</section>
-				
+        </section>
+        
                 <section>
-					<div style="font-weight: bold; font-size: 110%;">Reading for Next Class (Wednesday)</div>
+          <div style="font-weight: bold; font-size: 110%;">Reading for Next Class (Wednesday)</div>
                     <div style="position: relative; top: 30px; font-size:75%; text-align: left; width: 85%; margin-right: auto; margin-left: auto;">
-					    <ul>
-						    <li style="position: relative; font-size: 85%;">UK Data Archive (2015). Create and Manage Data: formatting Your Data: File Formats and Software. <br>
-								- <a href="http://www.data-archive.ac.uk/create-manage/format/formats">http://www.data-archive.ac.uk/create-manage/format/formats</a><br>
-								(follow “Recommended File Formats” link as well).
-						    <li style="position: relative; top: 20px; font-size: 85%;">Library of Congress (2015). Recommended Formats Statement 2016-2017.<br>
-								- <a href="http://www.loc.gov/preservation/resources/rfs/RFS%202016-2017.pdf">http://www.loc.gov/preservation/resources/rfs/RFS%202016-2017.pdf</a><br>
-								(get an idea of different file types and formats, but do not attempt to read word for word)
-						</ul>
-						<br><br>
-					</div>
-					<br><br>
-                </section>		
+              <ul>
+                <li style="position: relative; font-size: 85%;">UK Data Archive (2015). Create and Manage Data: formatting Your Data: File Formats and Software. <br>
+                - <a href="http://www.data-archive.ac.uk/create-manage/format/formats">http://www.data-archive.ac.uk/create-manage/format/formats</a><br>
+                (follow “Recommended File Formats” link as well).
+                <li style="position: relative; top: 20px; font-size: 85%;">Library of Congress (2015). Recommended Formats Statement 2016-2017.<br>
+                - <a href="http://www.loc.gov/preservation/resources/rfs/RFS%202016-2017.pdf">http://www.loc.gov/preservation/resources/rfs/RFS%202016-2017.pdf</a><br>
+                (get an idea of different file types and formats, but do not attempt to read word for word)
+            </ul>
+            <br><br>
+          </div>
+          <br><br>
+                </section>    
 
-				<section>
-					... break for next session ...
-				</section>				
+        <section>
+          ... break for next session ...
+        </section>        
 
 <!-- ########################################################################################################################## -->
-<!-- ##               end of session one - transition to session two                                                                                                                                                                                 ## -->				
-<!-- ########################################################################################################################## -->						
+<!-- ##               end of session one - transition to session two                                                                                                                                                                                 ## -->        
+<!-- ########################################################################################################################## -->            
 
-				<section>
-					<div style="font-weight: bold; font-size: 110%;">Todays Outline</div>
-					<div style="width: 75%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
-						<ul style="font-size: 80%;">
-							<li style="position: relative; left: 23px; top: 20px;">File formats
-							<li style="position: relative; left: 23px; top: 20px;">Text-based "open" formats
-							<li style="position: relative; left: 23px; top: 20px;">Image formats
-						</ul>
-					</div>
-					<br><br><br>
-					<div style="position: absolute; bottom: 0px; left: 500px; text-align: left; font-size: 60%; line-height: normal;">
-						<a href="https://etherpad.net/p/Data_Management_Keywords">https://etherpad.net/p/Data_Management_Keywords</a><br>
-					</div>
-					<div style="position: absolute; bottom: -100px; left: 100px; text-align: left; font-size: 60%; line-height: normal;">
-						Download this: <a href="https://tibbben.github.io/school.of.data/UM_DataManagementClass/materials/materials03.zip">https://tibbben.github.io/school.of.data/UM_DataManagementClass/materials/materials03.zip</a>
-					</div>
-				</section>
+        <section>
+          <div style="font-weight: bold; font-size: 110%;">Todays Outline</div>
+          <div style="width: 75%; margin-left: auto; margin-right: auto; font-size: 85%; text-align: left; top: 130px; line-height: 120%; position: relative; top: 23px;">
+            <ul style="font-size: 80%;">
+              <li style="position: relative; left: 23px; top: 20px;">File formats
+              <li style="position: relative; left: 23px; top: 20px;">Text-based "open" formats
+              <li style="position: relative; left: 23px; top: 20px;">Image formats
+            </ul>
+          </div>
+          <br><br><br>
+          <div style="position: absolute; bottom: 0px; left: 500px; text-align: left; font-size: 60%; line-height: normal;">
+            <a href="https://etherpad.net/p/Data_Management_Keywords">https://etherpad.net/p/Data_Management_Keywords</a><br>
+          </div>
+          <div style="position: absolute; bottom: -100px; left: 100px; text-align: left; font-size: 60%; line-height: normal;">
+            Download this: <a href="https://tibbben.github.io/school.of.data/UM_DataManagementClass/materials/materials03.zip">https://tibbben.github.io/school.of.data/UM_DataManagementClass/materials/materials03.zip</a>
+          </div>
+        </section>
 
-				<section>
+        <section>
                     <div style="width: 86%; margin-right: 7%; margin-left: auto;">
                         <span style="font-weight: bold; font-size: 110%;">File Formats<br><br></span>
-						<span style="font-weight: bold; font-size: 95%;">Recomended Formats for Long-term Access and Sharing<br><br></span>
+            <span style="font-weight: bold; font-size: 95%;">Recomended Formats for Long-term Access and Sharing<br><br></span>
                         <div style="font-size: 80%; text-align: left; line-height: 200%; position: relative; left: 40px;">
                             Non-proprietary – <i>no software purchase to open the file</i><br>
                             Lossless – <i>uncompressed with all of the original data</i><br>
                             Indexable – <i>if possible a plain text format that is both human and machine readable</i>
                         </div>
-			            <span style="font-weight: bold; font-size: 90%;"><br>Best file format?????<br><br></span>
+                  <span style="font-weight: bold; font-size: 90%;"><br>Best file format?????<br><br></span>
                     </div>
-					<div class="fragment" style="position: absolute; bottom: -90px; left: 800px; width: 100%; text-align: left; font-size: 100%; line-height: normal;"><b>PAPER!</b></div>
+          <div class="fragment" style="position: absolute; bottom: -90px; left: 800px; width: 100%; text-align: left; font-size: 100%; line-height: normal;"><b>PAPER!</b></div>
                 </section>
-				
-				<section>
-					
-					<section data-transition="fade-in fade-out">
-						<div style="width: 80%; margin-right: 10%; margin-left: auto; ">
-							<span style="font-weight: bold; font-size: 110%;">File Formats<br><br></span>
-							<table style="font-size: 80%; text-align: left; line-height: 150%;"><tbody><tr>
-							  <td rowspan=2 style="vertical-align: top; width: 220px; border: none !important;">
-								<ul>
-									<li>Text:
-									<li>Tabular:
-									<li>Stat:
-									<li>Images:
-									<li>Geographic
-									<li>Video
-									<li>Music
-									<li>Plain text:
-								</ul>
-							  </td><td rowspan=2 style="vertical-align: top; border: none !important;">
-									doc, docx, rtf, odt, pages<br>
-									xls, xlsx, numbers, dbf<br>
-									spss, sas, jmp, rdata<br>
-									jpg, tiff, svg, png, gif, bmp<br>
-									shp, geotiff, kml, kmz, gdb<br>
-									mp4, mov, avi, ogg<br>
-									mp3, wav, m4a, aiff<br>
-									txt, csv, json, html, xml 
-							  </td><td rowspan=2 style="vertical-align: top; width: 50px; border: none !important;">
-							  </td><td style="vertical-align: top; line-height: 100%; border: none !important; width: 284px;">
-							  </td>
-							</tr><tr>
-							  </td><td style="vertical-align: top; line-height: 100%; border: none !important; width: 284px;">
-							  </td>
-							</tr></tbody></table>
-						</div><br><br><br>
-					</section>
-					
-					<section data-transition="fade-in fade-out">
-						<div style="width: 80%; margin-right: 10%; margin-left: auto; ">
-							<span style="font-weight: bold; font-size: 110%;">File Formats<br><br></span>
-							<table style="font-size: 80%; text-align: left; line-height: 150%;"><tbody><tr>
-							  <td rowspan=2 style="vertical-align: top; width: 220px; border: none !important;">
-								<ul>
-									<li>Text:
-									<li>Tabular:
-									<li>Stat:
-									<li>Images:
-									<li>Geographic
-									<li>Video
-									<li>Music
-									<li>Plain text:
-								</ul>
-							  </td><td rowspan=2 style="vertical-align: top; border: none !important;">
-									<span style="color: red;">doc</span>, docx, <span style="color: green;">rtf</span>, <span style="color: green;">odt</span>, <span style="color: red;">pages</span><br>
-									<span style="color: red;">xls</span>, xlsx, <span style="color: red;">numbers</span>, dbf<br>
-									<span style="color: red;">spss</span>, <span style="color: red;">sas</span>, <span style="color: green;">jmp</span>, <span style="color: green;">rdata</span><br>
-									jpg, <span style="color: green;">tiff</span>, <span style="color: green;">svg</span>, <span style="color: green;">png</span>, <span style="color: red;">gif</span>, <span style="color: green;">bmp</span><br>
-									<span style="color: red;">shp</span>, <span style="color: green;">geotiff</span>, <span style="color: green;">kml</span>, <span style="color: green;">kmz</span>, <span style="color: red;">gdb</span><br>
-									<span style="color: green;">mp4</span>, <span style="color: red;">mov</span>, <span style="color: red;">avi</span>, <span style="color: green;">ogg</span><br>
-									<span style="color: green;">mp3</span>, <span style="color: red;">wav</span>, <span style="color: green;">m4a</span>, <span style="color: red;">aiff</span><br>
-									<span style="color: green;">txt</span>, <span style="color: green;">csv</span>, <span style="color: green;">json</span>, <span style="color: green;">html</span>, <span style="color: green;">xml</span> 
-							  </td><td rowspan=2 style="vertical-align: top; width: 50px; border: none !important;">
-							  </td><td style="vertical-align: top; line-height: 110%; border: none !important; width: 284px;">
-									<br><b>General Formats</b><br>
-									<ul>
-										<li><span style="color: red;">proprietary</span>
-										<li>mixed
-										<li><span style="color: green;">open</span>
-									</ul>
-							  </td>
-							</tr><tr>
-							  </td><td style="vertical-align: top; line-height: 110%; border: none !important; width: 284px;">
-							  </td>
-							</tr></tbody></table>
-						</div><br><br><br>
-					</section>
-					
-					<section data-transition="fade-in fade-out">
-						<div style="width: 80%; margin-right: 10%; margin-left: auto; ">
-							<span style="font-weight: bold; font-size: 110%;">File Formats<br><br></span>
-							<table style="font-size: 80%; text-align: left; line-height: 150%;"><tbody><tr>
-							  <td rowspan=2 style="vertical-align: top; width: 220px; border: none !important;">
-								<ul>
-									<li>Text:
-									<li>Tabular:
-									<li>Stat:
-									<li>Images:
-									<li>Geographic
-									<li>Video
-									<li>Music
-									<li>Plain text:
-								</ul>
-							  </td><td rowspan=2 style="vertical-align: top; border: none !important;">
-									<span style="color: red;"><b>doc</b></span>, <b>docx</b>, <span style="color: green;"><b>rtf</b></span>, <span style="color: green;"><b>odt</b></span>, <span style="color: red;"><b>pages</b></span><br>
-									<span style="color: red;"><b>xls</b></span>, <b>xlsx</b>, <span style="color: red;"><b>numbers</b></span>, <b>dbf</b><br>
-									<span style="color: red;"><b>spss</b></span>, <span style="color: red;"><b>sas</b></span>, <span style="color: green;"><b>jmp</b></span>, <span style="color: green;"><b>rdata</b></span><br>
-									<span style="text-decoration: line-through;">jpg</span>, <span style="color: green;"><u>tiff</u></span>, <span style="color: green;"><b>svg</b></span>, <span style="color: green;"><u>png</u></span>, <span style="color: red; text-decoration: line-through;">gif</span>, <span style="color: green; text-decoration: line-through;"><b>bmp</b></span><br>
-									<span style="color: red;"><b>shp</b></span>, <span style="color: green;"><u>geotiff</u></span>, <span style="color: green;"><u>kml</u></span>, <span style="color: green;"><u>kmz</u></span>, <span style="color: red;"><u>gdb</u></span><br>
-									<span style="color: green;"><u>mp4</u></span>, <span style="color: red;"><u>mov</u></span>, <span style="color: red;"><u>avi</u></span>, <span style="color: green; text-decoration: line-through;">ogg</span><br>
-									<span style="color: green; text-decoration: line-through;">mp3</span>, <span style="color: red;"><u>wav</u></span>, <span style="color: green;"><u>m4a</u></span>, <span style="color: red;"><u>aiff</u></span><br>
-									<span style="color: green;"><b>txt</b></span>, <span style="color: green;"><b>csv</b></span>, <span style="color: green;"><b>json</b></span>, <span style="color: green;"><b>html</b></span>, <span style="color: green;"><b>xml</b></span> 
-							  </td><td rowspan=2 style="vertical-align: top; width: 50px; border: none !important;">
-							  </td><td style="vertical-align: top; line-height: 110%; border: none !important; width: 284px;">
-									<br><b>General Formats</b><br>
-									<ul>
-										<li><span style="color: red;">proprietary</span>
-										<li>mixed
-										<li><span style="color: green;">open</span>
-									</ul>
-							  </td>
-							</tr><tr>
-							  </td><td style="vertical-align: top; line-height: 110%; border: none !important; width: 284px;">
-									<b>Compression</b><br>
-									<ul>
-										<li><span style="text-decoration: line-through;">lossy</span>
-										<li><u>depends</u>
-										<li><b>lossless</b>
-									</ul>
-							  </td>
-							</tr></tbody></table>
-						</div><br><br><br>
-					</section>
-				
+        
+        <section>
+          
+          <section data-transition="fade-in fade-out">
+            <div style="width: 80%; margin-right: 10%; margin-left: auto; ">
+              <span style="font-weight: bold; font-size: 110%;">File Formats<br><br></span>
+              <table style="font-size: 80%; text-align: left; line-height: 150%;"><tbody><tr>
+                <td rowspan=2 style="vertical-align: top; width: 220px; border: none !important;">
+                <ul>
+                  <li>Text:
+                  <li>Tabular:
+                  <li>Stat:
+                  <li>Images:
+                  <li>Geographic
+                  <li>Video
+                  <li>Music
+                  <li>Plain text:
+                </ul>
+                </td><td rowspan=2 style="vertical-align: top; border: none !important;">
+                  doc, docx, rtf, odt, pages<br>
+                  xls, xlsx, numbers, dbf<br>
+                  spss, sas, jmp, rdata<br>
+                  jpg, tiff, svg, png, gif, bmp<br>
+                  shp, geotiff, kml, kmz, gdb<br>
+                  mp4, mov, avi, ogg<br>
+                  mp3, wav, m4a, aiff<br>
+                  txt, csv, json, html, xml 
+                </td><td rowspan=2 style="vertical-align: top; width: 50px; border: none !important;">
+                </td><td style="vertical-align: top; line-height: 100%; border: none !important; width: 284px;">
+                </td>
+              </tr><tr>
+                </td><td style="vertical-align: top; line-height: 100%; border: none !important; width: 284px;">
+                </td>
+              </tr></tbody></table>
+            </div><br><br><br>
+          </section>
+          
+          <section data-transition="fade-in fade-out">
+            <div style="width: 80%; margin-right: 10%; margin-left: auto; ">
+              <span style="font-weight: bold; font-size: 110%;">File Formats<br><br></span>
+              <table style="font-size: 80%; text-align: left; line-height: 150%;"><tbody><tr>
+                <td rowspan=2 style="vertical-align: top; width: 220px; border: none !important;">
+                <ul>
+                  <li>Text:
+                  <li>Tabular:
+                  <li>Stat:
+                  <li>Images:
+                  <li>Geographic
+                  <li>Video
+                  <li>Music
+                  <li>Plain text:
+                </ul>
+                </td><td rowspan=2 style="vertical-align: top; border: none !important;">
+                  <span style="color: red;">doc</span>, docx, <span style="color: green;">rtf</span>, <span style="color: green;">odt</span>, <span style="color: red;">pages</span><br>
+                  <span style="color: red;">xls</span>, xlsx, <span style="color: red;">numbers</span>, dbf<br>
+                  <span style="color: red;">spss</span>, <span style="color: red;">sas</span>, <span style="color: green;">jmp</span>, <span style="color: green;">rdata</span><br>
+                  jpg, <span style="color: green;">tiff</span>, <span style="color: green;">svg</span>, <span style="color: green;">png</span>, <span style="color: red;">gif</span>, <span style="color: green;">bmp</span><br>
+                  <span style="color: red;">shp</span>, <span style="color: green;">geotiff</span>, <span style="color: green;">kml</span>, <span style="color: green;">kmz</span>, <span style="color: red;">gdb</span><br>
+                  <span style="color: green;">mp4</span>, <span style="color: red;">mov</span>, <span style="color: red;">avi</span>, <span style="color: green;">ogg</span><br>
+                  <span style="color: green;">mp3</span>, <span style="color: red;">wav</span>, <span style="color: green;">m4a</span>, <span style="color: red;">aiff</span><br>
+                  <span style="color: green;">txt</span>, <span style="color: green;">csv</span>, <span style="color: green;">json</span>, <span style="color: green;">html</span>, <span style="color: green;">xml</span> 
+                </td><td rowspan=2 style="vertical-align: top; width: 50px; border: none !important;">
+                </td><td style="vertical-align: top; line-height: 110%; border: none !important; width: 284px;">
+                  <br><b>General Formats</b><br>
+                  <ul>
+                    <li><span style="color: red;">proprietary</span>
+                    <li>mixed
+                    <li><span style="color: green;">open</span>
+                  </ul>
+                </td>
+              </tr><tr>
+                </td><td style="vertical-align: top; line-height: 110%; border: none !important; width: 284px;">
+                </td>
+              </tr></tbody></table>
+            </div><br><br><br>
+          </section>
+          
+          <section data-transition="fade-in fade-out">
+            <div style="width: 80%; margin-right: 10%; margin-left: auto; ">
+              <span style="font-weight: bold; font-size: 110%;">File Formats<br><br></span>
+              <table style="font-size: 80%; text-align: left; line-height: 150%;"><tbody><tr>
+                <td rowspan=2 style="vertical-align: top; width: 220px; border: none !important;">
+                <ul>
+                  <li>Text:
+                  <li>Tabular:
+                  <li>Stat:
+                  <li>Images:
+                  <li>Geographic
+                  <li>Video
+                  <li>Music
+                  <li>Plain text:
+                </ul>
+                </td><td rowspan=2 style="vertical-align: top; border: none !important;">
+                  <span style="color: red;"><b>doc</b></span>, <b>docx</b>, <span style="color: green;"><b>rtf</b></span>, <span style="color: green;"><b>odt</b></span>, <span style="color: red;"><b>pages</b></span><br>
+                  <span style="color: red;"><b>xls</b></span>, <b>xlsx</b>, <span style="color: red;"><b>numbers</b></span>, <b>dbf</b><br>
+                  <span style="color: red;"><b>spss</b></span>, <span style="color: red;"><b>sas</b></span>, <span style="color: green;"><b>jmp</b></span>, <span style="color: green;"><b>rdata</b></span><br>
+                  <span style="text-decoration: line-through;">jpg</span>, <span style="color: green;"><u>tiff</u></span>, <span style="color: green;"><b>svg</b></span>, <span style="color: green;"><u>png</u></span>, <span style="color: red; text-decoration: line-through;">gif</span>, <span style="color: green; text-decoration: line-through;"><b>bmp</b></span><br>
+                  <span style="color: red;"><b>shp</b></span>, <span style="color: green;"><u>geotiff</u></span>, <span style="color: green;"><u>kml</u></span>, <span style="color: green;"><u>kmz</u></span>, <span style="color: red;"><u>gdb</u></span><br>
+                  <span style="color: green;"><u>mp4</u></span>, <span style="color: red;"><u>mov</u></span>, <span style="color: red;"><u>avi</u></span>, <span style="color: green; text-decoration: line-through;">ogg</span><br>
+                  <span style="color: green; text-decoration: line-through;">mp3</span>, <span style="color: red;"><u>wav</u></span>, <span style="color: green;"><u>m4a</u></span>, <span style="color: red;"><u>aiff</u></span><br>
+                  <span style="color: green;"><b>txt</b></span>, <span style="color: green;"><b>csv</b></span>, <span style="color: green;"><b>json</b></span>, <span style="color: green;"><b>html</b></span>, <span style="color: green;"><b>xml</b></span> 
+                </td><td rowspan=2 style="vertical-align: top; width: 50px; border: none !important;">
+                </td><td style="vertical-align: top; line-height: 110%; border: none !important; width: 284px;">
+                  <br><b>General Formats</b><br>
+                  <ul>
+                    <li><span style="color: red;">proprietary</span>
+                    <li>mixed
+                    <li><span style="color: green;">open</span>
+                  </ul>
+                </td>
+              </tr><tr>
+                </td><td style="vertical-align: top; line-height: 110%; border: none !important; width: 284px;">
+                  <b>Compression</b><br>
+                  <ul>
+                    <li><span style="text-decoration: line-through;">lossy</span>
+                    <li><u>depends</u>
+                    <li><b>lossless</b>
+                  </ul>
+                </td>
+              </tr></tbody></table>
+            </div><br><br><br>
+          </section>
+        
                </section>
 
-				<section>
+        <section>
                     <div style="width: 90%; margin-right: auto; margin-left: auto;">
                         <span style="font-weight: bold; font-size: 110%;">Quick note on statistics files and conversions<br><br></span>
                         <div style="font-size: 80%; text-align: left;">
-							<ul>
-								<li>Often contain much metadata embedded in the file
-								<ul style="font-size: 90%;">
-									<li>For example SPSS and SAS include data types (nominal, ordinal, interval, ration) and data dictionaries (code keys for nominal data, units for interval and ration data, etc.)
-								</ul>
-								<li style="position: relative; top: 23px;">How to best share???
-								<ul style="font-size: 85%;">
-									<li>Option 1: keep in the proprietary format
-									<li>Option 2: convert to text based format (csv, xml) and have either
-									<ul style="font-size: 85%;">
-										<li>A data dictionary in a text based format so that a user can reconstruct the data-metadata association
-										<li>Some sort of ‘installer’ that contains the metadata and automatically reconstructs the data-metadata association
-									</ul>
-								</ul>
-							</ul>
-						</div>
+              <ul>
+                <li>Often contain much metadata embedded in the file
+                <ul style="font-size: 90%;">
+                  <li>For example SPSS and SAS include data types (nominal, ordinal, interval, ration) and data dictionaries (code keys for nominal data, units for interval and ration data, etc.)
+                </ul>
+                <li style="position: relative; top: 23px;">How to best share???
+                <ul style="font-size: 85%;">
+                  <li>Option 1: keep in the proprietary format
+                  <li>Option 2: convert to text based format (csv, xml) and have either
+                  <ul style="font-size: 85%;">
+                    <li>A data dictionary in a text based format so that a user can reconstruct the data-metadata association
+                    <li>Some sort of ‘installer’ that contains the metadata and automatically reconstructs the data-metadata association
+                  </ul>
+                </ul>
+              </ul>
+            </div>
                     </div><br>
                     <div style="font-size: 80%; position: relative; width: 90%; margin-left: auto; margin-right: auto; top: 40px; font-weight: bold;">This also applies to relational databases, images, and some geographical data</div><br><br>
                 </section>
-				
-				<section>
+        
+        <section>
                     <div style="width: 65%; margin-right: auto; margin-left: auto;">
                         <span style="font-weight: bold; font-size: 110%;">OK - so what?<br><br></span>
                         <div style="font-size: 80%; text-align: left;">
-							<span class="fragment" style="font-size: 80%; text-align: center;">First, make sure your operating system lets you see the file formats!!!!<br><br></span>
-							<ul class="fragment">
-								<li>Mac file extensions
-								<ul style="font-size: 85%;">
-									<li style="font-size: 85%;">Finder: Finder -> Preferences ... : <br>
-									      "Advanced" tab, check box next to "Show all filename extensions"
-								</ul>
-								<li style="position: relative; top: 23px;">PC file extensions
-								<ul style="font-size: 85%;">
-									<li>Win 7 and below
-									<ul style="font-size: 85%;">
-										<li>File Explorer: Organize -> Folder and search options: <br>
-											  "View" tab, uncheck the box next to "Hide extensions for known file types"
-									</ul>
-									<li>Win 8 and above
-									<ul style="font-size: 85%;">
-										<li>File Explorer: "view" tab,  check the box next to: "File name extensions" 
-									</ul>
-								</ul>
-							</ul>
-						</div>
+              <span class="fragment" style="font-size: 80%; text-align: center;">First, make sure your operating system lets you see the file formats!!!!<br><br></span>
+              <ul class="fragment">
+                <li>Mac file extensions
+                <ul style="font-size: 85%;">
+                  <li style="font-size: 85%;">Finder: Finder -> Preferences ... : <br>
+                        "Advanced" tab, check box next to "Show all filename extensions"
+                </ul>
+                <li style="position: relative; top: 23px;">PC file extensions
+                <ul style="font-size: 85%;">
+                  <li>Win 7 and below
+                  <ul style="font-size: 85%;">
+                    <li>File Explorer: Organize -> Folder and search options: <br>
+                        "View" tab, uncheck the box next to "Hide extensions for known file types"
+                  </ul>
+                  <li>Win 8 and above
+                  <ul style="font-size: 85%;">
+                    <li>File Explorer: "view" tab,  check the box next to: "File name extensions" 
+                  </ul>
+                </ul>
+              </ul>
+            </div>
                     </div><br><br>
                 </section>
-				
-				<section>
-				
-					<section>
-						<div style="width: 80%; margin-right: auto; margin-left: auto;">
-							<span style="font-weight: bold; font-size: 110%;">Some things to remember<br><br><br></span>
-							<div style="font-size: 80%; text-align: left; position: relative; top: 20px;">
-								<ul>
-									<li>Text and numbers
-									<ul style="font-size: 80%;">
-										<li>Plain text - <i>BUT STRUCTURED</i>
-										<li>Character enconding??? UTF-8
-										<li>PDF - preferably not!! (hard to index/search <i>UNLESS</i> created with specific care)
-									</ul>
-									<li style="position: relative; top: 53px;">Images (bitmap)
-									<ul style="font-size: 80%;">
-										<li>TIFF, JPEG2000 (??), PNG, JPEG
-									</ul>
-								</ul>
-							</div>
-						</div><br><br><br><br><br><br>
-						<div style="font-size: 50%; position: absolute; top: 120px; left: 500px; text-align: right;">hyper text markup language<br>.html</div>
-						<div style="font-size: 50%; position: absolute; top: 140px; left: 870px; text-align: left;">comma seperated values<br>.csv</div>
-						<div style="font-size: 50%; position: absolute; top: 190px; left: 650px; text-align: right;">.txt</div>
-						<div style="font-size: 50%; position: absolute; top: 240px; left: 600px; text-align: center;">extensible markup language<br>.xml</div>
-						<div style="font-size: 50%; position: absolute; top: 210px; left: 980px; text-align: left;">javascript object notation<br>.json</div>
-						<div style="font-size: 50%; position: absolute; top: 350px; left: 250px; text-align: right;">portable document format</div>
-						<div style="font-size: 50%; position: absolute; top: 450px; left: 750px; text-align: left;">joint photographic experts group<br>.jpg [ .jpeg, .jp2, j2k ]</div>
-						<div style="font-size: 50%; position: absolute; top: 510px; left: 150px; text-align: center;">tagged image file format<br>.tif [ .tiff ]</div>
-						<div style="font-size: 50%; position: absolute; top: 550px; left: 500px; text-align: left;">portable network graphic<br>.png</div>
-					</section>
-					
-					<section>
-						<div style="width: 75%; margin-right: 10%; margin-left: auto;">
-							<span style="font-weight: bold; font-size: 110%;">Dublin Core Schema (metadata)<br><br></span>
-							<div style="font-size: 80%; text-align: left; position: relative; left: 80px;">
-								<a href="http://dublincore.org/documents/usageguide/elements.shtml">http://dublincore.org/documents/usageguide/elements.shtml</a>
-							</div>
-						</div>
-						<br><br><br><br>
-					</section>
-				
-				</section>
+        
+        <section>
+        
+          <section>
+            <div style="width: 80%; margin-right: auto; margin-left: auto;">
+              <span style="font-weight: bold; font-size: 110%;">Some things to remember<br><br><br></span>
+              <div style="font-size: 80%; text-align: left; position: relative; top: 20px;">
+                <ul>
+                  <li>Text and numbers
+                  <ul style="font-size: 80%;">
+                    <li>Plain text - <i>BUT STRUCTURED</i>
+                    <li>Character enconding??? UTF-8
+                    <li>PDF - preferably not!! (hard to index/search <i>UNLESS</i> created with specific care)
+                  </ul>
+                  <li style="position: relative; top: 53px;">Images (bitmap)
+                  <ul style="font-size: 80%;">
+                    <li>TIFF, JPEG2000 (??), PNG, JPEG
+                  </ul>
+                </ul>
+              </div>
+            </div><br><br><br><br><br><br>
+            <div style="font-size: 50%; position: absolute; top: 120px; left: 500px; text-align: right;">hyper text markup language<br>.html</div>
+            <div style="font-size: 50%; position: absolute; top: 140px; left: 870px; text-align: left;">comma seperated values<br>.csv</div>
+            <div style="font-size: 50%; position: absolute; top: 190px; left: 650px; text-align: right;">.txt</div>
+            <div style="font-size: 50%; position: absolute; top: 240px; left: 600px; text-align: center;">extensible markup language<br>.xml</div>
+            <div style="font-size: 50%; position: absolute; top: 210px; left: 980px; text-align: left;">javascript object notation<br>.json</div>
+            <div style="font-size: 50%; position: absolute; top: 350px; left: 250px; text-align: right;">portable document format</div>
+            <div style="font-size: 50%; position: absolute; top: 450px; left: 750px; text-align: left;">joint photographic experts group<br>.jpg [ .jpeg, .jp2, j2k ]</div>
+            <div style="font-size: 50%; position: absolute; top: 510px; left: 150px; text-align: center;">tagged image file format<br>.tif [ .tiff ]</div>
+            <div style="font-size: 50%; position: absolute; top: 550px; left: 500px; text-align: left;">portable network graphic<br>.png</div>
+          </section>
+          
+          <section>
+            <div style="width: 75%; margin-right: 10%; margin-left: auto;">
+              <span style="font-weight: bold; font-size: 110%;">Dublin Core Schema (metadata)<br><br></span>
+              <div style="font-size: 80%; text-align: left; position: relative; left: 80px;">
+                <a href="http://dublincore.org/documents/usageguide/elements.shtml">http://dublincore.org/documents/usageguide/elements.shtml</a>
+              </div>
+            </div>
+            <br><br><br><br>
+          </section>
+        
+        </section>
 
-				<section>
+        <section>
                     <div style="width: 80%; margin-right: 10%; margin-left: auto;">
                         <span style="font-weight: bold; font-size: 110%;">File Formats<br><br></span>
-						<span style="font-weight: bold; font-size: 95%;">character encoding??? UTF-8<br><br></span>
+            <span style="font-weight: bold; font-size: 95%;">character encoding??? UTF-8<br><br></span>
                         <div style="font-size: 80%; text-align: left; line-height: 200%; position: relative; left: 80px;">
                             ASCII – <b>American Standard Code for Information Interchange</b><br>
                             <div style="font-size: 80%; text-align: left; line-height: 120%; position: relative; left: 40px;">[ old school, 128 characters in 7 bits ]</div>
-							<div class="fragment" style="position: absolute; right: 100px; font-size: 80%">lowercase “j” would become binary 01101010 and decimal 106</div><br>
+              <div class="fragment" style="position: absolute; right: 100px; font-size: 80%">lowercase “j” would become binary 01101010 and decimal 106</div><br>
                             UTF-8 – <b>Universal Coded Character Set + Transformation Format – 8-bit</b><br>
                             <div style="font-size: 80%; text-align: left; line-height: 120%; position: relative; left: 40px;">[ now the new standard, only since about 2007, first 128 characters are ASCII ]<br>
                             [ encodes 1,112,064 “code points” or characters ]</div>
-					    </div>
+              </div>
                     </div><br><br>
                 </section>
 
-				<section>
+        <section>
                     <div style="width: 85%; margin-right: 10%; margin-left: auto;">
                         <span style="font-weight: bold; font-size: 110%;">Bitmap and vector images<br><br></span>
                         <div style="font-size: 80%; text-align: left; position: relative; left: 80px;">
@@ -2768,176 +2765,176 @@ Incomplete transfers
                             <div style="font-size: 80%; text-align: left; line-height: 120%; position: relative; left: 40px;">[ .tif, .jpg, .png ]</div><br>
                             Vector – <b style="font-size: 85%;">a collection of points that can be connected to make lines, polygons, and volumes</b><br>
                             <div style="font-size: 80%; text-align: left; line-height: 120%; position: relative; left: 40px;">[ no standards yet, but common in Adobe Illustrator, AutoCAD, and many GIS applications ]<br></div>
-					    </div>
+              </div>
                     </div>
-					<div style="font-size: 70%; position: absolute; top: 450px; left: 500px; text-align: left;">WATCH for .svg – scaleable vector graphic</div>
+          <div style="font-size: 70%; position: absolute; top: 450px; left: 500px; text-align: left;">WATCH for .svg – scaleable vector graphic</div>
                 </section>
-				
-				<section>
+        
+        <section>
                     <div style="width: 80%; margin-right: auto; margin-left: auto;">
                         <span style="font-weight: bold; font-size: 110%;">Some things to remember<br><br><br></span>
                         <div style="font-size: 80%; text-align: left; position: relative; top: 20px;">
-							<ul>
-								<li>Cartographic (maps)
-								<ul style="font-size: 80%;">
-									<li>Raster: GeoTIFF
-									<li>Vector: shapefile, AutoCAD, GeoJSON
-									<li>Note: shapefile has .shp, .shx, .dbf optional (?!) .prj, .sbx, .sbn
-								</ul>
-								<li style="position: relative; top: 53px;">Audio
-								<ul style="font-size: 80%;">
-									<li>AIFF, WAVE 44.1 kHz / 16 bit or higher 
-									<li><i>BUT MP3 with FLAC encoding OK (Free Lossless Audio Codec)</i>
-								</ul>
-							</ul>
-						</div>
+              <ul>
+                <li>Cartographic (maps)
+                <ul style="font-size: 80%;">
+                  <li>Raster: GeoTIFF
+                  <li>Vector: shapefile, AutoCAD, GeoJSON
+                  <li>Note: shapefile has .shp, .shx, .dbf optional (?!) .prj, .sbx, .sbn
+                </ul>
+                <li style="position: relative; top: 53px;">Audio
+                <ul style="font-size: 80%;">
+                  <li>AIFF, WAVE 44.1 kHz / 16 bit or higher 
+                  <li><i>BUT MP3 with FLAC encoding OK (Free Lossless Audio Codec)</i>
+                </ul>
+              </ul>
+            </div>
                     </div><br><br><br><br><br><br>
                     <div style="font-size: 50%; position: absolute; top: 120px; left: 500px; text-align: right;">shapefile<br>.shp</div>
-					<div style="font-size: 50%; position: absolute; top: 140px; left: 870px; text-align: left;">data base format<br>.dbf</div>
+          <div style="font-size: 50%; position: absolute; top: 140px; left: 870px; text-align: left;">data base format<br>.dbf</div>
                     <div style="font-size: 50%; position: absolute; top: 300px; left: 960px; text-align: right;">projection (for maps)<br>.prj</div>
-					<div style="font-size: 50%; position: absolute; top: 190px; left: 590px; text-align: center;">.dxf<br>drawing exchange format</div>
+          <div style="font-size: 50%; position: absolute; top: 190px; left: 590px; text-align: center;">.dxf<br>drawing exchange format</div>
                     <div style="font-size: 50%; position: absolute; top: 210px; left: 980px; text-align: left;">.shx<br>shapefile index</div>
                     <div style="font-size: 50%; position: absolute; top: 520px; left: 750px; text-align: left;">audio interchange file format<br>.aiff</div>
-					<div style="font-size: 50%; position: absolute; top: 530px; left: 150px; text-align: center;">moving pictures expert group<br>.mp3</div>
-					<div style="font-size: 50%; position: absolute; top: 580px; left: 500px; text-align: left;">wave<br>.wav</div>
+          <div style="font-size: 50%; position: absolute; top: 530px; left: 150px; text-align: center;">moving pictures expert group<br>.mp3</div>
+          <div style="font-size: 50%; position: absolute; top: 580px; left: 500px; text-align: left;">wave<br>.wav</div>
                 </section>
 
-				<section>
+        <section>
                     <div style="width: 60%; margin-right: auto; margin-left: auto;">
                         <span style="font-weight: bold; font-size: 110%;">Some things to remember<br><br></span>
                         <div style="font-size: 80%; text-align: left; position: relative; top: 20px;">
-							<ul>
-								<li>Video
-								<ul style="font-size: 80%;">
-									<li>MPEG-4
-								</ul>
-								<li style="position: relative; top: 53px;">Documentation
-								<ul style="font-size: 80%;">
-									<li>Rich Text Format
-									<li>Open Document text
-									<li>html
-									<li>Plain text
-								</ul>
-							</ul>
-						</div>
+              <ul>
+                <li>Video
+                <ul style="font-size: 80%;">
+                  <li>MPEG-4
+                </ul>
+                <li style="position: relative; top: 53px;">Documentation
+                <ul style="font-size: 80%;">
+                  <li>Rich Text Format
+                  <li>Open Document text
+                  <li>html
+                  <li>Plain text
+                </ul>
+              </ul>
+            </div>
                     </div><br><br><br><br><br><br>
                     <div style="font-size: 50%; position: absolute; top: 200px; left: 530px; text-align: right;">motion picture expert group<br>.mp4</div>
-					<div style="font-size: 50%; position: absolute; top: 180px; left: 900px; text-align: left;">.m4a</div>
+          <div style="font-size: 50%; position: absolute; top: 180px; left: 900px; text-align: left;">.m4a</div>
                     <div style="font-size: 50%; position: absolute; top: 350px; left: 910px; text-align: right;">rich text format<br>.rtf</div>
-					<div style="font-size: 50%; position: absolute; top: 420px; left: 700px; text-align: center;">.odt<br>open document text</div>
+          <div style="font-size: 50%; position: absolute; top: 420px; left: 700px; text-align: center;">.odt<br>open document text</div>
                 </section>
-				
-				<section>
+        
+        <section>
                     <div style="width: 75%; margin-right: 10%; margin-left: auto;">
                         <span style="font-weight: bold; font-size: 110%;">Others?<br><br></span>
                         <div style="font-size: 80%; text-align: left; position: relative; left: 80px;">
                             What do you use in your work?<br><br><div class="fragment">NetCDF</div><br>
                             <div class="fragment" style="font-size: 80%; margin-left: 10%;">Actually a collection of tools. NetCDF “is a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data” – wikipedia <br></div>
-					    </div>
+              </div>
                     </div>
-					<div class="fragment" style="font-size: 90%; position: absolute; top: 450px; left: 500px; text-align: left;">more?</div>
-					<br><br><br><br>
+          <div class="fragment" style="font-size: 90%; position: absolute; top: 450px; left: 500px; text-align: left;">more?</div>
+          <br><br><br><br>
                 </section>
-				
-				<section>
-					... break to color ...
-				</section>
-				
-				<section>
+        
+        <section>
+          ... break to color ...
+        </section>
+        
+        <section>
                     <div style="width: 100%;">
                         <div style="font-size: 40%; text-align: center; line-height: 100%;">
                             <img src="../../common/assets/images-for-data/color.png" style="width: 800px"><br>
-							<i>Color is entirely a creation of the mind</i><br><br>
+              <i>Color is entirely a creation of the mind</i><br><br>
                         </div>
                     </div>
                 </section>
-				
-				<section>
+        
+        <section>
                     <div style="width: 60%; margin-right: auto; margin-left: auto;">
                         <span style="font-weight: bold; font-size: 110%;">Red Green Blue - RGB<br><br></span>
                         <div style="font-size: 80%; text-align: left; position: relative; top: 20px;">
-							<ul>
-								<li><b><i>Additive</i></b> color model based on ‘primary’ colors
-								<ul style="font-size: 80%;">
-									<li>Used on all electronic display devices
-									<li>Primary colors are closely matched to three receptors in eye
-								</ul>
-								<li style="position: relative; top: 23px;">The modern computer uses numbers from 0-255 to represent each primary color
-								<ul style="font-size: 80%;">
-									<li>8 bits for each color, three colors, 24-bit true color
-									<li>Approximately 16,777,216 colors – more than we can see
-								</ul>
-							</ul>
-						</div>
+              <ul>
+                <li><b><i>Additive</i></b> color model based on ‘primary’ colors
+                <ul style="font-size: 80%;">
+                  <li>Used on all electronic display devices
+                  <li>Primary colors are closely matched to three receptors in eye
+                </ul>
+                <li style="position: relative; top: 23px;">The modern computer uses numbers from 0-255 to represent each primary color
+                <ul style="font-size: 80%;">
+                  <li>8 bits for each color, three colors, 24-bit true color
+                  <li>Approximately 16,777,216 colors – more than we can see
+                </ul>
+              </ul>
+            </div>
                     </div><br><br><br><br><br><br>
                     <div style="position: absolute; top: 480px; left: 250px;"><img src="../../common/assets/images-for-data/rgb1.png" height="170"></div>
-					<div style="position: absolute; top: 490px; left: 550px;"><img src="../../common/assets/images-for-data/rgb2.png" height="150"></div>
+          <div style="position: absolute; top: 490px; left: 550px;"><img src="../../common/assets/images-for-data/rgb2.png" height="150"></div>
                     <div style="position: absolute; top: 490px; left: 900px;"><img src="../../common/assets/images-for-data/rgb3.png" height="150"></div>
                 </section>
 
-				<section>
+        <section>
                     <div style="width: 60%; margin-right: auto; margin-left: auto;">
                         <span style="font-weight: bold; font-size: 110%;">Cyan Magenta Yellow Black - CMYK<br><br></span>
                         <div style="font-size: 80%; text-align: left; position: relative; top: 20px; left: -100px;">
-							<ul>
-								<li><b><i>Subtractive</i></b> color model based on printer colors
-								<ul style="font-size: 80%;">
-									<li>Also known as "process" or "four-color" system 
-									<li>All printing devices use this model
-									<li>More ink 'subtracts' lightness from the white paper
-									<li>'K' is for 'key' as the black plate in an offset press is the 'key' plate
-								</ul>
-								<li style="position: relative; top: 23px;">8-bit or 16-bit information in each color 'channel'
-								<ul style="font-size: 80%;">
-									<li>CMYK image files are notiveably larger than RGB image files
-									<li>way more colors than we can see ...
-								</ul>
-							</ul>
-						</div>
+              <ul>
+                <li><b><i>Subtractive</i></b> color model based on printer colors
+                <ul style="font-size: 80%;">
+                  <li>Also known as "process" or "four-color" system 
+                  <li>All printing devices use this model
+                  <li>More ink 'subtracts' lightness from the white paper
+                  <li>'K' is for 'key' as the black plate in an offset press is the 'key' plate
+                </ul>
+                <li style="position: relative; top: 23px;">8-bit or 16-bit information in each color 'channel'
+                <ul style="font-size: 80%;">
+                  <li>CMYK image files are notiveably larger than RGB image files
+                  <li>way more colors than we can see ...
+                </ul>
+              </ul>
+            </div>
                     </div><br><br><br>
                     <div style="position: absolute; top: 100px; left: 1050px;"><img src="../../common/assets/images-for-data/cmyk1.png" height="170"></div>
-					<div style="position: absolute; top: 330px; left: 1000px;"><img src="../../common/assets/images-for-data/cmyk2.png" height="170"></div>
+          <div style="position: absolute; top: 330px; left: 1000px;"><img src="../../common/assets/images-for-data/cmyk2.png" height="170"></div>
                 </section>
-				
-				<section>
+        
+        <section>
                     <div style="width: 60%; margin-right: auto; margin-left: auto;">
                         <span style="font-weight: bold; font-size: 110%;">Hexadecimal for the Internet<br><br></span>
                         <div style="font-size: 80%; text-align: left; position: relative; top: 20px; left: -100px;">
-							<ul>
-								<li>The hex color system is based on the RGB model
-								<ul style="font-size: 80%;">
-									<li>Used in HTML for the internet 
-									<li>Is the preferred representation for color by programmers
-								</ul>
-								<li style="position: relative; top: 23px;">Hexadecimal is the name for counting in base 16
-								<ul style="font-size: 80%;">
-									<li>Good for computers: 24 = 16 and 16 x 16 = 256
-									<li>Counted from 0-15 like this:<br><br>
-									<span style="font-size: 110%; position: relative; left: 30px;">0 1 2 3 4 5 6 7 8 9 A B C D E F</span><br><br><br>
-								</ul>
-								<li class="fragment"> A hex color might look like this: #FF00FF 
-							</ul>
-						</div>
+              <ul>
+                <li>The hex color system is based on the RGB model
+                <ul style="font-size: 80%;">
+                  <li>Used in HTML for the internet 
+                  <li>Is the preferred representation for color by programmers
+                </ul>
+                <li style="position: relative; top: 23px;">Hexadecimal is the name for counting in base 16
+                <ul style="font-size: 80%;">
+                  <li>Good for computers: 24 = 16 and 16 x 16 = 256
+                  <li>Counted from 0-15 like this:<br><br>
+                  <span style="font-size: 110%; position: relative; left: 30px;">0 1 2 3 4 5 6 7 8 9 A B C D E F</span><br><br><br>
+                </ul>
+                <li class="fragment"> A hex color might look like this: #FF00FF 
+              </ul>
+            </div>
                     </div><br><br><br>
-					<div class="fragment" style="position: absolute; top: 400px; left: 1050px; text-align: left; font-size: 70%;">
-						rgb(255,0,255)<br>
-						<div style="width: 200px; height: 80px; background-color: #FF00FF;"></div>
-					</div>
+          <div class="fragment" style="position: absolute; top: 400px; left: 1050px; text-align: left; font-size: 70%;">
+            rgb(255,0,255)<br>
+            <div style="width: 200px; height: 80px; background-color: #FF00FF;"></div>
+          </div>
                     <div class="fragment" style="position: absolute; top: 516px; left: 465px; font-size: 45%; width: 420px; text-align: left; color: red;">
-						<div style="border: 2px solid red; position: relative; left: 200px; width: 30px; height: 30px;"></div><br>
-						Red: FF = 15*1 + 15*16 = 255
-					</div>
+            <div style="border: 2px solid red; position: relative; left: 200px; width: 30px; height: 30px;"></div><br>
+            Red: FF = 15*1 + 15*16 = 255
+          </div>
                     <div class="fragment" style="position: absolute; top: 516px; left: 499px; font-size: 45%; width: 400px; text-align: center; color: green;">
-						<div style="border: 2px solid green; position: relative; left: 200px; width: 30px; height: 30px;"></div><br><br><br>
-						Green: 00 = 0*1 + 0*16 = 0
-					</div>
+            <div style="border: 2px solid green; position: relative; left: 200px; width: 30px; height: 30px;"></div><br><br><br>
+            Green: 00 = 0*1 + 0*16 = 0
+          </div>
                     <div class="fragment" style="position: absolute; top: 516px; left: 533px; font-size: 45%; width: 450px; text-align: right; color: blue;">
-						<div style="border: 2px solid blue; position: relative; left: 200px; width: 30px; height: 30px;"></div><br>
-						Blue: FF = 15*1 + 15*16 = 255
-					</div>
+            <div style="border: 2px solid blue; position: relative; left: 200px; width: 30px; height: 30px;"></div><br>
+            Blue: FF = 15*1 + 15*16 = 255
+          </div>
                 </section>
 
-				<section>
+        <section>
                     <div style="width: 100%;">
                         <span style="font-weight: bold; font-size: 110%;">Photoshop's color picker<br><br></span>
                         <div style="font-size: 40%; text-align: center; line-height: 100%;">
@@ -2945,116 +2942,116 @@ Incomplete transfers
                         </div>
                     </div><br><br><br>
                     <div style="position: absolute; top: 80px; left: 500px; font-size: 50%; text-align: right; width: 300px;">Approximate screen color<br>
-						<svg width="150px;" height="150px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 200px; top: 40px;">
-							<line x1="0" y1="0" x2="60" y2="100" style="stroke: rgb(20,20,20); stroke-width: 2" />
-						</svg>
-					</div>
+            <svg width="150px;" height="150px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 200px; top: 40px;">
+              <line x1="0" y1="0" x2="60" y2="100" style="stroke: rgb(20,20,20); stroke-width: 2" />
+            </svg>
+          </div>
                     <div style="position: absolute; top: 550px; left: 700px; font-size: 50%;">
-						<svg width="150px;" height="150px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 10px; top: -100px;">
-							<line x1="45" y1="48" x2="10" y2="100" style="stroke: rgb(20,20,20); stroke-width: 2" />
-						</svg>HEX
-					</div>
+            <svg width="150px;" height="150px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: 10px; top: -100px;">
+              <line x1="45" y1="48" x2="10" y2="100" style="stroke: rgb(20,20,20); stroke-width: 2" />
+            </svg>HEX
+          </div>
                     <div style="position: absolute; top: 550px; left: 850px; font-size: 50%;">
-						<svg width="150px;" height="150px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: -45px; top: -120px;">
-							<line x1="0" y1="0" x2="50" y2="120" style="stroke: rgb(20,20,20); stroke-width: 2" />
-						</svg>RGB
-					</div>
+            <svg width="150px;" height="150px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: -45px; top: -120px;">
+              <line x1="0" y1="0" x2="50" y2="120" style="stroke: rgb(20,20,20); stroke-width: 2" />
+            </svg>RGB
+          </div>
                     <div style="position: absolute; top:400px; left: 1000px; font-size: 50%;">
-						<svg width="150px;" height="150px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: -70px; top: -40px;">
-							<line x1="60" y1="60" x2="0" y2="80" style="stroke: rgb(20,20,20); stroke-width: 2" />
-						</svg>CMYK
-					</div>
+            <svg width="150px;" height="150px" xmlns="https://www.w3.org/TR/SVG/" style="position: absolute; left: -70px; top: -40px;">
+              <line x1="60" y1="60" x2="0" y2="80" style="stroke: rgb(20,20,20); stroke-width: 2" />
+            </svg>CMYK
+          </div>
                 </section>
-				
-				<section>
+        
+        <section>
                     <div style="width: 75%; margin-right: 10%; margin-left: auto;">
                         <span style="font-weight: bold; font-size: 110%;">A note on resolution<br><br></span>
                         <div style="font-size: 80%; text-align: left;">
-							<div style="font-size: 80%">“Highest resolution available, not rescaled or interpolated” – LOC recommendation</div><br>
+              <div style="font-size: 80%">“Highest resolution available, not rescaled or interpolated” – LOC recommendation</div><br>
                             Resolution is directly related to pixel dimensions
-							<ul style="font-size: 75%;">
-								<li>usually expressed as dots per inch (DPI): 300 dpi
-								<li>can be megapixels (the product of height x width): 2.07 megapixels (1920 x 1080 = 2073600)
-								<li> can be simple image dimensions in pixels ('height' X 'width'): 1920 x 1080
-							</ul><br><br>
+              <ul style="font-size: 75%;">
+                <li>usually expressed as dots per inch (DPI): 300 dpi
+                <li>can be megapixels (the product of height x width): 2.07 megapixels (1920 x 1080 = 2073600)
+                <li> can be simple image dimensions in pixels ('height' X 'width'): 1920 x 1080
+              </ul><br><br>
                             <div class="fragment" style="font-size: 80%; margin-left: 10%;">
-								SOME NUMBERS TO REMEMBER <br>
-								<b>1000 DPI</b> – standard number for greyscale reproduction on a printing press <br>
-								<b>300 DPI</b> – standard minimum for color reproduction on a printing press <br>
-								<b>72 DPI</b> – standard screen resolution <br>
-							</div>
-						</div>
-						<br><br>
-					</div>
+                SOME NUMBERS TO REMEMBER <br>
+                <b>1000 DPI</b> – standard number for greyscale reproduction on a printing press <br>
+                <b>300 DPI</b> – standard minimum for color reproduction on a printing press <br>
+                <b>72 DPI</b> – standard screen resolution <br>
+              </div>
+            </div>
+            <br><br>
+          </div>
                 </section>
 
-				<section>
+        <section>
                     <div style="width: 50%; margin-right: auto; margin-left: auto;">
                         <span style="font-weight: bold; font-size: 110%;">So what?<br><br></span>
                         <div style="font-size: 80%; text-align: left;">
-							<ul class="fragment">
-								<li>How are file size and image quality related to:
-								<ul style="font-size: 85%;">
-									<li>Resolution (image dimensions)?
-									<li>Color model?
-									<li>Compression?
-									<li>Verctor or Raster?
-								</ul>
-								<li style="position: relative; top: 23px;">What Implications are there for 
-								<ul style="font-size: 85%;">
-									<li>Short-term workflows?
-									<li>Long-term preservation?
-								</ul>
-							</ul>
-						</div>
+              <ul class="fragment">
+                <li>How are file size and image quality related to:
+                <ul style="font-size: 85%;">
+                  <li>Resolution (image dimensions)?
+                  <li>Color model?
+                  <li>Compression?
+                  <li>Verctor or Raster?
+                </ul>
+                <li style="position: relative; top: 23px;">What Implications are there for 
+                <ul style="font-size: 85%;">
+                  <li>Short-term workflows?
+                  <li>Long-term preservation?
+                </ul>
+              </ul>
+            </div>
                     </div><br><br><br>
                 </section>
-				
+        
                 <section>
-					<div style="font-weight: bold; font-size: 110%;">Reading for Next Class (Monday)</div>
+          <div style="font-weight: bold; font-size: 110%;">Reading for Next Class (Monday)</div>
                     <div style="position: relative; top: 30px; font-size:75%; text-align: left; width: 85%; margin-right: auto; margin-left: auto;">
-					    <ul>
-						    <li style="position: relative; font-size: 85%;">Backing Up Data (UK Data Archive): <a href="http://www.data-archive.ac.uk/create-manage/storage/back-up">http://www.data-archive.ac.uk/create-manage/storage/back-up</a>
-						    <li style="position: relative; top: 20px; font-size: 85%;">Ruggiero and Heckathorn (2012). Data Backup Options. United States Computer Emergency Readiness Team. <a href="https://www.us-cert.gov/sites/default/files/publications/data_backup_options.pdf">https://www.us-cert.gov/sites/default/files/publications/data_backup_options.pdf</a>
-						</ul>
-						<br><br>
-					</div>
-					<br><br>
-                </section>		
-				
+              <ul>
+                <li style="position: relative; font-size: 85%;">Backing Up Data (UK Data Archive): <a href="http://www.data-archive.ac.uk/create-manage/storage/back-up">http://www.data-archive.ac.uk/create-manage/storage/back-up</a>
+                <li style="position: relative; top: 20px; font-size: 85%;">Ruggiero and Heckathorn (2012). Data Backup Options. United States Computer Emergency Readiness Team. <a href="https://www.us-cert.gov/sites/default/files/publications/data_backup_options.pdf">https://www.us-cert.gov/sites/default/files/publications/data_backup_options.pdf</a>
+            </ul>
+            <br><br>
+          </div>
+          <br><br>
+                </section>    
+        
             </div>
         </div>
         <script src="../../common/java/reveal.js"></script>
-	    <script src="../../common/java/notes.js"></script>
-	    <script src="../../common/java/head.min.js"></script>
+      <script src="../../common/java/notes.js"></script>
+      <script src="../../common/java/head.min.js"></script>
         <script>
             Reveal.initialize({
                 width: 1366, height: 768, margin: 0.05,
                 controls: true,
-				progress: true,
-				history: true,
-				center: true,
-				mouseWheel: true,
-				chart: {
-					defaults: { 
-						global: { 
-							defaultFontSize: 20,
-							title: { fontColor: "#333" }, 
-							legend: {
-								position: "top",
-								labels: { fontColor: "#333" },
-							},
-							tooltips: {
-								labels: { fontColor: "#333" },
-							},
-						}, 
-						scale: { 
-							scaleLabel: { fontColor: "#333" }, 
-							gridLines: { color: "#333", zeroLineColor: "#333" }, 
-							ticks: { fontColor: "#333" }, 
-						} 
-					},
-				},
+        progress: true,
+        history: true,
+        center: true,
+        mouseWheel: true,
+        chart: {
+          defaults: { 
+            global: { 
+              defaultFontSize: 20,
+              title: { fontColor: "#333" }, 
+              legend: {
+                position: "top",
+                labels: { fontColor: "#333" },
+              },
+              tooltips: {
+                labels: { fontColor: "#333" },
+              },
+            }, 
+            scale: { 
+              scaleLabel: { fontColor: "#333" }, 
+              gridLines: { color: "#333", zeroLineColor: "#333" }, 
+              ticks: { fontColor: "#333" }, 
+            } 
+          },
+        },
                 dependencies: [
                     { src: '../../common/java/Chart.min.js' },
                     { src: '../../common/java/csv2chart.js' }
