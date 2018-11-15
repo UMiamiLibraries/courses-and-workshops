@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../../common/css/reveal.css">
+        <link rel="stylesheet" href="../../common/css/white.css">
+        <link rel="stylesheet" href="../../common/css/overrides.css">
+      <script src="../../common/java/print.js"></script>
+        <title>Research Data Management - 04</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+
+              <section data-background-image="../../common/assets/images-for-data/DataCurationCover.png">
+                <div style="position: aboslute; top: 0px; left: 0px; width: 100%; height: 100%;">
+                  <div style="position: absolute; left: 340px; top: 235px; font-size: 150%; line-height: 100%;"><strong>Data Management in the<br>Research Environment</strong></div>
+                  <div style="position: absolute; left: 500px; top: 410px; font-size: 90%">Data Publication: Repositories and Sharing<br><span style="font-size: 80%; margin-left: 120px;">Library Workshop Series <script>var today = new Date();document.write(today.getFullYear());</script></span></div>
+                  <div style="position: absolute; left: 420px; top: 565px; font-size: 70%; text-align: left"><a href="" style="color: #222 !important; text-decoration: underline;"></a></div>
+                  <div style="position: absolute; left: 440px; top: 640px; font-size: 50%; text-align: left">Dr. Timothy Norris - Research Data Scientist - <a href="mailto:tnorris@miami.edu" style="color: #222 !important; text-decoration: underline;">tnorris@miami.edu</a></div>
+                </div>
+              </section>
+
+           <!-- ***
+                 * Outline
+                 * -->
+
+              <section>
+                <div style="font-weight: bold; font-size: 110%; margin-bottom: 42px;">Todays Outline</div>
+                <div style="font-size: 85%; text-align: left; margin: auto auto 100px auto; display: inline-block">
+                  <ul>
+                    <li>Overview: sharing and reuse
+                    <li>Intellectual property and licensing
+                    <li>Repository identification
+                    <li>Package creation
+                  </ul>
+                </div>
+              </section>
+
+           <!-- ***
+                 * Data Repositoriues
+                 * -->
+
+
+
+           <!-- ***
+                 * Extra Reading
+                 * -->
+
+              <section>
+                <div style="font-weight: bold; font-size: 110%;">Further Reading</div>
+                <div style="position: relative; top: 30px; font-size:80%; text-align: left; width:90%; margin-right: auto; margin-left: auto;">
+                  <ul style="font-size: 80%; line-height: 150%;">
+                    <li>University of Miami Faculty Manual 2017-18. TO SKIM - OF INTEREST pp 135-138. SEARCH for "data" and scan relevant sections. <a href="https://umshare.miami.edu/web/wda/facultysenate/FacultyManual.pdf">https://umshare.miami.edu/web/wda/facultysenate/FacultyManual.pdf</a>.
+                    <li>Carroll MW (2015) Sharing Research Data and Intellectual Property Law: A Primer. PLoS Biol 13(8): e1002235. <a href="http://dx.doi.org/10.1371/journal.pbio.10022358">http://dx.doi.org/10.1371/journal.pbio.10022358</a>.
+                    <li>Briney, K., Goben, A., & Zilinski, L. (2015). Do You Have an Institutional Data Policy? A Review of the Current Landscape of Library Data Services and Institutional Data Policies. Journal of Librarianship and Scholarly Communication, 3(2). <a href="http://dx.dio.org/10.7710/2162-3309.1232">http://dx.dio.org/10.7710/2162-3309.1232</a> TO SKIM -  LOOK MOSTLY AT THE RESULTS OF THE STUDY.
+                    <li>Johns Hopkins University Policy on Access and Retention of Research Data and Materials (2008). <a href="http://dms.data.jhu.edu/files/2016/08/JHUDataRetentionPolicy2008_WithAppendices.pdf">http://dms.data.jhu.edu/files/2016/08/JHUDataRetentionPolicy2008_WithAppendices.pdf</a>
+                  </ul>
+                  <br><br>
+                </div>
+                <br><br>
+              </section>
+
+            </div>
+        </div>
+        <script src="../../common/java/reveal.js"></script>
+        <script src="../../common/java/notes.js"></script>
+        <script src="../../common/java/head.min.js"></script>
+        <script>
+            Reveal.initialize({
+                width: 1366, height: 768, margin: 0.05,
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                mouseWheel: true,
+                chart: {
+                  defaults: { 
+                    global: { 
+                      defaultFontSize: 20,
+                      title: { fontColor: "#333" }, 
+                      legend: {
+                        position: "top",
+                        labels: { fontColor: "#333" },
+                      },
+                      tooltips: {
+                        labels: { fontColor: "#333" },
+                      },
+                    }, 
+                    scale: { 
+                      scaleLabel: { fontColor: "#333" }, 
+                      gridLines: { color: "#333", zeroLineColor: "#333" }, 
+                      ticks: { fontColor: "#333" }, 
+                    } 
+                  },
+                },
+                dependencies: [
+                    { src: '../../common/java/Chart.min.js' },
+                    { src: '../../common/java/csv2chart.js' }
+                ] 
+            });
+        </script>
+    </body>
+</html>
