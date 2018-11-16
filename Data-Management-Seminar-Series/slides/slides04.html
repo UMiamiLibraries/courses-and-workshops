@@ -16,7 +16,7 @@
                 <div style="position: aboslute; top: 0px; left: 0px; width: 100%; height: 100%;">
                   <div style="position: absolute; left: 340px; top: 235px; font-size: 150%; line-height: 100%;"><strong>Data Management in the<br>Research Environment</strong></div>
                   <div style="position: absolute; left: 500px; top: 410px; font-size: 90%">Data Publication: Repositories and Sharing<br><span style="font-size: 80%; margin-left: 120px;">Library Workshop Series <script>var today = new Date();document.write(today.getFullYear());</script></span></div>
-                  <div style="position: absolute; left: 420px; top: 565px; font-size: 70%; text-align: left"><a href="" style="color: #222 !important; text-decoration: underline;"></a></div>
+                  <div style="position: absolute; left: 420px; top: 565px; font-size: 70%; text-align: left"><a href="https://bit.ly/2TggJjt" style="color: #222 !important; text-decoration: underline;">https://bit.ly/2TggJjt</a></div>
                   <div style="position: absolute; left: 440px; top: 640px; font-size: 50%; text-align: left">Dr. Timothy Norris - Research Data Scientist - <a href="mailto:tnorris@miami.edu" style="color: #222 !important; text-decoration: underline;">tnorris@miami.edu</a></div>
                 </div>
               </section>
@@ -30,18 +30,1141 @@
                 <div style="font-size: 85%; text-align: left; margin: auto auto 100px auto; display: inline-block">
                   <ul>
                     <li>Overview: sharing and reuse
-                    <li>Intellectual property and licensing
                     <li>Repository identification
                     <li>Package creation
+                    <li>DOIs and data citation
+                    <li>Intellectual property and licensing
                   </ul>
                 </div>
               </section>
 
            <!-- ***
-                 * Data Repositoriues
+                 * Overview: sharing and reuse
                  * -->
 
+              <section>
 
+                <section>
+                  <div style="width: 80%; margin-right: 10%; margin-left: auto;">
+                    <span style="font-weight: bold; font-size: 110%;">Data Sharing and Reuse<br><br></span>
+                    <div style="font-size: 40%; text-align: center; line-height: 100%; position: relative; left: 20px;">
+                      <img src="../../common/assets/images-for-data/2014_SL_Neuro_Cartoon.jpg" style="max-width: 600px"><br>
+                      <a href="http://www.kavlifoundation.org/sites/default/files/image/resources/2014_SL_Neuro_Cartoon.jpg">http://www.kavlifoundation.org/sites/default/files/image/resources/2014_SL_Neuro_Cartoon.jpg</a>
+                    </div>
+                  </div>
+                  <div class="fragment" style="position: absolute; bottom: 340px; left: 120px; width: 30%; text-align: right; font-size: 50%; line-height: normal; background-color: #fff; padding: 13px;"><i>“Sharing data from one laboratory to another—or even within a laboratory—takes time and effort, but there are also psychological, cultural and technological barriers to doing so.”</i></div>
+                  <div style="position: absolute; bottom: -90px; left: 420px; width: 100%; text-align: left; font-size: 50%; line-height: normal;"><a href="http://www.kavlifoundation.org/science-spotlights/breaking-down-data-barriers-neuroscience">http://www.kavlifoundation.org/science-spotlights/breaking-down-data-barriers-neuroscience</a></div>
+                </section>
+
+                <section>
+                  <span style="font-weight: bold; font-size: 110%;">Researcher perspectives on sharing</span><br>
+                  <table border=0 cellspacing=0 cellpadding=0 style="font-size: 50%;">
+                   <tr style='height:27.25pt'>
+                    <td valign=bottom style='width:500px;background:white;padding:1.55pt .8pt 1.55pt .8pt;  height:27.25pt; border: none !important;'></td>
+                    <td style='width:250px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; border: none !important;'></td>
+                    <td style='width:150px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; border: none !important;'></td>
+                   </tr>
+                   <tr style='height:27.25pt; font-weight: bold;'>
+                    <td valign=bottom style='width:500px;background:white;padding:1.55pt .8pt 1.55pt .8pt;  height:27.25pt'>Sharing analysis scripts and data sets</td>
+                    <td style='width:250px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt'>Frequency</td>
+                    <td style='width:150px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt'>percent (valid)</td>
+                   </tr>
+                   <tr style='height:20.25pt; border: none !important;'>
+                    <td valign=bottom style='width:500px;background:white;padding:1.55pt .8pt 1.55pt .8pt;  height:27.25pt; border: none !important;'>1. Willing to share publicly</td>
+                    <td style='width:250px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; border: none !important;'>120</td>
+                    <td style='width:150px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; border: none !important;'>25.9%</td>
+                   </tr>
+                   <tr style='height:20.25pt; border: none !important;'>
+                    <td valign=bottom style='width:500px;background:white;padding:1.55pt .8pt 1.55pt .8pt;  height:27.25pt; border: none !important;'>2. Willing to share under access control</td>
+                    <td style='width:250px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; border: none !important;'>98</td>
+                    <td style='width:150px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; border: none !important;'>21.1%</td>
+                   </tr>
+                   <tr style='height:20.25pt; border: none !important;'>
+                    <td valign=bottom style='width:500px;background:white;padding:1.55pt .8pt 1.55pt .8pt;  height:27.25pt; border: none !important;'>3. Willing to share only on request</td>
+                    <td style='width:250px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; border: none !important;'>163</td>
+                    <td style='width:150px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; border: none !important;'>35.1%</td>
+                   </tr>
+                   <tr style='height:20.25pt; border: none !important;'>
+                    <td valign=bottom style='width:500px;background:white;padding:1.55pt .8pt 1.55pt .8pt;  height:27.25pt; '>4. Not willing to share</td>
+                    <td style='width:250px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; '>83</td>
+                    <td style='width:150px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; '>17.9%</td>
+                   </tr>
+                   <tr style='height:20.25pt; border: none !important; font-weight: bold;'>
+                    <td valign=bottom style='width:500px;background:white;padding:1.55pt .8pt 1.55pt .8pt;  height:27.25pt; '>Sum</td>
+                    <td style='width:250px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; '>464</td>
+                    <td style='width:150px;background:white;padding:.8pt .8pt 0in .8pt;  height:27.25pt; '>100%</td>
+                   </tr>
+                   <tr style='height:20.25pt; border: none !important;'>
+                    <td valign=bottom  colspan=3 style='width:500px;background:white;padding:1.55pt .8pt 1.55pt .8pt;  height:27.25pt; '>Source: SOEP User Survey 2013, own calculations</td>
+                   </tr>
+                  </table>
+                  <br><span style="font-size: 50%;">adapted from doi:<a target="_blank" href="http://dx.doi.org/10.1371/journal.pone.0118053.t005">10.1371/journal.pone.0118053.t005</a></span>
+                  <div class="fragment" style="position: absolute; bottom: -70px; right: 120px; width: 30%; text-align: right; font-size: 50%; line-height: normal;">Age<br>Control<br>Resource<br>Returns<br>Discipline</div>
+                  <aside class="notes">
+                    Really spend some time on this, let people try to guess why some people share and others not. Then discuss the results from the paper.
+                  </aside>
+                </section>
+
+                <section>
+                  <div style="width: 100%;">
+                    <div style="font-size: 40%; text-align: center; line-height: 100%;">
+                      <img src="../../common/assets/images-for-data/journal.pone.0118053.g004.PNG" style="width: 1000px"><br>
+                      <a href="http://dx.doi.org/10.1371/journal.pone.0118053.g004">http://dx.doi.org/10.1371/journal.pone.0118053.g004</a>
+                    </div>
+                  </div>
+                </section>
+
+              </section>
+
+              <section>
+
+                <section>
+                  <div style="width: 27%; margin-left: auto; margin-right: auto; font-size: 100%; text-align: left; top: 23px; line-height: 190%; position: relative; ">
+                    <div style="margin-left: 0px;">Storage</div>
+                    <div style="margin-left: 30px;">Archives</div>
+                    <div style="margin-left: 60px;">Preservation</div>
+                    <div style="margin-left: 90px;">Curation</div>
+                  </div>
+                  <br><br><br><br>
+                </section>
+                
+                <section>
+                  <div style="width: 1356px; height: 740px; position: absolute; top: 5px; left: 5px; overflow: hidden; background-color: #fff;">
+                    <img src="../../common/assets/images-for-data/backupArchive.svg" width="1000px" height="640px">
+                  </div>
+                  <div style="position: absolute; top: 700px; left: 120px; width: 80%; text-align: left; font-size: 40%; line-height: normal;">adapted from: Whitmire, Amanda L. (2014). Research Data Management Curriculum, Lecture 15: Data Preservation and DataONE education modules https://www.dataone.org/education-modules.</div>
+                </section>
+
+                <section data-background-image="../../common/assets/images-for-data/curationmountain.png"></section>
+
+              </section>
+
+              <section>
+                <div style="width: 60%;">
+                  <span style="font-weight: bold; font-size: 110%;">DOIs and ORCIDs<br></span>
+                  <div style="font-size: 70%; margin-top: 42px; text-align: left; line-height: 140%; margin-left: 100px">
+                    <div class="fragment" data-fragment-index="1">
+                      <ul><li>Digital Object Identifiers (DOIs)</li></ul><br>
+                      <ul style="font-size: 90%; margin-left: 80px;">
+                        <li>Permanent identifiers (links) to online resources</li>
+                        <li>Provided by resolving service (<a href="https://doi.org/">https://doi.org/</a>)</li>
+                        <li>All repositories provide these for your data</li>
+                        <li style="margin-bottom: 80px;">UM is a member of <a href="https://www.datacite.org/">DataCite</a> who provides our DOIs</li>
+                      </ul>
+                    </div>
+                    <div class="fragment" data-fragment-index="2">
+                      <ul><li>ORCID</li></ul><br>
+                      <ul style="font-size: 90%; margin-left: 80px;">
+                        <li><a href="https://orcid.org">https://orcid.org/</a></li>
+                        <li>like a Digital Object Identifier (DOI) for people</li>
+                        <li>the authoritative ID for researchers</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <br><br>
+                  <div class="fragment" data-fragment-index="1" style="position: absolute; top: 0px; right: 50px;">
+                    <img src="../../common/assets/images-for-data/DOI.jpg" style="max-width: 550px;">
+                  </div>
+                  <div class="fragment" data-fragment-index="2" style="position: absolute; bottom: 0px; right: 180px;">
+                    <img src="../../common/assets/images-for-data/orcid_128x128.gif" style="max-width: 100px;">
+                    <img src="../../common/assets/images-for-data/ORCID_logo.svg.png" style="max-width: 300px;">
+                  </div>
+                  <div class="fragment" data-fragment-index="3" style="position: absolute; top: 240px; right: 130px; font-size: 65%; text-align: right; color: #555;">
+                    <object data="../../common/assets/images-for-data/arrows/curved_arrow_down.svg" type="image/svg+xml" style="margin-right: 120px; margin-bottom: 23px;"></object><br>
+                    Work together to connect research to researcher<br>
+                    <object data="../../common/assets/images-for-data/arrows/curved_arrow_up.svg" type="image/svg+xml" style="margin-right: 120px; margin-top: 23px;"></object>
+                  </div>
+                </div>
+              </section>
+
+           <!-- ***
+                 * Repository identification
+                 * -->
+
+              <section>
+
+                <section>
+                  <div style="font-weight: bold; font-size: 110%; margin-bottom: 42px;">Repository Identification</div>
+                </section>
+
+                <section>
+                  <div style="width: 60%; margin-right: 20%; margin-left: auto;">
+                    <span style="font-weight: bold; font-size: 110%; margin-left: -20%;"><br>Archive/repository Identification<br><br></span>
+                    <div style="font-size: 80%; text-align: left; line-height: 120%; ">
+                      <table style="border: none; width: 700px"><tbody><tr>
+                        <td>
+                          <b>Considerations</b><br><br>
+                          <div style="font-size: 80%;">
+                            <ul>
+                              <li>Costs</li>
+                              <li>Size of dataset</li>
+                              <li>Public vs. private access</li>
+                              <li>Length of preservation</li>
+                              <li>Hands-on vs. hands-off</li>
+                              <li>Security of platform</li>
+                              <li>Disciplinary standards</li>
+                            </ul>
+                          </div>
+                        </td><td>
+                          <b>Locations</b><br><br>
+                          <div style="position: relative; font-size: 80%;">
+                            <ul>
+                            <li>Individual</li>
+                            <li>Department/college</li>
+                            <li>University-wide</li>
+                            <li>Discipline-specific</li>
+                            <li>3rd party</li>
+                          </ul>
+                          <div class="fragment" style="font-size: 90%; position: absolute; right: -160px; width: 400px;">archive vs. sharing mechanism</div>
+                          </div>
+                        </td>
+                      </tr></tbody></table>
+                    </div>
+                  </div>
+                  <div style="position: absolute; bottom: -200px; left: 30px; width: 95%; text-align: left; font-size: 45%; line-height: normal;">adapted from Whitmire, Amanda L. (2014). Research Data Management Curriculum, Lecture 15: Data Preservation. Oregon State University Libraries. Retrieved 11/04/2015 from: <a href="http://figshare.com/articles/GRAD521_Research_Data_Management_Lectures/1003835"> http://figshare.com/articles/GRAD521_Research_Data_Management_Lectures/1003835</a></div>
+                  <div class="fragment" style="position: absolute; top: 220px; left: 650px; "><object data="../../common/assets/images-for-data/arrow.svg" type="image/svg+xml"></object></div>
+                </section>
+
+                <section>
+                  <div style="width: 80%; margin-right: auto; margin-left: auto;">
+                    <span style="font-weight: bold; font-size: 110%;">Archive on your own<br></span>
+                    <div style="font-size: 75%; border: 1px solid black; background-color: #999; padding: 13px; margin-top: 42px;">
+                      <ul>
+                        <li>You buy & manage hardware, replication, backups and networking (if applicable, for offsite access)
+                        <li style="margin-top: 13px;">OK for unrestricted, sensitive (FERPA), and protected data
+                      </ul>
+                    </div>
+                    <br><br>
+                    <span style="border-bottom: 2px solid black;">Costs (100 GB dataset)</span>
+                    <table><tr><td style="font-size: 180%; color: #777">$</td><td style="text-align: center; line-height: 100%; vertical-align: top; padding-top: 20px;">Ranges<br><span style="font-size: 60%; text-align: center;">(but generally cheap)</span></td></tr></table>
+                  </div>
+                </section>
+
+                <section>
+                  <div style="width: 80%; margin-right: auto; margin-left: auto;">
+                    <span style="font-weight: bold; font-size: 110%;">Archive w/department IT<br></span>
+                    <div style="font-size: 75%; border: 1px solid black; background-color: #999; padding: 13px; margin-top: 42px;">
+                      <ul>
+                        <li>Depends on department IT</li>
+                      </ul>
+                    </div>
+                    <br><br>
+                    <span style="border-bottom: 2px solid black;">Costs (100 GB dataset)</span>
+                    <table><tr><td style="font-size: 180%; color: #777">$</td><td style="text-align: center; line-height: 100%; vertical-align: top; padding-top: 20px;">Under development???<br><span style="font-size: 60%; text-align: center;">(check your dept.)</span></td></tr></table>
+                  </div>
+                </section>
+
+                <section>
+                  <div style="width: 85%; margin-right: auto; margin-left: auto;">
+                    <span style="font-weight: bold; font-size: 110%;">Archive @ University of Miami Institutional Repository<br></span>
+                    <div style="font-size: 75%; border: 1px solid black; background-color: #999; padding: 13px; margin-top: 42px;">
+                      <ul>
+                        <li>Storage in Bepress Digital Commons (commercial site that UM subscribes to)</li>
+                        <li>Remotely accessible (restrictions/embargoes possible) </li>
+                        <li>OK for unrestricted data. Not compliant for sensitive (FERPA) and protected data</li>
+                      </ul>
+                    </div>
+                    <br><br>
+                    <span style="border-bottom: 2px solid black;">Costs (100 GB dataset)</span>
+                    <table><tr><td style="font-size: 180%; color: #777">$</td><td style="text-align: center; line-height: 100%; vertical-align: top; padding-top: 45px;">($0/year * 100 GB) = $0</td></tr></table>
+                  </div>
+                  <div class="fragment" style="position: absolute; top: 640px; left: 300px; color: #f00; font-size: 75%;">NOTE: THE COST IS A PLACEHOLDER. THIS IS NOT BINDING</div>
+                </section>
+
+                <section>
+                  <div style="width: 80%; margin-right: auto; margin-left: auto;">
+                    <span style="font-weight: bold; font-size: 110%;">Archive in discipline-specific repository<br></span>
+                    <div style="font-size: 75%; border: 1px solid black; background-color: #999; padding: 13px; margin-top: 42px;">
+                      <ul>
+                        <li>Replicated, archive-quality storage</li>
+                        <li>Data curation throughout ingest & archive period</li>
+                        <li>Data in context with other datasets</li>
+                      </ul>
+                    </div>
+                    <br><br>
+                    <span style="border-bottom: 2px solid black;">Costs (100 GB dataset)</span>
+                    <table><tr><td style="font-size: 180%; color: #777">$</td><td style="text-align: center; line-height: 100%; vertical-align: top; padding-top: 45px;">Depends</td></tr></table>
+                  </div>
+                </section>
+
+                <section>
+                    <div style="width: 85%; margin-right: 8%; margin-left: auto;">
+                        <span style="font-weight: bold; font-size: 110%;">Disciplinary Repositories (some)<br><br></span>
+                        <div style="font-size: 70%; text-align: left; line-height: 120%; position: relative; left: 110px;">
+                            <ul>
+                                <li>Biology and Life Sciences - Dryad<br>
+                                    <a href="http://www.datadryad.org/repo/" style="font-size: 90%;">http://www.datadryad.org/repo/</a>
+                                <li>Knowledge Network for Biodiversity<br>
+                                    <a href="https://knb.ecoinformatics.org/" style="font-size: 90%;">https://knb.ecoinformatics.org/</a>
+                                <li>Data Observation Network for Earth<br>
+                                    <a href="https://www.dataone.org/" style="font-size: 90%;">https://www.dataone.org/</a>
+                                <li>Snow and Ice Data Center<br>
+                                    <a href="https://nsidc.org/" style="font-size: 90%;">https://nsidc.org/</a>
+                                <li>Biological and Chemical Oceanography Data Management Office (BCO-DMO)<br>
+                                    <a href="http://www.bco-dmo.org/" style="font-size: 90%;">http://www.bco-dmo.org/</a>
+                                <li>National Centers for Environmental Information<br>
+                                    <a href="https://www.ncei.noaa.gov/" style="font-size: 90%;">https://www.ncei.noaa.gov/</a>
+                                <li>Inter-University Consortium for Political and Social Research<br>
+                                    <a href="http://www.icpsr.umich.edu/" style="font-size: 90%;">http://www.icpsr.umich.edu/</a>
+                                <li>Collaborative Research in Computational Neuroscience<br>
+                                    <a href="https://crcns.org/" style="font-size: 90%;">https://crcns.org/</a>
+                            </ul>
+                        </div><br>
+                    </div>
+                </section>
+
+                <section>
+                  <div style="width: 60%; margin-right: auto; margin-left: auto;">
+                    <span style="font-weight: bold; font-size: 110%;">Repository Directories<br><br></span>
+                    <div style="font-size: 80%; text-align: left; line-height: 120%;">
+                      <ul>
+                        <li>Registry of Research Data Repositories</li>
+                          <a href="http://www.re3data.org/" style="font-size: 90%;">http://www.re3data.org/</a>
+                        <li>DataCite Repository Finder</li>
+                          <a href="https://repositoryfinder.datacite.org/" style="font-size: 90%;">https://repositoryfinder.datacite.org/</a>
+                        <li style="margin-top: 23px;">The Directory of Open Access Repositories</li>
+                          <a href="http://www.opendoar.org/" style="font-size: 90%;">http://www.opendoar.org/</a>
+                        <li style="margin-top: 23px;">The Open Access Directory – Disciplinary Repositories</li>
+                          <a href="http://oad.simmons.edu/oadwiki/Disciplinary_repositories" style="font-size: 90%;">http://oad.simmons.edu/oadwiki/Disciplinary_repositories</a>
+                      </ul>
+                    </div><br><br><br>
+                  </div>
+                </section>
+
+                <section>
+                  <div style="width: 80%; margin-right: auto; margin-left: auto;">
+                    <span style="font-weight: bold; font-size: 110%;">3rd party repository platforms<br></span>
+                    <div style="font-size: 75%; border: 1px solid black; background-color: #999; padding: 13px; margin-top: 42px;">
+                      <ul>
+                        <li>easy and hassle free</li>
+                        <li>highly visible and publically available</li>
+                        <li>longevity is unknown</li>
+                      </ul>
+                    </div>
+                    <br><br>
+                    <span style="border-bottom: 2px solid black;">Costs (100 GB dataset)</span>
+                    <table><tr><td style="font-size: 180%; color: #777">$</td><td style="text-align: center; line-height: 100%; vertical-align: top; padding-top: 45px;">mostly free</td></tr></table>
+                  </div>
+                  <div style="position: absolute; top: 600px; width: 100%; align-content: center; "><a href="https://figshare.com/" target="_blank"><img src="../../common/assets/images-for-data/figshare.jpg"></a></div>
+                </section>
+
+              </section>
+
+           <!-- ***
+                 * Data Package and deposit
+                 * -->
+
+              <section>
+
+                <section>
+                    <div style="width: 80%; margin-right: 10%; margin-left: auto; text-align: center;">
+                        <span style="font-weight: bold; font-size: 110%;">The deposit package<br><br></span>
+                        <div style="font-size: 80%; text-align: left; line-height: 120%; position: relative; left: 150px;">
+                            <ul>
+                                <li style="position: relative; left: 23px;">organized data (correct formats)
+                                <li style="position: relative; left: 23px;">project metadata (standard?)
+                                <li style="position: relative; left: 23px;">technical metadata: README.txt
+                                <li style="position: relative; left: 23px;">licensing information
+                                <li style="position: relative; left: 23px;">checksum
+                            </ul><br><br>
+                            <ul>
+                                <li class="fragment" style="position: relative; left: 23px;">can be in a zipfile (like in the University of Miami Scholarly Repository)<br>
+                                <span style="margin-left: 15px; font-size: 80%"><a href="http://scholarlyrepository.miami.edu/physics_data/1/">physics data example</a></span><br><br>
+                                <li class="fragment" style="position: relative; left: 23px;">other formats (depends on repository)<br>
+                                <span style="margin-left: 15px; font-size: 80%"><a href="https://knb.ecoinformatics.org/#view/doi:10.5063/F1HD7SK1">ecology data example (KNB)</a></span><br><br><br>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                  <div style="width: 80%; margin-right: 5%; margin-left: auto;">
+                    <span style="font-weight: bold; font-size: 110%; margin-left: -20%;">Roles and Responsibilities<br><br></span>
+                    <div style="font-size: 80%; text-align: left; line-height: 120%; ">
+                      <table style="border: none"><tbody><tr><td>
+                        Researcher (‘data creator’)<br><br>
+                        <div style="font-size: 80%;">
+                          <ul>
+                            <li>Provide enough information for assessment
+                            <li>Provide information on audience and access restraints
+                            <li>Provide data in recommended formats
+                            <li>Provide sufficient metadata
+                        </div>
+                      </td><td>
+                        Data center or repository<br><br>
+                        <div style="font-size: 80%;">
+                          <ul>
+                            <li>Have explicit mission & data selection policy
+                            <li>Ensure legal and contract compliance
+                            <li>Ensure authenticity & integrity of digital objects & metadata 
+                            <li>Assume responsibility for data accessibility
+                            <li>Plan for long-term preservation
+                        </div>
+                      </td></tr></tbody></table>
+                    </div>
+                  </div>
+                </section>
+
+              </section>
+
+           <!-- ***
+                 * DOIs and data citation
+                 * -->
+
+              <section>
+
+                <section>
+                  <div style="font-weight: bold; font-size: 110%; margin-bottom: 42px;">DOIs and Data Citation</div>
+                </section>
+
+                <section>
+                  <div style="font-weight: bold; font-size: 110%;">Data Citation</div>
+                  <div style="position: relative; top: 30px; font-size:80%; text-align: left; width:90%; margin-right: auto; margin-left: auto;">
+                    <ul style="font-size: 80%; line-height: 150%;">
+                      <li>Kochanski, A., & Krueger, S. (2018). SAM model output files from A. Chandra, P. Zuidema, S. Krueger, A. Kochanski, S. P. de Szoeke and J. Zhang,2018: "Moisture distributions in tropical cold pools from equatorial Indian Ocean observations and cloud-resolving simulations”, J. Geophys. Res. - Atmos. [Data set]. University of Miami Libraries. <a href="https://doi.org/10.17604/5D4A-QJ11">https://doi.org/10.17604/5D4A-QJ11</a>
+                      <li>Norris, T. (2015). Cordillera Huayhuash Water Quality 2010-2011 [Data set]. UC Santa Cruz. <a href="https://doi.org/10.7291/d11592">https://doi.org/10.7291/d11592</a>
+                      <li>World Bank, World Development Indicators. (2016). Firms using banks to finance working capital (% of firms) [Data file]. Retrieved from <a href="http://data.worldbank.org/indicator/IC.FRM.BKWC.ZS">http://data.worldbank.org/indicator/IC.FRM.BKWC.ZS</a>
+                      <li>JBureau of Labor Statistics. (2016). Consumer price index - all urban consumers, 1956-2016 [Time series]. Retrieved from <a href="http://data.bls.gov">http://data.bls.gov</a>
+                    </ul>
+                    <br><br>
+                  </div>
+                  <br><br>
+                </section>
+                
+                <section>
+                  <a href="https://citation.crosscite.org" target="_blank">https://citation.crosscite.org</a>
+                </section>
+
+              </section>
+
+           <!-- ***
+                 * Intellectual Property and Licensing
+                 * -->
+
+              <section>
+
+                <section>
+                  <div style="width: 60%; margin-right: 20%; margin-left: auto;">
+                    <span style="font-weight: bold; font-size: 110%;">Licensing<br><br></span>
+                    <div style="font-size: 80%; text-align: left; line-height: 200%; position: relative; left: 145px;">
+                      <ol>
+                        <li style="position: relative; left: 23px;"><b>Stuff:</b> Creative Commons <> Copyright
+                        <li style="position: relative; left: 23px;"><b>Software:</b> Open Source <> Proprietary
+                        <li style="position: relative; left: 23px;"><b>Data:</b> Open Data Commons <> Proprietary
+                      </ol>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <div style="width: 60%; margin-right: 20%; margin-left: auto;">
+                    <span style="font-weight: bold; font-size: 110%;">Creative Commons<br></span>
+                    <a href="https://creativecommons.org/">https://creativecommons.org/</a><br><br>
+                    <div style="font-size: 80%">
+                    <img src="http://creativecommons.org/images/icons/attrib.gif" alt="Attribution" width="32" height="32" border="0" style="position: relative; top: 20px;"/><a href="https://creativecommons.org/licenses/by/4.0/"><strong> Attribution (by)</strong></a><br>
+                    <img src="http://creativecommons.org/icon/sa/standard.gif" alt="ShareAlike" width="32" height="32" border="0" style="position: relative; top: 20px;"/><a href="https://creativecommons.org/licenses/by-sa/4.0/"><strong> ShareAlike (sa)</strong></a><br>
+                    <img src="http://creativecommons.org/images/icons/noncomm.gif" alt="NonCommercial" width="32" height="32" border="0" style="position: relative; top: 20px;"/><a href="https://creativecommons.org/licenses/by-nc/4.0/"><strong> NonCommercial (nc)</strong></a><br>
+                    <img src="http://creativecommons.org/images/icons/nomod.gif" alt="NoDerivatives" width="32" height="32" border="0" style="position: relative; top: 20px;"/><a href="https://creativecommons.org/licenses/by-nd/4.0/"><strong> NoDerivatives (nd)</strong></a><br><br><br><br><br>
+                    </div> 
+                  </div>
+                </section>
+                <section>
+                  <div style="width: 60%; position: absolute; left: 17%; top 10%; text-align: center; line-height: 100%;">
+                    <span style="font-weight: bold; font-size: 110%;"><br><br>Some open source licenses<br><br></span>
+                    <div style="font-size: 80%; text-align: left; line-height: 130%; position: relative; left: 140px;">
+                                      Apache License, 2.0 (Apache-2.0) <br>BSD 3-Clause "New" or "Revised" license (BSD-3-Clause) <br>BSD 2-Clause "Simplified" or "FreeBSD" license (BSD-2-Clause) <br>GNU General Public License (GPL) <br>GNU Library or "Lesser" General Public License (LGPL) <br>MIT license (MIT) <br>Mozilla Public License 2.0 (MPL-2.0)<br><br><br><br>
+                    </div>
+                  </div>
+                  <div style="position: absolute; top: 50px; left: 50px; width: 100%; text-align: left; font-size: 50%; line-height: normal;"><img src="../../common/assets/images-for-data/gnu.png" width= 200></div>
+                  <div style="position: absolute; top: 400px; left: 100px; width: 100%; text-align: left; font-size: 50%; line-height: normal;"><img src="../../common/assets/images-for-data/mit.png" width= 200></div>
+                  <div style="position: absolute; top: 500px; left: 400px; width: 100%; text-align: left; font-size: 50%; line-height: normal;"><img src="../../common/assets/images-for-data/bsd.png" width= 200></div>
+                  <div style="position: absolute; top: 400px; left: 900px; width: 100%; text-align: left; font-size: 50%; line-height: normal;"><img src="../../common/assets/images-for-data/mozilla.jpg" width= 300></div>
+                  <div style="position: absolute; top: 0px; left: 950px; width: 100%; text-align: left; font-size: 50%; line-height: normal;"><img src="../../common/assets/images-for-data/apache.png" width= 400></div>
+                  <div style="position: absolute; top: 690px; left: 700px; width: 100%; text-align: left; font-size: 50%; line-height: normal;"><a href="https://opensource.org/licenses/category">https://opensource.org/licenses/category</a></div>
+                </section>
+                <section>
+                  <div style="width: 80%; margin-right: 10%; margin-left: auto;">
+                    <span style="font-weight: bold; font-size: 110%;">Open Data Commons<br></span>
+                    <div style="font-size: 80%; text-align: center; line-height: 200%; position: relative; left: 0px;">
+                        <a href="http://opendatacommons.org/licenses/">http://opendatacommons.org/licenses/</a><br><br>
+                      <b>Licenses</b><br>
+                      <ul style="font-size: 80%">
+                        <li style="position: relative; left: 23px;"><a href="http://opendatacommons.org/licenses/pddl/">Public Domain Dedication and License (PDDL)</a> — “Public Domain for data/databases”
+                        <li style="position: relative; left: 23px;"><a href="http://opendatacommons.org/licenses/by/">Attribution License (ODC-By)</a> — “Attribution for data/databases”
+                        <li style="position: relative; left: 23px;"><a href="http://opendatacommons.org/licenses/odbl/">Open Database License (ODC-ODbL)</a> — “Attribution Share-Alike for data/databases”
+                      </ul><br><br><br><br>
+                    </div>
+                  </div>
+                </section>
+
+              </section>
+
+           <!-- ***
+                 * Open Data
+                 * -->
+
+              <section>
+
+                <section>
+                  <div style="font-weight: bold; font-size: 110%;">Open</div>
+                  <div style="width: 30%; margin-left: auto; margin-right: auto; font-size: 600%; text-align: center; top: 0px; position: relative;">?</div>
+                </section>
+
+                <section>
+                  <div style="font-weight: bold; font-size: 110%;">Open Data</div>
+                  <div style="width: 85%; margin-left: auto; margin-right: auto; font-size: 90%; text-align: center; top: 50px; line-height: 140%; position: relative;">
+                    “data is open if anyone is free to use, reuse, and redistribute it – subject only, at most, to the requirement to attribute and/or share-alike.”<br>
+                  </div>
+                  <div style="font-size: 55%; width: 70%; line-height: 110%; text-align: left; position: relative; top: 130px; margin-left: auto; margin-right: auto;">Pollack, R (2006). ‘The value of the public domain’, Institue for Public Policy Research, <a href="http://www.ippr.org/publication/55/1526/the-value-of-the-public-domain">http://www.ippr.org/publication/55/1526/the-value-of-the-public-domain</a>, quoted from<br>Kitchin, R (2014). The Data Revolution. Sage, Los Angeles. P. 49-50.</div>
+                  <br><br><br><br>
+                </section>
+
+                <section>
+                  <div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Open Data</div>
+                  <div class="fragment" style="position: relative; margin-left: 60px; margin-right: auto; top: 30px; font-size: 82%; width: 50%; text-align: left;">
+                    <span style="padding-left: 13px;"><a href="http://opendefinition.org">opendefinition.org</a> *</span>
+                    <ul style="font-size: 95%;">
+                      <li style="position: relative; left: 23px; top: 20px;">Accessible
+                      <li style="position: relative; left: 23px; top: 20px;">Redistributable (w or w/o license)
+                      <li style="position: relative; left: 23px; top: 20px;">Reusable
+                      <li style="position: relative; left: 23px; top: 20px;">No Technological restrictions
+                      <li style="position: relative; left: 23px; top: 20px;">Attribution
+                      <li style="position: relative; left: 23px; top: 20px;">Integrity maintained
+                      <li style="position: relative; left: 23px; top: 20px;">Non-discriminatory
+                      <li style="position: relative; left: 23px; top: 20px;">License is redistributable, non-specific, and non-restrictive for derivative works
+                    </ul><br><br><br><br>
+                  </div>
+                  <div class="fragment" style="position: absolute; left: 810px; top: 90px; font-size: 82%; width: 43%; text-align: left;">
+                    <span style="padding-left: 13px;"><a href="http://www.opengovdata.org">www.opengovdata.org</a> °</span>
+                    <ul style="font-size: 95%;">
+                      <li style="position: relative; left: 23px; top: 20px;">Complete
+                      <li style="position: relative; left: 23px; top: 20px;">Primary
+                      <li style="position: relative; left: 23px; top: 20px;">Timely
+                      <li style="position: relative; left: 23px; top: 20px;">Accessible
+                      <li style="position: relative; left: 23px; top: 20px;">Machine processable
+                      <li style="position: relative; left: 23px; top: 20px;">Non-discriminatory
+                      <li style="position: relative; left: 23px; top: 20px;">Non-proprietary formats
+                      <li style="position: relative; left: 23px; top: 20px;">License Free
+                      <li style="position: relative; left: 23px; top: 20px;">Open for Compliance Review
+                    </ul>
+                  </div>
+                  <div class="fragment" style="position: absolute; left: 100px; top: 580px; text-align: left; width: 350px; font-size: 55%;">
+                    * As a sub-project of the open knowledge foundation, <a href="https://okfn.org/">okfn.org</a>
+                  </div>
+                  <div class="fragment" style="position: absolute; width: 250px; left: 1060px; top: 200px; text-align: left; font-size: 55%;">
+                    ° From a 2007 open data workshop. Influenced heavily by Larry Lessig 
+                  </div>
+                  <div class="fragment" style="color: #aaa; position: absolute; left: 500px; top: 630px; text-align: left; font-size: 55%; width: 800px;">
+                    Adapted from Kitchin, R (2014). The Data Revolution. Sage, Los Angeles. P. 50-51
+                  </div>
+                </section>
+
+                <section>
+                  <div style="font-weight: bold; font-size: 110%;">Linked Open Data</div>
+                  <div style="margin-right: auto; margin-left: auto; font-size: 85%; top: 50px; position: relative;">
+                    <img src="../../common/assets/images-for-data/lod.png" style="max-width: 1000px; width: 800px;">
+                  </div>
+                  <div style="margin-right: auto; margin-left: auto; font-size: 50%; top: 50px; position: relative; color: #aaa;">
+                    Berners-Lee, <a href="http://5stardata.info/en/">http://5stardata.info/en/</a>, accessed 03-27-2016
+                  </div><br><br>
+                </section>
+
+                <section>
+                  <span style="font-weight: bold; font-size: 110%;">Linked Open Data</span><br><br>
+                  <table style="font-size: 70%; width: 85%;" class="bluetable"><tbody>
+                    <tr style="background-color: rgb(210,222,239); border-bottom: solid white 1px !important;">
+                       <td>*</td><td>make your stuff available on the Web (whatever format) under an open license</td>
+                    </tr><tr style="background-color: rgb(234,239,247); border-bottom: solid white 1px !important;;">
+                       <td>**</td><td>make it available as structured data (e.g., Excel instead of image scan of a table)</td>
+                    </tr><tr style="background-color: rgb(210,222,239); border: solid white 1px !important;;">
+                       <td>***</td><td>make it available in a non-proprietary open format (e.g., CSV as well as of Excel)</td>
+                    </tr><tr style="background-color: rgb(234,239,247); border: solid white 1px !important;;">
+                       <td>****</td><td>use URIs to denote things, so that people can point at your stuff</td>
+                     </tr><tr style="background-color: rgb(210,222,239); border: solid white 1px !important;;">
+                       <td>*****</td><td>link your data to other data to provide context</td>
+                    </tr>
+                  </tbody></table><br>
+                  <div style="margin-right: auto; margin-left: auto; font-size: 50%; top: 50px; position: relative; color: #aaa;">
+                    Adapted from Berners-Lee, <a href="http://5stardata.info/en/">http://5stardata.info/en/</a>, accessed 03-27-2016
+                  </div><br><br>
+                </section>
+
+                <section>
+                  <div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Open Data in the Research Environment</div>
+                  <div class="fragment" style="position: relative; margin-left: 120px; margin-right: auto; top: 90px; font-size: 82%; width: 50%; text-align: left;">
+                    <span style="padding-left: 13px;">Benefits<br></span>
+                    <ul style="font-size: 95%;">
+                      <li style="position: relative; left: 23px; top: 20px;">Reproduction
+                      <li style="position: relative; left: 23px; top: 20px;">Meta-analyses
+                      <li style="position: relative; left: 23px; top: 20px;">Scientific Inquiry Approaches
+                      <li style="position: relative; left: 23px; top: 20px;">New Questions
+                      <li style="position: relative; left: 23px; top: 20px;">Meet Requirements
+                      <li style="position: relative; left: 23px; top: 20px;">Increase Impact/Visibility
+                    </ul><br><br><br><br>
+                  </div>
+                  <div class="fragment" style="position: absolute; left: 810px; top: 150px; font-size: 82%; width: 43%; text-align: left;">
+                    <span style="padding-left: 13px;">Barriers<br></span>
+                    <ul style="font-size: 95%;">
+                      <li style="position: relative; left: 23px; top: 20px;">Competition
+                      <li style="position: relative; left: 23px; top: 20px;">Lack of recognition
+                      <li style="position: relative; left: 23px; top: 20px;">Difficult and time consuming
+                      <li style="position: relative; left: 23px; top: 20px;">Sensitivity issues
+                    </ul>
+                  </div>
+                  <div style="margin-right: auto; margin-left: auto; font-size: 50%; top: 50px; position: relative; color: #aaa;">
+                    See also, <a href="http://swcarpentry.github.io/git-novice/10-open/">http://swcarpentry.github.io/git-novice/10-open/</a>
+                  </div><br><br>
+                </section>
+
+                <section>
+                  <div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Open Data in the Research Environment</div>
+                  <div style="position: relative; margin-left: auto; margin-right: auto; top: 90px; font-size: 82%; width: 55%; text-align: left; line-height: 200%;">
+                    Competition > embargos<br>
+                    Lack of recognition > citations<br>
+                    Difficult and time consuming > data repositories<br>
+                    Sensitivity issues > restrict access
+                  </div><br><br><br>
+                </section>
+
+                <section>
+                  <div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Open Data in the World Writ Large</div>
+                  <div class="fragment" style="position: relative; margin-left: 120px; margin-right: auto; top: 90px; font-size: 82%; width: 42%; text-align: left; line-height: 140%;">
+                    <span style="padding-left: 13px;">Benefits<br></span>
+                    <ul style="font-size: 95%;">
+                      <li style="position: relative; left: 23px; top: 20px;">Transparency
+                      <li style="position: relative; left: 23px; top: 20px;">Informed choice (democracy)
+                      <li style="position: relative; left: 23px; top: 20px;">Improved efficiencies/productivities
+                      <li style="position: relative; left: 23px; top: 20px;">Organizational Branding (like “greening” of a business)
+                      <li style="position: relative; left: 23px; top: 20px;">Commercial Value
+                    </ul><br><br><br><br>
+                  </div>
+                  <div class="fragment" style="position: absolute; left: 810px; top: 150px; font-size: 82%; width: 33%; text-align: left;">
+                    <span style="padding-left: 13px;">Barriers<br></span>
+                    <ul style="font-size: 95%;">
+                      <li style="position: relative; left: 23px; top: 20px;">Makes valuable resources selectively accessible
+                      <li style="position: relative; left: 23px; top: 20px;">May be co-opted by corporate business for profit
+                      <li style="position: relative; left: 23px; top: 20px;">Should businesses “open” their data?
+                    </ul>
+                  </div>
+                </section>
+
+                <section>
+                  <div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Open Data in the World Writ Large</div>
+                  <div style="position: relative; margin-left: auto; margin-right: auto; top: 90px; font-size: 82%; width: 45%; text-align: left; line-height: 140%;">
+                    Sustainability (who pays)?<br>
+                    Open Data  %LIKE%  Free Trade?<br>
+                    Who does it empower (social justice)?<br>
+                    Who does the work for whom?<br>
+                    Data Shadows and Dataveillance<br>
+                  </div><br><br><br>
+                </section>
+
+              </section>
+
+           <!-- ***
+                 * Open Data and Research
+                 * -->
+
+              <section>
+
+                <section>
+                  <div style="position: relative; width: 70%; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">What about data in the research environment</div>
+                  <div style="width: 75%; position: relative; margin-left: 17%; margin-right: auto; top: 40px; text-align: center; line-height: 100%;">
+                    <ul style="font-size: 85%;">
+                      <li style="position: relative; left: 23px; top: 20px;">What happens if a researcher leaves the institution?
+                      <li style="position: relative; left: 23px; top: 20px;">What if someone needs access to my data?
+                      <li style="position: relative; left: 23px; top: 20px;">How long do I have to keep them and how should I discard them?
+                      <li style="position: relative; left: 23px; top: 20px;">How do I set policy for my team, my lab or myself?
+                      <li style="position: relative; left: 23px; top: 20px;">But I’m collaborating: whose policy wins?
+                      <li style="position: relative; left: 23px; top: 20px;">What if there isn’t a policy?
+                      <li style="position: relative; left: 23px; top: 20px;">What help can I get?
+                    </ul>
+                  </div>
+                  <div style="color: #aaa; position: absolute; top: 650px; left: 10px; width: 100%; text-align: left; font-size: 50%; line-height: normal;">Briney, K., Goben, A., & Zilinski, L. (2015). Do You Have an Institutional Data Policy? A Review of the Current Landscape of Library Data Services and Institutional Data Policies. Journal of Librarianship and Scholarly Communication, 3(2), eP1232. <a href="http://dx.doi.org/10.7710/2162-3309.1232">http://dx.doi.org/10.7710/2162-3309.1232</a></div>
+                </section>
+
+                <section>
+                  <div style="line-height: 100%; font-size: 53%; width: 100%; position: relative; top:-42px;">
+                    <table border=0 cellspacing=0 cellpadding=0 style='width: 1300px; border-collapse:collapse'>
+                     <tr>
+                      <td valign=bottom style='width:300px;'><b><span>Peer Institutions</span></b></td>
+                      <td width=54 valign=bottom style='width:40.5pt;'><b><span>last revised</span></b></td>
+                      <td width=60 valign=bottom style='width:45.0pt;'><b><span>responsible party</span></b></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'><b><span>ownership stated</span></b></td>
+                      <td width=84 valign=bottom style='width:63.0pt;'><b><span>&quot;research data&quot; defined</span></b></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'><b><span>data retention (min.)</span></b></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'><b><span>data access</span></b></td>
+                      <td width=36 valign=bottom style='width:27.0pt;'><b><span>PI moves</span></b></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'><b><span>disputes</span></b></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'><b><span>take-down</span></b></td>
+                      <td width=120 valign=bottom style='width:1.25in;'><b><span>notes</span></b></td>
+                     </tr>
+                     <tr style=''>
+                      <td valign=bottom style='width:280px;'>Case Western Reserve University</td>
+                      <td width=54 valign=bottom style='width:40.5pt;'>2000</td>
+                      <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>&nbsp;</td>
+                      <td width=84 valign=bottom style='width:63.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>3 years</td>
+                      <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+                      <td width=36 valign=bottom style='width:27.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+                      <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+                      <td width=120 valign=bottom style='width:1.25in;'>&nbsp;</td>
+                     </tr>
+                     <tr style=''>
+                      <td valign=bottom style='width:280px;'>New York University</td>
+                      <td width=54 valign=bottom style='width:40.5pt;'>2010</td>
+                      <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+                      <td width=84 valign=bottom style='width:63.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>3 years</td>
+                      <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+                      <td width=36 valign=bottom style='width:27.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+                      <td width=120 valign=bottom style='width:1.25in;'></td>
+                     </tr>
+                     <tr style=''>
+                      <td valign=bottom style='width:280px;'>University of Rochester</td>
+                      <td width=54 valign=bottom style='width:40.5pt;'>2014</td>
+                      <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+                      <td width=84 valign=bottom style='width:63.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>3 years</td>
+                      <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+                      <td width=36 valign=bottom style='width:27.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'></td>
+                      <td width=120 valign=bottom style='width:1.25in;'></td>
+                     </tr>
+                     <tr style=''>
+                      <td valign=bottom style='width:280px;'><i>University of Miami</i></td>
+                      <td width=54 valign=bottom style='width:40.5pt;'><i>2014</i></td>
+                      <td width=60 valign=bottom style='width:45.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=84 valign=bottom style='width:63.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'><i>7 years</i></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'></td>
+                      <td width=36 valign=bottom style='width:27.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'></td>
+                      <td width=120 valign=bottom style='width:1.25in;'><i>in faculty manual</i></td>
+                     </tr>
+                     <tr style=''>
+                      <td valign=bottom style='width:280px;'>Emory University</td>
+                      <td width=54 valign=bottom style='width:40.5pt;'>2007</td>
+                      <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=84 valign=bottom style='width:63.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>7 years</td>
+                      <td width=42 valign=bottom style='width:31.5pt;'></td>
+                      <td width=36 valign=bottom style='width:27.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'></td>
+                      <td width=120 valign=bottom style='width:1.25in;'>in faculty
+                      manual</td>
+                     </tr>
+                     <tr style=''>
+                      <td valign=bottom style='width:280px;'>Brandeis University</td>
+                      <td width=54 valign=bottom style='width:40.5pt;'>2003</td>
+                      <td width=60 valign=bottom style='width:45.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+                      <td width=84 valign=bottom style='width:63.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'></td>
+                      <td width=36 valign=bottom style='width:27.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'></td>
+                      <td width=120 valign=bottom style='width:1.25in;'>in IP policy</td>
+                     </tr>
+                     <tr style=''>
+                      <td valign=bottom style='width:280px;'>University of Southern California</td>
+                      <td width=54 valign=bottom style='width:40.5pt;'>2001</td>
+                      <td width=60 valign=bottom style='width:45.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+                      <td width=84 valign=bottom style='width:63.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'></td>
+                      <td width=36 valign=bottom style='width:27.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'></td>
+                      <td width=120 valign=bottom style='width:1.25in;'>in IP policy </td>
+                     </tr>
+                     <tr style=''>
+                      <td valign=bottom style='width:280px;'>Carnegie Mellon University</td>
+                      <td width=54 valign=bottom style='width:40.5pt;'></td>
+                      <td width=60 valign=bottom style='width:45.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=84 valign=bottom style='width:63.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'></td>
+                      <td width=36 valign=bottom style='width:27.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'></td>
+                      <td width=120 valign=bottom style='width:1.25in;'></td>
+                     </tr>
+                     <tr style=''>
+                      <td valign=bottom style='width:280px;'>Syracuse University</td>
+                      <td width=54 valign=bottom style='width:40.5pt;'></td>
+                      <td width=60 valign=bottom style='width:45.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=84 valign=bottom style='width:63.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'></td>
+                      <td width=36 valign=bottom style='width:27.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'></td>
+                      <td width=120 valign=bottom style='width:1.25in;'></td>
+                     </tr>
+                     <tr style=''>
+                      <td valign=bottom style='width:280px;'>Tulane University</td>
+                      <td width=54 valign=bottom style='width:40.5pt;'></td>
+                      <td width=60 valign=bottom style='width:45.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=84 valign=bottom style='width:63.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'></td>
+                      <td width=36 valign=bottom style='width:27.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'></td>
+                      <td width=120 valign=bottom style='width:1.25in;'></td>
+                     </tr>
+                     <tr style=''>
+                      <td valign=bottom style='width:280px;'>Vanderbilt University</td>
+                      <td width=54 valign=bottom style='width:40.5pt;'>&nbsp;</td>
+                      <td width=60 valign=bottom style='width:45.0pt;'>&nbsp;</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>&nbsp;</td>
+                      <td width=84 valign=bottom style='width:63.0pt;'>&nbsp;</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>&nbsp;</td>
+                      <td width=42 valign=bottom style='width:31.5pt;'>&nbsp;</td>
+                      <td width=36 valign=bottom style='width:27.0pt;'>&nbsp;</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>&nbsp;</td>
+                      <td width=42 valign=bottom style='width:31.5pt;'>&nbsp;</td>
+                      <td width=120 valign=bottom style='width:1.25in;'>&nbsp;</td>
+                     </tr>
+                    </table>
+                  </div>
+                  <div style="color: #aaa; position: absolute; top: 650px; left: 50px; width: 100%; text-align: left; font-size: 50%; line-height: normal;">Norris, T., and S. Shreeves. “Data Curation Initiative: 2015-16 Report and Recommendations.” University of Miami Libraries. Miami, FL.</div>
+                </section>
+
+                <section>
+                  <div style="line-height: 100%; font-size: 53%; width: 100%;">
+                    <table border=0 cellspacing=0 cellpadding=0 style='width: 1300px; border-collapse:collapse'>
+                     <tr>
+                      <td valign=bottom style='width:300px;'><b><span>Non-Peer Institutions</span></b></td>
+                      <td width=54 valign=bottom style='width:40.5pt;'><b><span>last revised</span></b></td>
+                      <td width=60 valign=bottom style='width:45.0pt;'><b><span>responsible party</span></b></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'><b><span>ownership stated</span></b></td>
+                      <td width=84 valign=bottom style='width:63.0pt;'><b><span>&quot;research data&quot; defined</span></b></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'><b><span>data retention (min.)</span></b></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'><b><span>data access</span></b></td>
+                      <td width=36 valign=bottom style='width:27.0pt;'><b><span>PI moves</span></b></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'><b><span>disputes</span></b></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'><b><span>take-down</span></b></td>
+                      <td width=120 valign=bottom style='width:1.25in;'><b><span>notes</span></b></td>
+                     </tr>
+                     <tr style=''><td valign=bottom style='width:280px;
+                      border-top:none;'>University of Kentucky</td>
+                      <td width=54 valign=bottom style='width:40.5pt;'>2011</td>
+                      <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+                      <td width=84 valign=bottom style='width:63.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>5 years</td>
+                      <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+                      <td width=36 valign=bottom style='width:27.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+                      <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+                      <td width=120 valign=bottom style='width:1.25in;'></td>
+                     </tr>
+                     <tr style=''>
+                      <td valign=bottom style='width:280px;'>Johns Hopkins University</td>
+                      <td width=54 valign=bottom style='width:40.5pt;'>2008</td>
+                      <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+                      <td width=84 valign=bottom style='width:63.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>5 years</td>
+                      <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+                      <td width=36 valign=bottom style='width:27.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+                      <td width=120 valign=bottom style='width:1.25in;'></td>
+                     </tr>
+                     <tr style=''>
+                      <td valign=bottom style='width:280px;'>Duke University</td>
+                      <td width=54 valign=bottom style='width:40.5pt;'>2007</td>
+                      <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+                      <td width=84 valign=bottom style='width:63.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>5 Years</td>
+                      <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+                      <td width=36 valign=bottom style='width:27.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'></td>
+                      <td width=120 valign=bottom style='width:1.25in;'></td>
+                     </tr>
+                     <tr style=''>
+                      <td valign=bottom style='width:280px;'>The University of Edinburgh</td>
+                      <td width=54 valign=bottom style='width:40.5pt;'>2011</td>
+                      <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=84 valign=bottom style='width:63.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+                      <td width=36 valign=bottom style='width:27.0pt;'></td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+                      <td width=120 valign=bottom style='width:1.25in;'>not really a policy</td>
+                     </tr>
+                     <tr style=''>
+                      <td valign=bottom style='width:280px;'>University of Pittsburg</td>
+                      <td width=54 valign=bottom style='width:40.5pt;'>2009</td>
+                      <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+                      <td width=84 valign=bottom style='width:63.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>7 years</td>
+                      <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+                      <td width=36 valign=bottom style='width:27.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'></td>
+                      <td width=120 valign=bottom style='width:1.25in;'></td>
+                     </tr>
+                     <tr style=''>
+                      <td valign=bottom style='width:280px;'>Pennsylvania State</td>
+                      <td width=54 valign=bottom style='width:40.5pt;'>2003</td>
+                      <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+                      <td width=84 valign=bottom style='width:63.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>5 years</td>
+                      <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+                      <td width=36 valign=bottom style='width:27.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'></td>
+                      <td width=42 valign=bottom style='width:31.5pt;'></td>
+                      <td width=120 valign=bottom style='width:1.25in;'>set of guidelines</td>
+                     </tr>
+                     <tr style=''>
+                      <td valign=bottom style='width:280px;'>Stanford</td>
+                      <td width=54 valign=bottom style='width:40.5pt;'>1997</td>
+                      <td width=60 valign=bottom style='width:45.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>X</td>
+                      <td width=84 valign=bottom style='width:63.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>3 years</td>
+                      <td width=42 valign=bottom style='width:31.5pt;'>X</td>
+                      <td width=36 valign=bottom style='width:27.0pt;'>X</td>
+                      <td width=66 valign=bottom style='width:49.5pt;'>&nbsp;</td>
+                      <td width=42 valign=bottom style='width:31.5pt;'>&nbsp;</td>
+                      <td width=120 valign=bottom style='width:1.25in;'>&nbsp;</td>
+                     </tr>
+                    </table>
+                  </div>
+                  <div style="color: #aaa; position: absolute; top: 650px; left: 50px; width: 100%; text-align: left; font-size: 50%; line-height: normal;">Norris, T., and S. Shreeves. “Data Curation Initiative: 2015-16 Report and Recommendations.” University of Miami Libraries. Miami, FL.</div>
+                </section>
+
+                <section>
+                  <div style="position: relative; width: 50%; margin-left: 25%; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">UM Faculty Manual</div>
+                  <div style="font-size: 90%; width: 90%; position: relative; margin-left: auto; margin-right: auto; top: 30px; text-align: left; line-height: 130%;">
+                    <b>Innovations:</b> patentable or un-patentable inventions, discoveries, processes, compositions, research tools, <b>data</b>, ideas, <b>databases</b>, know-how, copyrightable works that are not scholarly or artistic Creations and tangible property, including biological organisms, engineering prototypes, drawings, and software created, conceived or made by Applicable Personnel within their normal duties (including clinical duties), course of studies, field of research or scholarly expertise or making more than Incidental Use of University’s resources. (p. 136)    
+                  </div>
+                  <div style="font-size: 90%; width: 90%; position: relative; margin-left: auto; margin-right: auto; top: 80px; text-align: left; line-height: 130%;">
+                    <b>3.3</b> Innovations are <b>owned by the University</b>; revenues derived from commercialization of Innovations will be shared with the Applicable Personnel as detailed in Section VI. (p. 138)
+                  </div><br><br>
+                </section>
+
+                <!-- ><section>
+                  <div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Innovations at UM</div>
+                  <div style="position: relative; margin-left: 60px; margin-right: auto; top: 30px; font-size: 82%; width: 80%; text-align: left;">
+                    <span style="padding-left: 13px;">Concept to commercialization seminars (C2C)</span>
+                    <ul style="font-size: 95%;">
+                      <li style="position: relative; left: 23px;"><a href="http://www.miami.edu/index.php/u_innovation/resources_for_um/C2C/">http://www.miami.edu/index.php/u_innovation/resources_for_um/C2C/</a>
+                    </ul><br><br>
+                    <span style="padding-left: 13px; margin-top: 10px;">Submit an invention</span>
+                    <ul style="font-size: 95%;">
+                      <li style="position: relative; left: 23px;"><a href="http://www.miami.edu/index.php/u_innovation/submit_an_invention/">http://www.miami.edu/index.php/u_innovation/submit_an_invention/</a>
+                    </ul><br><br><br><br>
+                  </div>
+                  <div style="position: absolute; top: 450px; left: 900px; text-align: left; font-size: 50%; line-height: normal;"><img src="../../common/assets/images-for-data/uminnovation.jpg" width= 400><br><a href="http://www.miami.edu/index.php/u_innovation/">http://www.miami.edu/index.php/u_innovation/</a></div>
+                </section> -->
+
+                <section>
+                  <div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">UM Faculty Manual</div>
+                  <div style="position: relative; margin-left: 60px; margin-right: auto; top: 30px; font-size: 82%; width: 90%; text-align: left;">
+                    <ul style="font-size: 95%; line-height: 140%;">
+                      <li style="position: relative; left: 23px;">Page 21 – all data with respect to hiring, promotion, and tenure of faculty
+                      <li style="position: relative; left: 23px;">Page 26 – senate appointments and voting
+                        <br><br>
+                      <li style="position: relative; left: 23px;"><b>Page 124 – Policies and Procedures of the University of Miami Relating to Allegations of Misconduct in Research </b>
+                      <br><div style="width: 95%; margin-left:23px; margin-top: 10px;">
+                        <i>In order to respond to allegations regarding the integrity of any published report, adequate records of the original protocols and research records, including all <b>raw data</b>, must be <b>preserved for at least seven years</b> (or longer if required by the funding agency), so they can be made available for inspection...</i>
+                      </div>
+                      <div style="width: 95%; margin-left:23px; font-size: 70%; margin-top: 10px;">
+                        <i>...Fabrication is making up data or results and recording or reporting them. Falsification is manipulating research materials, equipment, or processes, or changing or omitting data or results such that the research is not accurately represented in the research record.</i>
+                      </div>
+                    </ul><br><br>
+                  </div>
+                </section>
+
+                <section>
+                  <div style="position: relative; width: 50%; margin-left: 25%; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Grad Student Handbook</div>
+                  <div style="font-size: 90%; width: 88%; position: relative; margin-left: auto; margin-right: auto; top: 30px; text-align: left; line-height: 130%;">
+                    The University of Miami expects all graduate students to adhere to the highest standards of ethics and academic integrity. All forms of academic fraud are strictly prohibited. These include, but are not limited to, plagiarism, cheating, collusion, falsification, violation of professional ethics, or misrepresentation of <b>research data</b>. Students certify that all work (whether an examination, dissertation, thesis, research paper, research project, form of creative expression, <b>experimental data</b>, or any other academic undertaking) submitted for evaluation, presentation, or publication meets these standards. (p. 16)
+                  </div><br>
+                </section>
+
+              </section>
+
+           <!-- ***
+                 * Open Source
+                 * -->
+
+              <section>
+
+                <section>
+                  <div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Open Source</div>
+                  <div style="position: relative; margin-left: 30%; margin-right: auto; top: 30px; font-size: 82%; width: 50%; text-align: left;">
+                    1. Free Redistribution<br>
+                    2. Source Code<br>
+                    3. Derived Works<br>
+                    4. Integrity of The Author's Source Code<br>
+                    5. No Discrimination Against Persons or Groups<br>
+                    6. No Discrimination Against Fields of Endeavor<br>
+                    7. Distribution of License<br>
+                    8. License Must Not Be Specific to a Product<br>
+                    9. License Must Not Restrict Other Software<br>
+                    10. License Must Be Technology-Neutral
+                  </div>
+                  <div style="margin-right: auto; margin-left: auto; font-size: 50%; top: 90px; position: relative; color: #aaa;">
+                    <a href="https://opensource.org/osd">https://opensource.org/osd</a>
+                  </div><br>
+                </section>
+
+                <section>
+                  <div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Open Source Example</div>
+                  <div style="position: relative; margin-left: 10%; margin-right: auto; top: 30px; font-size: 82%; width: 75%; text-align: left;">
+                    <pre><code>
+        This set of tools is distributed under the GNU General Public License
+        <a href="http://www.gnu.org/licenses/gpl-3.0.en.html">http://www.gnu.org/licenses/gpl-3.0.en.html</a>
+                    </code></pre>
+                    <br>-- or –-<br><br>
+                    <pre><code>
+        /* googleTiles.php is adapted by Tim Norris 07/18/2008 from the perl script   */
+        /* googleTiles.pl published under the GNU general public license:             */
+        /* <a href="http://www.gnu.org/licenses/gpl-3.0.en.html">http://www.gnu.org/licenses/gpl-3.0.en.html</a>                                */
+        /* The original perl script was found here:                                   */
+        /* <a href="http://www.usnaviguide.com/google-tile.htm">http://www.usnaviguide.com/google-tile.htm</a>                                 */
+                    </code></pre>
+                  </div><br>
+                </section>
+        
+                <section>
+                  <div style="position: relative; margin-left: auto; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Free Software</div>
+                  <div style="position: relative; margin-left: 5%; margin-right: auto; top: 40px; font-size: 82%; width: 85%; text-align: left;">
+                    <span style="padding-left: 13px;">Benefits<br></span>
+                    <ul style="font-size: 95%;">
+                      <li style="position: relative; left: 23px; top: 20px;">The freedom to run the program as you wish, for any purpose (freedom 0).
+                      <li style="position: relative; left: 23px; top: 20px;">The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this. 
+                      <li style="position: relative; left: 23px; top: 20px;">The freedom to redistribute copies so you can help your neighbor (freedom 2). 
+                      <li style="position: relative; left: 23px; top: 20px;">The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this. 
+                    </ul>
+                  </div>
+                  <div style="margin-right: auto; margin-left: auto; font-size: 50%; top: 90px; position: relative; color: #aaa;">
+                    <a href="http://www.gnu.org/philosophy/free-sw.html">http://www.gnu.org/philosophy/free-sw.html</a>
+                  </div><br>
+                </section>        
+
+                <section>
+                  <div style="position: relative; width: 50%; margin-left: 15%; margin-right: auto; top: 0px; font-weight: bold; font-size: 110%;">Some Open Source Licenses</div>
+                  <div style="width: 75%; position: relative; margin-left: 17%; margin-right: auto; top: 40px; text-align: center; line-height: 100%;">
+                    <ul style="font-size: 85%;">
+                      <li style="position: relative; left: 23px; top: 20px;">Apache License, 2.0 (Apache-2.0)
+                      <li style="position: relative; left: 23px; top: 20px;">BSD 3-Clause "New" or "Revised" license (BSD-3-Clause)
+                      <li style="position: relative; left: 23px; top: 20px;">BSD 2-Clause "Simplified" or "FreeBSD" license (BSD-2-Clause)
+                      <li style="position: relative; left: 23px; top: 20px;">GNU General Public License (GPL)
+                      <li style="position: relative; left: 23px; top: 20px;">GNU Library or "Lesser" General Public License (LGPL)
+                      <li style="position: relative; left: 23px; top: 20px;">MIT license (MIT)
+                      <li style="position: relative; left: 23px; top: 20px;">Mozilla Public License 2.0 (MPL-2.0)
+                    </ul>
+                  </div>
+                  <div style="position: absolute; top: 50px; left: 10px; width: 100%; text-align: left; font-size: 50%; line-height: normal;"><img src="../../common/assets/images-for-data/gnu.png" width= 200></div>
+                  <div style="position: absolute; top: 400px; left: 80px; width: 100%; text-align: left; font-size: 50%; line-height: normal;"><img src="../../common/assets/images-for-data/mit.png" width= 180></div>
+                  <div style="position: absolute; top: 450px; left: 450px; width: 100%; text-align: left; font-size: 50%; line-height: normal;"><img src="../../common/assets/images-for-data/bsd.png" width= 180></div>
+                  <div style="position: absolute; top: 380px; left: 950px; width: 100%; text-align: left; font-size: 50%; line-height: normal;"><img src="../../common/assets/images-for-data/mozilla.jpg" width= 300></div>
+                  <div style="position: absolute; top: -30px; left: 1000px; width: 100%; text-align: left; font-size: 50%; line-height: normal;"><img src="../../common/assets/images-for-data/apache.png" width= 400></div>
+                  <div style="position: absolute; top: 650px; left: 700px; width: 100%; text-align: left; font-size: 50%; line-height: normal;"><a href="https://opensource.org/licenses/category">https://opensource.org/licenses/category</a></div>
+                </section>
+
+                <section>
+                  <div style="width: 60%; position: relative; margin-left: 5%; margin-right: auto; top: -10px; font-weight: bold; font-size: 110%;">Open Source Software</div>
+                  <div style="position: relative; margin-left: 120px; margin-right: auto; top: 40px; font-size: 72%; width: 42%; text-align: left;">
+                    <span style="padding-left: 13px;">Linux<br></span>
+                    <ul style="font-size: 95%;">
+                      <li style="position: relative; left: 23px;">Fedora/Redhat
+                      <li style="position: relative; left: 23px;">Debian
+                      <li style="position: relative; left: 23px;">Ubuntu
+                      <li style="position: relative; left: 23px;">OpenSUSE
+                    </ul><br>
+                    <span style="padding-left: 13px;">Apache<br></span>
+                    <ul style="font-size: 95%;">
+                      <li style="position: relative; left: 23px;">Webservers
+                      <li style="position: relative; left: 23px;">Flex
+                      <li style="position: relative; left: 23px;">Solr/Lucene
+                    </ul><br>
+                    <span style="padding-left: 13px;">Databases<br></span>
+                    <ul style="font-size: 95%;">            
+                      <li style="position: relative; left: 23px;">MySQL
+                      <li style="position: relative; left: 23px;">PostgreSQL
+                      <li style="position: relative; left: 23px;">MongoDB
+                      <li style="position: relative; left: 23px;">SQLite
+                    </ul><br>
+                  </div>
+                  <div style="position: absolute; left: 500px; top: 100px; font-size: 72%; width: 33%; text-align: left;">
+                    <span style="padding-left: 13px;">Languages<br></span>
+                    <ul style="font-size: 95%;">
+                      <li style="position: relative; left: 23px;">Java and javascript
+                      <li style="position: relative; left: 23px;">C++ (on linux)
+                      <li style="position: relative; left: 23px;">PHP
+                      <li style="position: relative; left: 23px;">Python
+                      <li style="position: relative; left: 23px;">R
+                    </ul><br>
+                    <span style="padding-left: 13px;">Content Management Systems<br></span>
+                    <ul style="font-size: 95%;">
+                      <li style="position: relative; left: 23px;">Wordpress
+                      <li style="position: relative; left: 23px;">Drupal
+                      <li style="position: relative; left: 23px;">Joomla
+                    </ul><br>
+                    <span style="padding-left: 13px;">Office<br></span>
+                    <ul style="font-size: 95%;">
+                      <li style="position: relative; left: 23px;">Open Office
+                      <li style="position: relative; left: 23px;">Libre Office
+                      <li style="position: relative; left: 23px;">Notepad++
+                    </ul>
+                  </div>
+                  <div style="position: absolute; left: 950px; top: -10px; font-size: 72%; width: 33%; text-align: left;">
+                    <span style="padding-left: 13px;">Maps and GIS<br></span>
+                    <ul style="font-size: 95%;">
+                      <li style="position: relative; left: 23px;">QGIS
+                      <li style="position: relative; left: 23px;">Mapserver
+                      <li style="position: relative; left: 23px;">GDAL/OGR
+                    </ul><br>
+                    <span style="padding-left: 13px;">Desktop<br></span>
+                    <ul style="font-size: 95%;">
+                      <li style="position: relative; left: 23px;">Mozilla Firefox
+                      <li style="position: relative; left: 23px;">Mozilla Thunderbird
+                      <li style="position: relative; left: 23px;">7-zip
+                      <li style="position: relative; left: 23px;">KeePass (password manager)
+                      <li style="position: relative; left: 23px;">Virtual Box (machine sims)
+                    </ul><br>
+                    <span style="padding-left: 13px;">Graphics<br></span>
+                    <ul style="font-size: 95%;">
+                      <li style="position: relative; left: 23px;">GIMP (like photoshop)
+                      <li style="position: relative; left: 23px;">Handbrake (video processor)
+                      <li style="position: relative; left: 23px;">VLC (video tools)
+                      <li style="position: relative; left: 23px;">InkScape (drawing)
+                      <li style="position: relative; left: 23px;">Meshlab (3D model editor)
+                      <li style="position: relative; left: 23px;">Blender (3D animation)
+                    </ul>
+                  </div>
+                </section>
+
+              </section>
 
            <!-- ***
                  * Extra Reading
