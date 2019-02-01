@@ -1,9 +1,9 @@
-##Data Curation for Learning and Outreach
-###Richter Library Internal Seminar Series
+## Data Wrangling in the Research Environment
+### Four Part Seminar Series 
 
-As a part of the data curation initiative this is series of three active learning workshops that will cover fundamental aspects of data curation for liason librarians.
+This is a four part version of the for-credit [Data Managemnent Graduate Seminar](https://umiamilibraries.github.io/courses-and-workshops/Data-Management-Seminar/).
 
-Please see the [hosted version](https://umiamilibraries.github.io/courses-and-workshops/Data-Workshops-Library/syllabus.html) for more information.
+Please see the [hosted version](https://umiamilibraries.github.io/courses-and-workshops/Data-Management-Seminar-Series/syllabus.html) for more information.
 
 Questions or comments please contact [Timothy Norris](mailto:tnorris@miami.edu)
 
