@@ -1,7 +1,7 @@
 ## Data Wrangling in the Research Environment
 ### Four Part Seminar Series 
 
-This is a four part version of the for-credit [Data Managemnent Graduate Seminar](https://umiamilibraries.github.io/courses-and-workshops/Data-Management-Seminar/).
+This is a four part version of the for-credit [Data Managemnent Graduate Seminar](https://github.com/UMiamiLibraries/courses-and-workshops/tree/master/Data-Management-Seminar/).
 
 Please see the [hosted version](https://umiamilibraries.github.io/courses-and-workshops/Data-Management-Seminar-Series/syllabus.html) for more information.
 
