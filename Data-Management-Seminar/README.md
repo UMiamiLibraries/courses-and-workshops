@@ -1,4 +1,4 @@
-##Data Management Seminar
+## Data Management Seminar
 
 As a part of the data curation initiative this seminar is an introduction to fundamental aspects of data curation in the research environment.
 
