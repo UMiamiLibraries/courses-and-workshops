@@ -1,6 +1,6 @@
 All material in this repository is shared under the creative commons attribution license version 4.0 CC-BY. 
 
-![CC-BY 4.0](/common/assets/cc-by4.png)
+![CC-BY 4.0](/common/assets/images-for-data/cc-by4.png)
 
 You are free to:
 
