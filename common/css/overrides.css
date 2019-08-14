@@ -34,3 +34,55 @@ section {
 .staff-meta {padding-top:1rem}
 .staff-pic img{border-radius:35%;background-color:#ff9f55;padding-right:4px;width:150px;height:150px;max-width:200px;margin-right:1rem}
 .staff-meta { font-size: 120% !important;}
+
+/*
+ * all for header footer template
+ */
+.template-container {
+  display: flex; flex-direction: column; align-items: center; width: 1366px; height: 768px; position: absolute; top: 0px; left: 0px;
+}
+.template-header {
+  flex: none; font-size: 0.6em !important; width: 100%; text-align: left; color: #777; border-bottom: 1px solid #c9bf9d !important;
+}
+.template-header span {
+  margin-left: 23px; float: right; margin-right: 23px; color: #c9bf9d;
+}
+.template-content-containter {
+  flex: 1; height: 100%; width: 100%; margin-left: auto; margin-right: auto;
+}
+.template-content {
+  max-width: 75%; margin: 0px auto 0px auto !important; font-size: 80% !important; line-height: 120% !important; position: relative; top: 50%; transform: translateY(-50%);
+}
+.template-content-jes {
+  max-width: 100%; margin: 0px auto 0px auto !important; font-size: 80% !important; line-height: 120% !important; position: relative; top: 50%; transform: translateY(-50%);
+}
+.template-content img {
+  max-height: 500px;
+}
+.template-title {
+  font-weight: bold !important; font-size: 120% !important; margin-bottom: 30px !important; text-align: center;
+}
+.template-element {
+  max-width: 100%; margin: 0px auto 0px auto !important;
+}
+.template-element ul {
+  line-height: 145%;
+}
+.template-citation {
+  flex: none; font-size: 40% !important; width: 100%; margin: 0px auto 23px auto !important; z-index: 100 !important; max-width: 70%; text-align: left; padding-left: 23px !important; color: #aaa;
+}
+.template-citation a {
+  color: #abe;
+}
+.template-footer {
+  flex: none; width: 110%;
+  background-color: #febc11;
+  text-align: left;
+}
+.template-footer td {
+  background-size: 100% 96px;
+}
+.template-footer img {
+  max-width: 230px;
+  margin-left: 10% !important;
+}
