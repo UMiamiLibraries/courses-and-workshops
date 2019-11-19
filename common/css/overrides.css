@@ -86,3 +86,45 @@ section {
   max-width: 230px;
   margin-left: 10% !important;
 }
+.um-template-container {
+  display: flex; flex-direction: column; align-items: center; width: 1366px; height: 768px; position: absolute; top: 0px; left: 0px;
+}
+.um-template-header {
+  flex: none; font-size: 0.6em !important; width: 100%; text-align: left; color: #777;
+}
+.um-template-header span {
+  margin-left: 23px; float: right; margin-right: 23px;
+}
+.um-template-content-containter {
+  flex: 1; height: 100%; width: 100%; margin-left: auto; margin-right: auto;
+}
+.um-template-content {
+  max-width: 75%; margin: 0px auto 0px auto !important; font-size: 80% !important; line-height: 120% !important; position: relative; top: 50%; transform: translateY(-50%);
+}
+.um-template-content-jes {
+  max-width: 100%; margin: 0px auto 0px auto !important; font-size: 80% !important; line-height: 120% !important; position: relative; top: 50%; transform: translateY(-50%);
+}
+.um-template-content img {
+  max-height: 500px;
+}
+.um-template-title {
+  font-weight: bold !important; font-size: 120% !important; margin-bottom: 30px !important; text-align: center;
+}
+.um-template-element {
+  max-width: 100%; margin: 0px auto 0px auto !important;
+}
+.um-template-element ul {
+  line-height: 145%;
+}
+.um-template-citation {
+  flex: none; font-size: 40% !important; width: 100%; margin: 0px auto 23px auto !important; z-index: 100 !important; max-width: 70%; text-align: left; padding-left: 23px !important; color: #aaa;
+}
+.um-template-citation a {
+  color: #abe;
+}
+.um-template-footer {
+  flex: none; width: 85%;
+}
+.um-template-footer td {
+  background-size: 100% 96px;
+}
