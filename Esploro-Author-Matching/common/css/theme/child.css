@@ -1,0 +1,102 @@
+body {
+  background-color: #222 !important;
+}
+img {
+   border: none !important;
+   box-shadow: none !important;
+}
+section {
+   padding: 0px !important;
+}
+.reveal {
+	font-size: 40px !important;
+}
+.center {
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+.highlight-text {
+	background-color: rgba(0,0,0,0.7); 
+	padding: 13px !important;
+	border-radius: 13px;
+}
+.highlight-text-light {
+	background-color: rgba(0,0,0,0.3) !important; 
+}
+.text-white {
+	color: #222 !important;
+	padding: 13px !important;
+	border-radius: 13px;
+}
+.highlight-text-white {
+	background-color: rgba(255,255,255,0.8); 
+}
+.section-title {
+    color: rgba(80,80,80,0.6) !important;
+	font-size: 36px;
+	position: absolute;
+	z-index: 100;
+	bottom: 13px;
+	left: 23px;
+	font-family: Helvetica, sans-serif;
+}
+a.menu-button:link, a.menu-button:visited {
+	color: #555 !important;
+	background-color: rgba(220,220,220,0.8); 
+	padding: 13px !important;
+	border-radius: 13px;
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	box-shadow: 3px 3px 3px 3px #333;
+    text-decoration: none;
+	line-height: 67px;
+}
+a.menu-button:hover, a.main-menu-button:hover {
+	background-color: rgba(255,255,255,1) !important; 
+	color: #222 !important;
+}
+.menu-buttons {
+	position: absolute;
+	z-index: 100;
+	bottom: 13px;
+	right: 13px;	
+}
+.main-menu-button {
+	font-size: 36px !important;
+	box-shadow: 3px 3px 3px 3px #111;
+	margin: 13px;
+	line-height: 80px !important;
+}
+.main-menu-wrapper {
+	position: absolute;
+	background-color: rgba(0,0,0,0.8); 
+	z-index: 200;
+	top: 0px;
+	left: 0px;	
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+.main-menu {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 600px;
+}
+.reference {
+	font-size: 55% !important; 
+	color: #444 !important; 
+	width: 90% !important; 
+	margin-left: auto !important; 
+	margin-right: auto !important; 
+	margin-top: 23px !important;
+}
+.reference-black {
+	font-size: 55% !important; 
+	color: #ddd !important; 
+	width: 90% !important; 
+	margin-left: auto !important; 
+	margin-right: auto !important; 
+	margin-top: 23px !important;
+}

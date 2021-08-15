@@ -1,0 +1,104 @@
+body {
+  background-color: #222 !important;
+}
+img {
+   border: none !important;
+   box-shadow: none !important;
+}
+p {
+  font-size: 48px; 
+  margin-top: 13px !important;
+  margin-bottom: 13px !important;
+}
+h2 {
+  font-size: 48px; 
+}
+.title-page {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  text-align: center;  
+}
+.vertical-center {
+  position: relative; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  -webkit-transform: translateY(-50%); 
+  -ms-transform: translateY(-50%);
+}
+.center {
+	margin-right: auto !important;
+	margin-left: auto !important;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.title-text {
+	margin-right: auto !important;
+	margin-left: auto !important;
+  display: inline-block;
+  background-color: yellow;
+  color: black;
+  font-size: 2.5em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  width: auto;
+	font-weight: 900;
+}
+.sub-title-text {
+  font-size: 1.5em;
+  width: 70%;
+  font-weight: normal;
+}
+.highlight-text {
+	padding: 13px !important;
+  font-size: 1.5em;
+  width: 65%;
+}
+.video-container {
+    margin-bottom: -13px;
+    margin-top: 13px;
+}
+.video-background {
+  width: 100%;
+}
+.reference {
+	font-size:0.8em; 
+	text-align: center;
+	color: #444 !important; 
+	margin-left: auto !important; 
+	margin-right: auto !important; 
+	font-style: italic;
+	width: 85%;
+}
+@media screen and (max-width: 479px) {
+     /* start of phone styles */
+	p {
+	  font-size: 24px !important; 
+	  margin-top: 7px !important;
+	  margin-bottom: 7px !important;
+	}
+	h2 {
+	  font-size: 36px !important; 
+	}
+	.highlight-text {
+	  padding: 7px !important;
+	  font-size: 1.2em !important;
+	  width: 85% !important;
+	}
+	.title-text {
+	  font-size: 1.5em !important;
+	  padding: 0.2em !important;
+	  border-radius: 0.2em !important;
+	  width: auto !important;
+	}
+	.sub-title-text {
+	  font-size: 1em !important;
+	  width: 85% !important;
+	}
+	.chart-text {
+		font-size: 0.7em !important;
+	}
+	.reference {
+		font-size: 0.7em !important; 
+	}
+}

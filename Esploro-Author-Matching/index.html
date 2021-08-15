@@ -1,0 +1,617 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="common/css/reveal.css">
+  <link rel="stylesheet" href="common/css/white.css">
+  <link rel="stylesheet" href="common/css/overrides.css">
+  <script src="common/java/print.js"></script>
+  <title>Esploro Faculty Profile Enrichment</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- ***
+            * Title Slide Branded
+            * -->
+      <section data-transition="fade" data-background-image="common/assets/img/titlePage.png">
+        <div style="position: absolute; top: 0px; left: 0px;">
+          <div style="color: white; margin-top: 100px; text-align: left; margin-left: 330px; margin-bottom: 23px;"><strong>Esploro<br>&nbsp;&nbsp;Faculty<br>&nbsp;&nbsp;&nbsp;&nbsp;Profile<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enrichment</strong></div>
+          <div style="color: black; margin-top: 23px; margin-left: 330px; text-align: left;"><strong>UM Libraries - Fall 2021</strong></div>
+          <div style="color: white; margin-left: 360px; margin-top: 20px; font-size: 60%;">
+            <div style="text-align: left; float: left; margin-left: 350px;">
+              <a href="" style="color: #fff; text-decoration: underline; margin-left: -120px">https://bit.ly/TBD</a><br><br><br>
+              Tim Norris - <a href="mailto:tnorris@miami.edu" style="color: #fff; text-decoration: underline;">tnorris@miami.edu</a><br>
+              Angela Clark - <a href="mailto:aclark@rsmas.miami.edu" style="color: #fff; text-decoration: underline;">aclark@rsmas.miami.edu</a><br>
+              Kineret Ben-Knaan - <a href="mailto:kbenknaan@miami.edu" style="color: #fff; text-decoration: underline;">kbenknaan@miami.edu</a><br>
+              Jason Cohen - <a href="mailto:j.cohen4@miami.edu" style="color: #fff; text-decoration: underline;">j.cohen4@miami.edu</a><br>
+              Leah Bamford - <a href="mailto:LBamford@med.miami.edu" style="color: #fff; text-decoration: underline;">LBamford@med.miami.edu</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- **********************************************************************************
+            * Outline
+            * -->
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Esploro Faculty Profile Enrichment</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter" style="font-size: 1.2em">
+
+            <div class="um-template-content" style="max-width: 85%; width: 85%;">
+              <div style="display: inline-block; width: 100%">
+                <ul style="font-size: 90%;">
+                  <li>Introduction</li>
+                  <li style="margin-top: 23px;">Esploro Faculty Profiles</li>
+                  <li style="margin-top: 23px;">Key Concepts</li>
+                  <li style="margin-top: 23px;">Smart Harvesting</li>
+                  <li style="margin-top: 23px;">Basic Author Matching</li>
+                  <li style="margin-top: 23px;">Assessing Author Matches</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <!-- ***
+            * 
+            * -->
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Introduction</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter" style="font-size: 1.2em">
+
+            <div class="um-template-content" style="max-width: 85%; width: 85%;">
+              <div class="um-template-title">Esploro, Pure, and Faculty Profiles</div>
+              <div style="display: inline-block; width: 100%">
+                <p style="margin-bottom: 42px;">Elsevier Pure > ExLibris Esploro : approximately one year</p>
+                <table style="font-size: 0.8em;">
+                  <tr>
+                    <td>Summer 2021</td><td>&nbsp;</td><td>Pilot Faculty Profile Enrichment</td>
+                  </tr><tr>
+                    <td>Fall 2021</td><td>&nbsp;</td><td>Manual Faculty Profile Enrichment with Liaisons</td>
+                  </tr><tr>
+                    <td>Spring 2022</td><td>&nbsp;</td><td>Launch campus-wide change management program</td>
+                  </tr><tr>
+                    <td>Summer 2022</td><td>&nbsp;</td><td>Smart Harvest automatic profile enrichment</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Esploro Faculty Profiles</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter" style="font-size: 1.2em">
+
+            <div class="um-template-content" style="max-width: 85%; width: 85%;">
+              <div class="um-template-title">Login to Esploro Admin Interface *</div>
+              <div style="font-size: 0.75em;">
+                <a href="https://miami-researchmanagement.esploro.exlibrisgroup.com/mng/login?auth=SAML" target="_blank">https://miami-researchmanagement.esploro.exlibrisgroup.com/mng/login?auth=SAML</a>
+              </div>
+              <div style="font-size: 0.6em; margin-top: 80px;">
+                <p>* Google Chrome seems to work best</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <!-- ***
+            * Faculty Profiles
+            * -->
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Esploro Faculty Profiles</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter" style="font-size: 1.2em">
+
+            <div class="um-template-content" style="max-width: 85%; width: 85%;">
+              <div class="um-template-title">Faculty Profiles</div>
+              <div style="display: inline-block; width: 100%">
+                <ul style="font-size: 90%;">
+                  <li style="margin-bottom: 7px;">In Esploro admin interface and select ‘researchers’ in the top left search bar, enter the researcher’s last name and press ‘enter’<br><img src="common/assets/img/findresearcher.jpg" style="max-height: 350px;"></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Esploro Faculty Profiles</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter" style="font-size: 1.2em">
+
+            <div class="um-template-content" style="max-width: 85%; width: 85%;">
+              <div class="um-template-title">Faculty Profiles</div>
+              <div style="display: inline-block; width: 100%">
+                <ul style="font-size: 90%;">
+                  <li style="margin-bottom: 7px;">On the 'Affiliated' tab, locate the researcher and click on the elipsis on the far right of the researcher row -> choose ‘view public profile’<br><img src="common/assets/img/selectresearcher.jpg" style="max-height: 350px;"></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Esploro Key Concepts and Terms</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter" style="font-size: 1.2em">
+
+            <div class="um-template-content" style="max-width: 85%; width: 85%;">
+              <div class="um-template-title">Key Concepts and Terms</div>
+              <div style="display: inline-block; width: 100%">
+                <table style="font-size: 0.55em" class="densetable">
+                  <tr>
+                    <td width=250px><p>Asset</p></td><td>&nbsp;&nbsp;</td><td><p>Can be any research output. May include peer reviewed articles, blog posts, conference presentations, and so on.</p></td>
+                  </tr><tr>
+                    <td><p>Researcher</p></td><td>&nbsp;&nbsp;</td><td><p>Any researcher that produced an asset in the repository. Can be affiliated or non-affiliated. The affiliated list comes from a Workday daily feed. Does not include staff or students unless manually entered.</p></td>
+                  </tr><tr>
+                    <td><p>Central Discovery Index</p></td><td>&nbsp;&nbsp;</td><td><p>The CDI. ExLibris' proprietary database of known assets.</p></td>
+                  </tr><tr>
+                    <td><p>Smart Expansion</p></td><td>&nbsp;&nbsp;</td><td><p>A manual process run in the Esploro back-end in which known researcher-asset matches are imported into the repository based on C Numbers and DOIs.</p></td>
+                  </tr><tr>
+                    <td><p>Smart Harvest</p></td><td>&nbsp;&nbsp;</td><td><p>Either a manual or automatic process run in the Esploro back-end in which known ExLibris' proprietary machine learning process attempts to match existing researchers with assets in the ExLibris CDI.</p></td>
+                  </tr><tr>
+                    <td><p>Researcher Set</p></td><td>&nbsp;&nbsp;</td><td><p>A manually created set of researchers used in Smart Harvest.</p></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Esploro Key Concepts</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter" style="font-size: 1.2em">
+
+            <div class="um-template-content" style="max-width: 85%; width: 85%;">
+              <div class="um-template-title">Processes and Responsibilities</div>
+              <table style="font-size: 0.55em" class="densetable">
+               <tr>
+                <td></td>
+                <td width=150px><p><b>Process</b></p></td>
+                <td><p><b>Responsible</b></p></td>
+                <td><p><b>Description</b></p></td>
+                <td width=140px><p><b>Timeframe</b></p></td>
+               </tr>
+              <tr>
+                <td>1.</td>
+                <td><p>CDI</p></td>
+                <td><p>ExLibris</p></td>
+                <td><p>Maintain proprietary Central Discovery Index</p></td>
+                <td><p>Ongoing</p></td>
+               </tr>
+               <tr>
+                <td>2.</td>
+                <td><p>Smart Expansion</p></td>
+                <td><p>Internal Esploro Implementation Group</p></td>
+                <td><p>Import metadata from CDI from known asset-researcher matches based on C Number and DOI</p></td>
+                <td><p>Fast computer job</p></td>
+               </tr>
+               <tr>
+                <td>3.</td>
+                <td><p>Manual Smart Harvest</p></td>
+                <td><p>Internal Esploro Implementation Group</p></td>
+                <td><p>ML based matching of assets in ExLibris CDI with researchers in Esploro. Researcher set created in Esploro back-end and is limited to five researchers. Author matches can be automatic or manually approved (very strong, strong, uncertain)</p></td>
+                <td><p>Slow computer intensive job</p></td>
+               </tr>
+               <tr>
+                <td>4.</td>
+                <td><p>Author Matching</p></td>
+                <td><p>Liaisons</p></td>
+                <td><p>Manual approval of matches from Smart Harvest (very strong, strong, uncertain)</p></td>
+                <td><p>Slow human job</p></td>
+               </tr>
+               <tr>
+                <td>5.</td>
+                <td><p>Smart Harvest</p></td>
+                <td><p>Automatic</p></td>
+                <td><p>Esploro back-end job that runs on a weekly(?) schedule to capture new assets/publications</p></td>
+                <td><p>Ongoing</p></td>
+               </tr>
+              </table>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Researcher Status Before Smart Harvest</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter" style="font-size: 1.2em">
+
+            <div class="um-template-content" style="max-width: 85%; width: 85%;">
+                <table style="font-size: 0.45em" class="moderatetable">
+                  <tr style="font-weight: 600;">
+                    <td><p>C#</p></td><td><p>Faculty</p></td><td><p>Department</p></td><td style="text-align: right;"><p>Assets in Esploro</p></td>
+                  </tr><tr>
+                    <td><p>C00076883</p></td><td><p>Chao, Sonia, Raquel</p></td><td><p>Architecture</p></td><td style="text-align: right;"><p>1</p></td>
+                  </tr><tr>
+                    <td><p>C11864666</p></td><td><p>Barnes, Germane</p></td><td><p>Architecture</p></td><td style="text-align: right;"><p>1</p></td>
+                  </tr><tr>
+                    <td><p>C09924365</p></td><td><p>Timpano, Nathan, James</p></td><td><p>Art & Art History</p></td><td style="text-align: right;"><p>7</p></td>
+                  </tr><tr>
+                    <td><p>C12154165</p></td><td><p>Coakley, James</p></td><td><p>Mechnical and Aerospace Engineering</p></td><td style="text-align: right;"><p>29</p></td>
+                  </tr><tr>
+                    <td><p>C11901430</p></td><td><p>Zhou, Yiqun</p></td><td><p>Chemistry</p></td><td style="text-align: right;"><p>37</p></td>
+                  </tr><tr>
+                    <td><p>C12139984</p></td><td><p>Liang, Liang</p></td><td><p>Computer Science</p></td><td style="text-align: right;"><p>44</p></td>
+                  </tr><tr>
+                    <td><p>C11910241</p></td><td><p>Connolly, Jennifer, Marie</p></td><td><p>Political Science</p></td><td style="text-align: right;"><p>14</p></td>
+                  </tr><tr>
+                    <td><p>C00718657</p></td><td><p>Gonzalez, George, A</p></td><td><p>Political Science</p></td><td style="text-align: right;"><p>52</p></td>
+                  </tr><tr>
+                    <td><p>C06458350</p></td><td><p>Fernandez, Dina</p></td><td><p>International Studies</p></td><td style="text-align: right;"><p>1</p></td>
+                  </tr><tr>
+                    <td><p>C11909666</p></td><td><p>Rattan, Rishi</p></td><td><p>UMMG Dept. of Surgery</p></td><td style="text-align: right;"><p>104</p></td>
+                  </tr><tr>
+                    <td><p>C12081150</p></td><td><p>Jaimes, Natalia</p></td><td><p>UMMG Dept. of Dermatology</p></td><td style="text-align: right;"><p>40</p></td>
+                  </tr><tr>
+                    <td><p>C12183293</p></td><td><p>Natori, Yoichiro</p></td><td><p>UMMG Dept. of Medicine</p></td><td style="text-align: right;"><p>38</p></td>
+                  </tr>
+                </table>
+              </div>
+
+          </div>
+
+          <div class="um-template-citation">
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <section data-transition="fade" data-background-image="common/assets/img/SmartHarvestFlow.jpg" data-background-size="contain"></section>
+
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Author Matching and Profile Enrichment</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter" style="font-size: 1.2em">
+
+            <div class="um-template-content" style="max-width: 85%; width: 85%;">
+              <iframe width="960" height="540" src="https://www.youtube.com/embed/yFSZ6sOaeZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Author Matching and Profile Enrichment</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter" style="font-size: 1.2em">
+
+            <div class="um-template-content" style="max-width: 85%; width: 85%;">
+              <div class="um-template-title">Basic Author Matching Workflow</div>
+              <ol style="font-size: 90%; margin-top: 42px;">
+                <li style="margin-bottom: 7px;">Open Author Matching Task List in Esploro</li>
+                <li style="margin-bottom: 7px;">Filter researcher assets with "pending" status</li>
+                <li style="margin-bottom: 7px;">Assess each asset for match approval<br>
+                  <ul style="font-size: 0.85em;">
+                    <li>Accept<br>- or -</li>
+                    <li>Reject</li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Open Author Matching Task List</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter" style="font-size: 1.2em">
+
+            <div class="um-template-content" style="max-width: 85%; width: 85%; height: 90%;">
+              <div class="um-template-title">Open Author Match Task List in Esploro</div>
+              <div style="float: left; max-width: 35%;">
+                <img src="common/assets/img/ApprovalTaskList.jpg">
+              </div>
+              <div style="float:left; max-width: 29%; font-size: 0.9em">
+                <br><br><br><p>There are two ways to open the author matching task list.</p>
+              </div>
+              <div style="float: right; max-width: 35%;">
+                <img src="common/assets/img/EsploroTaskList.jpg">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Filter Author Matching Task List</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter" style="font-size: 1.2em">
+
+            <div class="um-template-content">
+              <img src="common/assets/img/filterTasks.jpg" style="max-width: 1080px; max-height: 700px; width: 1080px; height: 700px; margin-left: -88px">
+            </div>
+
+          </div>
+
+          <div class="um-template-citation"></div>
+          <div class="um-template-footer"></div>
+          <!--<div class="um-template-footer" style="margin-top: -120px; z-index: 1000; mix-blend-mode: multiply;"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>-->
+          <div style="position: absolute; top: 420px; left: 420px; font-size: 0.8em; width: 800px; text-align: left;">
+            <ul>
+              <li style="margin-bottom: 13px;">Control the facets or filters on the left.</li>
+              <li style="margin-bottom: 13px;">Each active facet or filter will be displayed near the top of the page under the search bar.</li>
+              <li>The "Status: Pending Approval" facet will always show for author matching tasks.</li>
+            </ul>
+          </div>
+       </div>
+      </section>
+
+      <section data-transition="fade" data-background-image="common/assets/img/workflow_simple.jpg" data-background-size="contain">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Author Matching Workflow</span><br><table width=100%><td background="common/assets/img/grey_bar.jpg" width=23%></td><td></td><td background="common/assets/img/grey_bar.jpg" width=23%></td></tr></table></div>
+          <div class="um-template-content-containter" style="font-size: 1.2em">
+
+            <div class="um-template-content" style="width: 95%; max-width: 95%; height: 95%;">
+              <div style="float: left; max-width: 20%; margin-top: 42px; text-align: left;" class="um-template-title">Esploro Author Matching Workflow</div>
+              <div style="float: left; max-width: 50%;">&nbsp;</div>
+              <div style="float: right; max-width: 24%;" class="fragment">
+                <p style="font-size: 0.6em; text-align: left; margin-top: 80px;">* When no researcher C.V. is available, the asset match assessment is based on “external” comparison by using other metadata sources.<br><br>Useful information to compare can include:
+                  <ul style="font-size: 0.55em; line-height: 1.15em;">
+                    <li>names and affiliations</li>
+                    <li>publication year</li>
+                    <li>journal title</li>
+                    <li>publisher</li>
+                    <li>conference name</li>
+                    <li>abstract</li>
+                    <li>metadata quality</li>
+                    <li>etc</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation"></div>
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg" width=20%></td><td width=50%></td></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <section data-transition="fade" data-background-image="common/assets/img/workflow.jpg" data-background-size="contain">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Author Matching Workflow</span><br><table width=100%><td background="common/assets/img/grey_bar.jpg" width=23%></td><td></td><td background="common/assets/img/grey_bar.jpg" width=23%></td></tr></table></div>
+          <div class="um-template-content-containter" style="font-size: 1.2em">
+
+            <div class="um-template-content" style="width: 95%; max-width: 95%; height: 95%;">
+              <div style="float: left; max-width: 20%; margin-top: 42px; text-align: left;" class="um-template-title">Esploro Author Matching Workflow</div>
+              <div style="float: left; max-width: 50%;">&nbsp;</div>
+              <div style="float: right; max-width: 24%;">
+                <p style="font-size: 0.6em; text-align: left; margin-top: 80px;">* When no researcher C.V. is available, the asset match assessment is based on “external” comparison by using other metadata sources.<br><br>Useful information to compare can include:
+                  <ul style="font-size: 0.55em; line-height: 1.15em;">
+                    <li>names and affiliations</li>
+                    <li>publication year</li>
+                    <li>journal title</li>
+                    <li>publisher</li>
+                    <li>conference name</li>
+                    <li>abstract</li>
+                    <li>metadata quality</li>
+                    <li>etc</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation"></div>
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg" width=20%></td><td width=50%></td></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Esploro Author Matching Workflow</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter" style="font-size: 1.2em">
+
+            <div class="um-template-content" style="max-width: 85%; width: 85%; height: 90%;">
+              <div class="um-template-title">Approve Author Match</div>
+              <img src="common/assets/img/approve.jpg" style="max-width: 925px;">
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Esploro Author Matching Workflow</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter" style="font-size: 1.2em">
+
+            <div class="um-template-content" style="max-width: 85%; width: 85%; height: 90%;">
+              <div class="um-template-title">Reject Author Match and Delete Asset</div>
+              <img src="common/assets/img/rejectAndDelete.jpg" style="max-width: 925px;">
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Esploro Author Matching Workflow</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter" style="font-size: 1.2em">
+
+            <div class="um-template-content" style="max-width: 85%; width: 85%; height: 90%;">
+              <div class="um-template-title">Mass Delete</div>
+              <img src="common/assets/img/massDelete.jpg" style="max-width: 925px;">
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Esploro Author Matching Workflow</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter" style="font-size: 1.2em">
+
+            <div class="um-template-content" style="max-width: 85%; width: 85%; height: 90%;">
+              <div class="um-template-title">Replace Author for Asset</div>
+              <img src="common/assets/img/replaceResearcher.jpg" style="max-width: 925px;">
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <section data-transition="fade">
+        <div class="um-template-container">
+          <div class="um-template-header"><span>Author Matching Strategies</span><br><table width=100%><tr><td background="common/assets/img/grey_bar.jpg" width=100%></td></tr></table></div>
+          <div class="um-template-content-containter" style="font-size: 1.2em">
+
+            <div class="um-template-content" style="max-width: 85%; width: 85%;">
+              <div class="um-template-title">Approaches to Author Matching</div>
+              <ol style="font-size: 90%; margin-top: 42px;">
+                <li style="margin-bottom: 7px;">Approve known and then mass delete</li>
+                <li style="margin-bottom: 7px;">Download task list and manage in Excel</li>
+                <li style="margin-bottom: 7px;">Use analytics dashboard to identify matches</li>
+              </ol>
+            </div>
+
+          </div>
+
+          <div class="um-template-citation">
+          </div>
+          
+          <div class="um-template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+    </div>
+  </div>
+  <script src="common/java/reveal.js"></script>
+	<script src="common/java/notes.js"></script>
+  <script src="common/java/head.min.js"></script>
+  <script>
+    Reveal.initialize({
+        width: 1366, height: 768, margin: 0.05,
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        mouseWheel: false,
+        chart: {
+          defaults: { 
+            global: { 
+              defaultFontSize: 20,
+              title: { fontColor: "#333" }, 
+              legend: {
+                position: "top",
+                labels: { fontColor: "#333" },
+              },
+              tooltips: {
+                labels: { fontColor: "#333" },
+              },
+            }, 
+            scale: { 
+              scaleLabel: { fontColor: "#333" }, 
+              gridLines: { color: "#333", zeroLineColor: "#333" }, 
+              ticks: { fontColor: "#333" }, 
+            } 
+          },
+        },
+        dependencies: [
+            { src: 'common/java/Chart.min.js' },
+            { src: 'common/java/csv2chart.js' }
+        ] 
+    });
+  </script>
+</body>
+</html>
