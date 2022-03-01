@@ -114,4 +114,7 @@ section {
   padding: 13px !important;
   border-radius: 13px;
 }
+.img-map img {
+  margin: 0px;
+}
 
